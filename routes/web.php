@@ -13,9 +13,9 @@
 
 
 Route::get('/', 'IraisController@index');
-Route::get('/', function () {
-    return view('general.create');
-});
+
+           
+
 
 
 

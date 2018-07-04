@@ -15,7 +15,7 @@ class CreateIraisTable extends Migration
     {
         Schema::create('irais', function (Blueprint $table) {
             $table->increments('id');
-            $table->integer('user_id')->unsigned()->index();
+            // $table->integer('user_id')->unsigned()->index();
             $table->string('title');
             $table->string('content');
             $table->string('timespan');
@@ -24,7 +24,7 @@ class CreateIraisTable extends Migration
             $table->string('comment');
             $table->timestamps();
         
-            $table->foreign('user_id')->references('id')->on('users');
+            // $table->foreign('user_id')->references('id')->on('users');
         });
     }
 

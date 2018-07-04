@@ -14,7 +14,7 @@
 
 Route::get('/', 'IraisController@index');
 Route::get('/', function () {
-    return view('irais.index');
+    return view('irais.show');
 });
 
  Route::resource('users', 'UsersController');

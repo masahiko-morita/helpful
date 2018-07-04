@@ -11,12 +11,18 @@
 |
 */
 
+
+Route::get('/', 'IraisController@index');
 Route::get('/', function () {
     return view('welcome');
 });
 
  Route::resource('users', 'UsersController');
+ Route::resource('irais', 'IraisController');
 
 // Route::group(['middleware' => ['auth']], function () {
    
 // });
+
+
+

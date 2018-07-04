@@ -12,7 +12,11 @@
 */
 
 
-Route::get('/', 'IraisController@index');
+Route::get('/error', 'IraisController@index');
+
+Route::get('/edit', function () {
+    return view('irais.edit');
+});
 
            
 

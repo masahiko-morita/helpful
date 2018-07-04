@@ -14,3 +14,9 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+ Route::resource('users', 'UsersController');
+
+// Route::group(['middleware' => ['auth']], function () {
+   
+// });

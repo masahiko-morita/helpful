@@ -103,16 +103,37 @@ class IraisController extends Controller
         ]);
         }
     
+     public function edit($id)
+        {
+        //     $irai = \App\Irai::find($id);
+        //     if (\Auth::user()->id === $irai->user_id) {
+        //     return view('irais.edit', [
+        //         'irai' => $irai,
+        //     ]);
+        // }else {
+        //     return redirect("/");
+        //     }
+        
+        $irai = Irai::find($id);
+
+        return view('irais.edit', [
+            'irai' => $irai,
+        ]);
+        }
+    
     public function destroy($id)
     {
-        $irai = \App\Irai::find($id);
-
-        // if (\Auth::id() === $irai->user_id) {
+    //     if (\Auth::id() === $irai->user_id) {
             
-        // }
+    //     $irai = \App\Irai::find($id);
+    //     $irai->delete();
+
+    //     return redirect()->back();
+    // }
+        $irai = Irai::find($id);
         $irai->delete();
 
-        return redirect()->back();
+        return redirect('/');
     }
 }
 

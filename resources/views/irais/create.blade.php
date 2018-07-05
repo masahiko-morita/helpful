@@ -12,24 +12,24 @@
             
             <div class="form-group">
                     
-                    {!! Form::label('name', '商品名:') !!}
-                    {!! Form::text('name', null, ['class' => 'form-control']) !!}
+                    {!! Form::label('title', 'タイトル:') !!}
+                    {!! Form::text('title', null, ['class' => 'form-control']) !!}
                 
                     
-                    {!! Form::label('content', '商品説明:') !!}
+                    {!! Form::label('content', '説明:') !!}
                     {!! Form::text('content', null, ['class' => 'form-control']) !!}
                     
-                    {!! Form::label('price', '値段:') !!}
-                    {!! Form::text('price', null, ['class' => 'form-control']) !!}    
+                    {!! Form::label('timespan', '期間:') !!}
+                    {!! Form::text('timespan', null, ['class' => 'form-control']) !!}    
                     
-                     {!! Form::label('name', 'コメント:') !!}
-                    {!! Form::text('name', null, ['class' => 'form-control']) !!}
+                     {!! Form::label('station', '駅:') !!}
+                    {!! Form::text('station', null, ['class' => 'form-control']) !!}
                     
-                       {!! Form::label('name', '駅:') !!}
-                    {!! Form::text('name', null, ['class' => 'form-control']) !!}
+                       {!! Form::label('reward', '見返り:') !!}
+                    {!! Form::text('reward', null, ['class' => 'form-control']) !!}
                     
-                       {!! Form::label('name', '報酬:') !!}
-                    {!! Form::text('name', null, ['class' => 'form-control']) !!}
+                       {!! Form::label('comment', 'コメント:') !!}
+                    {!! Form::text('comment', null, ['class' => 'form-control']) !!}
                     
                 
             </div> 

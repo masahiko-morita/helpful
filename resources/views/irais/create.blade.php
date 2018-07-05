@@ -15,20 +15,22 @@
                     {!! Form::label('title', 'タイトル:') !!}
                     {!! Form::text('title', null, ['class' => 'form-control']) !!}
                 
-                    
                     {!! Form::label('content', '説明:') !!}
                     {!! Form::text('content', null, ['class' => 'form-control']) !!}
                     
-                    {!! Form::label('timespan', '期間:') !!}
-                    {!! Form::text('timespan', null, ['class' => 'form-control']) !!}    
+                    {!! Form::label('start', '開始時間:', ['class' => 'control-label']) !!}
+                    {!! Form::text('start', date('Y-m-d'), ['class' => 'datepicker']) !!}
                     
-                     {!! Form::label('station', '駅:') !!}
+                    {!! Form::label('finish', '終了時間:', ['class' => 'control-label']) !!}
+                    {!! Form::text('finish', date('Y-m-d'), ['class' => 'datepicker']) !!}<br>
+                    
+                    {!! Form::label('station', '駅:') !!}
                     {!! Form::text('station', null, ['class' => 'form-control']) !!}
                     
-                       {!! Form::label('reward', '見返り:') !!}
+                    {!! Form::label('reward', '見返り:') !!}
                     {!! Form::text('reward', null, ['class' => 'form-control']) !!}
                     
-                       {!! Form::label('comment', 'コメント:') !!}
+                    {!! Form::label('comment', 'コメント:') !!}
                     {!! Form::text('comment', null, ['class' => 'form-control']) !!}
                     
                 

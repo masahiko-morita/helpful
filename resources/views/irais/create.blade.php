@@ -31,20 +31,12 @@
                        {!! Form::label('comment', 'コメント:') !!}
                     {!! Form::text('comment', null, ['class' => 'form-control']) !!}
                     
-                
             </div> 
     
-<<<<<<< HEAD
         <button type="button" class="btn btn-default">
           <span class="glyphicon glyphicon-shopping-cart"></span>
             {!! Form::submit('投稿') !!}
         </button>
-=======
-                        <button type="button" class="btn btn-default">
-                          <span class="glyphicon glyphicon-shopping-cart"></span>
-                            {!! Form::submit('投稿！') !!}
-                        </button>
->>>>>>> 46f7160a1f22c061a8ee68f7514e7e864e45f6e6
         </div>
     </div>
     {!! Form::close() !!}

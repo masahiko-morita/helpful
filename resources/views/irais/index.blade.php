@@ -1,7 +1,5 @@
 @extends('layouts.app')
 
-
-
 @section('content')
 
     <form action="cgi-bin/example.cgi" method="post">
@@ -11,13 +9,10 @@
     </form>
 
    <div>
-  
-
         {!! link_to_route('irais.create', '新しい依頼') !!}
     
   </div>
   
   @include('irais.irai', ['irais' => $irais])
-  
 
 @endsection

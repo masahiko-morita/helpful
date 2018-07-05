@@ -4,24 +4,33 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Irai;
+use App\User;
+
 class IraisController extends Controller
 {
     public function index()
     {
-        $data = [];
-        // if (\Auth::check()) {
-            // $user = \Auth::user();
-            $irais = $user->irais()->orderBy('created_at', 'desc')->paginate(10);
+        // $data = [];
+        // // if (\Auth::check()) {
+        //     // $user = \Auth::user();
+        //     $irais = irais()->orderBy('created_at', 'desc')->paginate(10);
 
-            $data = [
-                // 'user' => $user,
-                'irais' => $irais,
-            ];
-            // $data += $this->counts($user);
-            return view('users.show', $data);
-        // }else {
-        //     return view('welcome');
-        // }
+        //     $data = [
+        //         // 'user' => $user,
+        //         'irais' => $irais,
+        //     ];
+        //     // $data += $this->counts($user);
+        //     return view('users.show', $data);
+        // // }else {
+        // //     return view('welcome');
+        // // }
+        
+        $irais = Irai::all();
+
+        return view('irais.index', [
+            'irais' => $irais,
+        ]);
     }
     
     public function create()

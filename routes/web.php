@@ -12,15 +12,9 @@
 */
 
 
-Route::get('/', 'IraisController@index');
-
-           
-
-
-
-
-
-
+Route::get('/toukou', function() {
+  return view('general.create');
+});
 
 
  Route::resource('users', 'UsersController');

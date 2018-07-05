@@ -7,8 +7,6 @@
         <h1>ありがとうございます！</h1>
         <h4>依頼内容は以下でございます</h4>
     </div>
-    
-
 
     <div class="row"> 
         
@@ -46,7 +44,11 @@
                 {!! Form::submit('ホームに戻る', ['class' => 'btn btn-success btn-lg']) !!}
             {!! Form::close() !!}
             
+            
+           
         <li><a href="https://tomochat.herokuapp.com">チャットに移動する</a></li>
+            
+   
     </div>
 </div>    
     

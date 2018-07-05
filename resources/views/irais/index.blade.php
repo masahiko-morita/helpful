@@ -8,4 +8,5 @@
     </form>
     
    <p>@    include('irais.irais',['irais' => $irais])</p> 
+
 @endsection

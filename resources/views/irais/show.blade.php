@@ -1,44 +1,43 @@
 @extends('layouts.app')
 
 @section('content')
-      
-<!--<div class="container">-->
-<!--    <div class=text-center>-->
-<!--        <h1>タイトル</h1>-->
-<!--    </div>-->
-<!--    <div class="row text-center">-->
-<!--        <div class="col-md-4">-->
-<!--                はるな　-->
-<!--        </div>-->
-<!--        <div class="col-md-4">-->
-<!--                場所-->
-<!--        </div>-->
-<!--        <div class="col-md-4">-->
-<!--                対価　-->
-<!--        </div>-->
-<!--    </div>-->
-<!--    <div class='text-center'>-->
-<!--        コンテンツ-->
-<!--    </div>-->
     
-<!--    <div class="row text-center">-->
-<!--        <div class="col-md-6">-->
-<!--            １００円-->
-<!--        </div>-->
-<!--        <div class="col-md-6">-->
-<!--            <a href="/irai_thankyou">購入する</a>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</div>-->
+<!--<div class="container">-->
+    <!--<div class=text-center>-->
+        <!--<h1>{{ $irai->title }}</h1>-->
+    <!--</div>-->
+    <!--<div class="row text-center">-->
+    <!--    <div class="col-md-4">-->
+    <!--            {{ $irai->timespan }}-->
+    <!--    </div>-->
+    <!--    <div class="col-md-4">-->
+    <!--            {{ $irai->station }}-->
+    <!--    </div>-->
+    <!--    <div class="col-md-4">-->
+    <!--            対価　-->
+    <!--    </div>-->
+    <!--</div>-->
+    <!--<div class='text-center'>-->
+    <!--    {{ $irai->content }}-->
+    <!--</div>-->
+    
+    <!--<div class="row text-center">-->
+    <!--    <div class="col-md-6">-->
+    <!--        {{ $irai->reward }}-->
+    <!--    </div>-->
+        <!--<div class="col-md-6">-->
+        <!--    <a href="/irai_thankyou">購入する</a>-->
+        <!--</div>-->
+    <!--</div>-->
+</div>
+<div class='container text-center'>
 
-<h1>依頼詳細ページ</h1>
+<h1>{{ $irai->title }}</h1>
     <div class="row"> 
+        
         <div class="col-md-6">
-            <table class="table table-hover">
-            <tr>
-                <th>タイトル</th>
-                <td>{{ $irai->title }}</td>
-            </tr>
+            <table class="table">
+            
             <tr>
                 <th>説明</th>
                 <td>{{ $irai->content }}</td>
@@ -60,7 +59,26 @@
                 <td>{{ $irai->comment }}</td>
             </tr>
         </table>
+       
         </div> 
-        
+        <div class="col-md-6">
+
+
+             <span><a href="{{ route('irais.thankyou', ['id' => $irai->id]) }}">購入する</a></span>
+
+            
+            {!! Form::open(['route' => ['irais.edit', $irai->id], 'method' => 'get']) !!}
+                {!! Form::submit('依頼を編集する', ['class' => 'btn btn-info btn-lg']) !!}
+            {!! Form::close() !!}
+             
+            <span>         
+            {!! Form::open(['route' => ['irais.destroy', $irai->id], 'method' => 'delete']) !!}
+            {!! Form::submit('Delete', ['class' => 'btn btn-danger btn-xs']) !!}
+            {!! Form::close() !!}
+            </span>
+            
+        </div>
+       
        </div>
+</div>
 @endsection

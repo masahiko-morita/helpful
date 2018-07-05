@@ -25,6 +25,8 @@
         </div>
         <div class="col-md-6">
                 <button type="submit" class="btn btn-default">購入</button>
+                <p>{!! link_to_route('general.thankyou', 'View profile') !!}</p>
+                
         </div>
     </div>
 </div>

@@ -30,13 +30,8 @@
                        {!! Form::label('comment', 'コメント:') !!}
                     {!! Form::text('comment', null, ['class' => 'form-control']) !!}
                     
-                
             </div> 
-    
-        <button type="button" class="btn btn-default">
-          <span class="glyphicon glyphicon-sunglasses"></span>
-            {!! Form::submit('更新☺！') !!}
-        </button>
+            {!! Form::submit('更新☺', ['class' => 'btn btn-info btn-lg']) !!}
     </div>
 </div>    
     {!! Form::close() !!}

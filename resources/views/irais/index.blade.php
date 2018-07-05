@@ -9,9 +9,6 @@
     </form>
 
    <div>
-        {!! link_to_route('irais.create', '新しい依頼') !!}
-    
-  </div>
   　　　　{!! Form::open(['route' => 'irais.create', 'method' => 'get']) !!}
         {!! Form::submit('依頼を投稿する', ['class' => 'btn btn-primary btn-lg']) !!}
         {!! Form::close() !!}

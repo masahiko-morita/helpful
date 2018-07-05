@@ -32,10 +32,7 @@
                     {!! Form::text('comment', null, ['class' => 'form-control']) !!}
                     
             </div> 
-        <button type="button" class="btn btn-default">
-          <span class="glyphicon glyphicon-shopping-cart"></span>
-            {!! Form::submit('投稿') !!}
-        </button>
+   
 　　　　　　　　　　{!! Form::submit('依頼を投稿する', ['class' => 'btn btn-info btn-lg']) !!}
         </div>
     </div>

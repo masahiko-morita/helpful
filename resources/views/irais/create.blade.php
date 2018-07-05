@@ -32,7 +32,7 @@
                     {!! Form::text('name', null, ['class' => 'form-control']) !!}
                     
                 
-            </div>  
+            </div> 
     
         <button type="button" class="btn btn-default">
           <span class="glyphicon glyphicon-sunglasses"></span>

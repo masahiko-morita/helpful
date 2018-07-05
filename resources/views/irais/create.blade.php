@@ -13,20 +13,20 @@
             <div class="form-group">
                     
                     {!! Form::label('title', 'タイトル:') !!}
-                    {!! Form::text('title', null, ['class' => 'form-control']) !!}
+                    {!! Form::text('title', null, ['class' => 'form-control' ,　'placeholder' => '例:○○をシェアしましょう'　) !!}
                 
                     
                     {!! Form::label('content', '説明:') !!}
-                    {!! Form::text('content', null, ['class' => 'form-control']) !!}
+                    {!! Form::text('content', null, ['class' => 'form-control',　'placeholder' => '例:○○を買いすぎたので分けたいです']) !!}
                     
                     {!! Form::label('timespan', '期間:') !!}
                     {!! Form::text('timespan', null, ['class' => 'form-control']) !!}    
                     
                      {!! Form::label('station', '駅:') !!}
-                    {!! Form::text('station', null, ['class' => 'form-control']) !!}
+                    {!! Form::text('station', null, ['class' => 'form-control',　'placeholder' => '例:都内、神奈川なら可です！/会社内でお願いします']) !!}
                     
                        {!! Form::label('reward', '見返り:') !!}
-                    {!! Form::text('reward', null, ['class' => 'form-control']) !!}
+                    {!! Form::text('reward', null, ['class' => 'form-control',　'placeholder' => '例:100円/○○が■円で買えます']) !!}
                     
                        {!! Form::label('comment', 'コメント:') !!}
                     {!! Form::text('comment', null, ['class' => 'form-control']) !!}

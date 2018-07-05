@@ -15,6 +15,7 @@
     
    <p>@    include('irais.irais',['irais' => $irais])</p>
    
+
    
    
    <div>
@@ -28,7 +29,6 @@
   @include('irais.irai', ['irais' => $irais])
   
 
-   
-
+\
 
 @endsection

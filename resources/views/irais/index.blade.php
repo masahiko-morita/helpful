@@ -12,14 +12,9 @@
           <input type="submit" name="submit" value="検索">
     </form>
 
-    
    <p>@    include('irais.irais',['irais' => $irais])</p>
    
-   
-   
    <div>
-  
-        
         {!! link_to_route('irais.create', '新規メッセージの投稿') !!}
         
         

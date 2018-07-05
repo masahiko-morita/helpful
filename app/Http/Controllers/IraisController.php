@@ -135,7 +135,7 @@ class IraisController extends Controller
 
         return redirect('/');
     }
-    
+
     public function thankyou($id)
     {
         
@@ -145,6 +145,21 @@ class IraisController extends Controller
             'irai' => $irai,
         ]);
         
+    }
+
+    public function update(Request $request, $id)
+    {
+        $irai = Irai::find($id);
+        $irai->title = $request->title;
+        $irai->content = $request->content;
+        $irai->timespan = $request->timespan;
+        $irai->station = $request->station;
+        $irai->reward = $request->reward;
+        $irai->comment = $request->comment;
+        $irai->save();
+
+        return redirect('/');
+
     }
 }
 

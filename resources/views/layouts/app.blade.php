@@ -29,7 +29,10 @@
             @include('commons.error_messages')
 
             @yield('content')
+            
+            
         </div> 
+        @include('commons.footer')
     </body>
-    @include('commons.footer')
+    
 </html>

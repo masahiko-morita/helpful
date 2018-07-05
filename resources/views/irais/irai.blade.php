@@ -3,18 +3,19 @@
     <?php $user = $irai->user; ?>
     <li class="irai">
         <div class="col-md-3 col-sm-4 col-xs-12">
-            <div class="panel panel-default-irais"><a href="{{ route('irais.show', $irai->id) }}">
+            <div class="panel panel-default-irais">
                 <div class="panel-body-irais">
                     @if ($irai->id)
-                    <p>タイトル:
-                    <h4 class="irai-title-irais">{{ $irai->title }}</h4></p>
+                    <a href="{{ route('irais.show', $irai->id) }}">
+                        <p>タイトル:
+                            <h4 class="irai-title-irais">{{ $irai->title }}</h4></p></a>
                     @endif
-                </div>    
-                <div class="panel-body-irais">    
                     <p>内容:
                     <h4 class="irai-title-irais">{{ $irai->content }}</h4></p>
+                    <p>駅:
+                    <h4 class="irai-title-irais">{{ $irai->station }}</h4></p>
                 </div>
-        </a></div>
+            </div>
         </div>
     </li>
 @endforeach

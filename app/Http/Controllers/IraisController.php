@@ -165,7 +165,7 @@ class IraisController extends Controller
         return view('irais.thankyou', [
             'irai' => $irai,
         ]);
-        
+         
     }
 
 }

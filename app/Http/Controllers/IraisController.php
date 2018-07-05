@@ -80,18 +80,60 @@ class IraisController extends Controller
     }
     
     
+    public function show($id)
+        {
+            // $user = User::find($id);
+            // $irai = Irai::find($id);
+            // // $irais = \DB::table('irais')->join('category_masters','irais.category_id', '=', 'category_masters.id')->select('category_masters.*')->get();
+            
+            
+            // if ($irai->user_id){
+            //     return view('irais.show', [
+            //         // 'user' => $user,
+            //         'irai' => $irai,
+            //     ]);
+            // }else {
+            //     return redirect("/");
+            // }
+            
+            $irai = Irai::find($id);
+
+        return view('irais.show', [
+            'irai' => $irai,
+        ]);
+        }
     
+     public function edit($id)
+        {
+        //     $irai = \App\Irai::find($id);
+        //     if (\Auth::user()->id === $irai->user_id) {
+        //     return view('irais.edit', [
+        //         'irai' => $irai,
+        //     ]);
+        // }else {
+        //     return redirect("/");
+        //     }
+        
+        $irai = Irai::find($id);
+
+        return view('irais.edit', [
+            'irai' => $irai,
+        ]);
+        }
     
     public function destroy($id)
     {
-        $irai = \App\Irai::find($id);
-
-        // if (\Auth::id() === $irai->user_id) {
+    //     if (\Auth::id() === $irai->user_id) {
             
-        // }
+    //     $irai = \App\Irai::find($id);
+    //     $irai->delete();
+
+    //     return redirect()->back();
+    // }
+        $irai = Irai::find($id);
         $irai->delete();
 
-        return redirect()->back();
+        return redirect('/');
     }
 }
 

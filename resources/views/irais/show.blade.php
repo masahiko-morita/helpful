@@ -62,8 +62,9 @@
        
         </div> 
         <div class="col-md-6">
-             <span><a href="/irai_thankyou">購入する</a></span><br>
+             
              <span><a href="{{ route('irais.edit', ['id' => $irai->id]) }}">edit</a></span>
+             <span><a href="{{ route('irais.thankyou', ['id' => $irai->id]) }}">購入する</a></span>
             
             <span>         
             {!! Form::open(['route' => ['irais.destroy', $irai->id], 'method' => 'delete']) !!}

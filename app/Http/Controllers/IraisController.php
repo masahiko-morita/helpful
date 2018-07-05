@@ -135,5 +135,16 @@ class IraisController extends Controller
 
         return redirect('/');
     }
+    
+    public function thankyou($id)
+    {
+        
+        $irai = Irai::find($id);
+
+        return view('irais.thankyou', [
+            'irai' => $irai,
+        ]);
+        
+    }
 }
 

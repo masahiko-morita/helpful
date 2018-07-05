@@ -28,10 +28,8 @@ Route::get('/toukou', function() {
 });
 
 Route::get('/', 'IraisController@index');
+Route::get('thankyou/{id}', 'IraisController@thankyou')->name('irais.thankyou');
 
-Route::get('/irai_thankyou', function () {
-    return view('irais.irai_thankyou');
-});
 
 
 

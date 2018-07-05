@@ -7,6 +7,7 @@
         <h1>ありがとうございます！</h1>
         <h4>依頼内容は以下でございます</h4>
     </div>
+    {{$irai->title}}
     <div class='text-center'>
         <h2>タイトル</h2>
     </div>

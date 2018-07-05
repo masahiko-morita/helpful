@@ -13,7 +13,7 @@
    <div>
   
 
-        {!! link_to_route('irais.create', '新規メッセージの投稿') !!}
+        {!! link_to_route('irais.create', '新しい依頼') !!}
     
   </div>
   

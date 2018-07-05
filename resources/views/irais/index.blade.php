@@ -9,7 +9,10 @@
           <input type="search" name="search" placeholder="キーワードを入力">
           <input type="submit" name="submit" value="検索">
     </form>
-    
+
+   <div>
+  
+
         {!! link_to_route('irais.create', '新規メッセージの投稿') !!}
     
   </div>

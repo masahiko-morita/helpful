@@ -12,18 +12,10 @@
 */
 
 
-<<<<<<< HEAD
-Route::get('/toukou', function() {
-  return view('general.create');
-});
 
 Route::get('/error', 'IraisController@index');
-=======
+
 Route::get('/', 'IraisController@index');
-
->>>>>>> db5766a72de62e0b9676c496f99a6d0b5f0b2014
-
-
            
 
 

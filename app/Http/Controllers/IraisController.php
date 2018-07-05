@@ -96,7 +96,7 @@ class IraisController extends Controller
             //     return redirect("/");
             // }
             
-            $irai = Irai::find($id);
+        $irai = Irai::find($id);
 
         return view('irais.show', [
             'irai' => $irai,
@@ -121,6 +121,27 @@ class IraisController extends Controller
         ]);
         }
     
+    public function update(Request $request, $id)
+    {
+      
+        
+        $this->validate($request, [
+            
+        ]);
+
+        
+        $irai = Irai::find($id);
+        $irai->title = $request->title;
+        $irai->content = $request->content;
+        $irai->timespan = $request->timespan;
+        $irai->station = $request->station;
+        $irai->reward = $request->reward;
+        $irai->comment = $request->comment;
+        $irai->save();
+
+        return redirect('/');
+    }
+    
     public function destroy($id)
     {
     //     if (\Auth::id() === $irai->user_id) {
@@ -144,22 +165,8 @@ class IraisController extends Controller
         return view('irais.thankyou', [
             'irai' => $irai,
         ]);
-        
+         
     }
 
-    public function update(Request $request, $id)
-    {
-        $irai = Irai::find($id);
-        $irai->title = $request->title;
-        $irai->content = $request->content;
-        $irai->timespan = $request->timespan;
-        $irai->station = $request->station;
-        $irai->reward = $request->reward;
-        $irai->comment = $request->comment;
-        $irai->save();
-
-        return redirect('/');
-
-    }
 }
 

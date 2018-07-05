@@ -62,24 +62,19 @@
        
         </div> 
         <div class="col-md-6">
-<<<<<<< HEAD
-             
-             <span><a href="{{ route('irais.edit', ['id' => $irai->id]) }}">edit</a></span>
+
              <span><a href="{{ route('irais.thankyou', ['id' => $irai->id]) }}">購入する</a></span>
-=======
-             <span><a href="/irai_thankyou">購入する</a></span><br>
-             
->>>>>>> 4591c2cb006c2cca55a91239f78a059007d57a76
             
+            {!! Form::open(['route' => ['irais.edit', $irai->id], 'method' => 'get']) !!}
+                {!! Form::submit('依頼を編集する', ['class' => 'btn btn-info btn-lg']) !!}
+            {!! Form::close() !!}
+             
             <span>         
             {!! Form::open(['route' => ['irais.destroy', $irai->id], 'method' => 'delete']) !!}
             {!! Form::submit('Delete', ['class' => 'btn btn-danger btn-xs']) !!}
             {!! Form::close() !!}
             </span>
             
-             {!! Form::open(['route' => ['irais.edit', $irai->id], 'method' => 'get']) !!}
-                    {!! Form::submit('依頼を編集する', ['class' => 'btn btn-info btn-lg']) !!}
-                {!! Form::close() !!}
         </div>
        
        </div>

@@ -3,7 +3,7 @@
 @section('content')
 
 <!-- Write content for each page here -->
-    <h1>出品ページ</h1>
+    <h1>投稿ページ</h1>
     
     <div class="row"> 
         <div class="form-group col-xs-12 col-sm-offset-2 col-sm-8 col-lg-offset-3 col-lg-6">

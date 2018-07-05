@@ -21,10 +21,16 @@
                     {!! Form::label('timespan', '期間:') !!}
                     {!! Form::text('timespan', null, ['class' => 'form-control']) !!}    
                     
+                    {!! Form::label('start', '始まり:') !!}
+                    {!! Form::text('start', null, ['class' => 'form-control']) !!}
+                    
+                    {!! Form::label('finish', '終わり:') !!}
+                    {!! Form::text('finish', null, ['class' => 'form-control']) !!}
+                    
                      {!! Form::label('station', '駅:') !!}
                     {!! Form::text('station', null, ['class' => 'form-control']) !!}
                     
-                       {!! Form::label('reward', '見返り:') !!}
+                       {!! Form::label('reward', 'お礼:') !!}
                     {!! Form::text('reward', null, ['class' => 'form-control']) !!}
                     
                        {!! Form::label('comment', 'コメント:') !!}

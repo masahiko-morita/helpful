@@ -1,21 +1,4 @@
 @extends('layouts.app')
-              
-<!--@section('toukou')-->
-<!--<form action=""  >-->
-  
-  
-  
-<!--  <div>-->
-<!--    <textarea name="toukou" cols="50" rows="5"></textarea>-->
-<!--    </div>-->
-<!--  <div>-->
-<!--      <input type="submit" value="新規投稿"/>-->
-<!--  </div>-->
-<!--</form>-->
-<!--@endsection-->
-
-
-@extends('layouts.app')
 
 @section('content')
 
@@ -33,7 +16,11 @@
             {{-- エラーメッセージ --}}
             @if ($errors->any())
                 <div class="alert alert-danger">
-               
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
                 </div>
             @endif
             
@@ -82,6 +69,3 @@
     {!! Form::close() !!}
 
 @endsection
-
-
-

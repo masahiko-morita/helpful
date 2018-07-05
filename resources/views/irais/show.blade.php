@@ -47,6 +47,10 @@
                 <td>{{ $irai->timespan }}</td>
             </tr>
             <tr>
+            <th>時間</th>
+                <td>{{ $irai->start }}　～　{{ $irai->finish }}</td>
+            </tr>
+            <tr>
                 <th>駅</th>
                 <td>{{ $irai->station }}</td>
             </tr>

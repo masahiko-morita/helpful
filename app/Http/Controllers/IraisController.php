@@ -48,6 +48,8 @@ class IraisController extends Controller
             'title' => 'required|max:50',
             'content' => 'required|max:191',
             'timespan' => 'required|max:50',
+            'start' => 'required|max:50',
+            'finish' => 'required|max:50',
             'station' => 'required|max:20',
             'reward' => 'required|max:50',
             'comment' => 'required|max:50',
@@ -67,6 +69,8 @@ class IraisController extends Controller
         $irai->title = $request->title;
         $irai->content = $request->content;
         $irai->timespan = $request->timespan;
+        $irai->start = $request->start;
+        $irai->finish = $request->finish;
         $irai->station = $request->station;
         $irai->reward = $request->reward;
         $irai->comment = $request->comment;
@@ -134,6 +138,8 @@ class IraisController extends Controller
         $irai->title = $request->title;
         $irai->content = $request->content;
         $irai->timespan = $request->timespan;
+        $irai->start = $request->start;
+        $irai->finish = $request->finish;
         $irai->station = $request->station;
         $irai->reward = $request->reward;
         $irai->comment = $request->comment;

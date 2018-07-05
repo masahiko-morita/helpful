@@ -20,7 +20,7 @@ class CreateIraisTable extends Migration
             $table->string('content');
             $table->string('timespan');
             $table->string('start');
-            $table->string('end');
+            $table->string('finish');
             $table->string('station');
             $table->string('reward');
             $table->string('comment');

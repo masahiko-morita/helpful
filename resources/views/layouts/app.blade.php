@@ -20,6 +20,7 @@
 
             @yield('content')
         </div> 
-    </body>
     @include('commons.footer')
+    </body>
+    
 </html>

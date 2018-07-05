@@ -1,10 +1,21 @@
 @charset "utf-8";
 
 
+/*body*/
 body {
-    background: #f2f2f2;
- 
+    background-color: white;
 }
+
+
+/* navbar */
+.navbar {
+    background-color: #11cbd7;
+    border-style:none;
+
+}
+
+/*footer*/
+
 footer {
     margin-top: 40px;
 }
@@ -16,5 +27,11 @@ footer {
     margin: 0;
     bottom: 0;
     width:100%;
-    position: fixed;
+    position: absolute;
 }
+
+/*irai-contents*/ 
+.irai .title {
+    background-color:  #C6f1e7;
+    border-bottom-color: black;
+} 

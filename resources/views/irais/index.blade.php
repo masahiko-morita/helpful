@@ -25,6 +25,8 @@
         
   </div>
   
+  @include('irais.irai', ['irais' => $irais])
+  
 
    
 

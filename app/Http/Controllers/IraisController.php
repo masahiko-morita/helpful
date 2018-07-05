@@ -50,18 +50,33 @@ class IraisController extends Controller
             'timespan' => 'required|max:50',
             'station' => 'required|max:20',
             'reward' => 'required|max:50',
+            'comment' => 'required|max:50',
                     
         ]);
 
-        $request->user()->irais()->create([
-            'title' => $request->title,
-            'content' => $request->content,
-            'timespan' => $request->timespan,
-            'station' => $request->station,
-            'reward' => $request->reward,
-        ]);
+        // $request->user()->irais()->create([
+        //     'title' => $request->title,
+        //     'content' => $request->content,
+        //     'timespan' => $request->timespan,
+        //     'station' => $request->station,
+        //     'reward' => $request->reward,
+        // ]);
 
-        return redirect()->back();
+
+        $irai = new Irai;
+        $irai->title = $request->title;
+        $irai->content = $request->content;
+        $irai->timespan = $request->timespan;
+        $irai->station = $request->station;
+        $irai->reward = $request->reward;
+        $irai->comment = $request->comment;
+        $irai->save();
+        // return redirect()->back();
+        
+         $irais = Irai::all();
+        return view('irais.index', [
+            'irais' => $irais,
+        ]);
     }
     
     
@@ -79,5 +94,4 @@ class IraisController extends Controller
         return redirect()->back();
     }
 }
-
 

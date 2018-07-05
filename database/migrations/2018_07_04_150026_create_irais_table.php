@@ -19,6 +19,8 @@ class CreateIraisTable extends Migration
             $table->string('title');
             $table->string('content');
             $table->string('timespan');
+            $table->string('start');
+            $table->string('end');
             $table->string('station');
             $table->string('reward');
             $table->string('comment');

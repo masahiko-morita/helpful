@@ -71,9 +71,9 @@
             {!! Form::close() !!}
             </span>
             
-             {!! Form::open(['route' => ['irais.edit', $irai->id], 'method' => 'get']) !!}
-                    {!! Form::submit('依頼を編集する', ['class' => 'btn btn-info btn-lg']) !!}
-                {!! Form::close() !!}
+            {!! Form::open(['route' => ['irais.edit', $irai->id], 'method' => 'get']) !!}
+                {!! Form::submit('依頼を編集する', ['class' => 'btn btn-info btn-lg']) !!}
+            {!! Form::close() !!}
         </div>
        
        </div>

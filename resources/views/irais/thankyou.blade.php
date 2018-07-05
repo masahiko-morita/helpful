@@ -46,12 +46,10 @@
                 {!! Form::submit('ホームに戻る', ['class' => 'btn btn-success btn-lg']) !!}
             {!! Form::close() !!}
             
-            <!--{!! Form::open(['route' => ['irais.edit', $irai->id], 'method' => 'get']) !!}-->
-                {!! Form::submit('チャットに移動する', ['class' => 'btn btn-info btn-lg']) !!}
-            {!! Form::close() !!}
-             
+        <li><a href="https://tomochat.herokuapp.com">チャットに移動する</a></li>
     </div>
 </div>    
+    
     
     
     

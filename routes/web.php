@@ -11,17 +11,17 @@
 |
 */
 
+
+Route::get('/', 'IraisController@index');
+
+
+           
+
+
 Route::get('/show', function () {
     return view('irais.show');
 });
 
-
-
-
-Route::get('/error', 'IraisController@index');
-
-Route::get('/', 'IraisController@index');
-           
 
 Route::get('/toukou', function() {
   return view('general.create');

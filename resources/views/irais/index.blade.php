@@ -14,14 +14,21 @@
 
    <p>@    include('irais.irais',['irais' => $irais])</p>
    
+<<<<<<< HEAD
+=======
+
+   
+   
+>>>>>>> 5414be92f3f4c9924fd62121ca5ff116a610c8b3
    <div>
         {!! link_to_route('irais.create', '新規メッセージの投稿') !!}
         
         
   </div>
   
+  @include('irais.irai', ['irais' => $irais])
+  
 
-   
-
+\
 
 @endsection

@@ -23,26 +23,13 @@
                     {!! Form::label('finish', '終了時間:', ['class' => 'control-label']) !!}
                     {!! Form::text('finish', date('Y-m-d'), ['class' => 'datepicker']) !!}<br>
                     
-<<<<<<< HEAD
                     {!! Form::label('station', '駅:') !!}
                     {!! Form::text('station', null, ['class' => 'form-control']) !!}
                     
-                    {!! Form::label('reward', '見返り:') !!}
-=======
-                    {!! Form::label('start', '始まり:') !!}
-                    {!! Form::text('start', null, ['class' => 'form-control']) !!}
-                    
-                    {!! Form::label('finish', '終わり:') !!}
-                    {!! Form::text('finish', null, ['class' => 'form-control']) !!}
-                    
-                     {!! Form::label('station', '駅:') !!}
-                    {!! Form::text('station', null, ['class' => 'form-control']) !!}
-                    
-                       {!! Form::label('reward', 'お礼:') !!}
->>>>>>> e1d6a08553b783a641f3bcc875beedce5f3f334f
+                    {!! Form::label('reward', 'お礼:') !!}
                     {!! Form::text('reward', null, ['class' => 'form-control']) !!}
                     
-                       {!! Form::label('comment', 'コメント:') !!}
+                    {!! Form::label('comment', 'コメント:') !!}
                     {!! Form::text('comment', null, ['class' => 'form-control']) !!}
                     
                 

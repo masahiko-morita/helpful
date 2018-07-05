@@ -51,7 +51,7 @@
                 <td>{{ $irai->station }}</td>
             </tr>
             <tr>
-                <th>見返り</th>
+                <th>お礼</th>
                 <td>{{ $irai->reward }}</td>
             </tr>
             <tr>

@@ -5,7 +5,7 @@
 <!-- Write content for each page here -->
     <h1>出品ページ</h1>
     
-        <div class="row"> 
+    <div class="row"> 
         <div class="form-group col-xs-12 col-sm-offset-2 col-sm-8 col-lg-offset-3 col-lg-6">
             {!! Form::model($irai, ['route' => 'irais.store','files'=>true]) !!}
             
@@ -34,11 +34,12 @@
                 
             </div> 
     
-        <button type="button" class="btn btn-default">
-          <span class="glyphicon glyphicon-sunglasses"></span>
-            {!! Form::submit('投稿！') !!}
-        </button>
+                        <button type="button" class="btn btn-default">
+                          <span class="glyphicon glyphicon-shopping-cart"></span>
+                            {!! Form::submit('投稿！') !!}
+                        </button>
         </div>
+    </div>
     {!! Form::close() !!}
 
 @endsection

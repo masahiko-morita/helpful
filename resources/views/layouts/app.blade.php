@@ -20,4 +20,9 @@
             @yield('content')
         </div> 
     </body>
+    <footer>
+        <div class=copyright>
+            Copyright © 2018 HELPFUL inc. All Rights Reserved.
+        </div>
+    </footer>
 </html>

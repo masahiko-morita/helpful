@@ -1,5 +1,17 @@
 @charset "utf-8";
 
+/*body*/
+body {
+    background-color: #fff;
+}
+
+
+/* navbar */
+.navbar {
+    background-color: #11cbd7;
+}
+
+/*footer*/
 .copy {
     background-color: #352b23;
     color: #fff;
@@ -9,3 +21,9 @@
     width:100%;
     position: absolute;
 }
+
+/*
+11cbd7
+C6f1e7
+F0fff3
+*/

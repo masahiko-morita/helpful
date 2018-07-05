@@ -42,9 +42,14 @@
        
         </div> 
         
-        <div class="col-md-6 text-center">
+            {!! Form::open(['route' => ['irais.index', $irai->id], 'method' => 'get']) !!}
+                {!! Form::submit('ホームに戻る', ['class' => 'btn btn-success btn-lg']) !!}
+            {!! Form::close() !!}
             
-        </div>
+            <!--{!! Form::open(['route' => ['irais.edit', $irai->id], 'method' => 'get']) !!}-->
+                {!! Form::submit('チャットに移動する', ['class' => 'btn btn-info btn-lg']) !!}
+            {!! Form::close() !!}
+             
     </div>
 </div>    
     

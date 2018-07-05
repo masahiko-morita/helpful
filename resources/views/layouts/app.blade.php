@@ -21,9 +21,5 @@
             @yield('content')
         </div> 
     </body>
-    <footer>
-        <div class=copy>
-            Copyright © 2018 HELPFUL inc. All Rights Reserved.
-        </div>
-    </footer>
+    @include('commons.footer')
 </html>

@@ -80,7 +80,28 @@ class IraisController extends Controller
     }
     
     
-    
+    public function show($id)
+        {
+            // $user = User::find($id);
+            // $irai = Irai::find($id);
+            // // $irais = \DB::table('irais')->join('category_masters','irais.category_id', '=', 'category_masters.id')->select('category_masters.*')->get();
+            
+            
+            // if ($irai->user_id){
+            //     return view('irais.show', [
+            //         // 'user' => $user,
+            //         'irai' => $irai,
+            //     ]);
+            // }else {
+            //     return redirect("/");
+            // }
+            
+            $irai = Irai::find($id);
+
+        return view('irais.show', [
+            'irai' => $irai,
+        ]);
+        }
     
     public function destroy($id)
     {

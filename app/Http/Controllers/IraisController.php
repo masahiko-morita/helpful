@@ -123,8 +123,7 @@ class IraisController extends Controller
     
     public function update(Request $request, $id)
     {
-        var_dump($irai);
-        exit;
+      
         
         $this->validate($request, [
             
@@ -157,9 +156,6 @@ class IraisController extends Controller
 
         return redirect('/');
     }
-<<<<<<< HEAD
-    
-=======
 
     public function thankyou($id)
     {
@@ -172,20 +168,5 @@ class IraisController extends Controller
         
     }
 
-    public function update(Request $request, $id)
-    {
-        $irai = Irai::find($id);
-        $irai->title = $request->title;
-        $irai->content = $request->content;
-        $irai->timespan = $request->timespan;
-        $irai->station = $request->station;
-        $irai->reward = $request->reward;
-        $irai->comment = $request->comment;
-        $irai->save();
-
-        return redirect('/');
-
-    }
->>>>>>> 12466b08016fad7b1654a6a1bc6c33b9461e1699
 }
 

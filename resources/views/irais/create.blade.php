@@ -35,8 +35,8 @@
             </div> 
     
         <button type="button" class="btn btn-default">
-          <span class="glyphicon glyphicon-sunglasses"></span>
-            {!! Form::submit('投稿！') !!}
+          <span class="glyphicon glyphicon-shopping-cart"></span>
+            {!! Form::submit('投稿') !!}
         </button>
         </div>
     {!! Form::close() !!}

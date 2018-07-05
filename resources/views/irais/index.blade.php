@@ -12,8 +12,7 @@
           <input type="submit" name="submit" value="検索">
     </form>
 
-    
-   <p>@    include('irais.irais',['irais' => $irais])</p>
+
    
 
    

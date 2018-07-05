@@ -1,5 +1,8 @@
 @charset "utf-8";
 
+body {
+    background-image: url("background.png")
+}
 .copy {
     background-color: #352b23;
     color: #fff;

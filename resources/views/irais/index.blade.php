@@ -11,13 +11,6 @@
           <input type="search" name="search" placeholder="キーワードを入力">
           <input type="submit" name="submit" value="検索">
     </form>
-
-    
-   <p>@    include('irais.irais',['irais' => $irais])</p>
-   
-
-   
-   
    <div>
   
         

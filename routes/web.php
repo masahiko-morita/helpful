@@ -16,6 +16,9 @@ Route::get('/show', function () {
 });
 
 
+Route::get('/toukou', function() {
+  return view('general.create');
+});
 
 Route::get('/', 'IraisController@index');
 

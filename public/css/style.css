@@ -1,12 +1,26 @@
 @charset "utf-8";
 
+
+body {
+    background: #f2f2f2;
+ 
+}
+footer {
+    margin-top: 40px;
+}
+
 .copy {
     background-color: #352b23;
     color: #fff;
     text-align: center;
-    padding:  0;
-    bottom: 10px;
+    margin: 0;
+    bottom: 0;
     width:100%;
+<<<<<<< HEAD
     position: absolute;
 }
 
+=======
+    position: fixed;
+}
+>>>>>>> 84e014a90ab398fc128be1b525e787258ae3ba9b

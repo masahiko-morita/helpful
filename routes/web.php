@@ -11,12 +11,16 @@
 |
 */
 
+Route::get('/show', function () {
+    return view('irais.show');
+});
 
 
-Route::get('/error', 'IraisController@index');
 
-Route::get('/edit', function () {
-    return view('irais.edit');
+Route::get('/', 'IraisController@index');
+
+Route::get('/irai_thankyou', function () {
+    return view('irais.irai_thankyou');
 });
 
 

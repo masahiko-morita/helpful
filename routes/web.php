@@ -23,7 +23,6 @@ Route::get('/show', function () {
 });
 
 
-
 Route::get('/toukou', function() {
   return view('general.create');
 });
@@ -33,6 +32,7 @@ Route::get('/', 'IraisController@index');
 Route::get('/irai_thankyou', function () {
     return view('irais.irai_thankyou');
 });
+
 
 
  Route::resource('users', 'UsersController');

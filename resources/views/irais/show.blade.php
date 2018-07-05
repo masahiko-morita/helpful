@@ -36,7 +36,7 @@
     <div class="row"> 
         
         <div class="col-md-6">
-            <table class="table table-hover">
+            <table class="table">
             
             <tr>
                 <th>説明</th>
@@ -63,7 +63,9 @@
         </div> 
         <div class="col-md-6">
 
+
              <span><a href="{{ route('irais.thankyou', ['id' => $irai->id]) }}">購入する</a></span>
+
             
             {!! Form::open(['route' => ['irais.edit', $irai->id], 'method' => 'get']) !!}
                 {!! Form::submit('依頼を編集する', ['class' => 'btn btn-info btn-lg']) !!}

@@ -31,6 +31,13 @@ class User extends Authenticatable
     {
         return $this->hasMany(Irai::class);
     }
+    
+    public function feed_irais()
+    {
+        $user_ids = $this->pluck('users.id');
+        $user_ids[] = $this->id;
+        return Irai::whereIn('user_id', $user_ids);
+    }
 }
 
  

@@ -99,7 +99,10 @@ margin-top: 50px;
   width:80%;
   margin:0 auto;
 }
+<<<<<<< HEAD
  
+=======
+>>>>>>> 95ba95d71990af2f260f3833f578f83d1b8446a4
 .cover .cover-inner {
     height: 100%;
     margin: auto;
@@ -122,4 +125,15 @@ margin-top: 50px;
     text-align: center;
 }
 
+<<<<<<< HEAD
 
+=======
+ a{
+    text-decoration: none;
+    color:black;
+}
+
+a:hover {
+text-decoration: none;
+}
+>>>>>>> 95ba95d71990af2f260f3833f578f83d1b8446a4

@@ -17,11 +17,37 @@
                     {!! Form::label('content', '説明:') !!}
                     {!! Form::text('content', null, ['class' => 'form-control']) !!}
                     
-                    {!! Form::label('start', '開始時間:', ['class' => 'control-label']) !!}
-                    {!! Form::text('start', date('Y-m-d'), ['class' => 'datetimepicker']) !!}
-                    
-                    {!! Form::label('finish', '終了時間:', ['class' => 'control-label']) !!}
-                    {!! Form::text('finish', date('Y-m-d'), ['class' => 'datetimepicker']) !!}<br>
+                    <div class="container">
+                        <div class="row">
+                            <div class='col-sm-6'>
+                                <div class="form-group">
+                                    <label for="start">開始時刻:</label><br>
+                                    <div class='input-group date' id='datetimepicker'>
+                                        <input type='text' name="start" class="form-control" />
+                                             <span class="input-group-addon">
+                                                 <span class="glyphicon glyphicon-calendar"></span>
+                                             </span>
+                                    </div>
+                                    <label for="finish">終了時刻:</label><br>
+                                    <div class='input-group date' id='datetimepicker1'>
+                                        <input type='text' name="finish" class="form-control" />
+                                             <span class="input-group-addon">
+                                                 <span class="glyphicon glyphicon-calendar"></span>
+                                             </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+                               $(function () {
+                               $('#datetimepicker').datetimepicker();
+                                });
+                               $(function () {
+                               $('#datetimepicker1').datetimepicker();
+                                });
+                                
+                    </script>
                     
                     {!! Form::label('station', '駅:') !!}
                     {!! Form::text('station', null, ['class' => 'form-control']) !!}

@@ -47,7 +47,6 @@ class IraisController extends Controller
         $this->validate($request, [
             'title' => 'required|max:50',
             'content' => 'required|max:191',
-            'timespan' => 'required|max:50',
             'start' => 'required|max:50',
             'finish' => 'required|max:50',
             'station' => 'required|max:20',
@@ -129,7 +128,13 @@ class IraisController extends Controller
       
         
         $this->validate($request, [
-            
+            'title' => 'required|max:50',
+            'content' => 'required|max:191',
+            'start' => 'required|max:50',
+            'finish' => 'required|max:50',
+            'station' => 'required|max:20',
+            'reward' => 'required|max:50',
+            'comment' => 'required|max:50',
         ]);
 
         

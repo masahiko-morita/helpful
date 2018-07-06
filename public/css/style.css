@@ -36,8 +36,10 @@ body {
 /*footer*/
 
 footer {
+
     margin-top: 40px;
 }   
+
 
 .copy {
     background-color: transparent;
@@ -72,11 +74,20 @@ footer {
    
 }
 
-.irai .irai-flower .title {
-    font-size:30px;
+.irai .irai-flower .title h3{
+text-align: center;
+width:200px;
+margin-left: 20px;
+margin-top: 50px;
+
 }
 
 .irai .irai-flower .title .widen-height {
     height:50px;
+
 }
- 
+
+.irai-flower .contentbox{
+  width:80%;
+  margin:0 auto;
+}

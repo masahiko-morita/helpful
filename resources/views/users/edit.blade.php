@@ -2,7 +2,7 @@
 
 @section('content')
 
-<h1>依頼の投稿編集ページ</h1>
+<h1>マイページの編集ページ</h1>
 
    
  <div class="row"> 
@@ -17,8 +17,8 @@
             </div> 
     
         <button type="button" class="btn btn-default">
-          <span class="glyphicon glyphicon-sunglasses"></span>
-            {!! Form::submit('更新☺！') !!}
+          <span class="glyphicon glyphicon-user"></span>
+            {!! Form::submit('更新！') !!}
         </button>
     </div>
 </div>    

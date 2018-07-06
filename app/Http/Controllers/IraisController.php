@@ -121,7 +121,14 @@ class IraisController extends Controller
         $irai->comment = $request->comment;
         $irai->save();
 
+<<<<<<< HEAD
         return redirect("/");
+=======
+        $irais = Irai::all();
+
+        return view("irais.index",
+              ['irais' => $irais]);
+>>>>>>> caac4f99d967dc3bc19c60be86ec8dff785218f6
     }
     
     public function destroy($id)
@@ -132,7 +139,10 @@ class IraisController extends Controller
         $irai = \App\Irai::find($id);
         $irai->delete();
 
-        return redirect("/");
+        $irais = Irai::all();
+
+        return view("irais.index",
+              ['irais' => $irais]);
         
 
       }  

@@ -27,16 +27,11 @@ footer {
     margin: 0;
     bottom: 0;
     width:100%;
-<<<<<<< HEAD
-<<<<<<< HEAD
     position: absolute;
 }
 
-=======
     position: fixed;
 }
->>>>>>> 84e014a90ab398fc128be1b525e787258ae3ba9b
-=======
     position: absolute;
 }
 
@@ -45,4 +40,3 @@ footer {
     background-color:  #C6f1e7;
     border-bottom-color: black;
 } 
->>>>>>> 74e2b677b3696ff04b0c586acf6484b47ad7d0e5

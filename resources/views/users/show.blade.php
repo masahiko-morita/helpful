@@ -7,6 +7,7 @@
         </div>
         <div class="name text-center">
             <h1>{{ $user->name }}</h1>
+            <h1>{{ $user->content }}</h1>
         </div>
         <div class="irais-detail">
         <h2>出した依頼</h2>

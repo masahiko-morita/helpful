@@ -56,22 +56,13 @@ footer {
     width:100%;
 }
 
-    position: fixed;
-}
-    position: absolute;
-}
-
 /*irai-contents*/ 
 
-<<<<<<< HEAD
 
 .irai .title {
     background-color:  #C6f1e7;
     border-bottom-color: black;
 } 
-
-=======
->>>>>>> 3f6acd5fa4540f090469e351a346d945609a7af9
 .cover-inner {
     color:#006400;
 }

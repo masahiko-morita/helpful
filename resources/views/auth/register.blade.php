@@ -13,7 +13,7 @@
                     {!! Form::label('name', 'ニックネーム') !!}
                     {!! Form::text('name', old('name'), ['class' => 'form-control']) !!}
                 </div>
-
+                <input type='hidden' name="email" value="dummy@example.com">
                 <div class="form-group">
                         {!! Form::label('gender', '性別') !!}
                         {{Form::select('gender', [

@@ -18,6 +18,8 @@
                     {!! Form::label('content', '説明:') !!}
                     {!! Form::text('content', null, ['class' => 'form-control','placeholder' => '例:○○を買いすぎたので分けたいです']) !!}
                     
+<<<<<<< HEAD
+=======
 
                     {!! Form::label('timespan', '時間:') !!}
                     {!! Form::text('timespan', null, ['class' => 'form-control','placeholder' => '例:`1時間程度']) !!}
@@ -25,9 +27,40 @@
                     
                     {!! Form::label('start', '開始時間:', ['class' => 'control-label']) !!}
                     {!! Form::text('start', date('Y-m-d'), ['class' => 'datepicker']) !!}
+>>>>>>> 0df156b6eec13778daf21093f1a6274c4fab6880
                     
-                    {!! Form::label('finish', '終了時間:', ['class' => 'control-label']) !!}
-                    {!! Form::text('finish', date('Y-m-d'), ['class' => 'datepicker']) !!}<br>
+                    <div class="container">
+                        <div class="row">
+                            <div class='col-sm-6'>
+                                <div class="form-group">
+                                    <label for="start">開始時刻:</label><br>
+                                    <div class='input-group date' id='datetimepicker'>
+                                        <input type='text' class="form-control" />
+                                             <span class="input-group-addon">
+                                                 <span class="glyphicon glyphicon-calendar"></span>
+                                             </span>
+                                    </div>
+                                    <label for="finish">終了時刻:</label><br>
+                                    <div class='input-group date' id='datetimepicker1'>
+                                        <input type='text' class="form-control" />
+                                             <span class="input-group-addon">
+                                                 <span class="glyphicon glyphicon-calendar"></span>
+                                             </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script type="text/javascript">
+                               $(function () {
+                               $('#datetimepicker').datetimepicker();
+                                });
+                               $(function () {
+                               $('#datetimepicker1').datetimepicker();
+                                });
+                                
+                    </script>
+
                     
                     {!! Form::label('station', '駅:') !!}
                     {!! Form::text('station', null, ['class' => 'form-control','placeholder' => '例:都内、神奈川なら可です！/会社内でお願いします']) !!}

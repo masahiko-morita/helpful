@@ -46,27 +46,8 @@
         {!! Form::submit('ホームに戻る', ['class' => 'btn btn-success btn-lg']) !!}
         {!! Form::close() !!}
         </div>
-        
-            
-<<<<<<< HEAD
-            
-           
-        <li><a href="https://tomochat.herokuapp.com">チャットに移動する</a></li>
-            
-   
-=======
->>>>>>> 95ba95d71990af2f260f3833f578f83d1b8446a4
     </div>
-            
-            
-        
 </div>    
-    
-    
-    
-    
-    
-    
     
 <!--    {{$irai->title}}-->
 <!--    <div class='text-center'>-->

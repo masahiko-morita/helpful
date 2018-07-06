@@ -115,6 +115,8 @@ margin-top: 50px;
     letter-spacing: 0.15em;
     text-align: center;
 }
+
+
  a{
     text-decoration: none;
     color:black;
@@ -123,4 +125,3 @@ margin-top: 50px;
 a:hover {
 text-decoration: none;
 }
-

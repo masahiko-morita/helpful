@@ -68,7 +68,6 @@ class IraisController extends Controller
         $irai = new Irai;
         $irai->title = $request->title;
         $irai->content = $request->content;
-        $irai->timespan = $request->timespan;
         $irai->start = $request->start;
         $irai->finish = $request->finish;
         $irai->station = $request->station;
@@ -137,7 +136,6 @@ class IraisController extends Controller
         $irai = Irai::find($id);
         $irai->title = $request->title;
         $irai->content = $request->content;
-        $irai->timespan = $request->timespan;
         $irai->start = $request->start;
         $irai->finish = $request->finish;
         $irai->station = $request->station;

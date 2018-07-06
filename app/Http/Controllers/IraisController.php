@@ -15,7 +15,7 @@ class IraisController extends Controller
         $data = [];
         if (\Auth::check()) {
             $user = \Auth::user();
-            $irais = $user->irais()->orderBy('created_at', 'desc')->paginate(10);
+            $irais = $user->feed_irais()->orderBy('created_at', 'desc')->paginate(10);
 
             $data = [
                 'user' => $user,

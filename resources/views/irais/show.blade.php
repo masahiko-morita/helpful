@@ -1,35 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    
-<!--<div class="container">-->
-    <!--<div class=text-center>-->
-        <!--<h1>{{ $irai->title }}</h1>-->
-    <!--</div>-->
-    <!--<div class="row text-center">-->
-    <!--    <div class="col-md-4">-->
-    <!--            {{ $irai->timespan }}-->
-    <!--    </div>-->
-    <!--    <div class="col-md-4">-->
-    <!--            {{ $irai->station }}-->
-    <!--    </div>-->
-    <!--    <div class="col-md-4">-->
-    <!--            対価　-->
-    <!--    </div>-->
-    <!--</div>-->
-    <!--<div class='text-center'>-->
-    <!--    {{ $irai->content }}-->
-    <!--</div>-->
-    
-    <!--<div class="row text-center">-->
-    <!--    <div class="col-md-6">-->
-    <!--        {{ $irai->reward }}-->
-    <!--    </div>-->
-        <!--<div class="col-md-6">-->
-        <!--    <a href="/irai_thankyou">購入する</a>-->
-        <!--</div>-->
-    <!--</div>-->
-</div>
+
 <div class='container text-center'>
 
 <h1>{{ $irai->title }}</h1>

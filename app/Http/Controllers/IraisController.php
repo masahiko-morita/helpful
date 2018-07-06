@@ -47,7 +47,6 @@ class IraisController extends Controller
         $this->validate($request, [
             'title' => 'required|max:50',
             'content' => 'required|max:191',
-            'timespan' => 'required|max:50',
             'start' => 'required|max:50',
             'finish' => 'required|max:50',
             'station' => 'required|max:20',
@@ -68,7 +67,6 @@ class IraisController extends Controller
         $irai = new Irai;
         $irai->title = $request->title;
         $irai->content = $request->content;
-        $irai->timespan = $request->timespan;
         $irai->start = $request->start;
         $irai->finish = $request->finish;
         $irai->station = $request->station;
@@ -137,7 +135,6 @@ class IraisController extends Controller
         $irai = Irai::find($id);
         $irai->title = $request->title;
         $irai->content = $request->content;
-        $irai->timespan = $request->timespan;
         $irai->start = $request->start;
         $irai->finish = $request->finish;
         $irai->station = $request->station;

@@ -37,11 +37,11 @@ body {
 
 footer {
     margin-top: 40px;
-}
+}   
 
 .copy {
-    background-color: #352b23;
-    color: #fff;
+    background-color: transparent;
+    color: gray;
     text-align: center;
     margin: 0;
     bottom: 0;

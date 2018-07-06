@@ -1,10 +1,10 @@
 @charset "utf-8";
 
-<<<<<<< HEAD
+
 body {
     background-image: url("background.png")
 }
-=======
+
 
 body {
     background: #f2f2f2;
@@ -14,7 +14,6 @@ footer {
     margin-top: 40px;
 }
 
->>>>>>> 84e014a90ab398fc128be1b525e787258ae3ba9b
 .copy {
     background-color: #352b23;
     color: #fff;

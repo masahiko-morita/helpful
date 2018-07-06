@@ -5,32 +5,28 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Irai;
+
 use App\User;
 
 class IraisController extends Controller
 {
     public function index()
     {
-        // $data = [];
-        // // if (\Auth::check()) {
-        //     // $user = \Auth::user();
-        //     $irais = irais()->orderBy('created_at', 'desc')->paginate(10);
+        $data = [];
+        if (\Auth::check()) {
+            $user = \Auth::user();
+            $irais = $user->irais()->orderBy('created_at', 'desc')->paginate(10);
 
-        //     $data = [
-        //         // 'user' => $user,
-        //         'irais' => $irais,
-        //     ];
-        //     // $data += $this->counts($user);
-        //     return view('users.show', $data);
-        // // }else {
-        // //     return view('welcome');
-        // // }
+            $data = [
+                'user' => $user,
+                'irais' => $irais,
+            ];
+            $data += $this->counts($user);
+            return view('irais.index', $data);
+        }else {
+            return view('welcome');
+        }
         
-        $irais = Irai::all();
-
-        return view('irais.index', [
-            'irais' => $irais,
-        ]);
     }
     
     public function create()
@@ -55,72 +51,46 @@ class IraisController extends Controller
                     
         ]);
 
-        // $request->user()->irais()->create([
-        //     'title' => $request->title,
-        //     'content' => $request->content,
-        //     'timespan' => $request->timespan,
-        //     'station' => $request->station,
-        //     'reward' => $request->reward,
-        // ]);
-
-
-        $irai = new Irai;
-        $irai->title = $request->title;
-        $irai->content = $request->content;
-        $irai->start = $request->start;
-        $irai->finish = $request->finish;
-        $irai->station = $request->station;
-        $irai->reward = $request->reward;
-        $irai->comment = $request->comment;
-        $irai->save();
-        // return redirect()->back();
-        
-         $irais = Irai::all();
-        return view('irais.index', [
-            'irais' => $irais,
+        $request->user()->irais()->create([
+            'title' => $request->title,
+            'content' => $request->content,
+            'start' => $request->start,
+            'finish' => $request->finish,
+            'station' => $request->station,
+            'reward' => $request->reward,
+            'comment' => $request->comment,            
+            
         ]);
+
+        return redirect("/");
+                
     }
     
     
     public function show($id)
         {
-            // $user = User::find($id);
-            // $irai = Irai::find($id);
-            // // $irais = \DB::table('irais')->join('category_masters','irais.category_id', '=', 'category_masters.id')->select('category_masters.*')->get();
+            $irai = Irai::find($id);
             
+             return view('irais.show', [
+                'irai' => $irai,
+          
+           ]);
+    }
+  
             
-            // if ($irai->user_id){
-            //     return view('irais.show', [
-            //         // 'user' => $user,
-            //         'irai' => $irai,
-            //     ]);
-            // }else {
-            //     return redirect("/");
-            // }
-            
-        $irai = Irai::find($id);
 
-        return view('irais.show', [
-            'irai' => $irai,
-        ]);
-        }
     
      public function edit($id)
         {
-        //     $irai = \App\Irai::find($id);
-        //     if (\Auth::user()->id === $irai->user_id) {
-        //     return view('irais.edit', [
-        //         'irai' => $irai,
-        //     ]);
-        // }else {
-        //     return redirect("/");
-        //     }
+            $irai = \App\Irai::find($id);
+            if (\Auth::user()->id === $irai->user_id) {
+            return view('irais.edit', [
+                'irai' => $irai,
+            ]);
+        }else {
+            return redirect("/");
+            }
         
-        $irai = Irai::find($id);
-
-        return view('irais.edit', [
-            'irai' => $irai,
-        ]);
         }
     
     public function update(Request $request, $id)
@@ -153,17 +123,16 @@ class IraisController extends Controller
     
     public function destroy($id)
     {
-    //     if (\Auth::id() === $irai->user_id) {
-            
-    //     $irai = \App\Irai::find($id);
-    //     $irai->delete();
-
-    //     return redirect()->back();
-    // }
         $irai = Irai::find($id);
+        if (\Auth::id() === $irai->user_id) {
+            
+        $irai = \App\Irai::find($id);
         $irai->delete();
 
-        return redirect('/');
+        return redirect("/");
+        
+
+      }  
     }
 
     public function thankyou($id)

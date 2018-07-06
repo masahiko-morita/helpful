@@ -12,6 +12,7 @@
 */
 
 
+// Route::get('/', 'WelcomeController@index');
 Route::get('/', 'IraisController@index');
 Route::get('thankyou/{id}', 'IraisController@thankyou')->name('irais.thankyou');
 
@@ -23,9 +24,9 @@ Route::get('thankyou/{id}', 'IraisController@thankyou')->name('irais.thankyou');
  
  
 
-// Route::group(['middleware' => ['auth']], function () {
+Route::group(['middleware' => ['auth']], function () {
    
-// });
+});
 
 
 

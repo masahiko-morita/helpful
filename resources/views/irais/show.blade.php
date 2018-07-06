@@ -43,10 +43,6 @@
                 <td>{{ $irai->content }}</td>
             </tr>
             <tr>
-                <th>期間</th>
-                <td>{{ $irai->timespan }}</td>
-            </tr>
-            <tr>
             <th>時間</th>
                 <td>{{ $irai->start }}　～　{{ $irai->finish }}</td>
             </tr>

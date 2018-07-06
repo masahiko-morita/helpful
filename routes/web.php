@@ -11,21 +11,33 @@
 |
 */
 
+Route::get('signup', 'Auth\RegisterController@showRegistrationForm')->name('signup.get');
+Route::post('signup', 'Auth\RegisterController@register')->name('signup.post');
+
+Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
+Route::post('login', 'Auth\LoginController@login')->name('login.post');
+Route::get('logout', 'Auth\LoginController@logout')->name('logout.get');
+
 
 // Route::get('/', 'WelcomeController@index');
 Route::get('/', 'IraisController@index');
 Route::get('thankyou/{id}', 'IraisController@thankyou')->name('irais.thankyou');
 
 
- Route::resource('users', 'UsersController');
- Route::resource('irais', 'IraisController');
+
+
  
  
  
  
 
 Route::group(['middleware' => ['auth']], function () {
+<<<<<<< HEAD
    
+=======
+    Route::resource('users', 'UsersController');
+    Route::resource('irais', 'IraisController');
+>>>>>>> 619e2a56eaa4c345e6ca61ab2f71f0f5d844a344
 });
 
 

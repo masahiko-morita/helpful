@@ -2,7 +2,7 @@
 
 @section('content')
 
-<h1>依頼の投稿編集ページ</h1>
+<h1>マイページの編集ページ</h1>
 
    
  <div class="row"> 

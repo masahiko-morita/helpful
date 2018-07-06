@@ -10,10 +10,9 @@ body {
 /* navbar */
 .navbar {
     background-color: #11cbd7;
-    border-style:none;
-
+    border-style:none;　　
 }
-
+　
 /*footer*/
 
 footer {
@@ -44,7 +43,7 @@ footer {
    
 }
 
-.irai .irai-flower .title h4{
+.irai .irai-flower .title {
     font-size:30px;
 }
 

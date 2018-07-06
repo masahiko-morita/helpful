@@ -18,10 +18,10 @@
                     {!! Form::text('content', null, ['class' => 'form-control']) !!}
                     
                     {!! Form::label('start', '開始時間:', ['class' => 'control-label']) !!}
-                    {!! Form::text('start', date('Y-m-d'), ['class' => 'datepicker']) !!}
+                    {!! Form::text('start', date('Y-m-d'), ['class' => 'datetimepicker']) !!}
                     
                     {!! Form::label('finish', '終了時間:', ['class' => 'control-label']) !!}
-                    {!! Form::text('finish', date('Y-m-d'), ['class' => 'datepicker']) !!}<br>
+                    {!! Form::text('finish', date('Y-m-d'), ['class' => 'datetimepicker']) !!}<br>
                     
                     {!! Form::label('station', '駅:') !!}
                     {!! Form::text('station', null, ['class' => 'form-control']) !!}

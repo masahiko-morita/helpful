@@ -30,19 +30,18 @@ body {
 /* navbar */
 .navbar {
     background-color: #11cbd7;
-    border-style:none;
-
+    border-style:none;　　
 }
-
+　
 /*footer*/
 
 footer {
     margin-top: 40px;
-}
+}   
 
 .copy {
-    background-color: #352b23;
-    color: #fff;
+    background-color: transparent;
+    color: gray;
     text-align: center;
     margin: 0;
     bottom: 0;
@@ -64,7 +63,7 @@ footer {
    
 }
 
-.irai .irai-flower .title h4{
+.irai .irai-flower .title {
     font-size:30px;
 }
 

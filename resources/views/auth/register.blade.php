@@ -14,6 +14,7 @@
                     {!! Form::text('name', old('name'), ['class' => 'form-control']) !!}
                 </div>
                 <input type='hidden' name="email" value="dummy@example.com">
+                
                 <div class="form-group">
                         {!! Form::label('gender', '性別') !!}
                         {{Form::select('gender', [
@@ -38,7 +39,7 @@
                 </div>
                 
                 
-                {!! Form::submit('Sign up', ['class' => 'btn btn-primary btn-block']) !!}
+                {!! Form::submit('新規登録！', ['class' => 'btn btn-primary btn-block']) !!}
             {!! Form::close() !!}
         </div>
     </div>

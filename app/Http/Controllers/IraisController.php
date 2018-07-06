@@ -61,8 +61,11 @@ class IraisController extends Controller
             'comment' => $request->comment,            
             
         ]);
+        
+        $irais = Irai::all();
 
-        return redirect("/");
+        return view("irais.index",
+              ['irais' => $irais]);
                 
     }
     

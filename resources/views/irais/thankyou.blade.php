@@ -24,7 +24,7 @@
             </tr>
             <tr>
                 <th>期間</th>
-                <td>{{ $irai->timespan }}</td>
+                <td>{{ $irai->start }}　～　{{ $irai->finish }}</td>
             </tr>
             <tr>
                 <th>駅</th>
@@ -42,12 +42,18 @@
        
         </div> 
         
-            {!! Form::open(['route' => ['irais.index', $irai->id], 'method' => 'get']) !!}
-                {!! Form::submit('ホームに戻る', ['class' => 'btn btn-success btn-lg']) !!}
-            {!! Form::close() !!}
+        <div class='container'>
+        <button class='btn btn-default btn-lg'><a href="https://tomochat.herokuapp.com">チャットに移動する</a></button>
+        {!! Form::open(['route' => ['irais.index', $irai->id], 'method' => 'get']) !!}
+        {!! Form::submit('ホームに戻る', ['class' => 'btn btn-success btn-lg']) !!}
+        {!! Form::close() !!}
+        </div>
+        
             
-        <li><a href="https://tomochat.herokuapp.com">チャットに移動する</a></li>
     </div>
+            
+            
+        
 </div>    
     
     

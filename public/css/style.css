@@ -3,7 +3,7 @@
 
 /*body*/
 body {
-    background-color: white;
+    background-color: #E8f1f5;
 }
 
 
@@ -27,7 +27,6 @@ footer {
     margin: 0;
     bottom: 0;
     width:100%;
-    position: absolute;
 }
 
     position: fixed;
@@ -36,7 +35,32 @@ footer {
 }
 
 /*irai-contents*/ 
+<<<<<<< HEAD
 .irai .title {
     background-color:  #C6f1e7;
     border-bottom-color: black;
 } 
+=======
+.irai {
+    text-align: center;
+}
+
+.irai .irai-flower {
+   background-image: url("../images/flower.png");
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 300px;
+   width: 300px;
+   margin:20px 20px;
+   
+}
+
+.irai .irai-flower .title h4{
+    font-size:30px;
+}
+
+.irai .irai-flower .title .widen-height {
+    height:50px;
+}
+ 
+>>>>>>> 619e2a56eaa4c345e6ca61ab2f71f0f5d844a344

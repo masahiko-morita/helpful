@@ -19,6 +19,10 @@
                     {!! Form::text('content', null, ['class' => 'form-control','placeholder' => '例:○○を買いすぎたので分けたいです']) !!}
                     
 
+                    {!! Form::label('timespan', '時間:') !!}
+                    {!! Form::text('timespan', null, ['class' => 'form-control','placeholder' => '例:`1時間程度']) !!}
+                    
+                    
                     {!! Form::label('start', '開始時間:', ['class' => 'control-label']) !!}
                     {!! Form::text('start', date('Y-m-d'), ['class' => 'datepicker']) !!}
                     

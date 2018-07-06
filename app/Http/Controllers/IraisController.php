@@ -121,7 +121,7 @@ class IraisController extends Controller
         $irai->comment = $request->comment;
         $irai->save();
 
-        return redirect('/');
+        return redirect("/");
     }
     
     public function destroy($id)

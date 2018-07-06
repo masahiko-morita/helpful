@@ -11,11 +11,11 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
     
-    // public function counts($user) {
-    //     $count_irais = $user->irais()->count();
+    public function counts($user) {
+        $count_irais = $user->irais()->count();
 
-    //     return [
-    //         'count_irais' => $count_irais,
-    //     ];
-    // }
+        return [
+            'count_irais' => $count_irais,
+        ];
+    }
 }

@@ -22,14 +22,6 @@ Route::get('logout', 'Auth\LoginController@logout')->name('logout.get');
 Route::get('/', 'IraisController@index');
 Route::get('thankyou/{id}', 'IraisController@thankyou')->name('irais.thankyou');
 
-
-
-
- 
- 
- 
- 
-
 Route::group(['middleware' => ['auth']], function () {
     Route::resource('users', 'UsersController');
     Route::resource('irais', 'IraisController');

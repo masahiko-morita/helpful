@@ -37,6 +37,8 @@ class CreateIraisTable extends Migration
     public function down()
     {
         Schema::dropIfExists('irais');
+        
+        
     }
 }
 

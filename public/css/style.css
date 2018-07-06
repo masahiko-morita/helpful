@@ -1,10 +1,21 @@
 @charset "utf-8";
 
 
+/*body*/
 body {
-    background: #f2f2f2;
- 
+    background-color: white;
 }
+
+
+/* navbar */
+.navbar {
+    background-color: #11cbd7;
+    border-style:none;
+
+}
+
+/*footer*/
+
 footer {
     margin-top: 40px;
 }
@@ -17,6 +28,7 @@ footer {
     bottom: 0;
     width:100%;
 <<<<<<< HEAD
+<<<<<<< HEAD
     position: absolute;
 }
 
@@ -24,3 +36,13 @@ footer {
     position: fixed;
 }
 >>>>>>> 84e014a90ab398fc128be1b525e787258ae3ba9b
+=======
+    position: absolute;
+}
+
+/*irai-contents*/ 
+.irai .title {
+    background-color:  #C6f1e7;
+    border-bottom-color: black;
+} 
+>>>>>>> 74e2b677b3696ff04b0c586acf6484b47ad7d0e5

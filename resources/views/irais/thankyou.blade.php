@@ -22,7 +22,7 @@
             </tr>
             <tr>
                 <th>期間</th>
-                <td>{{ $irai->timespan }}</td>
+                <td>{{ $irai->start }}　～　{{ $irai->finish }}</td>
             </tr>
             <tr>
                 <th>駅</th>

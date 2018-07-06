@@ -2,7 +2,13 @@
 
 
 /*body*/
+
 body {
+
+    background: #f2f2f2;
+ 
+    background-color: white;
+
     background-color: #E8f1f5;
     font-family:  游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
 }
@@ -51,6 +57,16 @@ footer {
 }
 
 /*irai-contents*/ 
+
+.irai .title {
+    background-color:  #C6f1e7;
+    border-bottom-color: black;
+} 
+
+.cover-inner {
+    color:#006400;
+}
+
 .irai {
     text-align: center;
 }
@@ -82,3 +98,31 @@ margin-top: 50px;
   width:80%;
   margin:0 auto;
 }
+<<<<<<< HEAD
+ 
+<<<<<<< HEAD
+.cover .cover-inner {
+    height: 100%;
+    margin: auto;
+    display: table;
+    color: #000066;
+   
+}
+.cover .cover-inner .cover-contents {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+   
+}
+.cover .cover-inner .cover-contents h1 {
+    margin: 0 0 20px 0;
+    color: #fff;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+    text-align: center;
+}
+=======
+>>>>>>> e0d45406ef07cdc35ee4dc57891fd4316d08432f
+=======
+>>>>>>> b4c9868d312ae4e9bfc00995a2dc878f5b718eaa

@@ -18,7 +18,6 @@ class CreateIraisTable extends Migration
             // $table->integer('user_id')->unsigned()->index();
             $table->string('title');
             $table->string('content');
-            $table->string('timespan');
             $table->string('start');
             $table->string('finish');
             $table->string('station');

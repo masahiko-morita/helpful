@@ -130,8 +130,7 @@ a:hover {
 text-decoration: none;
 }
 
-<<<<<<< HEAD
-=======
+
 .content-inner  {
     margin-bottom: 20px;
     width: 100%;
@@ -142,10 +141,9 @@ text-decoration: none;
 }
 
 .maintitle{
-    color:black;
+    color:#fff;
     text-align:center;
-    background-color: #99CCFF;
-    margin-left: 320px;
+    margin-left: 120px;
     margin-right: 320px;
 }
 
@@ -160,4 +158,3 @@ text-decoration: none;
 }
 
 
->>>>>>> 21e87ce2a2faff4de47c75f2243a8824084da6e0

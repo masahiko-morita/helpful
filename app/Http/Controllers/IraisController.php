@@ -15,7 +15,7 @@ class IraisController extends Controller
         $data = [];
         if (\Auth::check()) {
             $user = \Auth::user();
-            $irais = $user->irais()->orderBy('created_at', 'desc')->paginate(10);
+            $irais = $user->feed_irais()->orderBy('created_at', 'desc')->paginate(10);
 
             $data = [
                 'user' => $user,
@@ -62,7 +62,9 @@ class IraisController extends Controller
             
         ]);
         
-        $irais = Irai::all();
+        $user = \Auth::user();
+        // $irais = Irai::all();
+        $irais = $user->feed_irais()->orderBy('created_at', 'desc')->paginate(10);
 
         return view("irais.index",
               ['irais' => $irais]);
@@ -121,7 +123,9 @@ class IraisController extends Controller
         $irai->comment = $request->comment;
         $irai->save();
 
-        $irais = Irai::all();
+        $user = \Auth::user();
+        // $irais = Irai::all();
+        $irais = $user->feed_irais()->orderBy('created_at', 'desc')->paginate(10);
 
         return view("irais.index",
               ['irais' => $irais]);

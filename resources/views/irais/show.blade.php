@@ -35,20 +35,23 @@
         </div> 
         <div class="col-md-6">
 
-
+            @if (Auth::user()->id != $irai->user_id)
             {!! Form::open(['route' => ['irais.thankyou', $irai->id], 'method' => 'get']) !!}
                 {!! Form::submit('手伝う！！！', ['class' => 'btn btn-success btn-lg']) !!}
             {!! Form::close() !!}
+            @endif
             
-            {!! Form::open(['route' => ['irais.edit', $irai->id], 'method' => 'get']) !!}
-                {!! Form::submit('依頼を編集する', ['class' => 'btn btn-info btn-lg']) !!}
-            {!! Form::close() !!}
-             
-            <span>         
+            @if (Auth::user()->id == $irai->user_id)
+                {!! Form::open(['route' => ['irais.edit', $irai->id], 'method' => 'get']) !!}
+                    {!! Form::submit('依頼を編集する', ['class' => 'btn btn-info btn-lg']) !!}
+                {!! Form::close() !!}
+            @endif 
+            
+            @if (Auth::user()->id == $irai->user_id)       
             {!! Form::open(['route' => ['irais.destroy', $irai->id], 'method' => 'delete']) !!}
-            {!! Form::submit('依頼を削除する', ['class' => 'btn btn-danger btn-lg']) !!}
+                {!! Form::submit('依頼を削除する', ['class' => 'btn btn-danger btn-lg']) !!}
             {!! Form::close() !!}
-            </span>
+            @endif
             
         </div>
        

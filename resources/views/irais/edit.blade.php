@@ -59,15 +59,10 @@
                     {!! Form::text('comment', null, ['class' => 'form-control']) !!}
                     
             </div> 
-<<<<<<< HEAD
-            {!! Form::submit('更新☺', ['class' => 'btn btn-info btn-lg']) !!}
-=======
-    
         <button type="button" class="btn btn-default">
           <span class="glyphicon glyphicon-shopping-cart"></span>
             {!! Form::submit('更新！') !!}
         </button>
->>>>>>> d6a6608cb8238a15c494f8d63f6fba51b2b09d09
     </div>
 </div>    
     {!! Form::close() !!}

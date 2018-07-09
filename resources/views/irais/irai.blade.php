@@ -1,30 +1,32 @@
-<ul class="media-list">
-@foreach ($irais as $irai)
-    <?php $user = $irai->user; ?>
-    <li class="irai">
-        <div class="col-md-4">
-            <div>
-                <a href="{{ route('irais.show', $irai->id) }}">
-                <div class="irai-flower">
-                    <div class='contentbox'>
-                        @if ($irai->id)
-                        <div class='title'>
-                            <p class='widen-height'>
-                                <h3 class="irai-title-irais">{{ $irai->title }}</h3></p>
-                                <h6 class="irai-title-irais">ユーザー名({{ $user->name }})</h6>
-                        </div>
-                        @endif
-                        <div class="irai-contents">
-                            <h5 class="irai-title-irais">お礼➡{{ $irai->reward }}</h5>
-                            <h5 class="irai-title-irais">場所➡{{ $irai->station }}</h5>
-                        </div>
-                    </div>
-                </div>
-                </a>
-            </div>
-        </div>
-    </li>
-@endforeach
-</ul>
 
-                    
+
+            @foreach ($irais as $irai)
+                <?php $user = $irai->user; ?>
+                
+                <div class="col-md-3">
+                    <div class='containerirai'>
+                        <p></p>
+                        <div class="maste-box">
+                            <span class='maste-tape'>From {{$user->name}}</span>
+                            <a href="{{ route('irais.show', $irai->id) }}">    
+                         @if ($irai->id)
+                   
+                           <p>
+                           {{ $irai->start }}～{{ $irai->finish }}<br>
+                           {{ $irai->title }}<br>
+                           
+                           {{$irai->station}}周辺<br>
+                           お礼: {{ $irai->reward }}<br><br>
+                           {{ $irai->comment }}
+                           </p>
+                           
+                           @endif
+                        </div></a>
+                    </div>
+                  
+                </div>
+                
+            @endforeach
+
+
+

@@ -18,8 +18,8 @@ class CreateIraisTable extends Migration
             $table->integer('user_id')->unsigned()->index();
             $table->string('title');
             $table->string('content');
-            $table->string('start');
-            $table->string('finish');
+            $table->string('start')->nullable();
+            $table->string('finish')->nullable();
             $table->string('station');
             $table->string('reward');
             $table->string('comment');
@@ -37,6 +37,7 @@ class CreateIraisTable extends Migration
     public function down()
     {
         Schema::dropIfExists('irais');
+        
     }
 }
 

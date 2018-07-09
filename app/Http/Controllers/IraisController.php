@@ -43,8 +43,6 @@ class IraisController extends Controller
         $this->validate($request, [
             'title' => 'required|max:50',
             'content' => 'required|max:191',
-            'start' => 'required|max:50',
-            'finish' => 'required|max:50',
             'station' => 'required|max:20',
             'reward' => 'required|max:50',
             'comment' => 'required|max:50',
@@ -62,7 +60,9 @@ class IraisController extends Controller
             
         ]);
         
-        $irais = Irai::all();
+        $user = \Auth::user();
+        // $irais = Irai::all();
+        $irais = $user->feed_irais()->orderBy('created_at', 'desc')->paginate(10);
 
         return view("irais.index",
               ['irais' => $irais]);
@@ -121,7 +121,9 @@ class IraisController extends Controller
         $irai->comment = $request->comment;
         $irai->save();
 
-        $irais = Irai::all();
+        $user = \Auth::user();
+        // $irais = Irai::all();
+        $irais = $user->feed_irais()->orderBy('created_at', 'desc')->paginate(10);
 
         return view("irais.index",
               ['irais' => $irais]);

@@ -10,7 +10,8 @@
                         <div class='title'>
                         <a href="{{ route('irais.show', $irai->id) }}">
                             <p class='widen-height'>
-                            <h3 class="irai-title-irais">{{ $irai->title }}</h3></p></a>
+                                <h3 class="irai-title-irais">{{ $irai->title }}</h3></p></a>
+                                <h6 class="irai-title-irais">ユーザー名({{ $user->name }})</h6>
                         </div>
                         @endif
                         <div class="irai-contents">

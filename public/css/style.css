@@ -81,10 +81,6 @@ footer {
   margin:0 auto;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 64b9942efd974227968f79afc8d05dc0e546bc1a
 .cover .cover-inner {
     height: 100%;
     margin: auto;
@@ -117,10 +113,7 @@ a:hover {
 text-decoration: none;
 }
 
-<<<<<<< HEAD
 
-
-=======
 .content-inner  {
     margin-bottom: 20px;
     width: 100%;
@@ -145,5 +138,34 @@ text-decoration: none;
     border-top:solid 1px gray;
     text-align: center;
 }
->>>>>>> 64b9942efd974227968f79afc8d05dc0e546bc1a
 
+.maste-box {
+  position: relative;
+  background-color: #fff;
+  background: repeating-linear-gradient(-45deg, #edf5f4, #edf5f4 10px, #f6faf9 0, #f6faf9 20px);
+  padding: 1em;
+}
+.maste-tape{
+  position: absolute;
+  top: -0.75em;
+  background-color: rgba(100,100,100,.3);
+  border-left:4px solid #8BC6CA;
+  padding: 0.25em 2em;
+  color: #454545;
+  transform: rotate(-3deg);
+}
+.maste-box p {
+  color: #454545;
+  padding: 15px 10px 10px 10px;
+}
+
+
+.containerirai{
+  position:relative;
+  margin-top: 10%;
+  height:70%;
+}
+
+
+
+	

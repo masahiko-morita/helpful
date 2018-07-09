@@ -137,12 +137,10 @@ text-decoration: none;
 }
 
 .maintitle{
-    color:black;
-    text-align:center;
-    background-color: #99CCFF;
-    margin-left: 320px;
-    margin-right: 320px;
-}
+    color:navy;
+    margin-left: 1px;
+    margin-right: 300px;
+   }
 
 .introduction{
     border-top:solid 1px gray;
@@ -153,5 +151,4 @@ text-decoration: none;
     border-top:solid 1px gray;
     text-align: center;
 }
-
 

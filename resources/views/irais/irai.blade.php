@@ -6,6 +6,10 @@
             <div>
                 <a href="{{ route('irais.show', $irai->id) }}">
                 <div class="irai-flower">
+                    <div class="irai-syousai">
+                            <p><img src="{{ secure_asset("images/doru.png") }}" alt="housyuu">{{ $irai->reward }}</p>
+                            <p><img src="{{ secure_asset("images/chizu.png") }}" alt="housyuu">{{ $irai->station }}</p>
+                    </div>
                     <div class='contentbox'>
                         @if ($irai->id)
                         <div class='title'>
@@ -15,8 +19,7 @@
                         </div>
                         @endif
                         <div class="irai-contents">
-                            <h5 class="irai-title-irais">お礼➡{{ $irai->reward }}</h5>
-                            <h5 class="irai-title-irais">場所➡{{ $irai->station }}</h5>
+                            <h5>{{ $irai->start }}　～　{{ $irai->finish }}</h5>
                         </div>
                     </div>
                 </div>

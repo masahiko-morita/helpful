@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <ul class="media-list">
 @foreach ($irais as $irai)
     <?php $user = $irai->user; ?>
@@ -21,13 +22,37 @@
                         <div class="irai-contents">
                             <h5>{{ $irai->start }}　～　{{ $irai->finish }}</h5>
                         </div>
-                    </div>
-                </div>
-                </a>
-            </div>
-        </div>
-    </li>
-@endforeach
-</ul>
+=======
 
-                    
+
+            @foreach ($irais as $irai)
+                <?php $user = $irai->user; ?>
+                
+                <div class="col-md-3">
+                    <div class='containerirai'>
+                        <p></p>
+                        <div class="maste-box">
+                            <span class='maste-tape'>From {{$user->name}}</span>
+                            <a href="{{ route('irais.show', $irai->id) }}">    
+                         @if ($irai->id)
+                   
+                           <p>
+                           {{ $irai->start }}～{{ $irai->finish }}<br>
+                           {{ $irai->title }}<br>
+                           
+                           {{$irai->station}}周辺<br>
+                           お礼: {{ $irai->reward }}<br><br>
+                           {{ $irai->comment }}
+                           </p>
+                           
+                           @endif
+                        </div></a>
+>>>>>>> 6e8f406370171380be2692c08adec527c251cbb9
+                    </div>
+                  
+                </div>
+                
+            @endforeach
+
+
+

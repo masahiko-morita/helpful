@@ -64,9 +64,14 @@ footer {
 
 .irai {
     text-align: center;
+    
 }
 
 .irai .irai-flower {
+<<<<<<< HEAD
+=======
+  
+>>>>>>> 6e8f406370171380be2692c08adec527c251cbb9
    height: 300px;
    width: 300px;
    margin:20px 20px;
@@ -120,24 +125,11 @@ footer {
     margin-top: 15px;
 }
 
-.irai .irai-flower .title h3{
-text-align: center;
-width:200px;
-margin-left: 20px;
-margin-top: 50px;
-
-}
-
-.irai .irai-flower .title .widen-height {
-    height:50px;
-
-}
 
 .irai-flower .contentbox{
   width:80%;
   margin:0 auto;
 }
-
 
 .cover .cover-inner {
     height: 100%;
@@ -171,6 +163,7 @@ a:hover {
 text-decoration: none;
 }
 
+
 .content-inner  {
     margin-bottom: 20px;
     width: 100%;
@@ -196,3 +189,33 @@ text-decoration: none;
     text-align: center;
 }
 
+.maste-box {
+  position: relative;
+  background-color: #fff;
+  background: repeating-linear-gradient(-45deg, #edf5f4, #edf5f4 10px, #f6faf9 0, #f6faf9 20px);
+  padding: 1em;
+}
+.maste-tape{
+  position: absolute;
+  top: -0.75em;
+  background-color: rgba(100,100,100,.3);
+  border-left:4px solid #8BC6CA;
+  padding: 0.25em 2em;
+  color: #454545;
+  transform: rotate(-3deg);
+}
+.maste-box p {
+  color: #454545;
+  padding: 15px 10px 10px 10px;
+}
+
+
+.containerirai{
+  position:relative;
+  margin-top: 10%;
+  height:70%;
+}
+
+
+
+	

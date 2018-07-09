@@ -17,6 +17,5 @@
 　　</div>
   
   @include('irais.irai', ['irais' => $irais])
-  
 
 @endsection

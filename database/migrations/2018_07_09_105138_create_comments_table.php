@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateIraisTable extends Migration
+class CreateCommentsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,18 +13,17 @@ class CreateIraisTable extends Migration
      */
     public function up()
     {
-        Schema::create('irais', function (Blueprint $table) {
+        Schema::create('comments', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('irai_id')->unsigned()->index();
             $table->integer('user_id')->unsigned()->index();
-            $table->string('title');
-            $table->string('content');
-            $table->string('start')->nullable();
-            $table->string('finish')->nullable();
-            $table->string('station');
-            $table->string('reward');
+            $table->string('content')->nullable();
             $table->timestamps();
-        
+            
             $table->foreign('user_id')->references('id')->on('users');
+            $table->foreign('irai_id')->references('id')->on('irais');
+            
+            $table->unique(['user_id', 'irai_id']);
         });
     }
 
@@ -35,8 +34,6 @@ class CreateIraisTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('irais');
-        
+        Schema::dropIfExists('irais_comments');
     }
 }
-

@@ -54,12 +54,7 @@
                     
                     {!! Form::label('reward', 'お礼:') !!}
                     {!! Form::text('reward', null, ['class' => 'form-control']) !!}
-                    
-                    {!! Form::label('comment', 'コメント:') !!}
-                    {!! Form::text('comment', null, ['class' => 'form-control']) !!}
-                    
-                
-            </div> 
+        </div> 
     
         <button type="button" class="btn btn-default">
           <span class="glyphicon glyphicon-shopping-cart"></span>

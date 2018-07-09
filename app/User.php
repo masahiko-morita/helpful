@@ -38,6 +38,12 @@ class User extends Authenticatable
         $user_ids[] = $this->id;
         return Irai::whereIn('user_id', $user_ids);
     }
+    
+    public function comments()
+    {
+       return $this->hasMany(Comment::class);
+    }
+    
 }
 
  

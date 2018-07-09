@@ -1,26 +1,27 @@
+@extends('layouts.app')
+
+@section('content')
 <ul class="media-list">
 @foreach ($comments as $comment)
     <?php $user = $comment->user; ?>
-    <li class="media">
-        <div class="media-left">
-            <img class="media-object img-rounded" src="{{ Gravatar::src($user->email, 50) }}" alt="">
-        </div>
-        <div class="media-body">
+    <li class="comment">
+        <div class="col-md-4">
             <div>
-                {!! link_to_route('users.show', $user->name, ['id' => $user->id]) !!} <span class="text-muted">posted at {{ $comment->created_at }}</span>
-            </div>
-            <div>
-                <p>{!! nl2br(e($comment->content)) !!}</p>
-            </div>
-            <div>
-                @if (Auth::id() == $comment->user_id)
-                    {!! Form::open(['route' => ['comments.destroy', $comment->id], 'method' => 'delete']) !!}
-                        {!! Form::submit('Delete', ['class' => 'btn btn-danger btn-xs']) !!}
-                    {!! Form::close() !!}
-                @endif
+                <a href="{{ route('comments.show', $comment->id) }}">
+                <div class="comment-flower">
+                    <div class='contentbox'>
+                        @if ($comment->id)
+                        <div class='title'>
+                            <p class='widen-height'>
+                                <h6 class="comment-title-comments">ユーザー名({{ $commnent->content }})</h6>
+                        </div>
+                        @endif
+                    </div>
+                </div>
+                </a>
             </div>
         </div>
     </li>
 @endforeach
 </ul>
-{!! $comments->render() !!}
+@endsection

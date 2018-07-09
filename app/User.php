@@ -44,6 +44,14 @@ class User extends Authenticatable
        return $this->hasMany(Comment::class);
     }
     
+    public function feed_comments()
+    {
+        $user_ids = $this->pluck('users.id');
+        $user_ids[] = $this->id;
+        return Comment::whereIn('user_id', $user_ids);
+    }
+
+    
 }
 
  

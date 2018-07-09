@@ -54,22 +54,16 @@
         </div>
         
        
+       </div>
+       
+       {!! Form::open(['route' => ['comments.store', $irai->id], 'method' => 'post']) !!}
+       {{Form::hidden('irai_id', $irai->id)}}
+        {!! Form::label('content', 'コメント:') !!}
+        {!! Form::text('content', null, ['class' => 'form-control']) !!}
+        {!! Form::submit('コメント投稿！！！', ['class' => 'btn btn-success btn-lg']) !!}
+        {!! Form::close() !!}
+        
 </div>
-        <form class="form-horizontal">
-  <!-- form-groupが1行（row）を表す -->
-  <div class="form-group">
-    <label class="col-xs-2 control-label">aaaa</label>
-    <div class="col-xs-10">
-      <input type="text" class="form-control" name="content">
-    </div>
-  </div>
-  <!-- 1行 -->
-  <div class="form-group">
-    <div class="col-xs-offset-2 col-sm-10">
-       <a href="{{ route('comments.store', Auth::user()->id) }}"><button input type="hidden" name="irai_id" value="$irai->id" class="btn btn-default">登録</button></a>
-    </div>
-  </div>
-</form>       
-      
+
 
 @endsection

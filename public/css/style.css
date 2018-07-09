@@ -141,11 +141,18 @@ text-decoration: none;
 }
 
 .maintitle{
+<<<<<<< HEAD
     color:#fff;
     text-align:center;
     margin-left: 120px;
     margin-right: 320px;
 }
+=======
+    color:navy;
+    margin-left: 1px;
+    margin-right: 300px;
+   }
+>>>>>>> 64b9942efd974227968f79afc8d05dc0e546bc1a
 
 .introduction{
     border-top:solid 1px gray;
@@ -156,5 +163,4 @@ text-decoration: none;
     border-top:solid 1px gray;
     text-align: center;
 }
-
 

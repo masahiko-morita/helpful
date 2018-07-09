@@ -64,39 +64,23 @@ footer {
 
 .irai {
     text-align: center;
+    
 }
     
 .irai .irai-flower {
-   background-image: url("../images/flower.png");
-   background-repeat: no-repeat;
-   background-size: cover;
+  
    height: 300px;
    width: 300px;
    margin:20px 20px;
    
 }
 
-.irai .irai-flower .title h3{
-text-align: center;
-width:200px;
-margin-left: 20px;
-margin-top: 50px;
-
-}
-
-.irai .irai-flower .title .widen-height {
-    height:50px;
-
-}
 
 .irai-flower .contentbox{
   width:80%;
   margin:0 auto;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> 95ba95d71990af2f260f3833f578f83d1b8446a4
 .cover .cover-inner {
     height: 100%;
     margin: auto;
@@ -118,8 +102,7 @@ margin-top: 50px;
     letter-spacing: 0.15em;
     text-align: center;
 }
-<<<<<<< HEAD
-=======
+
 
  a{
     text-decoration: none;
@@ -129,4 +112,7 @@ margin-top: 50px;
 a:hover {
 text-decoration: none;
 }
->>>>>>> 95ba95d71990af2f260f3833f578f83d1b8446a4
+
+
+
+

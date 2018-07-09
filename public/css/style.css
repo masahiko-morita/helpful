@@ -37,7 +37,6 @@ body {
 .navbar {
     background-color: #11cbd7;
     border-style:none;
-    position: fixed;
 }
 　
 /*footer*/
@@ -66,7 +65,7 @@ footer {
 .irai {
     text-align: center;
 }
-
+    
 .irai .irai-flower {
    background-image: url("../images/flower.png");
    background-repeat: no-repeat;

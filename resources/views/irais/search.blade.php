@@ -17,13 +17,7 @@
   　　　　{!! Form::open(['route' => 'irais.create', 'method' => 'get']) !!}
         {!! Form::submit('依頼を投稿する', ['class' => 'btn btn-primary btn-lg']) !!}
         {!! Form::close() !!}
-<<<<<<< HEAD
-　　</div>
-  
-  @include('irais.irai', ['irais' => $irais])
-=======
 </div>
 @include('irais.irai', ['irais' => $irais])
->>>>>>> 64b9942efd974227968f79afc8d05dc0e546bc1a
 
 @endsection

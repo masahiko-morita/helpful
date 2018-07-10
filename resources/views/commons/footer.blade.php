@@ -1,3 +1,3 @@
-<footer class="fixed-bottom">
+<div class="copy">
     Copyright © 2018 HELPFUL inc. All Rights Reserved.
-</footer>
+</div>

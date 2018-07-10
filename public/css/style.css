@@ -379,6 +379,7 @@ text-decoration: none;
     font-size: 15px;
 }
 
+
 .c{
     display: inline-block;
     margin-left: 6px;
@@ -462,7 +463,6 @@ display: inline-block;
 .comment .comment-flower .contentbox .popover .comment-death {
     text-align:right;
 }
-
 
 
 /*だいき（コメントの高さ変更）*/

@@ -40,6 +40,7 @@ body {
 　
 /*footer*/
 
+<<<<<<< HEAD
 footer{
     margin-top: 40px;
     }
@@ -54,6 +55,17 @@ footer{
     
    
    }
+=======
+#footer {
+    background-color: transparent;
+    color: gray;
+    text-align: center;
+    margin: 150px;
+<<<<<<< HEAD
+=======
+}
+>>>>>>> cefa103cb21ece4d0497cd55ee6f35d21830d82f
+>>>>>>> 83ac200167f9c2f7f8e272ad6e6b503d1e0d20a0
 
 
 /*クッションページ*/

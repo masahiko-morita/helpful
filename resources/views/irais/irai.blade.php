@@ -17,10 +17,13 @@
                お礼: {{ $irai->reward }}<br><br>
                {{ $irai->comment }}
                </p>
+               
                @endif
             </div></a>
         </div>
+      
     </div>
+    
 @endforeach
 
 

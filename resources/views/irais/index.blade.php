@@ -11,7 +11,7 @@
         </span>
         <span class='form-group'>
     　　　　{!! Form::open(['route' => 'irais.create', 'method' => 'get']) !!}
-          {!! Form::submit('投稿', ['class' => 'btn']) !!}
+          {!! Form::submit('投稿', ['class' => 'btn btn-danger']) !!}
           {!! Form::close() !!}
         </span>
       </div>

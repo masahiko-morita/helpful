@@ -57,11 +57,14 @@
 <<<<<<< HEAD
         </div> 
     
+<<<<<<< HEAD
                     
                     {!! Form::label('comment', 'コメント:') !!}
                     {!! Form::text('comment', null, ['class' => 'form-control']) !!}
                     
             </div> 
+=======
+>>>>>>> 18ed668fc19b40c679ae65cb66b8812fe347139c
         <button type="button" class="btn btn-default">
 =======
              

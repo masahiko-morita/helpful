@@ -1,18 +1,16 @@
 <ul class="media-list">
 @foreach ($comments as $comment)
     <?php $user = $comment->user; ?>
-        <li class="comment">
                 <div class="comment-flower">
                     <div class='contentbox'>
                         @if ($comment->irai_id == $irai->id)
-                        <div class='title'>
-                            <p class='widen-height'>
-                                <h3 class="comment-title-comments"><a href="{{ route('users.show', $user->id) }}">{{ $user->name }}</h3></a>
+                        <div class='comment-title'>
+                            <h3 class="comment-title-comments"><a href="{{ route('users.show', $user->id) }}">{{ $user->name }}</h3></a>
                                     <div class="popover right show" style="position:relative; max-width:50%;">
                                         <div class="arrow"></div>
                                             <div class="popover-content">
                                                 <p>
-                                                   <td><h4 class="comment-title-comments">{{ $comment->content }}</h4></td>
+                                                   <td><h5 class="comment-title-comments">{{ $comment->content }}</h4></td>
                                                 </p>
                                             </div>
                                     </div>
@@ -24,9 +22,9 @@
                                 {!! Form::close() !!}
                             @endif 
                         @endif
+                            
                     </div>
                 </div>
-        </li>
 @endforeach
 </ul>
 

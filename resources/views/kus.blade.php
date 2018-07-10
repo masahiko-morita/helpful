@@ -10,7 +10,10 @@
         <img src='images/hito.png'>
         </span>
         <br>
-        <a href="irais" class="btn btn-default btn-sm" role="button">依頼検索ページに飛ぶ！</a>
+        <div class='kus-button'>
+        <a href="irais" class="btn" role="button"><span>助けて！</span></a>
+        <a href="#" class="btn" role="button"><span>助けます！</span></a>
+        </div>
     </div>
 </div>
 @endsection

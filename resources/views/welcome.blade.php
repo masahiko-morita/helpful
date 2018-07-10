@@ -13,12 +13,10 @@
                     <a href="{{ route('signup.get') }}" class="btn btn-success btn-lg">HELPFULを始める</a>
                 @endif
             </div>
-<<<<<<< HEAD
 
-=======
             <div class="content-contents">
             </div>
->>>>>>> 64b9942efd974227968f79afc8d05dc0e546bc1a
+
         </div>
     </div>
     @endif
@@ -29,18 +27,12 @@
      <div class=explaination>
           <h2>Helpfulの特徴</h2>
     </div>
-    <div class="top-key-features-container clearfix">
-<<<<<<< HEAD
-         <section class="top-key-features-item">
-                 <figure>
-                　 <img src=/images/desktop.png alt="" width="80px" height="80px">
-            　　 </figure><h3 class="top-key-features-subtitle text-center">
-=======
+    <div class="top-key-features-containers">
                   <section class="top-key-features-item">
                         <figure>
                                   <img src=/images/desktop.png alt="" width="80px" height="80px">
                               </figure><h3 class="top-key-features-subtitle text-center">
->>>>>>> 64b9942efd974227968f79afc8d05dc0e546bc1a
+
               お手伝いしたいことや、依頼したいことを投稿しよう
             </h3>
             <p class="top-key-features-description text-center">
@@ -84,6 +76,6 @@
             </p>
           </section>
           
-              </div>
+　　</div>
 @endsection
 

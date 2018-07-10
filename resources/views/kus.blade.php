@@ -1,6 +1,22 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="text-center">
-  <a href="irais" class="btn btn-default btn-sm" role="button">依頼検索ページに飛ぶ！</a>
+<div class='kus-content'>
+    <div class="text-center">
+        <span id='hukidashi'>
+            <img src='images/hukidashi-1.png'>
+        </span>
+        <span id="hito">
+            <img src='images/hito.png'>
+        </span>
+        <br>
+        <div class='kus-button'>
+            <a href="#" class="btn" role="button"><span><img src='images/runnning.png'>引受一覧</span></a>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="irais" class="btn" role="button"><span>依頼一覧<img src='images/drown.png'></span></a>
+        </div>
+    </div>
+    <br>
+    <br>
+</div>
 @endsection

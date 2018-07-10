@@ -405,54 +405,58 @@ display: inline-block;
 }
 
 
-.abc
-{
+.abc{
     text-align: center;
-    margin-left: 490px;
+    margin-left: 410px;
 }
 
 /*welcomepageのボタン*/
 .animation {
-  width:170px;
-  height:50px;
+  width:350px;
+  height:76px;
   text-align:center;
-  border:2px solid #BBBBBB;
+  border:2px solid #1989ac;
   float:left;
   cursor:pointer;
   position:relative;
   box-sizing:border-box;
   overflow:hidden;
   margin:0 0 40px 0;
+  border-radius:10px;
+  box-shadow:4px 4px #555;
   
 }
 .animation a {
   font-family:arial;
-  font-size:16px;
-  color:#BBBBBB;
+  font-size:36px;
+  color:#1989ac;
+  
   text-decoration:none;
-  line-height:50px;
+  line-height:56px;
   transition:all .10s ease;
   z-index:2;
   position:relative;
 }
 .effect {
-  width:154px;
-  height:50px;
+  width:330px;
+  height:76px;
   top:-2px;
-  left:-140px;
-  background:#BBBBBB;
+  left:-324px;
+  background:#283e56;
   position:absolute;
   transition:all .6s ease;
   z-index:1;
 }
 .animation:hover .effect {
   left:0;
-}
+  color:#fff;
+ }
 .animation:hover a {
-  color:#FFFFFF;
+  color:#fff;
+  
+  
 }
 .steps {
-    margin-top: 30px;
     margin-top: 50px;
 }
 

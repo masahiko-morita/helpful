@@ -126,10 +126,9 @@
       <div class="animation">
         <div class="effect"></div>
          @if (!Auth::check())
-          <a href="{{ route('signup.get') }}"> HELPFULを始める </a>
+          <a href="{{ route('signup.get') }}"> <h1> HELPFULを始める </h1></a>
            @endif
          </div>
 　  　</div>
 　  </div>
 @endsection
-

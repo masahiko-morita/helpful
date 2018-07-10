@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<<<<<<< HEAD
   <div class="row">
       <div class="text-center">
         <span class='form-group'>
@@ -17,6 +18,8 @@
       </div>
   </div>
 @include('irais.irai', ['irais' => $irais])
+=======
+>>>>>>> 8525fbf1f60c889994c71a7a417f6f83a2b5a980
 <div class="search">
     <div class="row">
             <div class="text-center">

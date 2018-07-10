@@ -16,6 +16,8 @@
             <a href="#" class="btn" role="button"><span>助けて！<img src='images/drown.png'></span></a>
         </div>
     </div>
+    <br>
+    <br>
     <div class="kus-wakaranai">
         <br>
         <p>↓どちらを選べば良いかわからない人へ↓</p>

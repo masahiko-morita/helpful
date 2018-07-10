@@ -38,7 +38,7 @@ body {
 }
 　
 /*footer*/
-.text-center .text-muted{
+#footer {
     background-color: transparent;
     color: gray;
     text-align: center;

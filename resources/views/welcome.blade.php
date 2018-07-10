@@ -19,7 +19,7 @@
     @endif
     
      <div class="introduction">
-        <h2>Helpfulでは、簡単に交換ができて、<br>安心、安全なお取引ができます。</h2>
+        <h2>Helpfulでは、すぐに交換ができて、<br>安心、安全なお取引ができます。</h2>
      </div>
      <div class=explaination>
           <h2>Helpfulの特徴</h2>
@@ -27,7 +27,7 @@
     <div class="top-key-features-container clearfix">
                   <section class="top-key-features-item">
                         <figure>
-                                  <img src=/images/desktop.png alt="" width="80px" height="80px">
+                                  <center><img src=/images/desktop.png alt="" width="80px" height="80px"></center>
                               </figure><h3 class="top-key-features-subtitle text-center">
               お手伝いしたいことや、依頼したいことを投稿しよう
             </h3>
@@ -37,7 +37,7 @@
           </section>
                   <section class="top-key-features-item">
                           <figure>
-                                  <img src="/images/safe.png" alt="" width="80px" height="80px"alt="">
+                                  <center><img src="/images/safe.png" alt="" width="80px" height="80px"alt=""></center>
                               </figure>
                         <h3 class="top-key-features-subtitle text-center">
               安心・安全なシステム
@@ -48,7 +48,7 @@
           </section>
                   <section class="top-key-features-item">
                           <figure>
-                                  <img src=/images/chat.jpg alt="" width="80px" height="80px">
+                                  <center><img src=/images/chat.jpg alt="" width="80px" height="80px"></center>
                               </figure>
                         <h3 class="top-key-features-subtitle text-center">
               チャット機能を活用しよう。
@@ -59,7 +59,7 @@
           </section>
                   <section class="top-key-features-item">
                           <figure>
-                                  <img src="images/money.png" alt="" width="80px" height="80px">
+                                  <center><img src="images/money.png" alt="" width="80px" height="80px"></center>
                               </figure>
                         <h3 class="top-key-features-subtitle text-center">
               誰でも簡単に無料で楽しめる。

@@ -143,12 +143,20 @@ text-decoration: none;
    }
 
 .introduction{
-    border-top:solid 1px gray;
     text-align:center;
 }
 
 .explaination h2{ 
     border-top:solid 1px gray;
     text-align: center;
+    font-weight: bold;
+    padding-top: 30px;
 }
 
+.explaination{
+    padding-bottom: 20px;
+}
+
+.top-key-features-container p{
+    font-size: 18px;
+}

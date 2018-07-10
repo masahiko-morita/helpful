@@ -54,20 +54,24 @@
                     
                     {!! Form::label('reward', 'お礼:') !!}
                     {!! Form::text('reward', null, ['class' => 'form-control']) !!}
-<<<<<<< HEAD
+             
+          </div>        
+                    
+         
+          <button type="button" class="btn btn-default">
         </div> 
     
-=======
                     
                     {!! Form::label('comment', 'コメント:') !!}
                     {!! Form::text('comment', null, ['class' => 'form-control']) !!}
                     
             </div> 
->>>>>>> e6e7256263d7684e0acb13327b0db3bc45f209c5
+
         <button type="button" class="btn btn-default">
           <span class="glyphicon glyphicon-shopping-cart"></span>
             {!! Form::submit('更新！') !!}
-        </button>
+          </button>
+        </div>
     </div>
 </div>    
     {!! Form::close() !!}

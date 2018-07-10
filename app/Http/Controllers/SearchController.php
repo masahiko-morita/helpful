@@ -17,12 +17,15 @@ class SearchController extends Controller
 	$query = Request::get('q');
 
 	if ($query) {
-		$irais = Irai::where('title', 'LIKE', "%$query%")->paginate(10);
+		$irais = Irai::where('title', 'LIKE', "%$query%")
+                       ->orWhere('station', 'LIKE', "%$query%")	
+                       ->orWhere('finish', 'LIKE', "%$query%")
+                       ->paginate(10);
 	}else{
 		$irais = array();
 	}
 
-	return view('irais.search',
+	return view('irais.index',
 	['irais' => $irais,
 	]);
     }

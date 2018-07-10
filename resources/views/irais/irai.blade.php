@@ -16,14 +16,17 @@
                 <h4 class='under'>{{ $irai->title }}</h4>
                 <h4 class="glyphicon glyphicon-time text-center"></h4><br> {{ $irai->start }}-{{ $irai->finish }}<br>
                
+
                 <h4 class="glyphicon glyphicon-map-marker"></h4> {{$irai->station}}<br>
                 <h4 class="glyphicon glyphicon-heart"></h4> {{ $irai->reward }}<br>
                </div>
+
                @endif
                
             </div>
             </a>
         </div>
+      
     </div>
 
     

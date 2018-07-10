@@ -380,8 +380,16 @@ text-decoration: none;
 }
 
 
-/*だいき（コメントの高さ変更）*/
+/*comment-comment*/
 
-.row-eq-height{
-    height: 50px;
+.comment .comment-flower .contentbox .popover{
+    height: 80px;
+}
+
+.comment .comment-flower .contentbox .name h3 {
+    text-align: left;
+}
+
+.comment .comment-flower .contentbox .popover .comment-death {
+    text-align:right;
 }

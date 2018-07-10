@@ -15,7 +15,7 @@
         </div>
         
         <h4>
-          <p class='glyphicon glyphicon-user' width='70px'>{{$user->name}}</p></h4>
+          <p>{{$user->name}}</p></h4>
                         
   <div class="sticky anim750">
         <div class="back circle_wrapper anim750">

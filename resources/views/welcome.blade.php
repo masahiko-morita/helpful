@@ -25,13 +25,8 @@
         <div class="steps">
             <div class="c">
             <h3 class="text-left">
-<<<<<<< HEAD
                               <span class="top-introduction-num">1</span>
                             簡単に投稿できる
-=======
-                              <span class="top-introduction-num">1.</span>
-                            簡単に依頼できる
->>>>>>> 83ac200167f9c2f7f8e272ad6e6b503d1e0d20a0
             </h3>
             
             <img src="/images/toukou.jpg" width="300px" height="320px">

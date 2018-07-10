@@ -23,6 +23,8 @@ Route::get('/', 'WelcomeController@index');
 Route::get('thankyou/{id}', 'IraisController@thankyou')->name('irais.thankyou');
 
 Route::group(['middleware' => ['auth']], function () {
+
+    Route::resource('comments', 'CommentsController');
     Route::resource('users', 'UsersController'); 
     Route::resource('irais','IraisController');
     Route::get('iraisearch', 'SearchController@iraisearch')->name('irais.search');

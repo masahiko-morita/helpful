@@ -11,9 +11,9 @@
         </span>
         <br>
         <div class='kus-button'>
-            <a href="#" class="btn" role="button"><span><img src='images/runnning.png'>引受一覧</span></a>
+            <a href="#" class="btn" role="button"><span><img src='images/runnning.png'>助ける一覧へ</span></a>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="irais" class="btn" role="button"><span>依頼一覧<img src='images/drown.png'></span></a>
+            <a href="irais" class="btn" role="button"><span>依頼一覧へ<img src='images/drown.png'></span></a>
         </div>
     </div>
     <br>

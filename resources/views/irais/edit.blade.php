@@ -57,8 +57,7 @@
              
           </div>        
                     
-         
-          <button type="button" class="btn btn-default">
+        <button type="button" class="btn btn-default">
           <span class="glyphicon glyphicon-shopping-cart"></span>
             {!! Form::submit('更新！') !!}
           </button>

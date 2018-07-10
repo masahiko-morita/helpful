@@ -235,8 +235,8 @@ text-decoration: none;
     text-align: center;
     margin-left: 1px;
     color:navy;
-    margin-right: 600px;
-    margin-top: 30px;
+    margin-right: 650px;
+    margin-top: 110px;
    }
 
 .introduction{
@@ -295,4 +295,43 @@ text-decoration: none;
     text-align: center;
     font-size: 15px;
 }
- 
+
+.animation {
+  width:170px;
+  height:50px;
+  text-align:center;
+  border:2px solid #BBBBBB;
+  float:left;
+  cursor:pointer;
+  position:relative;
+  box-sizing:border-box;
+  overflow:hidden;
+  margin:0 0 40px 0;
+  
+}
+.animation a {
+  font-family:arial;
+  font-size:12px;
+  color:#BBBBBB;
+  text-decoration:none;
+  line-height:50px;
+  transition:all .10s ease;
+  z-index:2;
+  position:relative;
+}
+.effect {
+  width:140px;
+  height:50px;
+  top:-2px;
+  left:-140px;
+  background:#BBBBBB;
+  position:absolute;
+  transition:all .5s ease;
+  z-index:1;
+}
+.animation:hover .effect {
+  left:0;
+}
+.animation:hover a {
+  color:#FFFFFF;
+}

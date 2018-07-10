@@ -79,6 +79,17 @@
             </p>
           </section>
           
+          <!--<div class="button">-->
+          <!--      @if (!Auth::check())-->
+          <!--          <a href="{{ route('signup.get') }}" class="btn btn-success btn-lg">HELPFULを始める</a>-->
+          <!--      @endif-->
+          <!--  </div>-->
+            
+            <div class="animation">
+  <div class="effect"></div>
+  <a href="#"> HELPFULを始める </a>
+</div>
+          
 　　</div>
 @endsection
 

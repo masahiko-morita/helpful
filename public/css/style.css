@@ -40,12 +40,34 @@ body {
 　
 /*footer*/
 
+
+footer{
+    margin-top: 40px;
+    }
+
+.copy {
+    background-color: transparent;
+    color: gray;
+    text-align: center;
+    margin: 0;
+    bottom: 0px;
+    width:100%;
+    
+   
+   }
+
 #footer {
     background-color: transparent;
     color: gray;
     text-align: center;
     margin: 150px;
+<<<<<<< HEAD
 }
+=======
+
+}
+
+>>>>>>> c3bf2129a57841abc8d94fbb5abc6bb817c29b92
 
 
 /*クッションページ*/
@@ -211,6 +233,7 @@ text-decoration: none;
     background-size: cover;
     text-align: center;
     position: absolute;
+    
 }
 
 .maintitle{
@@ -283,8 +306,6 @@ text-decoration: none;
     margin-top: 70%;
     margin-left: 80%;
 }
-
-
 .maepage{
     margin-left: 80%;
 }
@@ -381,8 +402,8 @@ text-decoration: none;
 
 .c{
     display: inline-block;
-    margin-left: 6px;
-}
+    margin-left: 8px;
+    }
 
 .top-introduction-num{
 display: inline-block;
@@ -398,51 +419,56 @@ display: inline-block;
 }
 
 
-.abc
-{
+.abc{
     text-align: center;
-    margin-left: 490px;
+    margin-left: 410px;
 }
 
 /*welcomepageのボタン*/
 .animation {
-  width:170px;
-  height:50px;
+  width:350px;
+  height:76px;
   text-align:center;
-  border:2px solid #BBBBBB;
+  border:2px solid #1989ac;
   float:left;
   cursor:pointer;
   position:relative;
   box-sizing:border-box;
   overflow:hidden;
   margin:0 0 40px 0;
+  border-radius:10px;
+  box-shadow:4px 4px #555;
   
 }
 .animation a {
   font-family:arial;
-  font-size:16px;
-  color:#BBBBBB;
+  font-size:36px;
+  color:#1989ac;
+  
   text-decoration:none;
-  line-height:50px;
+  line-height:56px;
   transition:all .10s ease;
   z-index:2;
   position:relative;
 }
 .effect {
-  width:154px;
-  height:50px;
+  width:330px;
+  height:76px;
   top:-2px;
-  left:-140px;
-  background:#BBBBBB;
+  left:-324px;
+  background:#283e56;
   position:absolute;
   transition:all .6s ease;
   z-index:1;
 }
 .animation:hover .effect {
   left:0;
-}
+  color:#fff;
+ }
 .animation:hover a {
-  color:#FFFFFF;
+  color:#fff;
+  
+  
 }
 .steps {
     margin-top: 50px;

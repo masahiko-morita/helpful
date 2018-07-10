@@ -1,18 +1,44 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="user-profile">
-        <div class="icon text-center">
-            <img src="{{ Gravatar::src($user->email, 100) . '&d=mm' }}" alt="" class="img-circle">
+
+<div class='containermypage'>
+    <div class='col-md-offset-3 col-md-3 text-center'>
+        <img src="{{ Gravatar::src($user->email, 100) . '&d=mm' }}" alt="" class="img-circle" width='30%'>
+        <h3>{{ $user->name }}</h3>
+    </div>
+
+
+    <div class='col-md-5 text-center'>
+
+       <div class="balloon">
+      {{$user->content}}
+  <br>
+</div>
+    </div>
+    <div class='col-md-6'><br><br><br></div>
+</div>
+    
+   
+    
+
+
+        
+<div>            
+    <div class='container'>
+        <div class='ribbon3'>
+           <h2>出した依頼</h2>
         </div>
-        <div class="name text-center">
-            <h1>{{ $user->name }}</h1>
-            <h1>{{ $user->content }}</h1>
+        <div class='maepage'>
+            {!! $irais->render() !!}
         </div>
-        <div class="irais-detail">
-        <h2>出した依頼</h2>
-            @include('irais.irai', ['irais' => $irais])
-        </div>
-    </div>    
-    {!! $irais->render() !!}
+    </div>
+           @include('irais.irai', ['irais' => $irais])
+</div>
+
+    
+<div class='usiropage'>
+    
+{!! $irais->render() !!}
+</div>
 @endsection

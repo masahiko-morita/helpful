@@ -4,25 +4,31 @@
     <div class="col-md-3">
         <div class='containerirai'>
             <p></p>
+            <a href="{{ route('irais.show', $irai->id) }}" > 
             <div class="maste-box">
+                  
                 <span class='maste-tape'>From {{$user->name}}</span>
-                <a href="{{ route('irais.show', $irai->id) }}">    
+                 
              @if ($irai->id)
        
-               <p>
-               {{ $irai->start }}～{{ $irai->finish }}<br>
-               {{ $irai->title }}<br>
+               <div>
+                <br>
+                <h4 class='under'>{{ $irai->title }}</h4>
+                <h4 class="glyphicon glyphicon-time text-center"></h4><br> {{ $irai->start }}~{{ $irai->finish }}<br>
                
-               {{$irai->station}}周辺<br>
-               お礼: {{ $irai->reward }}<br><br>
-               {{ $irai->comment }}
-               </p>
-               
+
+                <h4 class="glyphicon glyphicon-map-marker"></h4> {{$irai->station}}<br>
+                <h4 class="glyphicon glyphicon-heart"></h4> {{ $irai->reward }}<br>
+               </div>
+
                @endif
-            </div></a>
+               
+            </div>
+            </a>
         </div>
       
     </div>
+
     
 @endforeach
 

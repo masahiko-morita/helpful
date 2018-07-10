@@ -58,6 +58,7 @@
                     {!! Form::label('reward', 'お礼:') !!}
                     {!! Form::text('reward', null, ['class' => 'form-control','placeholder' => '例:100円お渡しします/○○が■円で買えます']) !!}
 
+<<<<<<< HEAD
 
 <<<<<<< HEAD
                 
@@ -66,6 +67,8 @@
                     
 =======
 >>>>>>> 03694275efc1a0bcddfb64dd0724176f1b74eb42
+=======
+>>>>>>> 366da2c55aa9235b50b13124cd533ddbd471319f
             </div> 
    
 　　　　　　　　　　{!! Form::submit('依頼を投稿する', ['class' => 'btn btn-info btn-lg']) !!}

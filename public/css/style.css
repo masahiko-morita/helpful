@@ -375,6 +375,7 @@ text-decoration: none;
     font-size: 15px;
 }
 
+
 .c{
     display: inline-block;
     margin-left: 6px;
@@ -460,10 +461,20 @@ display: inline-block;
 }
 
 
+<<<<<<< HEAD
 
 
+=======
+<<<<<<< HEAD
+/*irai-index*/
+.index-content form{
+    text-align:center;
+}
+=======
+>>>>>>> 366da2c55aa9235b50b13124cd533ddbd471319f
 /*だいき（コメントの高さ変更）*/
 .comment-title-comments h3{
     text-align: left;
 }
 
+>>>>>>> 10c666d8aa2ddccf6fe62f0007924276b432e106

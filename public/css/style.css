@@ -39,6 +39,13 @@ body {
 }
 　
 /*footer*/
+<<<<<<< HEAD
+#footer {
+    background-color: transparent;
+    color: gray;
+    text-align: center;
+    margin: 150px;
+=======
 
 footer{
     margin-top: 40px;
@@ -50,6 +57,7 @@ footer{
     text-align: center;
     margin: 0;
     bottom: 0px;
+>>>>>>> 08f23b9b6622e855a041584d4f9e7505ef04ed24
     width:100%;
 }
 

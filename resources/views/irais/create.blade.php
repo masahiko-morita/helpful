@@ -59,10 +59,13 @@
                     {!! Form::text('reward', null, ['class' => 'form-control','placeholder' => '例:100円お渡しします/○○が■円で買えます']) !!}
 
 
+<<<<<<< HEAD
                 
                     {!! Form::label('comment', 'コメント:') !!}
                     {!! Form::text('comment', null, ['class' => 'form-control']) !!}
                     
+=======
+>>>>>>> 03694275efc1a0bcddfb64dd0724176f1b74eb42
             </div> 
    
 　　　　　　　　　　{!! Form::submit('依頼を投稿する', ['class' => 'btn btn-info btn-lg']) !!}

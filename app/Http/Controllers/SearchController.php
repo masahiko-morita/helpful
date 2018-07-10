@@ -25,7 +25,7 @@ class SearchController extends Controller
 		$irais = array();
 	}
 
-	return view('irais.search',
+	return view('irais.index',
 	['irais' => $irais,
 	]);
     }

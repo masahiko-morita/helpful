@@ -5,7 +5,13 @@
 
 body {
     background: #f2f2f2;
+<<<<<<< HEAD
     background-color: white;
+=======
+ 
+  
+
+>>>>>>> c09ac124d68f2dc8ceca36d2ed4c98070560e849
     background-color: #E8f1f5;
     font-family:  游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
 }
@@ -32,7 +38,7 @@ body {
 
 /* navbar */
 .navbar {
-    background-color: #11cbd7;
+    background-color: #283e56;
     border-style:none;
 }
 　
@@ -241,6 +247,7 @@ text-decoration: none;
 
 .introduction{
     text-align:center;
+    margin-top: 100px;
 }
 
 
@@ -259,6 +266,8 @@ text-decoration: none;
 .explaination{
     padding-bottom: 20px;
 }
+
+/*マスキングテープ*/
 
 .maste-box {
   position: relative;
@@ -288,6 +297,100 @@ text-decoration: none;
 
 }
 
+
+/*pagination*/
+
+.usiropage{
+    margin-top: 70%;
+    margin-left: 80%;
+}
+
+
+.maepage{
+    margin-left: 80%;
+}
+
+/*リボン*/
+
+.ribbon3 {
+    display: inline-block;
+    position: relative;
+    height: 60px;
+    line-height: 60px;
+    vertical-align: middle;
+    text-align: center;
+    padding: 7px 0;
+    font-size: 18px;
+    background: #1989ac;
+    color: #FFF;
+    box-sizing: border-box;
+    margin-left: 0;
+    
+}
+
+.ribbon3 h2 {
+    vertical-align: middle;
+    margin: 0;
+    padding: 0 30px;
+    border-top: dashed 2px rgba(255, 255, 255, 0.5);
+    border-bottom: dashed 2px rgba(255, 255, 255, 0.5);
+    line-height: 42px;
+}
+
+.ribbon3:before, .ribbon3:after{
+  position: absolute;
+  content: '';
+  width: 0px;
+  height: 0px;
+  z-index: 1;
+}
+
+.ribbon3:before{/*左の山形*/
+  top: 0;
+  left: 0;
+  border-width: 30px 0px 30px 15px;
+  border-color: transparent transparent transparent #E8f1f5;
+  border-style: solid;
+  
+}
+
+.ribbon3:after{/*右の山形*/
+  top: 0;
+  right: 0;
+  border-width: 30px 15px 30px 0px;
+  border-color: transparent #E8f1f5 transparent transparent;
+  border-style: solid;
+}
+
+/* 吹き出し本体 */
+.balloon{
+  margin-top: 5%;
+  width:200px;
+  position: relative;
+  padding: 20px;
+  background-color: #fff3ad;
+}
+
+.balloon::before{
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  left: -15px;
+  top: 20px;
+  border-right: 15px solid #fff3ad;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+
+
+.col-md-5 .text-center{
+    margin-top: 500px;
+    height:200px;
+    
+}
+
 .top-key-features-item{
     float: left;
     width: 50%;
@@ -296,6 +399,7 @@ text-decoration: none;
     font-size: 15px;
 }
 
+<<<<<<< HEAD
 .animation {
   width:170px;
   height:50px;
@@ -335,3 +439,10 @@ text-decoration: none;
 .animation:hover a {
   color:#FFFFFF;
 }
+=======
+
+.steps {margin-top: 100px;
+}
+
+
+>>>>>>> c09ac124d68f2dc8ceca36d2ed4c98070560e849

@@ -231,6 +231,7 @@ text-decoration: none;
 
 .introduction{
     text-align:center;
+    margin-top: 100px;
 }
 
 .explaination h2{ 
@@ -273,7 +274,6 @@ text-decoration: none;
   height:70%;
 }
 
-<<<<<<< HEAD
 
 /*pagination*/
 
@@ -367,7 +367,7 @@ text-decoration: none;
     height:200px;
     
 }
-=======
+
 .top-key-features-item{
     float: left;
     width: 50%;
@@ -375,5 +375,9 @@ text-decoration: none;
     text-align: center;
     font-size: 15px;
 }
- 
->>>>>>> 8525fbf1f60c889994c71a7a417f6f83a2b5a980
+
+
+.steps {margin-top: 100px;
+}
+
+

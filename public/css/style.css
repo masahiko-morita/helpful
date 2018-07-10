@@ -66,13 +66,14 @@ footer {
 }
 .kus-content #hukidashi img{
     margin-top:-150px;
+    margin-right: 50px;
     width:15%;               
     height:15%;
 }
 
 .kus-content #hito img{
     padding-top:40px;
-    margin-left:-90px;
+    margin-left:-130px;
     width:20%;
     height:20%;
 }
@@ -89,7 +90,7 @@ footer {
 .kus-content .kus-button .btn {
     font-weight: bold;
     padding: 1.2em 0.5em;
-    width:140px;
+    width:160px;
     text-decoration: none;
     color: #696969;
     background: #dcdcdc;

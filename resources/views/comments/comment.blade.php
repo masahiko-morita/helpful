@@ -7,7 +7,7 @@
                         @if ($comment->irai_id == $irai->id)
                         <div class='title'>
                             <p class='widen-height'>
-                                <h5 class="comment-title-comments">{{ $user->name }}</h5>
+                                <h3 class="comment-title-comments"><a href="{{ route('users.show', $user->id) }}">{{ $user->name }}</h3></a>
                                     <div class="popover right show" style="position:relative; max-width:50%;">
                                         <div class="arrow"></div>
                                             <div class="popover-content">
@@ -17,14 +17,14 @@
                                             </div>
                                     </div>
                         </div>
+                            @if (Auth::user()->id == $comment->user_id)       
+                                {!! Form::open(['route' => ['comments.destroy', $comment->id], 'method' => 'delete']) !!}
+                                {{Form::hidden('irai_id', $irai->id)}}
+                                {!! Form::submit('コメント削除', ['class' => 'btn btn-danger btn-xs']) !!}
+                                {!! Form::close() !!}
+                            @endif 
                         @endif
                     </div>
-                    @if (Auth::user()->id == $comment->user_id)       
-                        {!! Form::open(['route' => ['comments.destroy', $comment->id], 'method' => 'delete']) !!}
-                        {{Form::hidden('irai_id', $irai->id)}}
-                        {!! Form::submit('コメント削除', ['class' => 'btn btn-danger btn-xs']) !!}
-                        {!! Form::close() !!}
-                    @endif 
                 </div>
         </li>
 @endforeach

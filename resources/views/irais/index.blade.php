@@ -11,6 +11,11 @@
           {!! Form::submit('依頼を検索', ['class' => 'btn btn-success btn-lg']) !!}
           {!! Form::close() !!}
         </span>
+        <span class='form-group'>
+    　　　　{!! Form::open(['route' => 'irais.create', 'method' => 'get']) !!}
+          {!! Form::submit('投稿', ['class' => 'btn btn-danger']) !!}
+          {!! Form::close() !!}
+        </span>
       </div>
   </div>
    </div>

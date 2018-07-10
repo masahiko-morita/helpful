@@ -18,7 +18,7 @@
     @endif
     
      <div class="introduction">
-        <h2>Helpfulでは、すぐに交換ができて、<br>安心、安全なお取引ができます。</h2>
+        <h2>Helpfulでは、自分ではどうしようもないことを、<br>安心して同期に依頼することができます。</h2>
      </div>
      
 
@@ -26,7 +26,7 @@
             <div class="c">
             <h3 class="text-left">
                               <span class="top-introduction-num">1.</span>
-                            簡単に投稿できる
+                            簡単に依頼できる
             </h3>
             
             <img src="/images/toukou.jpg" width="350px" height="300px">
@@ -80,7 +80,7 @@
               お手伝いしたいことや、<br>依頼したいことを投稿しよう
             </h3>
             <p class="top-key-features-description text-center">
-              困った時はお手伝いを依頼しよう。暇な時間は人助けしよう
+              困った時はお手伝いを依頼しよう。暇な時間は人助けしよう。
             </p>
           </section>
           
@@ -104,7 +104,7 @@
               メッセージ機能を活用しよう
             </h3>
             <p class="top-key-features-description text-center">
-              分からないことは、返信機能でですぐさま解決。
+              分からないことは、コメント機能ですぐさま解決。
             </p>
           </section>
           

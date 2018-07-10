@@ -40,9 +40,5 @@
         </div> 
         
     </body>
-    
-    <footer>
     @include('commons.footer')
-    </footer>
-    
 </html>

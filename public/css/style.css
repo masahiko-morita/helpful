@@ -40,19 +40,11 @@ body {
 }
 　
 /*footer*/
-
-footer {
-
-    margin-top: 40px;
-}   
-
-
-.copy {
+.text-center .text-muted{
     background-color: transparent;
     color: gray;
     text-align: center;
-    margin: 0;
-    bottom: 0;
+    margin: 150px;
     width:100%;
 }
 

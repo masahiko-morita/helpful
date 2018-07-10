@@ -464,9 +464,7 @@ display: inline-block;
 }
 
 
-
-/*だいき（コメントの高さ変更）*/
-.comment-title-comments h3{
-    text-align: left;
+/*irai-index*/
+.index-content form{
+    text-align:center;
 }
-

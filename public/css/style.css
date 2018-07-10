@@ -230,6 +230,7 @@ text-decoration: none;
 
 .introduction{
     text-align:center;
+    margin-top: 100px;
 }
 
 .explaination h2{ 
@@ -277,4 +278,6 @@ text-decoration: none;
     text-align: center;
     font-size: 15px;
 }
- 
+
+.steps {margin-top: 100px;
+}

@@ -24,6 +24,44 @@
      <div class="introduction">
         <h2>Helpfulでは、すぐに交換ができて、<br>安心、安全なお取引ができます。</h2>
      </div>
+     
+        <div class="steps">
+            <h3 class="text-left">
+                              <span class="top-introduction-num">1</span>
+                            簡単に投稿できる
+            </h3>
+
+            
+            <img src="/images/toukou.jpg" width="350px" height="300px">
+
+            <p class="top-introduction-description">
+              困ったことや最寄りの駅を入力するだけで、<br>簡単に投稿できます。
+            </p>
+          
+    
+            <h3 class="text-left">
+                              <span class="top-introduction-num">2</span>
+                            すぐにリクエストを反映できる
+            </h3>
+
+            
+            <img src="/images/smilydesktop.jpg" width="350px" height="300px">
+
+            <p class="top-introduction-description">
+              投稿したら即返信できる。
+            </p>
+            <h3 class="text-left">
+                              <span class="top-introduction-num">3</span>
+                            たくさん投稿がのせられる
+            </h3>
+
+            
+            <img src="/images/search.png" width="300px" height="360px">
+
+            <p class="top-introduction-description">
+              毎日いくつも依頼が投稿されるので、<br>困ったことがきっと解決します。
+            </p>
+        </div>
      <div class=explaination>
           <h2>Helpfulの特徴</h2>
     </div>
@@ -57,10 +95,10 @@
                                   <center><img src=/images/chat.jpg alt="" width="80px" height="80px"></center>
                               </figure>
                         <h3 class="top-key-features-subtitle text-center">
-              チャット機能を活用しよう。
+              メッセージ機能を活用しよう。
             </h3>
             <p class="top-key-features-description text-center">
-              分からないことは、チャットですぐさま解決。
+              分からないことは、返信機能でですぐさま解決。
             </p>
           </section>
           

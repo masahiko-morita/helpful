@@ -3,21 +3,34 @@
 @section('content')
 
 <div class='containermypage'>
-    <div class='col-md-offset-3 col-md-3 text-center'>
-        <img src="{{ Gravatar::src($user->email, 100) . '&d=mm' }}" alt="" class="img-circle" width='30%'>
-        <h3>{{ $user->name }}</h3>
+    <div id="Awesome" class="anim750">
+        <div class="reveal circle_wrapper">
+            <div class="circle">{{ $user->content }}</div>
+        </div>
+                        
+        <div class="sticky anim750">
+            <div class="front circle_wrapper anim750">
+                <div class="circle anim750"></div>
+            </div>
+        </div>
+        
+        <h4>
+          <p class='glyphicon glyphicon-user' width='70px'>{{$user->name}}</p></h4>
+                        
+  <div class="sticky anim750">
+        <div class="back circle_wrapper anim750">
+            <div class="circle anim750"></div>
+        </div>
+    </div>
+                        
+
+　　　　
+       
     </div>
 
-
-    <div class='col-md-5 text-center'>
-
-       <div class="balloon">
-      {{$user->content}}
-  <br>
+    
 </div>
-    </div>
-    <div class='col-md-6'><br><br><br></div>
-</div>
+
     
    
     
@@ -41,4 +54,6 @@
     
 {!! $irais->render() !!}
 </div>
+
+
 @endsection

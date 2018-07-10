@@ -4,7 +4,7 @@
     <div class="col-md-3">
         <div class='containerirai'>
             <p></p>
-            <a href="{{ route('irais.show', $irai->id) }}" > 
+            <a href="{{ route('irais.show', $irai->id) }}" class='rotateY'> 
             <div class="maste-box">
                   
                 <span class='maste-tape'>From {{$user->name}}</span>
@@ -14,7 +14,7 @@
                <div>
                 <br>
                 <h4 class='under'>{{ $irai->title }}</h4>
-                <h4 class="glyphicon glyphicon-time text-center"></h4><br> {{ $irai->start }}~{{ $irai->finish }}<br>
+                <h4 class="glyphicon glyphicon-time"></h4><br> {{ $irai->start }}~{{ $irai->finish }}<br>
                
 
                 <h4 class="glyphicon glyphicon-map-marker"></h4> {{$irai->station}}<br>

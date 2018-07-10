@@ -57,16 +57,6 @@
              
           </div>        
                     
-         
-          <button type="button" class="btn btn-default">
-        </div> 
-    
-                    
-                    {!! Form::label('comment', 'コメント:') !!}
-                    {!! Form::text('comment', null, ['class' => 'form-control']) !!}
-                    
-            </div> 
-
         <button type="button" class="btn btn-default">
           <span class="glyphicon glyphicon-shopping-cart"></span>
             {!! Form::submit('更新！') !!}

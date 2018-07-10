@@ -7,8 +7,6 @@
         <h1>ありがとうございます！</h1>
         <h4>依頼内容は以下でございます</h4>
     </div>
-    
-
 
     <div class="row"> 
         
@@ -50,19 +48,8 @@
         {!! Form::submit('ホームに戻る', ['class' => 'btn btn-success btn-lg']) !!}
         {!! Form::close() !!}
         </div>
-        
-            
     </div>
-            
-            
-        
 </div>    
-    
-    
-    
-    
-    
-    
     
 <!--    {{$irai->title}}-->
 <!--    <div class='text-center'>-->

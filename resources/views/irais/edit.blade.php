@@ -54,10 +54,8 @@
                     
                     {!! Form::label('reward', 'お礼:') !!}
                     {!! Form::text('reward', null, ['class' => 'form-control']) !!}
-<<<<<<< HEAD
         </div> 
     
-<<<<<<< HEAD
                     
                     {!! Form::label('comment', 'コメント:') !!}
                     {!! Form::text('comment', null, ['class' => 'form-control']) !!}
@@ -65,18 +63,8 @@
         {!! Form::submit('更新する', ['class' => 'btn btn-info btn-lg']) !!}
     
     </div>
-=======
         <button type="button" class="btn btn-default">
-=======
-=======
->>>>>>> d8d450be1a99b0303fc5597b8e7fdd3aa08b8a4d
-             
           </div>        
-                    
-         
-          <button type="button" class="btn btn-default">
-        </div> 
-    
                     
                     {!! Form::label('comment', 'コメント:') !!}
                     {!! Form::text('comment', null, ['class' => 'form-control']) !!}
@@ -88,7 +76,6 @@
             {!! Form::submit('更新！') !!}
           </button>
         </div>
->>>>>>> 18ed668fc19b40c679ae65cb66b8812fe347139c
     </div>
 </div>    
     {!! Form::close() !!}

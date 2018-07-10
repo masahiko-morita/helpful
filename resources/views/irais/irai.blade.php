@@ -14,7 +14,7 @@
                <div>
                 <br>
                 <h4 class='under'>{{ $irai->title }}</h4>
-                <h4 class="glyphicon glyphicon-time text-center"></h4><br> {{ $irai->start }}~{{ $irai->finish }}<br>
+                <h4 class="glyphicon glyphicon-time text-center"></h4><br> {{ $irai->start }}~<br>{{ $irai->finish }}<br>
                
 
                 <h4 class="glyphicon glyphicon-map-marker"></h4> {{$irai->station}}<br>

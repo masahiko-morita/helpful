@@ -56,6 +56,21 @@ footer {
     width:100%;
 }
 
+/*クッションページ*/
+.kus-content #hukidashi img{
+    width:15%;               
+    height:15%;
+}
+
+.kus-content #hito img{
+    padding-top:100px;
+    margin-left:-70px;
+    width:20%;
+    height:20%;
+}
+
+
+
 /*irai-contents*/ 
 
 .cover-inner {
@@ -68,10 +83,7 @@ footer {
 }
 
 .irai .irai-flower {
-<<<<<<< HEAD
-=======
-  
->>>>>>> 6e8f406370171380be2692c08adec527c251cbb9
+
    height: 300px;
    width: 300px;
    margin:20px 20px;

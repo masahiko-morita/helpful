@@ -16,10 +16,7 @@
                 
             </div> 
     
-        <button type="button" class="btn btn-default">
-          <span class="glyphicon glyphicon-user"></span>
-            {!! Form::submit('更新！') !!}
-        </button>
+        {!! Form::submit('更新', ['class' => 'btn btn-info btn-lg']) !!}
     </div>
 </div>    
     {!! Form::close() !!}

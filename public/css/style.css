@@ -42,8 +42,10 @@ body {
 /*footer*/
 
 footer {
-
-    margin-top: 40px;
+   position: fixed;
+    margin-bottom: 0;
+    width: 100%;
+    height: 100px;
 }   
 
 
@@ -282,3 +284,5 @@ text-decoration: none;
 
 .steps {margin-top: 100px;
 }
+
+

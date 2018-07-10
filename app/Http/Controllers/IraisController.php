@@ -8,6 +8,8 @@ use App\Irai;
 
 use App\User;
 
+use App\Comment;
+
 class IraisController extends Controller
 {
     public function index()
@@ -71,9 +73,11 @@ class IraisController extends Controller
     public function show($id)
         {
             $irai = Irai::find($id);
+            $comments = Comment::all();
             
              return view('irais.show', [
                 'irai' => $irai,
+                'comments' => $comments,
           
            ]);
     }

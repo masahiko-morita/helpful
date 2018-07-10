@@ -57,43 +57,29 @@ footer {
 }
 
 /*irai-contents*/ 
-
 .cover-inner {
     color:#006400;
 }
 
+
 .irai {
     text-align: center;
+    
 }
     
 .irai .irai-flower {
-   background-image: url("../images/flower.png");
-   background-repeat: no-repeat;
-   background-size: cover;
+  
    height: 300px;
    width: 300px;
    margin:20px 20px;
    
 }
 
-.irai .irai-flower .title h3{
-text-align: center;
-width:200px;
-margin-left: 20px;
-margin-top: 50px;
-
-}
-
-.irai .irai-flower .title .widen-height {
-    height:50px;
-
-}
 
 .irai-flower .contentbox{
   width:80%;
   margin:0 auto;
 }
-
 
 .cover .cover-inner {
     height: 100%;
@@ -127,6 +113,7 @@ a:hover {
 text-decoration: none;
 }
 
+
 .content-inner  {
     margin-bottom: 20px;
     width: 100%;
@@ -134,21 +121,67 @@ text-decoration: none;
     background: url("/images/help.JPG") center center no-repeat;
     background-size: cover;
     text-align: center;
+    position: absolute;
+}
+.top-key-features-item{
+    float: left;
+    width: 50%;
+    height: 310px;
 }
 
 .maintitle{
-    color:navy;
+    text-align:center;
     margin-left: 1px;
-    margin-right: 300px;
-   }
+     color:navy;
+    margin-right: 600px;
+    margin-top: 70px;
+}
+
+.top-key-features-item
+{
+    text-align: center;
+}
+
+
 
 .introduction{
-    border-top:solid 1px gray;
     text-align:center;
+    margin-top: 440px;
 }
+
 
 .explaination h2{ 
     border-top:solid 1px gray;
     text-align: center;
 }
 
+.maste-box {
+  position: relative;
+  background-color: #fff;
+  background: repeating-linear-gradient(-45deg, #edf5f4, #edf5f4 10px, #f6faf9 0, #f6faf9 20px);
+  padding: 1em;
+}
+.maste-tape{
+  position: absolute;
+  top: -0.75em;
+  background-color: rgba(100,100,100,.3);
+  border-left:4px solid #8BC6CA;
+  padding: 0.25em 2em;
+  color: #454545;
+  transform: rotate(-3deg);
+}
+.maste-box p {
+  color: #454545;
+  padding: 15px 10px 10px 10px;
+}
+
+
+.containerirai{
+  position:relative;
+  margin-top: 10%;
+  height:70%;
+}
+
+
+
+	

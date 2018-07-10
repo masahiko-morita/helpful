@@ -1,6 +1,3 @@
-@extends('layouts.app')
-
-@section('content')
 <ul class="media-list">
 @foreach ($comments as $comment)
     <?php $user = $comment->user; ?>
@@ -13,7 +10,7 @@
                         @if ($comment->id)
                         <div class='title'>
                             <p class='widen-height'>
-                                <h6 class="comment-title-comments">ユーザー名({{ $commnent->content }})</h6>
+                                <h6 class="comment-title-comments">({{ $comment->content }})</h6>
                         </div>
                         @endif
                     </div>
@@ -24,4 +21,3 @@
     </li>
 @endforeach
 </ul>
-@endsection

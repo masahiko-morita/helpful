@@ -26,11 +26,13 @@ class CommentsController extends Controller
             'irai_id' => $request->irai_id,
         ]);
         
-        // $irai = \App\Irai::find($id);
+        $comments = \App\Comment::all();
         
+        $irai = \App\Irai::find($request->irai_id);
         // return redirect("/");
-        return view("irais.comment", [
-        
+        return view("irais.show", [
+             'irai'    => $irai,
+             'comments' => $comments
         ]);
     }
     

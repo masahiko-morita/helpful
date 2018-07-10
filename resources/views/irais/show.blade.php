@@ -56,7 +56,7 @@
        
        </div>
        
-       {!! Form::open(['route' => ['comments.store', $irai->id], 'method' => 'post']) !!}
+       {!! Form::open(['route' => ['comments.store'], 'method' => 'post']) !!}
        {{Form::hidden('irai_id', $irai->id)}}
         {!! Form::label('content', 'コメント:') !!}
         {!! Form::text('content', null, ['class' => 'form-control']) !!}
@@ -64,6 +64,6 @@
         {!! Form::close() !!}
         
 </div>
-
+@include('comments.comment', ['comments' => $comments])
 
 @endsection

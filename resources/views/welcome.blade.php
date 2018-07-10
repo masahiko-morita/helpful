@@ -30,6 +30,8 @@
                               <span class="top-introduction-num">1</span>
                             簡単に投稿できる
             </h3>
+            
+            
 
             
             <img src="/images/toukou.jpg" width="350px" height="300px">

@@ -24,6 +24,9 @@
      <div class="introduction">
         <h2>Helpfulでは、すぐに交換ができて、<br>安心、安全なお取引ができます。</h2>
      </div>
+     
+     
+     
      <div class=explaination>
           <h2>Helpfulの特徴</h2>
     </div>

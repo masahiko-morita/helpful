@@ -4,11 +4,8 @@
 /*body*/
 
 body {
-
     background: #f2f2f2;
- 
     background-color: white;
-
     background-color: #E8f1f5;
     font-family:  游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
 }
@@ -117,11 +114,11 @@ footer {
 }
 
 .irai .irai-flower {
-<<<<<<< HEAD
+
    height: 300px;
    width: 300px;
    margin:20px 20px;
-=======
+
 
    height: 300px;
    width: 300px;
@@ -174,7 +171,7 @@ footer {
     text-align: center;
     line-height:10px;
     margin-top: 15px;
->>>>>>> d7f226e49560bb2e55dbd7787e8426edf3e1fd50
+
 }
 
 

@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-<<<<<<< HEAD
   <div class="row">
       <div class="text-center">
         <span class='form-group'>
@@ -18,7 +17,6 @@
       </div>
   </div>
 @include('irais.irai', ['irais' => $irais])
-=======
 <div class="search">
     <div class="row">
             <div class="text-center">
@@ -35,7 +33,6 @@
   　　　　{!! Form::open(['route' => 'irais.create', 'method' => 'get']) !!}
         {!! Form::submit('依頼を投稿する', ['class' => 'btn btn-primary btn-lg']) !!}
         {!! Form::close() !!}
->>>>>>> d6bef2756bdb706c0f3200de5b6a4b7ce8ca469d
 　　</div>
   
   @include('irais.irai', ['irais' => $irais])

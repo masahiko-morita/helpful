@@ -21,13 +21,7 @@
   
   @include('irais.irai', ['irais' => $irais])
 </div>
-<<<<<<< HEAD
 
-=======
-@include('irais.irai', ['irais' => $irais])
-　　</div>
-  
-  @include('irais.irai', ['irais' => $irais])
->>>>>>> e6e7256263d7684e0acb13327b0db3bc45f209c5
+
 
 @endsection

@@ -8,6 +8,7 @@ use App\User;
 
 use App\Irai;
 
+
 class UsersController extends Controller
 {
     public function index()

@@ -4,18 +4,23 @@
     <li class="comment">
         <div class="col-md-4">
             <div>
-                <a href="{{ route('comments.show', $comment->id) }}">
                 <div class="comment-flower">
                     <div class='contentbox'>
                         @if ($comment->id)
                         <div class='title'>
                             <p class='widen-height'>
-                                <h6 class="comment-title-comments">({{ $comment->content }})</h6>
+                                <h6 class="comment-title-comments">{{ $user->name }}</h6>
+                                <h6 class="comment-title-comments">「{{ $comment->content }}」</h6>
                         </div>
                         @endif
                     </div>
+                    @if (Auth::user()->id == $comment->user_id)       
+                        {!! Form::open(['route' => ['comments.destroy', $comment->id], 'method' => 'delete']) !!}
+                        {{Form::hidden('irai_id', $irai->id)}}
+                        {!! Form::submit('依頼を削除する', ['class' => 'btn btn-danger btn-lg']) !!}
+                        {!! Form::close() !!}
+                    @endif 
                 </div>
-                </a>
             </div>
         </div>
     </li>

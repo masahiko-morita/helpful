@@ -57,10 +57,10 @@ footer {
 }
 
 /*irai-contents*/ 
-
 .cover-inner {
     color:#006400;
 }
+
 
 .irai {
     text-align: center;
@@ -121,17 +121,34 @@ text-decoration: none;
     background: url("/images/help.JPG") center center no-repeat;
     background-size: cover;
     text-align: center;
+    position: absolute;
+}
+.top-key-features-item{
+    float: left;
+    width: 50%;
+    height: 310px;
 }
 
 .maintitle{
-    color:navy;
+    text-align:center;
     margin-left: 1px;
-    margin-right: 300px;
-   }
+     color:navy;
+    margin-right: 600px;
+    margin-top: 70px;
+}
+
+.top-key-features-item
+{
+    text-align: center;
+}
+
+
 
 .introduction{
     text-align:center;
+    margin-top: 440px;
 }
+
 
 .explaination h2{ 
     border-top:solid 1px gray;

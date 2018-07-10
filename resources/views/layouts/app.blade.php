@@ -27,6 +27,7 @@
         <!--css最下部に固定-->
         <script type="text/javascript" src="/js/footerFixed.js"></script>
     </head>
+    
     <body>
           @include('commons.navbar')
           <div class="container">
@@ -40,5 +41,13 @@
         </div> 
         
     </body>
+<<<<<<< HEAD
         @include('commons.footer')
+=======
+    
+    <footer>
+        @include('commons.footer')
+    </footer>
+    
+>>>>>>> 08f23b9b6622e855a041584d4f9e7505ef04ed24
 </html>

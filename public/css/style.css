@@ -42,7 +42,7 @@ body {
 
 footer{
     margin-top: 40px;
-}
+    }
 
 .copy {
     background-color: transparent;
@@ -51,7 +51,9 @@ footer{
     margin: 0;
     bottom: 0px;
     width:100%;
-}
+    
+   
+   }
 
 
 /*クッションページ*/
@@ -441,11 +443,8 @@ display: inline-block;
   color:#FFFFFF;
 }
 .steps {
-<<<<<<< HEAD
     margin-top: 30px;
-=======
     margin-top: 50px;
->>>>>>> bdffeeed45954093413e92af59e2616f39f63c21
 }
 
 

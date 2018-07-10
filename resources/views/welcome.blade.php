@@ -44,11 +44,8 @@
             </h3>
 
             
-<<<<<<< HEAD
+
             <img src="/images/smilydesktop.jpg" width="300px" height="320px">
-=======
-            <img src="/images/smilydesktop.jpg" width="350px" height="320px">
->>>>>>> bdffeeed45954093413e92af59e2616f39f63c21
 
             <p class="top-introduction-description">
               投稿したら即返信できる。
@@ -62,11 +59,9 @@
             </h3>
 
             
-<<<<<<< HEAD
+
             <img src="/images/search.png" width="300px" height="320px">
-=======
-            <img src="/images/search.png" width="350px" height="300px">
->>>>>>> bdffeeed45954093413e92af59e2616f39f63c21
+
 
             <p class="top-introduction-description">
               毎日いくつも依頼が投稿されるので、<br>困ったことがきっと解決します。
@@ -126,11 +121,8 @@
             </p>
           </section>
           
-<<<<<<< HEAD
-    <div class="abc">        
-=======
+
              <div class="abc">        
->>>>>>> bdffeeed45954093413e92af59e2616f39f63c21
       <div class="animation">
         <div class="effect"></div>
          @if (!Auth::check())

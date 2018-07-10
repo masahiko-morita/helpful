@@ -48,6 +48,9 @@
         {!! Form::submit('ホームに戻る', ['class' => 'btn btn-success btn-lg']) !!}
         {!! Form::close() !!}
         </div>
+        
+        {!! Form::submit('評価をする', ['class' => 'btn btn-danger btn-lg']) !!}
+        {!! Form::close() !!}
     </div>
 </div>    
     

@@ -61,13 +61,14 @@ footer {
 }
 .kus-content #hukidashi img{
     margin-top:-150px;
+    margin-right: 50px;
     width:15%;               
     height:15%;
 }
 
 .kus-content #hito img{
     padding-top:40px;
-    margin-left:-90px;
+    margin-left:-130px;
     width:20%;
     height:20%;
 }
@@ -84,7 +85,7 @@ footer {
 .kus-content .kus-button .btn {
     font-weight: bold;
     padding: 1.2em 0.5em;
-    width:140px;
+    width:160px;
     text-decoration: none;
     color: #696969;
     background: #dcdcdc;
@@ -445,7 +446,29 @@ display: inline-block;
     margin-top: 100px;
 }
 
+<<<<<<< HEAD
+=======
+
+<<<<<<< HEAD
+/*comment-comment*/
+
+.comment .comment-flower .contentbox .popover{
+    height: 80px;
+}
+
+.comment .comment-flower .contentbox .name h3 {
+    text-align: left;
+}
+
+.comment .comment-flower .contentbox .popover .comment-death {
+    text-align:right;
+}
+=======
+
+
+>>>>>>> 31af8b72c63da5c34512076747b5a69c215044fc
 /*だいき（コメントの高さ変更）*/
 .comment-title-comments h3{
     text-align: left;
 }
+>>>>>>> 7dd9c4f94f354ef2f5c29b72ab4f77347d660c50

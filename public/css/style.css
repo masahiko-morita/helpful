@@ -380,3 +380,8 @@ text-decoration: none;
 }
 
 
+/*だいき（コメントの高さ変更）*/
+
+.row-eq-height{
+    height: 50px;
+}

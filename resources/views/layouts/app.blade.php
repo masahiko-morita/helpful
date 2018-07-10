@@ -41,5 +41,6 @@
         </div> 
         
     </body>
+
         @include('commons.footer')
 </html>

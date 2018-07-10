@@ -25,11 +25,11 @@
         <div class="steps">
             <div class="c">
             <h3 class="text-left">
-                              <span class="top-introduction-num">1.</span>
-                            簡単に依頼できる
+                              <span class="top-introduction-num">1</span>
+                            簡単に投稿できる
             </h3>
             
-            <img src="/images/toukou.jpg" width="350px" height="300px">
+            <img src="/images/toukou.jpg" width="300px" height="320px">
 
             <p class="top-introduction-description">
               困ったことや最寄りの駅を入力するだけで、<br>簡単に投稿できます。</p>
@@ -39,28 +39,29 @@
            <div class="c">
             <h3 class="text-left">
                 <div class="c">
-                              <span class="top-introduction-num">2.</span>
+                              <span class="top-introduction-num">2</span>
                             すぐにリクエストを反映できる
             </h3>
 
             
-            <img src="/images/smilydesktop.jpg" width="350px" height="320px">
+
+            <img src="/images/smilydesktop.jpg" width="300px" height="320px">
 
             <p class="top-introduction-description">
               投稿したら即返信できる。
             </p>
             </div>
             
-            
-            
             <div class="c">
             <h3 class="text-left">
-                      <span class="top-introduction-num">3.</span>
+                      <span class="top-introduction-num">3</span>
                             たくさん投稿がのせられる
             </h3>
 
             
-            <img src="/images/search.png" width="350px" height="300px">
+
+            <img src="/images/search.png" width="300px" height="320px">
+
 
             <p class="top-introduction-description">
               毎日いくつも依頼が投稿されるので、<br>困ったことがきっと解決します。
@@ -120,14 +121,14 @@
             </p>
           </section>
           
+
              <div class="abc">        
       <div class="animation">
         <div class="effect"></div>
          @if (!Auth::check())
-          <a href="{{ route('signup.get') }}"> HELPFULを始める </a>
+          <a href="{{ route('signup.get') }}"> <h1> HELPFULを始める </h1></a>
            @endif
          </div>
 　  　</div>
 　  </div>
 @endsection
-

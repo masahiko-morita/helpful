@@ -54,6 +54,7 @@
                     
                     {!! Form::label('reward', 'お礼:') !!}
                     {!! Form::text('reward', null, ['class' => 'form-control']) !!}
+<<<<<<< HEAD
         </div> 
     
 <<<<<<< HEAD
@@ -67,12 +68,22 @@
 =======
         <button type="button" class="btn btn-default">
 =======
+=======
+>>>>>>> d8d450be1a99b0303fc5597b8e7fdd3aa08b8a4d
              
           </div>        
                     
          
           <button type="button" class="btn btn-default">
->>>>>>> 8370b11b92cd9f33c09f7f97c60fc34f3096eefb
+        </div> 
+    
+                    
+                    {!! Form::label('comment', 'コメント:') !!}
+                    {!! Form::text('comment', null, ['class' => 'form-control']) !!}
+                    
+            </div> 
+
+        <button type="button" class="btn btn-default">
           <span class="glyphicon glyphicon-shopping-cart"></span>
             {!! Form::submit('更新！') !!}
           </button>

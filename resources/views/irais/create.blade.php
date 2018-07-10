@@ -58,13 +58,20 @@
                     {!! Form::label('reward', 'お礼:') !!}
                     {!! Form::text('reward', null, ['class' => 'form-control','placeholder' => '例:100円お渡しします/○○が■円で買えます']) !!}
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> d8d450be1a99b0303fc5597b8e7fdd3aa08b8a4d
 
                 
                     {!! Form::label('comment', 'コメント:') !!}
                     {!! Form::text('comment', null, ['class' => 'form-control']) !!}
                     
+<<<<<<< HEAD
 =======
 >>>>>>> 18ed668fc19b40c679ae65cb66b8812fe347139c
+=======
+
+>>>>>>> d8d450be1a99b0303fc5597b8e7fdd3aa08b8a4d
             </div> 
    
 　　　　　　　　　　{!! Form::submit('依頼を投稿する', ['class' => 'btn btn-info btn-lg']) !!}

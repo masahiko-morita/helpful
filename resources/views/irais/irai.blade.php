@@ -17,6 +17,7 @@
                お礼: {{ $irai->reward }}<br><br>
                {{ $irai->comment }}
                </p>
+<<<<<<< HEAD
                
                @endif
             </div></a>
@@ -24,6 +25,12 @@
       
     </div>
     
+=======
+               @endif
+            </div></a>
+        </div>
+    </div>
+>>>>>>> 8525fbf1f60c889994c71a7a417f6f83a2b5a980
 @endforeach
 
 

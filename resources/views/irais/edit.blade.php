@@ -55,8 +55,6 @@
                     {!! Form::label('reward', 'お礼:') !!}
                     {!! Form::text('reward', null, ['class' => 'form-control']) !!}
              
-                    {!! Form::label('comment', 'コメント:') !!}
-                    {!! Form::text('comment', null, ['class' => 'form-control']) !!}
           </div>        
                     
          

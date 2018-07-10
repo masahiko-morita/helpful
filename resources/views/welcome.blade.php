@@ -25,7 +25,7 @@
         <div class="steps">
             <div class="c">
             <h3 class="text-left">
-                              <span class="top-introduction-num">1.</span>
+                              <span class="top-introduction-num">1</span>
                             簡単に投稿できる
             </h3>
             
@@ -39,7 +39,7 @@
            <div class="c">
             <h3 class="text-left">
                 <div class="c">
-                              <span class="top-introduction-num">2.</span>
+                              <span class="top-introduction-num">2</span>
                             すぐにリクエストを反映できる
             </h3>
 
@@ -51,11 +51,9 @@
             </p>
             </div>
             
-            
-            
             <div class="c">
             <h3 class="text-left">
-                      <span class="top-introduction-num">3.</span>
+                      <span class="top-introduction-num">3</span>
                             たくさん投稿がのせられる
             </h3>
 

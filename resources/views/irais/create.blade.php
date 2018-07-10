@@ -13,10 +13,10 @@
             
             <div class="form-group">
                     
-                    {!! Form::label('title', 'タイトル:') !!}
+                    {!! Form::label('title', '※必須  タイトル:') !!}
                     {!! Form::text('title', null, ['class' => 'form-control' ,'placeholder' => '例:○○をシェアしましょう']) !!}
                 
-                    {!! Form::label('content', '説明:') !!}
+                    {!! Form::label('content', '※必須  説明:') !!}
                     {!! Form::text('content', null, ['class' => 'form-control','placeholder' => '例:○○を買いすぎたので分けたいです']) !!}
                     
                     <div class="container">
@@ -52,12 +52,11 @@
                     </script>
 
                     
-                    {!! Form::label('station', '場所:') !!}
+                    {!! Form::label('station', '※必須  場所:') !!}
                     {!! Form::text('station', null, ['class' => 'form-control','placeholder' => '例:都内、神奈川なら可です！/会社内でお願いします']) !!}
                     
-                    {!! Form::label('reward', 'お礼:') !!}
+                    {!! Form::label('reward', '※必須  お礼:') !!}
                     {!! Form::text('reward', null, ['class' => 'form-control','placeholder' => '例:100円お渡しします/○○が■円で買えます']) !!}
-
             </div> 
    
 　　　　　　　　　　{!! Form::submit('依頼を投稿する', ['class' => 'btn btn-info btn-lg']) !!}

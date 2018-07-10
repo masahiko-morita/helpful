@@ -54,13 +54,11 @@
                     
                     {!! Form::label('reward', 'お礼:') !!}
                     {!! Form::text('reward', null, ['class' => 'form-control']) !!}
-             
-          </div>        
-                    
-        <button type="button" class="btn btn-default">
-          <span class="glyphicon glyphicon-shopping-cart"></span>
-            {!! Form::submit('更新！') !!}
-          </button>
+    
+        
+        {!! Form::submit('更新する', ['class' => 'btn btn-info btn-lg']) !!}
+    
+    </div>
         </div>
     </div>
 </div>    

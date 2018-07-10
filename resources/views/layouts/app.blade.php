@@ -7,9 +7,6 @@
 
         <title>Helpful</title>
         
-      
-        
-
         <!-- Bootstrap -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -26,10 +23,14 @@
         <!--datetimepickercss-->
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css" />
+        
+        <!--css最下部に固定-->
+        <script type="text/javascript" src="/js/footerFixed.js"></script>
     </head>
+    
     <body>
           @include('commons.navbar')
-        <div class="container">
+          <div class="container">
             @include('commons.error_messages')
 
             
@@ -40,9 +41,5 @@
         </div> 
         
     </body>
-    
-    <footer>
-    @include('commons.footer')
-    </footer>
-    
+        @include('commons.footer')
 </html>

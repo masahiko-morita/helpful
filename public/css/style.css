@@ -78,8 +78,8 @@ footer {
 }
 
 .kus-content .kus-button img{
-    width:30px;
-    height:30px;
+    width:40px;
+    height:40px;
 }
 
 .kus-content .kus-button a{
@@ -88,17 +88,18 @@ footer {
 
 .kus-content .kus-button .btn {
     font-weight: bold;
-    padding: 1em 0.5em;
+    padding: 1.2em 0.5em;
+    width:140px;
     text-decoration: none;
     color: #696969;
     background: #dcdcdc;
     transition: .4s;
+    font-size:16px;
 }
 
 .kus-content .kus-button .btn > span{
     border-bottom: solid 2px RGBA(105,105,105,0.5);
-    border-top: solid 2px RGBA(105,105,105,0.5);
-    border-width:0.5px;
+    border-width:0.8px;
 }
 
 .kus-content .kus-button .btn:hover span {

@@ -64,15 +64,12 @@ footer {
 
 .irai {
     text-align: center;
-    
 }
     
 .irai .irai-flower {
-  
    height: 300px;
    width: 300px;
    margin:20px 20px;
-   
 }
 
 
@@ -114,8 +111,6 @@ text-decoration: none;
 }
 
 
-
-
 .content-inner  {
     margin-bottom: 20px;
     width: 100%;
@@ -123,7 +118,6 @@ text-decoration: none;
     background: url("/images/help.JPG") center center no-repeat;
     background-size: cover;
     text-align: center;
-<<<<<<< HEAD
     position: absolute;
 }
 .top-key-features-item{
@@ -131,8 +125,7 @@ text-decoration: none;
     width: 50%;
     height: 310px;
     text-align: center;
-=======
->>>>>>> 5279bbd2d67504942a7b93f4cecb9ea917807752
+
 }
 
 .maintitle{
@@ -147,16 +140,12 @@ text-decoration: none;
     text-align:center;
 }
 
-<<<<<<< HEAD
+
 .introduction{
     text-align:center;
     margin-top: 440px;
 }
 
-.explaination h2{ 
-    border-top:solid 1px gray;
-    text-align: center;
-=======
 .explaination h2{ 
     border-top:solid 1px gray;
     text-align: center;
@@ -193,7 +182,7 @@ text-decoration: none;
   position:relative;
   margin-top: 10%;
   height:70%;
->>>>>>> 5279bbd2d67504942a7b93f4cecb9ea917807752
+
 }
 
 .top-key-features-item{

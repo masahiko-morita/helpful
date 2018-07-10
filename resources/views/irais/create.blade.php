@@ -55,13 +55,16 @@
                     {!! Form::label('station', '場所:') !!}
                     {!! Form::text('station', null, ['class' => 'form-control','placeholder' => '例:都内、神奈川なら可です！/会社内でお願いします']) !!}
                     
-                    {!! Form::label('reward', '見返り:') !!}
+                    {!! Form::label('reward', 'お礼:') !!}
                     {!! Form::text('reward', null, ['class' => 'form-control','placeholder' => '例:100円お渡しします/○○が■円で買えます']) !!}
+<<<<<<< HEAD
 
                 
                     {!! Form::label('comment', 'コメント:') !!}
                     {!! Form::text('comment', null, ['class' => 'form-control']) !!}
                     
+=======
+>>>>>>> 18ed668fc19b40c679ae65cb66b8812fe347139c
             </div> 
    
 　　　　　　　　　　{!! Form::submit('依頼を投稿する', ['class' => 'btn btn-info btn-lg']) !!}

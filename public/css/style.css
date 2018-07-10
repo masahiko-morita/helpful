@@ -126,6 +126,8 @@ text-decoration: none;
 }
 
 
+
+
 .content-inner  {
     margin-bottom: 20px;
     width: 100%;
@@ -139,6 +141,7 @@ text-decoration: none;
     float: left;
     width: 50%;
     height: 310px;
+    text-align: center;
 }
 
 .maintitle{
@@ -149,18 +152,10 @@ text-decoration: none;
     margin-top: 70px;
 }
 
-.top-key-features-item
-{
-    text-align: center;
-}
-
-
-
 .introduction{
     text-align:center;
     margin-top: 440px;
 }
-
 
 .explaination h2{ 
     border-top:solid 1px gray;

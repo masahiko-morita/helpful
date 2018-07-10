@@ -33,7 +33,7 @@
                                   <img src=/images/desktop.png alt="" width="80px" height="80px">
                               </figure><h3 class="top-key-features-subtitle text-center">
 
-              お手伝いしたいことや、依頼したいことを投稿しよう
+              お手伝いしたいことや、<br>依頼したいことを投稿しよう
             </h3>
             <p class="top-key-features-description text-center">
               困った時はお手伝いを依頼しよう。暇な時間は人助けしよう。

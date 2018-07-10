@@ -8,6 +8,8 @@ use App\Irai;
 
 use App\User;
 
+use App\Comment;
+
 class IraisController extends Controller
 {
     public function index()
@@ -45,7 +47,6 @@ class IraisController extends Controller
             'content' => 'required|max:191',
             'station' => 'required|max:20',
             'reward' => 'required|max:50',
-            'comment' => 'required|max:50',
                     
         ]);
 
@@ -56,7 +57,6 @@ class IraisController extends Controller
             'finish' => $request->finish,
             'station' => $request->station,
             'reward' => $request->reward,
-            'comment' => $request->comment,            
             
         ]);
         
@@ -73,9 +73,11 @@ class IraisController extends Controller
     public function show($id)
         {
             $irai = Irai::find($id);
+            $comments = Comment::all();
             
              return view('irais.show', [
                 'irai' => $irai,
+                'comments' => $comments,
           
            ]);
     }
@@ -107,7 +109,6 @@ class IraisController extends Controller
             'finish' => 'required|max:50',
             'station' => 'required|max:20',
             'reward' => 'required|max:50',
-            'comment' => 'required|max:50',
         ]);
 
         
@@ -118,7 +119,6 @@ class IraisController extends Controller
         $irai->finish = $request->finish;
         $irai->station = $request->station;
         $irai->reward = $request->reward;
-        $irai->comment = $request->comment;
         $irai->save();
 
         $user = \Auth::user();

@@ -382,7 +382,7 @@ text-decoration: none;
 .c{
     display: inline-block;
     margin-left: 6px;
-}
+    }
 
 .top-introduction-num{
 display: inline-block;
@@ -445,7 +445,7 @@ display: inline-block;
   color:#FFFFFF;
 }
 .steps {
-    margin-top: 100px;
+    margin-top: 30px;
 }
 
 

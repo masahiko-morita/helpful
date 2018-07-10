@@ -29,7 +29,7 @@
                             簡単に投稿できる
             </h3>
             
-            <img src="/images/toukou.jpg" width="350px" height="300px">
+            <img src="/images/toukou.jpg" width="300px" height="320px">
 
             <p class="top-introduction-description">
               困ったことや最寄りの駅を入力するだけで、<br>簡単に投稿できます。</p>
@@ -44,7 +44,7 @@
             </h3>
 
             
-            <img src="/images/smilydesktop.jpg" width="350px" height="300px">
+            <img src="/images/smilydesktop.jpg" width="300px" height="320px">
 
             <p class="top-introduction-description">
               投稿したら即返信できる。
@@ -58,7 +58,7 @@
             </h3>
 
             
-            <img src="/images/search.png" width="300px" height="360px">
+            <img src="/images/search.png" width="300px" height="320px">
 
             <p class="top-introduction-description">
               毎日いくつも依頼が投稿されるので、<br>困ったことがきっと解決します。
@@ -118,11 +118,6 @@
             </p>
           </section>
           
-          <!--<div class="button">-->
-          <!--      @if (!Auth::check())-->
-          <!--          <a href="{{ route('signup.get') }}" class="btn btn-success btn-lg">HELPFULを始める</a>-->
-          <!--      @endif-->
-          <!--  </div>-->
     <div class="abc">        
       <div class="animation">
         <div class="effect"></div>

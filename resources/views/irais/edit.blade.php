@@ -54,14 +54,9 @@
                     
                     {!! Form::label('reward', 'お礼:') !!}
                     {!! Form::text('reward', null, ['class' => 'form-control']) !!}
-    
+        </div> 
         
         {!! Form::submit('更新する', ['class' => 'btn btn-info btn-lg']) !!}
     
     </div>
-        </div>
-    </div>
-</div>    
-    {!! Form::close() !!}
-
 @endsection

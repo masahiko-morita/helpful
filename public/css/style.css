@@ -57,6 +57,13 @@ footer {
 }
 
 /*クッションページ*/
+.kus-content {
+    text-align: center;
+}
+
+.kus-content .kus-wakranai {
+    margin-top:50px;
+}
 .kus-content #hukidashi img{
     margin-top:-150px;
     width:15%;               
@@ -68,6 +75,11 @@ footer {
     margin-left:-90px;
     width:20%;
     height:20%;
+}
+
+.kus-content .kus-button img{
+    width:30px;
+    height:30px;
 }
 
 .kus-content .kus-button a{

@@ -211,7 +211,7 @@ text-decoration: none;
 
 .content-inner  {
     margin-bottom: 20px;
-    width: 100%;
+    width: 80%;
     height: 390px;
     background: url("/images/help.JPG") center center no-repeat;
     background-size: cover;
@@ -442,7 +442,7 @@ display: inline-block;
   color:#FFFFFF;
 }
 .steps {
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 
@@ -461,20 +461,15 @@ display: inline-block;
 }
 
 
-<<<<<<< HEAD
 
 
-=======
-<<<<<<< HEAD
 /*irai-index*/
 .index-content form{
     text-align:center;
 }
-=======
->>>>>>> 366da2c55aa9235b50b13124cd533ddbd471319f
+
 /*だいき（コメントの高さ変更）*/
 .comment-title-comments h3{
     text-align: left;
 }
 
->>>>>>> 10c666d8aa2ddccf6fe62f0007924276b432e106

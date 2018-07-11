@@ -42,38 +42,14 @@ body {
 
 
 /*footer*/
-<<<<<<< HEAD
-=======
 
-
-footer{
-    margin-top: 40px;
-    }
-
-.copy {
-    background-color: transparent;
-    color: gray;
-    text-align: center;
-    margin: 0;
-    bottom: 0px;
-    width:100%;
-    
-   
-   }
-
->>>>>>> b8076ea0bbe5f8d8a02dd847f084de16e0d1e19e
 #footer {
     background-color: transparent;
     color: gray;
     text-align: center;
     margin: 150px;
-<<<<<<< HEAD
-}
-=======
-
 }
 
->>>>>>> b8076ea0bbe5f8d8a02dd847f084de16e0d1e19e
 /*クッションページ*/
 .kus-content {
     text-align: center;

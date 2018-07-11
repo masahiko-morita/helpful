@@ -8,7 +8,6 @@
     <div class="content">
         <div class="content-inner">
             <div class="maintitle">
-                <h1>いつでも簡単に投稿</h1>
                 @if (!Auth::check())
                     <a href="{{ route('signup.get') }}" class="btn btn-default btn-lg">HELPFULを始める</a>
                 @endif
@@ -120,8 +119,6 @@
     <!--          いつでも誰でも無料で投稿。-->
     <!--        </p>-->
     <!--      </section>-->
-
-          
 
     <div class="abc">    
       <div class="animation">

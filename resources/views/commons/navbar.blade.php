@@ -9,7 +9,7 @@
                     <span class="icon-bar"></span>
                 </button>
 
-                   <a class="navbar-brand" href="{{ route('irais.index', Auth::check()) }}">Helpful</a>
+                   <a class="navbar-brand" href="{{ route('irais.index', Auth::check()) }}">Helpful<i class="fa fa-home" id='peace'> </i> </a>
 
             </div>
             

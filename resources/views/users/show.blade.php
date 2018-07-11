@@ -33,7 +33,7 @@
 
         
 <div>
-    <span class='form-group'>
+    <span class=''>
     　　　　{!! Form::open(['route' => 'irais.create', 'method' => 'get']) !!}
           {!! Form::submit('投稿', ['class' => 'btn btn-danger btn-lg']) !!}
           {!! Form::close() !!}
@@ -49,9 +49,6 @@
            @include('irais.irai', ['irais' => $irais])
 </div>
 
-<a id="fab" href="#">
-  <i class="fa fa-plus"><p>投稿する</p></i>
-</a>
 
     
 <div class='usiropage'>

@@ -74,10 +74,12 @@ class IraisController extends Controller
     public function show($id)
         {
             $irai = Irai::find($id);
+            $user = User::find($id);
             $comments = Comment::all();
             
              return view('irais.show', [
-                'irai' => $irai,
+                'irai'     => $irai,
+                'user'     => $user,
                 'comments' => $comments,
           
            ]);

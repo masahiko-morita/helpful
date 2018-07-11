@@ -1,13 +1,17 @@
 @extends('layouts.app')
 
 @section('content')
-
+    
 <div class='container text-center'>
-
+<?php $user = $irai->user; ?>
 <h1>{{ $irai->title }}</h1>
     <div class="row"> 
         <div class="col-md-6">
             <table class="table">
+                <tr>
+                    <th>ユーザー名</th>
+                    <td><a href="{{ route('users.show', $user->id) }}"><h4 class="comment-title-comments">{{ $user->name }}</h4></a></td>
+                </tr>
                 <tr>
                     <th>説明</th>
                     <td>{{ $irai->content }}</td>
@@ -48,7 +52,7 @@
            <div class="col-md-9">
             {!! Form::open(['route' => ['comments.store'], 'method' => 'post']) !!}
             {{Form::hidden('irai_id', $irai->id)}}
-            {!! Form::text('content', null, ['class' => 'form-control input-lg' , 'placeholder' => 'コメント' ]) !!}
+            {!! Form::textarea('content', null, ['class' => 'form-control input-lg' , 'placeholder' => 'コメント' ]) !!}
             {!! Form::submit('コメント投稿！！！', ['class' => 'btn btn-success btn-lg']) !!}
             {!! Form::close() !!}
             </div>

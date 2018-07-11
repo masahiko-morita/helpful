@@ -14,7 +14,7 @@ class WelcomeController extends Controller
 {
     public function index()
     {
-        $irais = Irai::orderBy('updated_at', 'desc')->paginate(8);
+        $irais = Irai::orderBy('updated_at', 'desc')->paginate(4);
         return view('welcome', [
             'irais' => $irais,
         ]);

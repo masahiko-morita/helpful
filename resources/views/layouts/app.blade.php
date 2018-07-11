@@ -26,6 +26,9 @@
         
         <!--css最下部に固定-->
         <script type="text/javascript" src="/js/footerFixed.js"></script>
+        
+        <!--fontawesome-->
+        <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     </head>
     
     <body>
@@ -41,5 +44,11 @@
         </div> 
         
     </body>
+<<<<<<< HEAD
+
+        @include('commons.footer')
+
+=======
         @include('commons.footer') 
+>>>>>>> b8076ea0bbe5f8d8a02dd847f084de16e0d1e19e
 </html>

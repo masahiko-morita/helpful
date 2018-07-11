@@ -3,13 +3,21 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+
 use App\Http\Controllers\Controller;
+
 use App\Irai;
+
+use App\User;
 
 class WelcomeController extends Controller
 {
     public function index()
     {
-       return view('welcome');
+        $irais = Irai::orderBy('updated_at', 'desc')->paginate(8);
+        return view('welcome', [
+            'irais' => $irais,
+        ]);
+        
     }
 }

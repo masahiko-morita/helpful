@@ -13,8 +13,8 @@ body {
     font-family:  'Noto Sans JP', sans-serif;
     font-weight:300;
 }
-/* サンプル 4 
------------------------------------------------------------ */  
+
+/* サンプル 4 */  
 #searchform4 {  
     width: 200px;  
     display: block;  
@@ -65,8 +65,6 @@ footer{
     margin: 150px;
 
 }
-
-
 
 /*クッションページ*/
 .kus-content {
@@ -265,7 +263,7 @@ text-decoration: none;
   background-color: #fff;
   background: repeating-linear-gradient(-45deg, #edf5f4, #edf5f4 10px, #f6faf9 0, #f6faf9 20px);
   padding: 1em;
-  height:260px;
+  height:280px;
 }
 
 .maste-box .maste-content{
@@ -287,6 +285,10 @@ text-decoration: none;
 .maste-box p {
   color: #454545;
   padding: 15px 10px 10px 10px;
+}
+
+.maste-box .maste-btn {
+    text-align: center;
 }
 
 

@@ -63,8 +63,16 @@ footer{
     color: gray;
     text-align: center;
     margin: 150px;
+<<<<<<< HEAD
 }
 
+=======
+
+}
+
+
+
+>>>>>>> 53c1e10df9f00ff031ed2993e6796a93c74c4a6c
 /*クッションページ*/
 .kus-content {
     text-align: center;
@@ -76,7 +84,7 @@ footer{
 .kus-content #hukidashi img{
     margin-top:-150px;
     margin-right: 50px;
-    width:15%;                
+    width:15%;               
     height:15%;
 }
 
@@ -394,14 +402,13 @@ text-decoration: none;
     font-size: 15px;
 }
 
-
 .c{
     display: inline-block;
     margin-left: 8px;
     }
 
 .top-introduction-num{
-display: inline-block;
+    display: inline-block;
     width: 40px;
     height: 40px;
     margin: 0 8px 0 0;
@@ -446,6 +453,7 @@ display: inline-block;
   z-index:2;
   position:relative;
 }
+
 .effect {
   width:330px;
   height:76px;
@@ -456,15 +464,24 @@ display: inline-block;
   transition:all .6s ease;
   z-index:1;
 }
+.effect-background {
+  width:330px;
+  height:76px;
+  top:-0px;
+  left:0px;
+  background:#00000000;
+  position:absolute;
+  z-index:2;
+}
+
 .animation:hover .effect {
   left:0;
   color:#fff;
  }
 .animation:hover a {
   color:#fff;
-  
-  
 }
+
 .steps {
     margin-top: 50px;
 }

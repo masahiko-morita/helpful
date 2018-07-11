@@ -44,5 +44,11 @@
         </div> 
         
     </body>
+<<<<<<< HEAD
+
+        @include('commons.footer')
+
+=======
         @include('commons.footer') 
+>>>>>>> b8076ea0bbe5f8d8a02dd847f084de16e0d1e19e
 </html>

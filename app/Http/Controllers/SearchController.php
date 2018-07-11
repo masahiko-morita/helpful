@@ -10,9 +10,13 @@ use App\User;
 
 use App\Http\Controllers\Controller;
 
+use Illuminate\Support\Facades\DB;
+
 class SearchController extends Controller
 {
     public function iraisearch(){
+    
+    
     	
 	$query = Request::get('q');
 

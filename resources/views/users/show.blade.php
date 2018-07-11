@@ -18,11 +18,6 @@
     </div>
     <div class='col-md-6'><br><br><br></div>
 </div>
-    
-   
-    
-
-
         
 <div>
     <span class='form-group'>

@@ -1,17 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
-    
+
 <div class='container text-center'>
-<?php $user = $irai->user; ?>
+
 <h1>{{ $irai->title }}</h1>
     <div class="row"> 
         <div class="col-md-6">
             <table class="table">
-                <tr>
-                    <th>ユーザー名</th>
-                    <td><a href="{{ route('users.show', $user->id) }}"><h4 class="comment-title-comments">{{ $user->name }}</h4></a></td>
-                </tr>
                 <tr>
                     <th>説明</th>
                     <td>{{ $irai->content }}</td>

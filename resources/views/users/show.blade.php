@@ -19,7 +19,8 @@
     <div class='col-md-6'><br><br><br></div>
 </div>
         
-<div>
+<div> 
+
     <div class='container'>
         <div class='ribbon3'>
            <h2>出した依頼</h2>

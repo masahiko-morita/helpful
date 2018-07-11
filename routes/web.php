@@ -21,6 +21,9 @@ Route::get('logout', 'Auth\LoginController@logout')->name('logout.get');
 
 Route::get('/', 'WelcomeController@index');
 Route::get('thankyou/{id}', 'IraisController@thankyou')->name('irais.thankyou');
+Route::get('/hatsu', function () {
+    return view('hatsu');
+});
 
 Route::group(['middleware' => ['auth']], function () {
 

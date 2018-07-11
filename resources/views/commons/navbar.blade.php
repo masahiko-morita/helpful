@@ -8,7 +8,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="/">Helpful</a>
+                <a class="navbar-brand" href="{{ route('irais.index', Auth::check()) }}">Helpful</a>
+
             </div>
             
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

@@ -8,6 +8,8 @@ use App\User;
 
 use App\Irai;
 
+use App\Chat;
+
 
 class UsersController extends Controller
 {

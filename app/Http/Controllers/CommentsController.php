@@ -30,7 +30,7 @@ class CommentsController extends Controller
         }else {
             return view('welcome');
         }
-        
+         
     }
     
     public function store(Request $request)

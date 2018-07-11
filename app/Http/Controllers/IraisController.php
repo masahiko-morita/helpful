@@ -47,6 +47,7 @@ class IraisController extends Controller
             'content' => 'required|max:191',
             'station' => 'required|max:20',
             'reward' => 'required|max:50',
+            'finish' => 'required|date|after:start'
                     
         ]);
 

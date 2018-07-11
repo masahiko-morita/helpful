@@ -648,7 +648,6 @@ text-decoration: none;
 }
 
 .wrap {
-
   align-items: center;
   justify-content: center;
   position: fixed;
@@ -680,15 +679,8 @@ text-decoration: none;
   box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
   color: #fff;
   transform: translateY(-7px);
-<<<<<<< HEAD
-
 }
-
-=======
-}
-
 /*irai-search*/
 .search-content {
     text-align: center;
 }
->>>>>>> 0c930e97235a760909d6dc40bc849118a2a687e7

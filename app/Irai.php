@@ -18,5 +18,10 @@ class Irai extends Model
        return $this->hasMany(Comment::class);
     }
     
+    public function chats()
+    {
+       return $this->hasMany(Chat::class);
+    }
+    
 }
 

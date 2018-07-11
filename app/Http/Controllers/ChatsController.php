@@ -8,13 +8,11 @@ use App\User;
 
 use App\Irai;
 
-use App\Comment;
+use App\Chat;
 
-class CommentsController extends Controller
+class ChatsController extends Controller
 {
-
-
-   public function index()
+    public function index()
     {
         $data = [];
         if (\Auth::check()) {
@@ -40,26 +38,27 @@ class CommentsController extends Controller
             'content' => 'required|max:191',
         ]);
 
-        $request->user()->comments()->create([
+        $request->user()->chats()->create([
             'content' => $request->content,
             'irai_id' => $request->irai_id,
         ]);
         
 
-        $comments = \App\Comment::find($request->irai_id);
-        return redirect(route('irais.show',
-            ['id'=>$request->irai_id]));
+        $chats = \App\Chat::find($request->irai_id);
+        return redirect(route('irais.thankyou',
+            ['id'=>$request->irai_id
+            ]));
     }
     
     public function destroy($id)
     {
-        $comment = \App\Comment::find($id);
+        $chat = \App\Chat::find($id);
         
-        if (\Auth::id() === $comment->user_id) {
+        if (\Auth::id() === $chat->user_id) {
             
-        $comment->delete();
+        $chat->delete();
         
-        // $comments = \App\Comment::all();
+        // $chats = \App\chat::all();
         // $irai = \App\Irai::find($irai->id);
 
         return redirect()->back();
@@ -67,7 +66,3 @@ class CommentsController extends Controller
         }
     }
 }
-
-
-
-        

@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-      
+<?php $user = $irai->user; ?>
 <div class="container">
     <div class='text-center'>
         <h1>ありがとうございます！</h1>
@@ -9,6 +9,12 @@
     </div>
 
     <div class="row"> 
+    
+        <div class='container'>
+        {!! Form::open(['route' => ['irais.index', $irai->id], 'method' => 'get']) !!}
+        {!! Form::submit('ホームに戻る', ['class' => 'btn btn-primary btn-lg']) !!}
+        {!! Form::close() !!}
+        </div>
         
         <div class="col-md-6 text-center">
             <table class="table">
@@ -38,35 +44,23 @@
        
         </div> 
         
-        <div class='container'>
-        <button class='btn btn-default btn-lg'><a href="https://tomochat.herokuapp.com">チャットに移動する</a></button>
-        {!! Form::open(['route' => ['irais.index', $irai->id], 'method' => 'get']) !!}
-        {!! Form::submit('ホームに戻る', ['class' => 'btn btn-success btn-lg']) !!}
-        {!! Form::close() !!}
-        </div>
-        
-        {!! Form::submit('評価をする', ['class' => 'btn btn-danger btn-lg']) !!}
-        {!! Form::close() !!}
+        <div class="row row-eq-height">
+           <div class="col-md-9">
+                <h3>取引メッセージ</h3>
+            {!! Form::open(['route' => ['chats.store'], 'method' => 'post']) !!}
+            {{Form::hidden('irai_id', $irai->id)}}
+            {!! Form::textarea('content', null, ['class' => 'form-control input-sm'  ]) !!}
+            {!! Form::submit('投稿！', ['class' => 'btn btn-success btn-lg']) !!}
+            {!! Form::close() !!}
+            </div>
+            
+           
+        </div>  
+        <!--{!! Form::submit('評価をする', ['class' => 'btn btn-danger btn-lg']) !!}-->
+        <!--{!! Form::close() !!}-->
     </div>
+
 </div>    
-    
-<!--    {{$irai->title}}-->
-<!--    <div class='text-center'>-->
-<!--        <h2>タイトル</h2>-->
-<!--    </div>-->
-<!--    <div class="row text-center">-->
-<!--        <div class="col-md-4">-->
-<!--                はるな　-->
-<!--        </div>-->
-<!--        <div class="col-md-4">-->
-<!--                場所-->
-<!--        </div>-->
-<!--        <div class="col-md-4">-->
-<!--                対価　-->
-<!--        </div>-->
-<!--    </div>-->
-<!--    <div class='text-center'>-->
-<!--        コンテンツ-->
-<!--    </div>-->
-<!--</div>-->
+
+ @include('chats.chat', ['chats' => $chats])
 @endsection

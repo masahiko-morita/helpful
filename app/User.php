@@ -50,6 +50,18 @@ class User extends Authenticatable
         $user_ids[] = $this->id;
         return Comment::whereIn('user_id', $user_ids);
     }
+    
+    public function chats()
+    {
+       return $this->hasMany(Chat::class);
+    }
+    
+    public function feed_chats()
+    {
+        $user_ids = $this->pluck('users.id');
+        $user_ids[] = $this->id;
+        return Chat::whereIn('user_id', $user_ids);
+    }
 
     
 }

@@ -52,7 +52,7 @@
            <div class="col-md-9">
             {!! Form::open(['route' => ['comments.store'], 'method' => 'post']) !!}
             {{Form::hidden('irai_id', $irai->id)}}
-            {!! Form::textarea('content', null, ['class' => 'form-control input-lg' , 'span6' , 'placeholder' => 'コメント' ]) !!}
+            {!! Form::textarea('content', null, ['class' => 'form-control input-sm' ,  'placeholder' => 'コメント' ]) !!}
             {!! Form::submit('コメント投稿！！！', ['class' => 'btn btn-success btn-lg']) !!}
             {!! Form::close() !!}
             </div>

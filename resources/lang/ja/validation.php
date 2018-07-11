@@ -105,7 +105,7 @@ return [
 
     'attributes' => [
         'title' => 'タイトル',
-        'content' => '説明',
+        'content' => '理由',
         'station' => '場所',
         'reward' => 'お礼'
         ],

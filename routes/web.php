@@ -26,11 +26,12 @@ Route::get('/hatsu', function () {
 });
 
 Route::group(['middleware' => ['auth']], function () {
-
+    Route::resource('chats', 'ChatsController');
     Route::resource('comments', 'CommentsController');
     Route::resource('users', 'UsersController'); 
     Route::resource('irais','IraisController');
     Route::get('iraisearch', 'SearchController@iraisearch')->name('irais.search');
 });
+
 
 

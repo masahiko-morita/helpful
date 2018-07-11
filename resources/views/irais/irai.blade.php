@@ -17,7 +17,7 @@
                 <br>
                 <h4 class='under'>{{ $irai->title }}</h4>
                 <div class='maste-btn'>
-                    @if (Auth::user()->id != $irai->user_id)
+                    @if (Auth::check())
                     {!! Form::open(['route' => ['irais.thankyou', $irai->id], 'method' => 'get']) !!}
                         {!! Form::submit('手伝う！！！', ['class' => 'btn btn-success btn-sm']) !!}
                     {!! Form::close() !!}

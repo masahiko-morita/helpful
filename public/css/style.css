@@ -9,7 +9,7 @@ body {
 
     background-color: white;
 
-    background-color: #E8f1f5;
+    /*background-color: #E8f1f5;*/
     font-family:  'Noto Sans JP', sans-serif;
     font-weight:300;
 }
@@ -447,7 +447,6 @@ text-decoration: none;
   font-family:arial;
   font-size:36px;
   color:#1989ac;
-  
   text-decoration:none;
   line-height:56px;
   transition:all .10s ease;
@@ -459,7 +458,7 @@ text-decoration: none;
   width:330px;
   height:76px;
   top:-2px;
-  left:-324px;
+  left:-360px;
   background:#283e56;
   position:absolute;
   transition:all .6s ease;

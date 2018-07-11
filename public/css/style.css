@@ -11,8 +11,8 @@ body {
     background-color: #E8f1f5;
     font-family:  游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
 }
-/* サンプル 4 
------------------------------------------------------------ */  
+
+/* サンプル 4 */  
 #searchform4 {  
     width: 200px;  
     display: block;  
@@ -61,14 +61,7 @@ footer{
     color: gray;
     text-align: center;
     margin: 150px;
-<<<<<<< HEAD
 }
-=======
-
-}
-
->>>>>>> c3bf2129a57841abc8d94fbb5abc6bb817c29b92
-
 
 /*クッションページ*/
 .kus-content {

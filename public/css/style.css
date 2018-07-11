@@ -289,8 +289,6 @@ text-decoration: none;
 .maste-box p {
   color: #454545;
   padding: 15px 10px 10px 10px;
-}
-
 .maste-box .maste-btn {
     text-align: center;
 }
@@ -452,10 +450,7 @@ text-decoration: none;
   font-family:arial;
   font-size:36px;
   color:#1989ac;
-<<<<<<< HEAD
 
-=======
->>>>>>> bcda2322cac63b15c86875f7bdb173180b2021ed
   text-decoration:none;
   line-height:56px;
   transition:all .10s ease;
@@ -518,6 +513,7 @@ text-decoration: none;
 /*だいき（コメントの高さ変更）*/
 .comment-title-comments h3{
     text-align: left;
+
 
 }
 
@@ -702,4 +698,6 @@ text-decoration: none;
   box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
   color: #fff;
   transform: translateY(-7px);
+
 }
+

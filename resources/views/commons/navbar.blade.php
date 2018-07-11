@@ -9,11 +9,17 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="/">Helpful</a>
-            </div> 
+            </div>
+            
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     @if (Auth::check())
-                    <a class="navbar-brand" href="{{ route('irais.index', Auth::user()->id) }}">依頼一覧へ</a>
+                        <span class='kensaku form-group'>
+                            {!! Form::open(['route' => 'irais.search', 'method' => 'get']) !!}
+                            {!! Form::text('q', '', ['class' => 'form-control input-sm', 'placeholder' => 'キーワード(例:タイトル(引っ越し),駅(二子玉),時間(12日の場合12))', 'size' => 40,'style' => 'width:200px']) !!}{!! Form::submit('依頼を検索', ['class' => 'btn btn-success btn-sm']) !!}
+                            {!! Form::close() !!}
+                        </span>
+                        <a class="navbar-brand" href="{{ route('irais.index', Auth::user()->id) }}">依頼一覧へ</a>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ Auth::user()->name }} <span class="caret"></span></a>
                             <ul class="dropdown-menu">

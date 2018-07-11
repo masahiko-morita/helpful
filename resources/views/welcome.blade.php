@@ -122,7 +122,7 @@
           </section>
           
 
-             <div class="abc">        
+    <div class="abc">        
       <div class="animation">
         <div class="effect"></div>
          @if (!Auth::check())
@@ -131,4 +131,10 @@
          </div>
 　  　</div>
 　  </div>
+　  
+
+　  
 @endsection
+
+        
+      

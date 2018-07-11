@@ -395,14 +395,13 @@ text-decoration: none;
     font-size: 15px;
 }
 
-
 .c{
     display: inline-block;
     margin-left: 8px;
     }
 
 .top-introduction-num{
-display: inline-block;
+    display: inline-block;
     width: 40px;
     height: 40px;
     margin: 0 8px 0 0;
@@ -430,7 +429,7 @@ display: inline-block;
   cursor:pointer;
   position:relative;
   box-sizing:border-box;
-  overflow:hidden;
+  /*overflow:hidden;*/
   margin:0 0 40px 0;
   border-radius:10px;
   box-shadow:4px 4px #555;
@@ -463,9 +462,8 @@ display: inline-block;
  }
 .animation:hover a {
   color:#fff;
-  
-  
 }
+
 .steps {
     margin-top: 50px;
 }

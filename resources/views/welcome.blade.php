@@ -137,6 +137,10 @@
       </div>
 　  </div>
 　  
+　  <div class="wrap">
+  <button class="button"><i class="fa fa-plus">  </i> New Post<a href="{{ route('irais.create')}}"></a></button>
+</div>
+　  
 
 　  
 @endsection

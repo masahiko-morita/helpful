@@ -9,7 +9,7 @@
                     <span class="icon-bar"></span>
                 </button>
 
-                <a class="navbar-brand" href="{{ route('irais.index', Auth::check()) }}">Helpful</a>
+                   <a class="navbar-brand" href="{{ route('irais.index', Auth::check()) }}">Helpful</a>
 
             </div>
             
@@ -34,8 +34,10 @@
                             </ul>
                         </li>
                     @else
-                        <li>{!! link_to_route('signup.get', '新規登録') !!}</li>
-                        <li>{!! link_to_route('login', 'ログイン') !!}</li>
+                        <li>{!! link_to_route('signup.get', 'Sign up ') !!}</li>
+                        
+                        
+                        <li>{!! link_to_route('login', 'Log in') !!}</li>
                     @endif
                 </ul>
             </div>

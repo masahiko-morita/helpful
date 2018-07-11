@@ -19,7 +19,7 @@
                 <div class='maste-btn'>
                     @if (Auth::user()->id != $irai->user_id)
                     {!! Form::open(['route' => ['irais.thankyou', $irai->id], 'method' => 'get']) !!}
-                        {!! Form::submit('手伝う！！！', ['class' => 'btn btn-success btn-xs']) !!}
+                        {!! Form::submit('手伝う！！！', ['class' => 'btn btn-success btn-sm']) !!}
                     {!! Form::close() !!}
                     @endif
                 </div>

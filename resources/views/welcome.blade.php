@@ -9,6 +9,7 @@
         <div class="content-inner">
             <div class="maintitle">
                 <h1>ワンクリックで簡単に投稿</h1>
+                <p>Helpfulは</p>
                 @if (!Auth::check())
                     <a href="{{ route('signup.get') }}" class="btn btn-default btn-lg">HELPFULを始める</a>
                 @endif

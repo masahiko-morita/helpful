@@ -63,9 +63,13 @@ footer{
     color: gray;
     text-align: center;
     margin: 150px;
+<<<<<<< HEAD
+}
+=======
 
 }
 
+>>>>>>> c3bf2129a57841abc8d94fbb5abc6bb817c29b92
 
 
 /*クッションページ*/
@@ -79,7 +83,7 @@ footer{
 .kus-content #hukidashi img{
     margin-top:-150px;
     margin-right: 50px;
-    width:15%;               
+    width:15%;                
     height:15%;
 }
 

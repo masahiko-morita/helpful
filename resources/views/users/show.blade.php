@@ -24,7 +24,11 @@
     　　　{!! Form::open(['route' => 'irais.create', 'method' => 'get']) !!}
           {!! Form::submit('投稿', ['class' => 'btn btn-danger btn-lg']) !!}
           {!! Form::close() !!}
+
+        </span>  
+
           @endif
+
     <div class='container'>
         <div class='ribbon3'>
            <h2>出した依頼</h2>
@@ -36,9 +40,13 @@
            @include('irais.irai', ['irais' => $irais])
 </div>
 
+
     
 <div class='usiropage'>
     
 {!! $irais->render() !!}
+</div>
+<div class="wrap">
+  <button class="button"><i class="fa fa-plus">  </i> New Post<a href="{{ route('irais.create', ['id' => $user->id]) }}"></a></button>
 </div>
 @endsection

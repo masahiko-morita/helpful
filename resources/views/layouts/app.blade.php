@@ -26,6 +26,9 @@
         
         <!--css最下部に固定-->
         <script type="text/javascript" src="/js/footerFixed.js"></script>
+        
+        <!--fontawesome-->
+        <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     </head>
     
     <body>

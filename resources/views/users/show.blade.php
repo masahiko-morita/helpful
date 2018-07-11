@@ -21,8 +21,6 @@
         
 <div>
 
-       
-
     <div class='container'>
         <div class='ribbon3'>
            <h2>出した依頼</h2>
@@ -40,7 +38,10 @@
     
 {!! $irais->render() !!}
 </div>
+
+ <a href="{{ route('irais.create', ['id' => $user->id]) }}">
 <div class="wrap">
-  <button class="button"><i class="fa fa-plus">  </i> New Post<a href="{{ route('irais.create', ['id' => $user->id]) }}"></a></button>
+  <button class="button"><i class="fa fa-hand-peace" id='peace'> </i><br>New Post</button>
 </div>
+</a>
 @endsection

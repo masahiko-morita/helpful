@@ -273,6 +273,7 @@ text-decoration: none;
 .maste-box p {
   color: #454545;
   padding: 15px 10px 10px 10px;
+}
 .maste-box .maste-btn {
     text-align: center;
 }
@@ -682,12 +683,12 @@ text-decoration: none;
   color: grey;
   transform: translateY(-7px);
 }
-<<<<<<< HEAD
+
 /*irai-search*/
 .search-content {
     text-align: center;
 }
-=======
+
 
 
 .search-content {
@@ -705,4 +706,3 @@ text-decoration: none;
 .wrap #peace{
  font-size: 40px;   
 }
->>>>>>> f5fcbeeec457bb95c2d3cc5f31baa2ed9ae2e294

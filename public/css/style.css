@@ -448,6 +448,7 @@ text-decoration: none;
   z-index:2;
   position:relative;
 }
+
 .effect {
   width:330px;
   height:76px;
@@ -458,6 +459,16 @@ text-decoration: none;
   transition:all .6s ease;
   z-index:1;
 }
+.effect-background {
+  width:330px;
+  height:76px;
+  top:-0px;
+  left:0px;
+  background:#00000000;
+  position:absolute;
+  z-index:2;
+}
+
 .animation:hover .effect {
   left:0;
   color:#fff;

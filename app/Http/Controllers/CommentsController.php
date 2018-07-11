@@ -45,6 +45,7 @@ class CommentsController extends Controller
             'irai_id' => $request->irai_id,
         ]);
         
+
         $comments = \App\Comment::find($request->irai_id);
         return redirect(route('irais.show',
             ['id'=>$request->irai_id]));

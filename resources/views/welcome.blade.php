@@ -120,13 +120,25 @@
               いつでも誰でも無料で投稿。
             </p>
           </section>
-             <div class="abc">        
+
+          
+
+    <div class="abc">    
       <div class="animation">
-        <div class="effect"></div>
+        <div class="effect" style='pointer-events:none;'>
+        </div>
          @if (!Auth::check())
-          <a href="{{ route('signup.get') }}"> <h1> HELPFULを始める </h1></a>
+        <div class="effect-background">
+          <a href="{{ route('signup.get') }}" style='z-index:1000;'> <h1> HELPFULを始める </h1></a>
+        </div>
            @endif
-         </div>
-　  　</div>
+
+      </div>
 　  </div>
+　  
+
+　  
 @endsection
+
+        
+      

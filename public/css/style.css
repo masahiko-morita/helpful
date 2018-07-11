@@ -665,22 +665,37 @@ text-decoration: none;
     font-size: 30px;
 }
 
+.wrap {
 
-/*create button*/
- 
-#fab {/*円の部分*/
-    display: block;
-    width: 100px;/*幅*/
-    height: 100px;/*高さ*/
-    background: #FF7F50;/*背景色*/
-    text-align: center;/*中央寄せ*/
-    border-radius: 50%;/*角丸く*/
-    transition: .3s;/*滑らかな動きに*/
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,.12), 0 2px 2px 0 rgba(0,0,0,.24);/*影*/
-    bottom: 100px;
-    right: 20px;
-    position:fixed;
-    
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom:100px;
+  right:20px;
 }
 
+.button {
+  width: 200px;
+  height: 200px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #000;
+  background-color: rgb(242, 242, 147);
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  
+  }
 
+.button:hover {
+  background-color: rgb(247, 247, 89);
+  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  color: #fff;
+  transform: translateY(-7px);
+}

@@ -687,7 +687,7 @@ text-decoration: none;
   letter-spacing: 2.5px;
   font-weight: 500;
   color: #000;
-  background-color: rgb(242, 242, 147);
+  background-color:tomato;
   border: none;
   border-radius: 45px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
@@ -698,8 +698,8 @@ text-decoration: none;
   }
 
 .button:hover {
-  background-color: rgb(247, 247, 89);
-  box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
+  background-color: #FF836D;
+  box-shadow: 0px 15px 20px #FFC4BA;
   color: #fff;
   transform: translateY(-7px);
 }

@@ -120,9 +120,13 @@
               いつでも誰でも無料で投稿。
             </p>
           </section>
+<<<<<<< HEAD
           
 
     <div class="abc">        
+=======
+             <div class="abc">        
+>>>>>>> eeef1848e799a1a543438072fea3fbb32b1a6df5
       <div class="animation">
         <div class="effect"></div>
          @if (!Auth::check())

@@ -11,7 +11,7 @@
     <div class="row"> 
         
         <div class="col-md-6 text-center">
-            <table class="table table-hover">
+            <table class="table">
             <tr>
                 <h3 class='text-center'>{{ $irai->title }}</h3>
             </tr>
@@ -33,10 +33,6 @@
             <tr>
                 <th>見返り</th>
                 <td>{{ $irai->reward }}</td>
-            </tr>
-            <tr>
-                <th>コメント</th>
-                <td>{{ $irai->comment }}</td>
             </tr>
             </table>
        

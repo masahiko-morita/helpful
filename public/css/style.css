@@ -211,10 +211,12 @@ text-decoration: none;
     margin-bottom: 20px;
     width: 80%;
     height: 390px;
-    background: url("/images/help.JPG") center center no-repeat;
+    /*background: url("/images/help.JPG") center center no-repeat;*/
+     background: url("/images/viber3.jpg") center center no-repeat;
     background-size: cover;
     text-align: center;
     position: absolute;
+     opacity: 0.8;
     
 }
 

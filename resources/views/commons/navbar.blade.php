@@ -8,7 +8,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{{ route('irais.index', Auth::user()->id) }}">Helpful</a>
+                <a class="navbar-brand" href="#">Helpful</a>
             </div>
             
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -33,6 +33,8 @@
                         </li>
                     @else
                         <li>{!! link_to_route('signup.get', 'Sign up ') !!}</li>
+                        
+                        
                         <li>{!! link_to_route('login', 'Log in') !!}</li>
                     @endif
                 </ul>

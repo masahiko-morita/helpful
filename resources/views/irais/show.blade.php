@@ -2,30 +2,30 @@
 
 @section('content')
     
-<div class='container text-center'>
+<div class='container'>
 <?php $user = $irai->user; ?>
-<h1>{{ $irai->title }}</h1>
+<h1 class='text-center'>{{ $irai->title }}</h1>
     <div class="row"> 
         <div class="col-md-6">
             <table class="table">
                 <tr>
-                    <th>ユーザー名</th>
-                    <td><a href="{{ route('users.show', $user->id) }}"><h4 class="comment-title-comments">{{ $user->name }}</h4></a></td>
+                    <th><i class="fa fa-user" id='peace'> </i></th>
+                    <td><a href="{{ route('users.show', $user->id) }}">{{ $user->name }}</a></td>
                 </tr>
                 <tr>
-                    <th>説明</th>
+                    <th><i class="fa fa-file-alt" id='peace'> </i></th>
                     <td>{{ $irai->content }}</td>
                 </tr>
                 <tr>
-                <th>時間</th>
+                <th><i class="fa fa-clock" id='peace'> </i> </th>
                     <td>{{ $irai->start }}　～　{{ $irai->finish }}</td>
                 </tr>
                 <tr>
-                    <th>駅</th>
+                    <th><i class="fa fa-map-marker-alt" id='peace'> </i> 場所</th>
                     <td>{{ $irai->station }}</td>
                 </tr>
                 <tr>
-                    <th>お礼</th>
+                    <th><i class="fa fa-gift" id='peace'> </i> お礼</th>
                     <td>{{ $irai->reward }}</td>
                 </tr>
             </table>

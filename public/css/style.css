@@ -682,10 +682,3 @@ display: inline-block;
   vertical-align: middle;
   font-size: 20px;/*サイズ*/
 }
-
-#fab p{
-    color: white;
-  line-height: 100px;/*＝幅と高さ*/
-  vertical-align: middle;
-  font-size: 20px;/*サイズ*/
-}

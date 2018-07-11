@@ -211,10 +211,12 @@ text-decoration: none;
     margin-bottom: 20px;
     width: 80%;
     height: 390px;
-    background: url("/images/help.JPG") center center no-repeat;
+    /*background: url("/images/help.JPG") center center no-repeat;*/
+     background: url("/images/viber3.jpg") center center no-repeat;
     background-size: cover;
     text-align: center;
     position: absolute;
+     opacity: 0.8;
     
 }
 
@@ -272,7 +274,6 @@ text-decoration: none;
   color: #454545;
   padding: 15px 10px 10px 10px;
 }
-
 .maste-box .maste-btn {
     text-align: center;
 }
@@ -498,6 +499,7 @@ text-decoration: none;
 .comment-title-comments h3{
     text-align: left;
 
+
 }
 
 .glyphicon .glyphicon-time{
@@ -649,7 +651,6 @@ text-decoration: none;
 }
 
 .wrap {
-
   align-items: center;
   justify-content: center;
   position: fixed;
@@ -683,6 +684,12 @@ text-decoration: none;
   transform: translateY(-7px);
 }
 
+/*irai-search*/
+.search-content {
+    text-align: center;
+}
+
+
 
 .search-content {
     text-align: center;
@@ -694,7 +701,7 @@ text-decoration: none;
     text-decoration: underline;
 }
 
-}
+ 
 
 .wrap #peace{
  font-size: 40px;   

@@ -120,8 +120,6 @@
               いつでも誰でも無料で投稿。
             </p>
           </section>
-          
-
              <div class="abc">        
       <div class="animation">
         <div class="effect"></div>

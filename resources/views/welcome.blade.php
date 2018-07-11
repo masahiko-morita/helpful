@@ -128,17 +128,21 @@
       <div class="animation">
         <div class="effect" style='pointer-events:none;'>
         </div>
-         @if (!Auth::check())
+        @if (!Auth::check())
         <div class="effect-background">
           <a href="{{ route('signup.get') }}" style='z-index:1000;'> <h1> HELPFULを始める </h1></a>
         </div>
-           @endif
+        @endif
 
       </div>
 　  </div>
 　  
+　  @if (!Auth::check())
+　  <a href="{{ route('irais.create')}}">
 　  <div class="wrap">
-  <button class="button"><i class="fa fa-plus">  </i> New Post<a href="{{ route('irais.create')}}"></a></button>
+        <button class="button"><i class="fa fa-plus">  </i> New Post</button></a>
+    @endif
+
 </div>
 　  
 

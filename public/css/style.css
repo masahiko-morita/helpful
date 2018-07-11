@@ -661,15 +661,15 @@ text-decoration: none;
 }
 
 .button {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   text-transform: uppercase;
   letter-spacing: 2.5px;
   font-weight: 500;
   color: #000;
-  background-color:tomato;
+  background-color:#ffde25;
   border: none;
   border-radius: 45px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
@@ -680,8 +680,12 @@ text-decoration: none;
   }
 
 .button:hover {
-  background-color: #FF836D;
-  box-shadow: 0px 15px 20px #FFC4BA;
-  color: #fff;
+  background-color: #FFF9D8;
+  box-shadow: 0px 15px 20px #FF572;
+  color: #ffde25;
   transform: translateY(-7px);
+}
+
+.wrap button i{
+    width:50px;
 }

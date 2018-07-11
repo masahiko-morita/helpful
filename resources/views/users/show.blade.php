@@ -20,11 +20,11 @@
 </div>
         
 <div>
-    <span class='form-group'>
-    　　　　{!! Form::open(['route' => 'irais.create', 'method' => 'get']) !!}
+    @if (Auth::user()->id == $user->id) 
+    　　　{!! Form::open(['route' => 'irais.create', 'method' => 'get']) !!}
           {!! Form::submit('投稿', ['class' => 'btn btn-danger btn-lg']) !!}
           {!! Form::close() !!}
-        </span>            
+          @endif
     <div class='container'>
         <div class='ribbon3'>
            <h2>出した依頼</h2>

@@ -48,6 +48,7 @@ body {
     text-align: center;
     margin: 150px;
 }
+
 /*クッションページ*/
 .kus-content {
     text-align: center;
@@ -109,8 +110,7 @@ body {
 }
 
 
-
-   height: 300px;
+  height: 300px;
    width: 300px;
    margin:20px 20px;
    overflow: hidden; 
@@ -434,10 +434,7 @@ text-decoration: none;
   font-family:arial;
   font-size:36px;
   color:#1989ac;
-<<<<<<< HEAD
 
-=======
->>>>>>> bcda2322cac63b15c86875f7bdb173180b2021ed
   text-decoration:none;
   line-height:56px;
   transition:all .10s ease;
@@ -684,4 +681,9 @@ text-decoration: none;
   box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
   color: #fff;
   transform: translateY(-7px);
+}
+
+/*irai-search*/
+.search-content {
+    text-align: center;
 }

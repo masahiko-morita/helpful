@@ -335,7 +335,7 @@ text-decoration: none;
   top: 0;
   left: 0;
   border-width: 30px 0px 30px 15px;
-  border-color: transparent transparent transparent #E8f1f5;
+  border-color: transparent transparent transparent #fff;
   border-style: solid;
   
 }
@@ -344,7 +344,7 @@ text-decoration: none;
   top: 0;
   right: 0;
   border-width: 30px 15px 30px 0px;
-  border-color: transparent #E8f1f5 transparent transparent;
+  border-color: transparent #fff transparent transparent;
   border-style: solid;
 }
 
@@ -679,7 +679,7 @@ text-decoration: none;
 .button:hover {
   background-color: #FFF9D8;
   box-shadow: 0px 15px 20px #FF572;
-  color: #ffde25;
+  color: grey;
   transform: translateY(-7px);
 }
 
@@ -688,3 +688,9 @@ text-decoration: none;
     text-align: center;
 
 }
+
+.wrap #peace{
+ font-size: 40px;   
+}
+
+

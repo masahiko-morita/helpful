@@ -49,7 +49,7 @@
 
  <a href="{{ route('irais.create', ['id' => $user->id]) }}">
 <div class="wrap">
-  <button class="button"><i class="fa fa-hand-peace" > </i><br>New Post</button>
+  <button class="button"><i class="fa fa-hand-peace" id='peace'> </i><br>New Post</button>
 </div>
 </a>
 @endsection

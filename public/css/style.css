@@ -689,8 +689,13 @@ text-decoration: none;
 
 }
 
+/*irai-create*/
+.toukou h4 {
+    text-decoration: underline;
+}
+
+}
+
 .wrap #peace{
  font-size: 40px;   
 }
-
-

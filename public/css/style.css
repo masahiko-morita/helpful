@@ -687,3 +687,8 @@ text-decoration: none;
 .search-content {
     text-align: center;
 }
+
+/*irai-create*/
+.toukou h4 {
+    text-decoration: underline;
+}

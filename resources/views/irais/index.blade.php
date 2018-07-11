@@ -4,9 +4,11 @@
 
 @include('irais.irai', ['irais' => $irais])
  
- <a href="{{ route('irais.create', ['id' => $user->id]) }}">
+ <a href="{{ route('irais.create') }}">
  <div class="wrap">
- <button class="button"><i class="fa fa-plus"> </i> New Post</button>
+
+ <button class="button"><i class="fa fa-hand-peace" id='peace'> </i> <br>New Post</button>
+
 </div>
 </a>
  

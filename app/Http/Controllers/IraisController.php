@@ -10,6 +10,8 @@ use App\User;
 
 use App\Comment;
 
+use App\Chat;
+
 class IraisController extends Controller
 {
     public function index()
@@ -75,7 +77,7 @@ class IraisController extends Controller
         {
             $irai = Irai::find($id);
             $user = User::find($id);
-            $comments = Comment::all();
+            $comments = Comment::orderBy('created_at', 'desc')->paginate(10);
             
              return view('irais.show', [
                 'irai'     => $irai,
@@ -151,9 +153,11 @@ class IraisController extends Controller
     {
         
         $irai = Irai::find($id);
+        $chats = Chat::orderBy('created_at', 'desc')->paginate(10);
 
         return view('irais.thankyou', [
             'irai' => $irai,
+            'chats' => $chats,
         ]);
          
     }

@@ -9,28 +9,29 @@
     <div class="row"> 
         <div class="form-group col-xs-12 col-sm-offset-2 col-sm-8 col-lg-offset-3 col-lg-6">
             {!! Form::model($irai, ['route' => 'irais.store','files'=>true]) !!}
-            
-            
+
+            <h4>※は必須です</h4>            
+            <br>
             <div class="form-group">
                     
-                    {!! Form::label('title', '※必須  タイトル:') !!}
+                    {!! Form::label('title', '※ タイトル:') !!}
                     {!! Form::text('title', null, ['class' => 'form-control' ,'placeholder' => '例:○○をシェアしましょう']) !!}
                 
-                    {!! Form::label('content', '※必須  説明:') !!}
+                    {!! Form::label('content', '※ 理由:') !!}
                     {!! Form::text('content', null, ['class' => 'form-control','placeholder' => '例:○○を買いすぎたので分けたいです']) !!}
                     
                     <div class="container">
                         <div class="row">
                             <div class='col-sm-6'>
                                 <div class="form-group">
-                                    <label for="start">開始時刻:</label><br>
+                                    <label for="start">開始時刻(任意):</label><br>
                                     <div class='input-group date' id='datetimepicker'>
                                         <input type='text' name="start" class="form-control" />
                                              <span class="input-group-addon">
                                                  <span class="glyphicon glyphicon-calendar"></span>
                                              </span>
                                     </div>
-                                    <label for="finish">終了時刻:</label><br>
+                                    <label for="finish">終了時刻(任意):</label><br>
                                     <div class='input-group date' id='datetimepicker1'>
                                         <input type='text' name="finish" class="form-control" />
                                              <span class="input-group-addon">
@@ -52,10 +53,10 @@
                     </script>
 
                     
-                    {!! Form::label('station', '※必須  場所:') !!}
+                    {!! Form::label('station', '※ 場所:') !!}
                     {!! Form::text('station', null, ['class' => 'form-control','placeholder' => '例:都内、神奈川なら可です！/会社内でお願いします']) !!}
                     
-                    {!! Form::label('reward', '※必須  お礼:') !!}
+                    {!! Form::label('reward', '※ お礼:') !!}
                     {!! Form::text('reward', null, ['class' => 'form-control','placeholder' => '例:100円お渡しします/○○が■円で買えます']) !!}
             </div> 
    

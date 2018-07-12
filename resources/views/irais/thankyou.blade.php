@@ -9,11 +9,12 @@
     </div>
 
     <div class="row"> 
-    
-        <div class='container'>
+        <div class="btn-content">
+        <div id="home">
         {!! Form::open(['route' => ['irais.index', $irai->id], 'method' => 'get']) !!}
-        {!! Form::submit('ホームに戻る', ['class' => 'btn btn-primary btn-lg']) !!}
+        {!! Form::submit('ホームに戻る', ['class' => 'btn center-block']) !!}
         {!! Form::close() !!}
+        </div>
         </div>
         
         <div class="col-md-6 text-center">
@@ -45,16 +46,18 @@
         </div> 
         
         <div class="row row-eq-height">
-           <div class="col-md-9">
-                <h3>取引メッセージ</h3>
-            {!! Form::open(['route' => ['chats.store'], 'method' => 'post']) !!}
-            {{Form::hidden('irai_id', $irai->id)}}
-            {!! Form::textarea('content', null, ['class' => 'form-control input-sm'  ]) !!}
-            {!! Form::submit('投稿！', ['class' => 'btn btn-success btn-lg']) !!}
-            {!! Form::close() !!}
+            <div class="col-md-9">
+            <h3>取引メッセージ</h3>
+            <div class="btn-content">
+            <div id="toukou">
+                {!! Form::open(['route' => ['chats.store'], 'method' => 'post']) !!}
+                {{Form::hidden('irai_id', $irai->id)}}
+                {!! Form::textarea('content', null, ['class' => 'form-control input-sm'  ]) !!}
+                {!! Form::submit('投稿！', ['class' => 'btn center-block']) !!}
+                {!! Form::close() !!}
             </div>
-            
-           
+            </div>
+           </div>
         </div>  
         <!--{!! Form::submit('評価をする', ['class' => 'btn btn-danger btn-lg']) !!}-->
         <!--{!! Form::close() !!}-->

@@ -3,7 +3,7 @@
 @section('content')
 
 <!-- Write content for each page here -->
-    <h1>投稿ページ</h1>
+        <h1>投稿ページ</h1>
     
     <div class='toukou'>
     <div class="row"> 

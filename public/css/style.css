@@ -426,7 +426,9 @@ text-decoration: none;
 
 .abc{
     text-align: center;
-    margin-left: 410px;
+    margin-top: 5%;
+    margin-left:35%;
+    
 }
 
 /*welcomepageのボタン*/
@@ -828,8 +830,8 @@ text-decoration: none;
   align-items: center;
   justify-content: center;
   position: fixed;
-  bottom:100px;
-  right:20px;
+  bottom:10%;
+  right:2%;
 }
 
 .btn-post{
@@ -854,9 +856,13 @@ text-decoration: none;
 .btn-post:hover {
   background-color:	#FFC0CB;
   box-shadow: 0px 15px 20px #FF572;
-  color: grey;
+  color:#333333;
   transform: translateY(-7px);
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> a6bb80caf60c480a40e08a97ff516da467dcd2dd
 }
 
 /*irai-search*/
@@ -882,6 +888,7 @@ text-decoration: none;
  font-size: 40px;   
 }
 
+<<<<<<< HEAD
 .person_1{
     font-size: 30px;
     color:blue;
@@ -910,3 +917,7 @@ text-decoration: none;
 =======
 }
 >>>>>>> 46ddf9e3892e5cd4a2455ddad44c863b2ae503ff
+=======
+
+
+>>>>>>> a6bb80caf60c480a40e08a97ff516da467dcd2dd

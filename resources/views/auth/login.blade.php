@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="text-center">
-        <h1>ログイン</h1>
+    <div class='ribbon2'>
+           <h2>ログイン</h2>
     </div>
 
     <div class="row">
@@ -19,7 +19,7 @@
                     {!! Form::password('password', ['class' => 'form-control']) !!}
                 </div>
 
-                {!! Form::submit('ログイン', ['class' => 'btn btn-primary btn-block']) !!}
+                {!! Form::submit('ログイン', ['class' => 'btn btn-info btn-block']) !!}
                 {!! Form::close() !!}
 
             <p>未登録の場合は {!! link_to_route('signup.get', '今すぐ新規登録！') !!}</p>

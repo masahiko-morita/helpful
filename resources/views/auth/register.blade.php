@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="text-center">
-        <h1>新規登録</h1>
+    <div class='ribbon2'>
+           <h2>新規登録</h2>
     </div>
 
     <div class="row">
@@ -39,7 +39,7 @@
                 </div>
                 
                 
-                {!! Form::submit('新規登録！', ['class' => 'btn btn-primary btn-block']) !!}
+                {!! Form::submit('新規登録！', ['class' => 'btn btn-info btn-block']) !!}
             {!! Form::close() !!}
         </div>
     </div>

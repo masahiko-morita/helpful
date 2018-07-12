@@ -13,11 +13,14 @@
     <div class="row"> 
     
         <div class='container'>
-         @include('irai_finish.finish_button', ['user' => $user])    
-            
+        <div id="kanryou">
+         @include('irai_finish.finish_button', ['user' => $user])
+        </div>
+        <div id="home">
         {!! Form::open(['route' => ['irais.index', $irai->id], 'method' => 'get']) !!}
         {!! Form::submit('ホームに戻る', ['class' => 'btn center-block']) !!}
         {!! Form::close() !!}
+        </div>
         <!--{!! Form::open(['route' => ['irais.index', $irai->id], 'method' => 'get']) !!}-->
         <!--{!! Form::submit('依頼完了', ['class' => 'btn btn-primary btn-lg']) !!}-->
         <!--{!! Form::close() !!}-->

@@ -8,9 +8,17 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
+<<<<<<< HEAD
 
                    <a class="navbar-brand" href="{{ route('irais.index', Auth::check()) }}">Helpful<i class="fa fa-home" id='peace'> </i> </a>
 
+=======
+                    @if (Auth::check())
+                        <a class="navbar-brand" href="{{ route('irais.index', Auth::check()) }}">Helpful</a>
+                    @else
+                        <a class="navbar-brand" href="/">Helpful</a>
+                    @endif
+>>>>>>> 46ddf9e3892e5cd4a2455ddad44c863b2ae503ff
             </div>
             
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -35,8 +43,6 @@
                         </li>
                     @else
                         <li>{!! link_to_route('signup.get', 'Sign up ') !!}</li>
-                        
-                        
                         <li>{!! link_to_route('login', 'Log in') !!}</li>
                     @endif
                 </ul>

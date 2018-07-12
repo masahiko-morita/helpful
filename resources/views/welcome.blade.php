@@ -2,7 +2,7 @@
 
 @section('content')
     @if (Auth::check())
-        @include('kus')
+        @include('irais.index')
     @else
 
     <div class="content">

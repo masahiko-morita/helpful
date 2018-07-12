@@ -30,7 +30,7 @@
                 </tr>
             </table>
         </div>
-        <div class='show-btn'>
+        <div class='btn-content'>
         <div class="col-md-6">
             @if (Auth::user()->id != $irai->user_id)
             <div id="tetsudau">

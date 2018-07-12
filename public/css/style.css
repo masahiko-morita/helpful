@@ -669,39 +669,7 @@ text-decoration: none;
     font-size: 30px;
 }
 
-.wrap {
-  align-items: center;
-  justify-content: center;
-  position: fixed;
-  bottom:100px;
-  right:20px;
-}
 
-.button {
-  width: 150px;
-  height: 150px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-  text-transform: uppercase;
-  letter-spacing: 2.5px;
-  font-weight: 500;
-  color: #fff;
-  background-color:#dd5e89;
-  border: none;
-  border-radius: 45px;
-  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease 0s;
-  cursor: pointer;
-  outline: none;
-  
-  }
-
-.button:hover {
-  background-color:	#FFC0CB;
-  box-shadow: 0px 15px 20px #FF572;
-  color: grey;
-  transform: translateY(-7px);
-}
 
 /*irai-search*/
 .search-content {
@@ -709,11 +677,6 @@ text-decoration: none;
 }
 
 
-
-.search-content {
-    text-align: center;
-
-}
 
 /*irai-create*/
 .toukou h4 {
@@ -746,7 +709,7 @@ text-decoration: none;
    color: #fff;
 }
 
-.show-btn #tetsudau .btn{
+.btn-content #tetsudau .btn{
     display: block;
     width: 200px;
     text-align: center;
@@ -760,12 +723,12 @@ text-decoration: none;
     background-color:rgba(255,255,255,0.7);
 }
 
-.show-btn #tetsudau .btn:hover{
+.btn-content #tetsudau .btn:hover{
    background: #93D87C;
    color: #fff;
 }
 
-.show-btn #hensyuu .btn{
+.btn-content #hensyuu .btn{
     display: block;
     width: 250px;
     text-align: center;
@@ -779,12 +742,12 @@ text-decoration: none;
     background-color:rgba(255,255,255,0.7);
 }
 
-.show-btn #hensyuu .btn:hover{
+.btn-content #hensyuu .btn:hover{
    background: #6FC9D8;
    color: #fff;
 }
 
-.show-btn #sakujyo .btn{
+.btn-content #sakujyo .btn{
     display: block;
     width: 250px;
     text-align: center;
@@ -798,12 +761,12 @@ text-decoration: none;
     background-color:rgba(255,255,255,0.7);
 }
 
-.show-btn #sakujyo .btn:hover{
+.btn-content #sakujyo .btn:hover{
    background: #EA5C5C;
    color: #fff;
 }
 
-.show-btn #toukou .btn{
+.btn-content #toukou .btn{
     display: block;
     width: 250px;
     text-align: center;
@@ -818,9 +781,79 @@ text-decoration: none;
     text-align: center;
 }
 
-.show-btn #toukou .btn:hover{
+.btn-content #toukou .btn:hover{
    background: #BC927A;
-   color: #fff;
+   color: #fff; 
 }
 
+.btn-content #home .btn{
+    display: block;
+    width: 250px;
+    text-align: center;
+    text-decoration: none;
+    margin-top:50px;
+    font-size:30px;
+    color: #6FC9D8;
+    border: 3px solid #6FC9D8;
+    border-radius: 3px;
+    transition: .4s;
+    background-color:rgba(255,255,255,0.7);
+    text-align: center;
+}
 
+.btn-content #home .btn:hover{
+   background: #6FC9D8;
+   color: #fff; 
+}
+
+.btn-content #kensaku .btn{
+    display: inline-block;
+    width: 200px;
+    text-decoration: none;
+    font-size:20px;
+    color: #6FC9D8;
+    border: 3px solid #6FC9D8;
+    border-radius: 3px;
+    transition: .4s;
+    background-color:rgba(255,255,255,0.7);
+    text-align: center;
+}
+
+.btn-content #kensaku .btn:hover{
+   background: #6FC9D8;
+   color: #fff; 
+}
+
+.wrap-1 {
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom:100px;
+  right:20px;
+}
+
+.btn-post{
+  width: 150px;
+  height: 150px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 500;
+  color: #fff;
+  background-color:#dd5e89;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  
+  }
+
+.btn-post:hover {
+  background-color:	#FFC0CB;
+  box-shadow: 0px 15px 20px #FF572;
+  color: grey;
+  transform: translateY(-7px);
+}

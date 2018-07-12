@@ -2,6 +2,8 @@
 
 @section('content')
 
+
+
 @include('irais.irai', ['irais' => $irais])
  
  <a href="{{ route('irais.create') }}">

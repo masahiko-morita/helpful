@@ -286,6 +286,25 @@ text-decoration: none;
 
 }
 
+.maste-btn .btn{
+    display: block;
+    width: 130px;
+    margin-top:10px;
+    padding: 0.3em;
+    text-align: center;
+    text-decoration: none;
+    color: #3cb371;
+    border: 3px solid #93D87C;
+    border-radius: 3px;
+    transition: .4s;
+    background-color:rgba(255,255,255,0.7);
+}
+
+.maste-btn .btn:hover{
+   background: #93D87C;
+   color: #fff;
+}
+
 
 /*pagination*/
 
@@ -705,4 +724,101 @@ text-decoration: none;
 
 .wrap #peace{
  font-size: 40px;   
+}
+
+/*button*/
+.maste-btn .btn{
+    display: block;
+    width: 130px;
+    margin-top:10px;
+    padding: 0.3em;
+    text-align: center;
+    text-decoration: none;
+    color: #3cb371;
+    border: 3px solid #93D87C;
+    border-radius: 3px;
+    transition: .4s;
+    background-color:rgba(255,255,255,0.7);
+}
+
+.maste-btn .btn:hover{
+   background: #93D87C;
+   color: #fff;
+}
+
+.show-btn #tetsudau .btn{
+    display: block;
+    width: 200px;
+    text-align: center;
+    text-decoration: none;
+    margin-top:50px;
+    font-size:30px;
+    color: #3cb371;
+    border: 3px solid #93D87C;
+    border-radius: 3px;
+    transition: .4s;
+    background-color:rgba(255,255,255,0.7);
+}
+
+.show-btn #tetsudau .btn:hover{
+   background: #93D87C;
+   color: #fff;
+}
+
+.show-btn #hensyuu .btn{
+    display: block;
+    width: 250px;
+    text-align: center;
+    text-decoration: none;
+    margin-top:20px;
+    font-size:30px;
+    color: #6FC9D8;
+    border: 3px solid #6FC9D8;
+    border-radius: 3px;
+    transition: .4s;
+    background-color:rgba(255,255,255,0.7);
+}
+
+.show-btn #hensyuu .btn:hover{
+   background: #6FC9D8;
+   color: #fff;
+}
+
+.show-btn #sakujyo .btn{
+    display: block;
+    width: 250px;
+    text-align: center;
+    text-decoration: none;
+    margin-top:15px;
+    font-size:30px;
+    color: #EA5C5C;
+    border: 3px solid #EA5C5C;
+    border-radius: 3px;
+    transition: .4s;
+    background-color:rgba(255,255,255,0.7);
+}
+
+.show-btn #sakujyo .btn:hover{
+   background: #EA5C5C;
+   color: #fff;
+}
+
+.show-btn #toukou .btn{
+    display: block;
+    width: 25px;
+    text-align: center;
+    text-decoration: none;
+    margin-top:50px;
+    font-size:30px;
+    color: #BC927A;
+    border: 3px solid #BC927A;
+    border-radius: 3px;
+    transition: .4s;
+    background-color:rgba(255,255,255,0.7);
+    text-align: center;
+}
+
+.show-btn #toukou .btn:hover{
+   background: #BC927A;
+   color: #fff;
 }

@@ -20,7 +20,7 @@
                 <div class='maste-btn'>
                     @if (Auth::check())
                     {!! Form::open(['route' => ['irais.thankyou', $irai->id], 'method' => 'get']) !!}
-                        {!! Form::submit('手伝う！！！', ['class' => 'btn btn-success btn-sm']) !!}
+                    {!! Form::submit('手伝う！！！', ['class' => 'btn center-block']) !!}
                     {!! Form::close() !!}
                     @endif
                 </div>

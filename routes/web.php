@@ -30,6 +30,9 @@ Route::group(['middleware' => ['auth']], function () {
     Route::resource('comments', 'CommentsController');
     Route::resource('users', 'UsersController'); 
     Route::resource('irais','IraisController');
+    Route::post('finish', 'IraiFinishController@store')->name('irai.finish');
+        Route::delete('unfinish', 'IraiFinishController@destroy')->name('irai.unfinish');
+        Route::get('finishings', 'UsersController@finishings')->name('users.finishings');
     Route::get('iraisearch', 'SearchController@iraisearch')->name('irais.search');
 });
 

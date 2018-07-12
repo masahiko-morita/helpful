@@ -391,6 +391,57 @@ transition: .4s;
   border-style: solid;
 }
 
+/*ribbon2*/
+.ribbon2 {
+    display: inline-block;
+    position: relative;
+    height: 60px;
+    line-height: 60px;
+    vertical-align: middle;
+    text-align: center;
+    padding: 7px 0;
+    font-size: 18px;
+    background: #1989ac;
+    color: #FFF;
+    box-sizing: border-box;
+    margin-left:40%;
+    
+}
+
+.ribbon2 h2 {
+    vertical-align: middle;
+    margin: 0;
+    padding: 0 30px;
+    border-top: dashed 2px rgba(255, 255, 255, 0.5);
+    border-bottom: dashed 2px rgba(255, 255, 255, 0.5);
+    line-height: 42px;
+}
+
+.ribbon2:before, .ribbon2:after{
+  position: absolute;
+  content: '';
+  width: 0px;
+  height: 0px;
+  z-index: 1;
+}
+
+.ribbon2:before{/*左の山形*/
+  top: 0;
+  left: 0;
+  border-width: 30px 0px 30px 15px;
+  border-color: transparent transparent transparent #fff;
+  border-style: solid;
+  
+}
+
+.ribbon2:after{/*右の山形*/
+  top: 0;
+  right: 0;
+  border-width: 30px 15px 30px 0px;
+  border-color: transparent #fff transparent transparent;
+  border-style: solid;
+}
+
 /* 吹き出し本体 */
 .balloon{
   margin-top: 5%;
@@ -734,7 +785,7 @@ transition: .4s;
    color: #fff;
 }
 
-.btn-content #tetsudau .btn{
+#tetsudau .btn{
     display: block;
     width: 200px;
     text-align: center;
@@ -748,12 +799,11 @@ transition: .4s;
     background-color:rgba(255,255,255,0.7);
 }
 
-.btn-content #tetsudau .btn:hover{
+#tetsudau .btn:hover{
    background: #93D87C;
    color: #fff;
 }
-
-.btn-content #hensyuu .btn{
+#hensyuu .btn{
     display: block;
     width: 250px;
     text-align: center;
@@ -767,12 +817,12 @@ transition: .4s;
     background-color:rgba(255,255,255,0.7);
 }
 
-.btn-content #hensyuu .btn:hover{
+#hensyuu .btn:hover{
    background: #6FC9D8;
    color: #fff;
 }
 
-.btn-content #sakujyo .btn{
+#sakujyo .btn{
     display: block;
     width: 250px;
     text-align: center;
@@ -786,12 +836,12 @@ transition: .4s;
     background-color:rgba(255,255,255,0.7);
 }
 
-.btn-content #sakujyo .btn:hover{
+#sakujyo .btn:hover{
    background: #EA5C5C;
    color: #fff;
 }
 
-.btn-content #toukou .btn{
+#toukou .btn{
     display: block;
     width: 250px;
     text-align: center;
@@ -806,18 +856,18 @@ transition: .4s;
     text-align: center;
 }
 
-.btn-content #toukou .btn:hover{
+#toukou .btn:hover{
    background: #BC927A;
    color: #fff; 
 }
 
-.btn-content #home .btn{
+#home .btn{
     display: block;
-    width: 250px;
+    width: 200px;
     text-align: center;
     text-decoration: none;
     margin-top:50px;
-    font-size:30px;
+    font-size:15px;
     color: #6FC9D8;
     border: 3px solid #6FC9D8;
     border-radius: 3px;
@@ -826,12 +876,12 @@ transition: .4s;
     text-align: center;
 }
 
-.btn-content #home .btn:hover{
+#home .btn:hover{
    background: #6FC9D8;
    color: #fff; 
 }
 
-.btn-content #kensaku .btn{
+#kensaku .btn{
     display: inline-block;
 
     text-decoration: none;
@@ -844,7 +894,7 @@ transition: .4s;
     text-align: center;
 }
 
-.btn-content #kensaku .btn:hover{
+#kensaku .btn:hover{
    background: #6FC9D8;
    color: #fff; 
 }
@@ -882,6 +932,38 @@ transition: .4s;
   color:#333333;
   transform: translateY(-7px);
 
+}
+
+#kanryou .btn{
+    text-decoration: none;
+    font-size:20px;
+    color: #6FC9D8;
+    border: 3px solid #6FC9D8;
+    border-radius: 3px;
+    transition: .4s;
+    background-color:rgba(255,255,255,0.7);
+    text-align: center;
+}
+
+#kanryou .btn:hover{
+   background: #6FC9D8;
+   color: #fff; 
+}
+
+#kanryou-zumi .btn{
+    text-decoration: none;
+    font-size:20px;
+    color: #EA5C5C;
+    border: 3px solid #EA5C5C;
+    border-radius: 3px;
+    transition: .4s;
+    background-color:rgba(255,255,255,0.7);
+    text-align: center;
+}
+
+#kanryou-zumi .btn:hover{
+   background: #EA5C5C;
+   color: #fff; 
 }
 
 /*irai-search*/

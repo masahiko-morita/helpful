@@ -24,7 +24,7 @@
   
         <div id="sampleCarousel" class="carousel slide" data-ride="carousel"data-pause="false" data-interval="2500">
                  
-         <a href="{{ route('irais.index') }}"">   
+         <a href="{{ route('irais.index') }}">   
         	<div class="carousel-inner" role="listbox">
         		<div class="item active">
         			<img src="../images/feed1.png" alt="First slide">

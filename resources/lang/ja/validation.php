@@ -107,7 +107,10 @@ return [
         'title' => 'タイトル',
         'content' => '理由',
         'station' => '場所',
-        'reward' => 'お礼'
+        'reward' => 'お礼',
+        'start' => '開始時刻',
+        'finish' => '終了時刻',
+        
         ],
 
 ];

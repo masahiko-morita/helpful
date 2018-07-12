@@ -2,7 +2,7 @@
 
 @section('content')
     @if (Auth::check())
-        @include('kus')
+        @include('irais.index')
     @else
 
     <div class="content">
@@ -154,8 +154,8 @@
 　  
 　  @if (!Auth::check())
 　  <a href="{{ route('irais.create')}}">
-　  <div class="wrap">
-         <button class="button"><i class="fa fa-hand-peace" id='peace'> </i> <br>New Post</button></div></a>
+　  <div class="wrap-1">
+         <button class="btn-post"><i class="fa fa-hand-peace" id='peace'> </i> <br>New Post</button></div></a>
     @endif
 
 </div>

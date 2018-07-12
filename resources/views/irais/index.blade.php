@@ -5,9 +5,9 @@
 @include('irais.irai', ['irais' => $irais])
  
  <a href="{{ route('irais.create') }}">
- <div class="wrap">
+ <div class="wrap-1">
 
- <button class="button"><i class="fa fa-hand-peace" id='peace'> </i> <br>New Post</button>
+ <button class="btn-post"><i class="fa fa-hand-peace" id='peace'></i><br>New Post</button>
 
 </div>
 </a>

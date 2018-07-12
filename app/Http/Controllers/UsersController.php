@@ -107,9 +107,9 @@ class UsersController extends Controller
 
         $data = [
             'user' => $user,
-            'users' => $finishings,
+            'finishings' => $finishings,
         ];
-
+        
         $data += $this->counts($user);
 
         return view('users.finishings', $data);

@@ -30,7 +30,6 @@
                 </tr>
             </table>
         </div>
-        <div class='btn-content'>
         <div class="col-md-6">
             @if (Auth::user()->id != $irai->user_id)
             <div id="tetsudau">
@@ -53,7 +52,7 @@
                 {!! Form::close() !!}
             </div>
             @endif    
-        </div>
+       </div>
         
         <div class="row row-eq-height">
            <div class="col-md-9">
@@ -61,14 +60,18 @@
             {!! Form::open(['route' => ['comments.store'], 'method' => 'post']) !!}
             {{Form::hidden('irai_id', $irai->id)}}
             {!! Form::textarea('content', null, ['class' => 'form-control input-lg', 'rows="2"',  'placeholder' => 'コメント' ]) !!}
+<<<<<<< HEAD
             {!! Form::submit('コメント投稿！！！', ['class' => 'btn btn-success btn-lg']) !!}
             {!! Form::textarea('content', null, ['class' => 'form-control input-sm' ,  'placeholder' => 'コメント' ]) !!}
             {!! Form::submit('コメント投稿！！！', ['class' => 'btn center-block']) !!}
+=======
+            {!! Form::submit('コメント投稿！', ['class' => 'btn btn-success btn-lg']) !!}
+>>>>>>> 5b63a55fad1218dda1157d194103700dcecc2fce
             {!! Form::close() !!}
             </div>
             </div>
         </div>    
-            
+             
             
     </div>
 @include('comments.comment', ['comments' => $comments])

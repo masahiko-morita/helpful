@@ -14,15 +14,15 @@ use App\Chat;
 
 class IraiFinishController extends Controller
 {
-    public function store(Request $request)
+    public function store($id)
     {
-        \Auth::user()->finish($request->irai_id);
+        \Auth::user()->finish($id);
         return redirect()->back();
     }
 
-    public function destroy(Request $request)
+    public function destroy($id)
     {
-        \Auth::user()->unfinish($request->irai_id);
+        \Auth::user()->unfinish($id);
         return redirect()->back();
     }
 }

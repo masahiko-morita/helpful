@@ -61,6 +61,12 @@
             </div> 
    
                     {!! Form::submit('依頼を投稿する', ['class' => 'btn btn-info btn-lg']) !!}
+                    
+                    
+
+                    
+                    
+                    
         </div>
     </div>
     {!! Form::close() !!}

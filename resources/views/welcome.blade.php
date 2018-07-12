@@ -6,7 +6,8 @@
     @else
 
     <div class="content">
-        <div class="content-inner">
+        <div class="content1">
+            <div class=saki>  <h1>困ったときは同期に助けを</h1> </div>
             <div class="maintitle">
                 @if (!Auth::check())
                     <a href="{{ route('signup.get') }}" class="btn btn-default btn-lg">HELPFULを始める</a>

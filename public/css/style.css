@@ -952,19 +952,17 @@ transition: .4s;
 
 #kanryou-zumi .btn{
     text-decoration: none;
-    font-size:20px;
-    color: #EA5C5C;
-    border: 3px solid #EA5C5C;
+    color: #FFF;
+    border: 3px solid #FFF;
     border-radius: 3px;
-    transition: .4s;
-    background-color:rgba(255,255,255,0.7);
+    background-color:#EA5C5C;
     text-align: center;
+    width: 130px;
+    margin-top:10px;
+    padding: 0.3em;
+    display: block;
 }
 
-#kanryou-zumi .btn:hover{
-   background: #EA5C5C;
-   color: #fff; 
-}
 
 /*irai-search*/
 .search-content {

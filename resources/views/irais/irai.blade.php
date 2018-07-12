@@ -20,9 +20,9 @@
                                 @if (Auth::user() == null)
                             
                                 @elseif(Auth::user()->id != $irai->user_id)
-                                    <div id="kanryou">
+                                        <div class="kanryou-zumi">
                                          @include('irai_finish.finish_button', ['user' => $user])
-                                    </div>
+                                        </div>
                                 @endif
                             </div>
             

@@ -3,7 +3,7 @@
 @section('content')
 
 <!-- Write content for each page here -->
-    <h1>投稿ページ</h1>
+        <h1>投稿ページ</h1>
     
     <div class='toukou'>
     <div class="row"> 
@@ -61,6 +61,12 @@
             </div> 
    
                     {!! Form::submit('依頼を投稿する', ['class' => 'btn btn-info btn-lg']) !!}
+                    
+                    
+
+                    
+                    
+                    
         </div>
     </div>
     {!! Form::close() !!}

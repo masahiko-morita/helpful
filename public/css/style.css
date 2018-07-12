@@ -201,31 +201,39 @@ body {
 
 a:hover {
 text-decoration: none;
-
- 
-
 }
 
-
-.content-inner  {
+.content1  {
     margin-bottom: 20px;
     width: 80%;
     height: 390px;
     /*background: url("/images/help.JPG") center center no-repeat;*/
      background: url("/images/viber3.jpg") center center no-repeat;
     background-size: cover;
-    text-align: center;
+    /*text-align:center;*/
     position: absolute;
      opacity: 0.8;
-    
+       
 }
 
+.saki{
+    font-size: larger;
+     color: #fff;
+     margin-left:50px; 
+     margin-top: 70px;
+}
 .maintitle{
     text-align: center;
     margin-left: 1px;
+<<<<<<< HEAD
+    color:navy;
+    margin-right: 680px;
+    margin-top: 40px;
+=======
     color:white;
     margin-right: 650px;
     margin-top: 110px;
+>>>>>>> 5b63a55fad1218dda1157d194103700dcecc2fce
    }
 
 .introduction{
@@ -500,9 +508,12 @@ transition: .4s;
 
 .abc{
     text-align: center;
+
+    margin-left: 400px;
+    margin-bottom: 10px;
+
     margin-top: 5%;
     margin-left:35%;
-    
 }
 
 /*welcomepageのボタン*/
@@ -567,7 +578,7 @@ transition: .4s;
 }
 
 .steps {
-    margin-top: 50px;
+    margin-bottom:  50px;
 }
 
 
@@ -931,7 +942,6 @@ transition: .4s;
   box-shadow: 0px 15px 20px #FF572;
   color:#333333;
   transform: translateY(-7px);
-
 }
 
 #kanryou .btn{
@@ -952,19 +962,17 @@ transition: .4s;
 
 #kanryou-zumi .btn{
     text-decoration: none;
-    font-size:20px;
-    color: #EA5C5C;
-    border: 3px solid #EA5C5C;
+    color: #FFF;
+    border: 3px solid #FFF;
     border-radius: 3px;
-    transition: .4s;
-    background-color:rgba(255,255,255,0.7);
+    background-color:#EA5C5C;
     text-align: center;
+    width: 130px;
+    margin-top:10px;
+    padding: 0.3em;
+    display: block;
 }
 
-#kanryou-zumi .btn:hover{
-   background: #EA5C5C;
-   color: #fff; 
-}
 
 /*irai-search*/
 .search-content {
@@ -990,6 +998,11 @@ transition: .4s;
 }
 
 
+.title21{
+    text-align: center;
+}
+
+
 .btn-primary{
     background-color: black;
     position:fixed;
@@ -1004,28 +1017,148 @@ transition: .4s;
 
 }
 
-.person_1{
-    font-size: 30px;
-    color:blue;
+
+.touroku_1 {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    color: #6091d3;/*文字色*/
+    background: #FFF;
+    border: solid 3px #6091d3;/*線*/
+    border-radius: 10px;/*角の丸み*/
+}
+.touroku_1 p {
+    margin: 0; 
+    padding: 0;
+    color: #283e56;
 }
 
-.person_2{
-    font-size: 30px;
-    color:hotpink;
+ .flow_06, .flow_09{
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    color: #6091d3;/*文字色*/
+    background: #FFF;
+    border: solid 3px #6091d3;/*線*/
+    border-radius: 10px;/*角の丸み*/
+    
 }
+ .flow_06, .flow_09 p {
+    margin: 0; 
+    padding: 0;
+    color: #283e56;
+}
+
+ .flow_09{
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    color: #6091d3;/*文字色*/
+    background: #FFF;
+    border: solid 3px #6091d3;/*線*/
+    border-radius: 10px;/*角の丸み*/
+    
+}
+ .flow_09 p {
+    margin: 0; 
+    padding: 0;
+    color: #283e56;
+}
+
+
+ .flow_04{
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    color: #6091d3;/*文字色*/
+    background: #FFF;
+    border: solid 3px #6091d3;/*線*/
+    border-radius: 10px;/*角の丸み*/
+    
+}
+ .flow_04 p {
+    margin: 0; 
+    padding: 0;
+    color: #283e56;
+}
+
+ .flow_07{
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    color: #6091d3;/*文字色*/
+    background: #FFF;
+    border: solid 3px #6091d3;/*線*/
+    border-radius: 10px;/*角の丸み*/
+    
+}
+ .flow_07 p {
+    margin: 0; 
+    padding: 0;
+    color: #283e56;
+}
+
+ .flow_08{
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    color: #6091d3;/*文字色*/
+    background: #FFF;
+    border: solid 3px #6091d3;/*線*/
+    border-radius: 10px;/*角の丸み*/
+    
+}
+ .flow_08 p {
+    margin: 0; 
+    padding: 0;
+    color: #283e56;
+}
+
+
+
+
+
+
+
+
+
+
+.person_1{
+    font-size: 40px;
+    color: #ffde25;
+    text-shadow: 2px 0px 0px #ff5900, 0px 1px 0px #ff5900, -1px 0px 0px #ff5900, 0px -1px 0px #ff5900;
+}
+
+
+.person_2{
+    font-size: 40px;
+    color:hotpink;
+    text-shadow: 2px 0px 0px #ff003f, 0px 1px 0px #ff003f, -1px 0px 0px #ff003f, 0px -1px 0px #ff003f;
+}
+
+.tasuketai{
+    float: right;
+    width: 500px;
+}
+
 
 .iraishitai{
     font-size: 28px;
+    float: left;
+    
 }
 
 .tasuketai{
     font-size: 28px;
 }
 
+
+
 .torihiki{
     font-weight:bold;
     font-size:35px;
     color:red;
 }
+
 
 

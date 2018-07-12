@@ -6,9 +6,9 @@
     @else
 
     <div class="content">
-        <div class="content-inner">
+        <div class="content1">
+            <div class=saki>  <h1>困ったときは同期に助けを</h1> </div>
             <div class="maintitle">
-                <h1>いつでも簡単に投稿</h1>
                 @if (!Auth::check())
                     <a href="{{ route('signup.get') }}" class="cp_btn">Helpfulを始める</a>
                     <!--<a href="{{ route('signup.get') }}" class="btn btn-default btn-lg">HELPFULを始める</a>-->
@@ -90,8 +90,6 @@
               いつでも誰でも無料で投稿。
             </p>
           </section>
-
-          
 
     <div class="abc">    
       <div class="animation">

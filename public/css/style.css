@@ -435,8 +435,14 @@ text-decoration: none;
 
 .abc{
     text-align: center;
+<<<<<<< HEAD
     margin-left: 400px;
     margin-bottom: 10px;
+=======
+    margin-top: 5%;
+    margin-left:35%;
+    
+>>>>>>> cd8b97ec54181aa4db15c1fa6663cee4bb05161e
 }
 
 /*welcomepageのボタン*/
@@ -838,8 +844,8 @@ text-decoration: none;
   align-items: center;
   justify-content: center;
   position: fixed;
-  bottom:100px;
-  right:20px;
+  bottom:10%;
+  right:2%;
 }
 
 .btn-post{
@@ -864,6 +870,61 @@ text-decoration: none;
 .btn-post:hover {
   background-color:	#FFC0CB;
   box-shadow: 0px 15px 20px #FF572;
-  color: grey;
+  color:#333333;
   transform: translateY(-7px);
+
+
+
 }
+
+/*irai-search*/
+.search-content {
+    text-align: center;
+}
+
+
+
+.search-content {
+    text-align: center;
+
+}
+
+/*irai-create*/
+.toukou h4 {
+    text-decoration: underline;
+}
+
+ 
+
+.wrap #peace{
+ font-size: 40px;   
+}
+
+
+.person_1{
+    font-size: 30px;
+    color:blue;
+}
+
+.person_2{
+    font-size: 30px;
+    color:hotpink;
+}
+
+.iraishitai{
+    font-size: 28px;
+}
+
+.tasuketai{
+    font-size: 28px;
+}
+
+.torihiki{
+    font-weight:bold;
+    font-size:35px;
+    color:red;
+}
+
+
+
+

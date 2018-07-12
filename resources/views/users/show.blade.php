@@ -40,8 +40,8 @@
 </div>
 
  <a href="{{ route('irais.create', ['id' => $user->id]) }}">
-<div class="wrap">
-  <button class="button"><i class="fa fa-hand-peace" id='peace'> </i><br>New Post</button>
+<div class="wrap-1">
+  <button class="btn-post"><i class="fa fa-hand-peace" id='peace'> </i><br>New Post</button>
 </div>
 </a>
 @endsection

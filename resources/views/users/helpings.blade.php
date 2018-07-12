@@ -1,8 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-
-<div class='containermypage'>
+    <div class='containermypage'>
     <div class='col-md-offset-3 col-md-3 text-center'>
         <img src="{{ Gravatar::src($user->email, 100) . '&d=mm' }}" alt="" class="img-circle" width='30%'>
         <h3>{{ $user->name }}</h3>
@@ -29,19 +28,13 @@
         <div class='ribbon3'>
            <h2>出した依頼</h2>
         </div>
-        <div class='maepage'>
-            {!! $irais->render() !!}
-        </div>
+        
     </div>
-           @include('irais.irai', ['irais' => $irais])
+           @include('irais.irai', ['irais' => $helpings])
 </div>
 
 
     
-<div class='usiropage'>
-    
-{!! $irais->render() !!}
-</div>
 
  <a href="{{ route('irais.create', ['id' => $user->id]) }}">
 <div class="wrap-1">

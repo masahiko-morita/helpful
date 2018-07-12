@@ -7,6 +7,8 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
+
+
                     @if (Auth::check())
                         <a class="navbar-brand" href="{{ route('irais.index', Auth::check()) }}">Helpful</a>
                     @else

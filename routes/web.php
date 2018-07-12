@@ -30,11 +30,16 @@ Route::group(['middleware' => ['auth']], function () {
     Route::resource('comments', 'CommentsController');
     Route::resource('users', 'UsersController'); 
     Route::resource('irais','IraisController');
+            Route::get('iraisearch', 'SearchController@iraisearch')->name('irais.search');
+
+});
+
+Route::group(['prefix' => 'users/{id}'], function () {
     Route::post('finish', 'IraiFinishController@store')->name('irai.finish');
         Route::delete('unfinish', 'IraiFinishController@destroy')->name('irai.unfinish');
         Route::get('finishings', 'UsersController@finishings')->name('users.finishings');
-    Route::get('iraisearch', 'SearchController@iraisearch')->name('irais.search');
+        Route::post('help', 'IraiHelpController@store')->name('irai.help');
+        Route::delete('unhelp', 'IraiHelpController@destroy')->name('irai.unhelp');
+        Route::get('helpings', 'UsersController@helpings')->name('users.helpings');
 });
-
-
 

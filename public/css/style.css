@@ -762,7 +762,7 @@ text-decoration: none;
    color: #fff;
 }
 
-.btn-content #tetsudau .btn{
+#tetsudau .btn{
     display: block;
     width: 200px;
     text-align: center;
@@ -776,12 +776,11 @@ text-decoration: none;
     background-color:rgba(255,255,255,0.7);
 }
 
-.btn-content #tetsudau .btn:hover{
+#tetsudau .btn:hover{
    background: #93D87C;
    color: #fff;
 }
-
-.btn-content #hensyuu .btn{
+#hensyuu .btn{
     display: block;
     width: 250px;
     text-align: center;
@@ -795,12 +794,12 @@ text-decoration: none;
     background-color:rgba(255,255,255,0.7);
 }
 
-.btn-content #hensyuu .btn:hover{
+#hensyuu .btn:hover{
    background: #6FC9D8;
    color: #fff;
 }
 
-.btn-content #sakujyo .btn{
+#sakujyo .btn{
     display: block;
     width: 250px;
     text-align: center;
@@ -814,12 +813,12 @@ text-decoration: none;
     background-color:rgba(255,255,255,0.7);
 }
 
-.btn-content #sakujyo .btn:hover{
+#sakujyo .btn:hover{
    background: #EA5C5C;
    color: #fff;
 }
 
-.btn-content #toukou .btn{
+#toukou .btn{
     display: block;
     width: 250px;
     text-align: center;
@@ -834,18 +833,18 @@ text-decoration: none;
     text-align: center;
 }
 
-.btn-content #toukou .btn:hover{
+#toukou .btn:hover{
    background: #BC927A;
    color: #fff; 
 }
 
-.btn-content #home .btn{
+#home .btn{
     display: block;
-    width: 250px;
+    width: 200px;
     text-align: center;
     text-decoration: none;
     margin-top:50px;
-    font-size:30px;
+    font-size:15px;
     color: #6FC9D8;
     border: 3px solid #6FC9D8;
     border-radius: 3px;
@@ -854,12 +853,12 @@ text-decoration: none;
     text-align: center;
 }
 
-.btn-content #home .btn:hover{
+#home .btn:hover{
    background: #6FC9D8;
    color: #fff; 
 }
 
-.btn-content #kensaku .btn{
+#kensaku .btn{
     display: inline-block;
 
     text-decoration: none;
@@ -872,7 +871,7 @@ text-decoration: none;
     text-align: center;
 }
 
-.btn-content #kensaku .btn:hover{
+#kensaku .btn:hover{
    background: #6FC9D8;
    color: #fff; 
 }
@@ -910,6 +909,38 @@ text-decoration: none;
   color:#333333;
   transform: translateY(-7px);
 
+}
+
+#kanryou .btn{
+    text-decoration: none;
+    font-size:20px;
+    color: #6FC9D8;
+    border: 3px solid #6FC9D8;
+    border-radius: 3px;
+    transition: .4s;
+    background-color:rgba(255,255,255,0.7);
+    text-align: center;
+}
+
+#kanryou .btn:hover{
+   background: #6FC9D8;
+   color: #fff; 
+}
+
+#kanryou-zumi .btn{
+    text-decoration: none;
+    font-size:20px;
+    color: #EA5C5C;
+    border: 3px solid #EA5C5C;
+    border-radius: 3px;
+    transition: .4s;
+    background-color:rgba(255,255,255,0.7);
+    text-align: center;
+}
+
+#kanryou-zumi .btn:hover{
+   background: #EA5C5C;
+   color: #fff; 
 }
 
 /*irai-search*/

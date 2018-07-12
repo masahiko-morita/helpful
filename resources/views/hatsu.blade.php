@@ -17,7 +17,7 @@
             
             <div class="touroku_1">
                 <p> 1.まずは会員登録！ </p>
-                <img src="/images/signin.png" width="450px" height="250px">
+                <img src="/images/signin.png" width="450px" height="260px">
             </div>
             
             <div class="flow_06">
@@ -26,7 +26,7 @@
                 <br>
                     依頼したいことを入力
                 </p>
-                 <img src="/images/iraitoukou.jpg" width="450px" height="270px">
+                 <img src="/images/iraitoukou.jpg" width="450px" height="280px">
             </div>
             <div class="flow_09">
                 <p>
@@ -34,7 +34,7 @@
                 <br>
                     通知が来たら、さっそく返信！
                 </p>
-            　 <img src="/images/comment1.jpg" width="450px" height="270px">    
+            　 <img src="/images/comment1.jpg" width="450px" height="280px">    
             </div>
         </div>
         <!--<div class="arrow_1">-->

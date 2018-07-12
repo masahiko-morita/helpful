@@ -810,7 +810,7 @@ text-decoration: none;
 
 .btn-content #kensaku .btn{
     display: inline-block;
-    width: 200px;
+
     text-decoration: none;
     font-size:20px;
     color: #6FC9D8;
@@ -835,7 +835,7 @@ text-decoration: none;
 }
 
 .btn-post{
-  width: 150px;
+  width: 150;
   height: 150px;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
@@ -858,11 +858,7 @@ text-decoration: none;
   box-shadow: 0px 15px 20px #FF572;
   color:#333333;
   transform: translateY(-7px);
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 
->>>>>>> a6bb80caf60c480a40e08a97ff516da467dcd2dd
 }
 
 /*irai-search*/
@@ -888,7 +884,21 @@ text-decoration: none;
  font-size: 40px;   
 }
 
-<<<<<<< HEAD
+
+.btn-primary{
+    background-color: black;
+    position:fixed;
+    left:100px;
+}
+
+.btn-primary:hover{
+  background-color:silver;
+  border-color: silver;
+  box-shadow: 0px 15px 20px #FF572;
+  color:black;
+
+}
+
 .person_1{
     font-size: 30px;
     color:blue;
@@ -914,10 +924,3 @@ text-decoration: none;
 }
 
 
-=======
-}
->>>>>>> 46ddf9e3892e5cd4a2455ddad44c863b2ae503ff
-=======
-
-
->>>>>>> a6bb80caf60c480a40e08a97ff516da467dcd2dd

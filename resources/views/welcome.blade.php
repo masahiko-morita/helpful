@@ -21,7 +21,7 @@
         <h2>Helpfulでは、自分ではどうしようもないことを、<br>安心して同期に依頼することができます。</h2>
      </div>
   
-        <div id="sampleCarousel" class="carousel slide" data-ride="carousel">
+        <div id="sampleCarousel" class="carousel slide" data-ride="carousel"data-pause="false" data-interval="2500">
                  
          <a href="{{ route('irais.index') }}">   
         	<div class="carousel-inner" role="listbox">
@@ -37,6 +37,9 @@
         	</div>
           </a>	
         </div>
+        
+        
+        
 
     <!--    <div class="steps">-->
     <!--        <div class="c">-->

@@ -60,14 +60,11 @@
             <div id="toukou">
             {!! Form::open(['route' => ['comments.store'], 'method' => 'post']) !!}
             {{Form::hidden('irai_id', $irai->id)}}
-            {!! Form::textarea('content', null, ['class' => 'form-control input-lg', 'rows="2"',  'placeholder' => 'コメント' ]) !!}
-<<<<<<< HEAD
-            {!! Form::submit('コメント投稿！！！', ['class' => 'btn btn-success btn-lg']) !!}
+
             {!! Form::textarea('content', null, ['class' => 'form-control input-sm' ,  'placeholder' => 'コメント' ]) !!}
             {!! Form::submit('コメント投稿！！！', ['class' => 'btn center-block']) !!}
-=======
-            {!! Form::submit('コメント投稿！', ['class' => 'btn btn-success btn-lg']) !!}
->>>>>>> 5b63a55fad1218dda1157d194103700dcecc2fce
+
+
             {!! Form::close() !!}
             </div>
             </div>

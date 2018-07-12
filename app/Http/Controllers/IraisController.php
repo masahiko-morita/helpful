@@ -150,18 +150,6 @@ class IraisController extends Controller
       }  
     }
 
-    public function thankyou($id)
-    {
-        
-        $irai = Irai::find($id);
-        $chats = Chat::orderBy('created_at', 'desc')->paginate(10);
-
-        return view('irais.thankyou', [
-            'irai' => $irai,
-            'chats' => $chats,
-        ]);
-         
-    }
  
 }
 

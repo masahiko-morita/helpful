@@ -805,7 +805,7 @@ text-decoration: none;
 
 .show-btn #toukou .btn{
     display: block;
-    width: 25px;
+    width: 250px;
     text-align: center;
     text-decoration: none;
     margin-top:50px;
@@ -822,3 +822,5 @@ text-decoration: none;
    background: #BC927A;
    color: #fff;
 }
+
+

@@ -407,7 +407,9 @@ text-decoration: none;
 
 .abc{
     text-align: center;
-    margin-left: 410px;
+    margin-top: 5%;
+    margin-left:35%;
+    
 }
 
 /*welcomepageのボタン*/
@@ -654,8 +656,8 @@ text-decoration: none;
   align-items: center;
   justify-content: center;
   position: fixed;
-  bottom:100px;
-  right:20px;
+  bottom:10%;
+  right:2%;
 }
 
 .button {
@@ -706,3 +708,6 @@ text-decoration: none;
 .wrap #peace{
  font-size: 40px;   
 }
+
+
+

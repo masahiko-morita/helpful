@@ -20,8 +20,24 @@
      <div class="introduction">
         <h2>Helpfulでは、自分ではどうしようもないことを、<br>安心して同期に依頼することができます。</h2>
      </div>
-     
-         @include('irais.irai', ['irais' => $irais])
+  
+        <div id="sampleCarousel" class="carousel slide" data-ride="carousel">
+                 
+         <a href="{{ route('irais.index') }}"">   
+        	<div class="carousel-inner" role="listbox">
+        		<div class="item active">
+        			<img src="../images/feed1.png" alt="First slide">
+        		</div>
+        		<div class="item">
+        			<img src="../images/feed2.png" alt="Second slide">
+        		</div>
+        		<div class="item">
+        			<img src="../images/feed1.png" alt="Third slide">
+        		</div>
+        	</div>
+          </a>	
+        </div>
+
     <!--    <div class="steps">-->
     <!--        <div class="c">-->
     <!--        <h3 class="text-left">-->

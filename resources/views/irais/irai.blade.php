@@ -18,19 +18,12 @@
                 <h4 class='under'>{{ $irai->title }}</h4>
 
                 <div class='maste-btn'>
-<<<<<<< HEAD
-                    @if (Auth::check())
-                    {!! Form::open(['route' => ['irais.thankyou', $irai->id], 'method' => 'get']) !!}
-                    {!! Form::submit('手伝う！！！', ['class' => 'btn center-block']) !!}
-                    {!! Form::close() !!}
-=======
                     @if (Auth::user() == null)
                 
                     @elseif(Auth::user()->id != $irai->user_id)
                         {!! Form::open(['route' => ['irais.thankyou', $irai->id], 'method' => 'get']) !!}
-                            {!! Form::submit('手伝う！！！', ['class' => 'btn btn-success btn-sm']) !!}
+                        {!! Form::submit('手伝う！！！', ['class' => 'btn center-block']) !!}
                         {!! Form::close() !!}
->>>>>>> 387fcd613adec37a2fa25000152d68dd445c0c1a
                     @endif
                 </div>
 

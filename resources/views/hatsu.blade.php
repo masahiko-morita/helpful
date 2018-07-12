@@ -2,26 +2,23 @@
 @section('content')
 
 <div id="header_box">
-        <img alt="初めての方へ" height="18" width="12" src="//d1d7kfcb5oumx0.cloudfront.net/assets/layout/beginner-e0b30f19accf053ebee022ece727eda9390271e36b24f09a786487557fa57da7.png"<h1>
-            HELPFULが初めての方へ
-        </h1>
+        <img alt="初めての方へ" height="18" width="12" src="//d1d7kfcb5oumx0.cloudfront.net/assets/layout/beginner-e0b30f19accf053ebee022ece727eda9390271e36b24f09a786487557fa57da7.png"
+        <h1>初めての方へ </h1>
 </div>
 
-            <h2 class="title21">
-                    取引の流れ
-            </h2>
+        <h2 class="title21">～取引の流れ～ </h2>
+        
         <div class="iraishitai">
             <div class="person_1">
                 <p>
                     依頼したい人
                 </p>
             </div>
+            
+        
+            
             <div class="touroku_1">
-                <p>
-                    1.必要項目を
-                <br>
-                    入力して会員登録
-                </p>
+                <p> 1.必要項目を <br>入力して会員登録 </p>
             </div>
             <div class="flow_06">
                 <p>
@@ -38,10 +35,10 @@
                 </p>
             </div>
         </div>
+        <!--<div class="arrow_1">-->
+        <!--    <img src="/images/down_right_arrow.png">-->
+        <!--</div>-->
         
-        <div class="arrow_1">
-            <img src="/images/down_right_arrow.png">
-        </div>
         <div class="tasuketai">
             <div class="person_2">
                 <p>
@@ -69,17 +66,17 @@
                     コメント欄で返信
                 </p>
             </div>
-            <div class="arrow_2">
-                <img src="/images/down_left_arrow.png">
-            </div>
-            <div class="arrow_3">
-                <img src="/images/down_arrow.png">
-            </div>
-            <div class="torihiki">
-                <p>
-                    取引完了！
-                </p>
-            </div>
+            <!--<div class="arrow_2">-->
+            <!--    <img src="/images/down_left_arrow.png">-->
+            <!--</div>-->
+            <!--<div class="arrow_3">-->
+            <!--    <img src="/images/down_arrow.png">-->
+            <!--</div>-->
+            <!--<div class="torihiki">-->
+            <!--    <p>-->
+            <!--        取引完了！-->
+            <!--    </p>-->
+            <!--</div>-->
         </div>
 
        <div class="steps">

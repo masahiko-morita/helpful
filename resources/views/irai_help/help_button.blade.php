@@ -1,8 +1,9 @@
 @if (Auth::id() != $user->id)
     @if (Auth::user()->is_helping($irai->id))
-        <div id="tetsudai-now">
-        <!--{!! Form::open(['route' => ['irai.unhelp', $irai->id], 'method' => 'delete']) !!}-->
-            {!! Form::submit('手伝い中', ['class' => "btn center-block"]) !!}
+
+        <div id="kanryou-zumi">
+        {!! Form::open(['route' => ['irai.unhelp', $irai->id], 'method' => 'delete']) !!}
+            {!! Form::submit('手伝い中', ['class' => "btn btn-danger btn-block"]) !!}
         {!! Form::close() !!}
         </div>
     @else

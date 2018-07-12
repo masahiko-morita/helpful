@@ -286,6 +286,25 @@ text-decoration: none;
 
 }
 
+.maste-btn .btn{
+    display: block;
+    width: 130px;
+    margin-top:10px;
+    padding: 0.3em;
+    text-align: center;
+    text-decoration: none;
+    color: #3cb371;
+    border: 3px solid #93D87C;
+    border-radius: 3px;
+    transition: .4s;
+    background-color:rgba(255,255,255,0.7);
+}
+
+.maste-btn .btn:hover{
+   background: #93D87C;
+   color: #fff;
+}
+
 
 /*pagination*/
 
@@ -407,7 +426,9 @@ text-decoration: none;
 
 .abc{
     text-align: center;
-    margin-left: 410px;
+    margin-top: 5%;
+    margin-left:35%;
+    
 }
 
 /*welcomepageのボタン*/
@@ -650,15 +671,170 @@ text-decoration: none;
     font-size: 30px;
 }
 
-.wrap {
+
+
+/*irai-search*/
+.search-content {
+    text-align: center;
+}
+
+
+
+/*irai-create*/
+.toukou h4 {
+    text-decoration: underline;
+}
+
+ 
+
+.wrap #peace{
+ font-size: 40px;   
+}
+
+/*button*/
+.maste-btn .btn{
+    display: block;
+    width: 130px;
+    margin-top:10px;
+    padding: 0.3em;
+    text-align: center;
+    text-decoration: none;
+    color: #3cb371;
+    border: 3px solid #93D87C;
+    border-radius: 3px;
+    transition: .4s;
+    background-color:rgba(255,255,255,0.7);
+}
+
+.maste-btn .btn:hover{
+   background: #93D87C;
+   color: #fff;
+}
+
+.btn-content #tetsudau .btn{
+    display: block;
+    width: 200px;
+    text-align: center;
+    text-decoration: none;
+    margin-top:50px;
+    font-size:30px;
+    color: #3cb371;
+    border: 3px solid #93D87C;
+    border-radius: 3px;
+    transition: .4s;
+    background-color:rgba(255,255,255,0.7);
+}
+
+.btn-content #tetsudau .btn:hover{
+   background: #93D87C;
+   color: #fff;
+}
+
+.btn-content #hensyuu .btn{
+    display: block;
+    width: 250px;
+    text-align: center;
+    text-decoration: none;
+    margin-top:20px;
+    font-size:30px;
+    color: #6FC9D8;
+    border: 3px solid #6FC9D8;
+    border-radius: 3px;
+    transition: .4s;
+    background-color:rgba(255,255,255,0.7);
+}
+
+.btn-content #hensyuu .btn:hover{
+   background: #6FC9D8;
+   color: #fff;
+}
+
+.btn-content #sakujyo .btn{
+    display: block;
+    width: 250px;
+    text-align: center;
+    text-decoration: none;
+    margin-top:15px;
+    font-size:30px;
+    color: #EA5C5C;
+    border: 3px solid #EA5C5C;
+    border-radius: 3px;
+    transition: .4s;
+    background-color:rgba(255,255,255,0.7);
+}
+
+.btn-content #sakujyo .btn:hover{
+   background: #EA5C5C;
+   color: #fff;
+}
+
+.btn-content #toukou .btn{
+    display: block;
+    width: 250px;
+    text-align: center;
+    text-decoration: none;
+    margin-top:50px;
+    font-size:30px;
+    color: #BC927A;
+    border: 3px solid #BC927A;
+    border-radius: 3px;
+    transition: .4s;
+    background-color:rgba(255,255,255,0.7);
+    text-align: center;
+}
+
+.btn-content #toukou .btn:hover{
+   background: #BC927A;
+   color: #fff; 
+}
+
+.btn-content #home .btn{
+    display: block;
+    width: 250px;
+    text-align: center;
+    text-decoration: none;
+    margin-top:50px;
+    font-size:30px;
+    color: #6FC9D8;
+    border: 3px solid #6FC9D8;
+    border-radius: 3px;
+    transition: .4s;
+    background-color:rgba(255,255,255,0.7);
+    text-align: center;
+}
+
+.btn-content #home .btn:hover{
+   background: #6FC9D8;
+   color: #fff; 
+}
+
+.btn-content #kensaku .btn{
+    display: inline-block;
+    width: 200px;
+    text-decoration: none;
+    font-size:20px;
+    color: #6FC9D8;
+    border: 3px solid #6FC9D8;
+    border-radius: 3px;
+    transition: .4s;
+    background-color:rgba(255,255,255,0.7);
+    text-align: center;
+}
+
+.btn-content #kensaku .btn:hover{
+   background: #6FC9D8;
+   color: #fff; 
+}
+
+.wrap-1 {
   align-items: center;
   justify-content: center;
   position: fixed;
-  bottom:100px;
-  right:20px;
+  bottom:10%;
+  right:2%;
 }
 
-.button {
+.btn-post{
   width: 150px;
   height: 150px;
   font-family: 'Roboto', sans-serif;
@@ -677,11 +853,16 @@ text-decoration: none;
   
   }
 
-.button:hover {
+.btn-post:hover {
   background-color:	#FFC0CB;
   box-shadow: 0px 15px 20px #FF572;
-  color: grey;
+  color:#333333;
   transform: translateY(-7px);
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+
+>>>>>>> a6bb80caf60c480a40e08a97ff516da467dcd2dd
 }
 
 /*irai-search*/
@@ -706,3 +887,37 @@ text-decoration: none;
 .wrap #peace{
  font-size: 40px;   
 }
+
+<<<<<<< HEAD
+.person_1{
+    font-size: 30px;
+    color:blue;
+}
+
+.person_2{
+    font-size: 30px;
+    color:hotpink;
+}
+
+.iraishitai{
+    font-size: 28px;
+}
+
+.tasuketai{
+    font-size: 28px;
+}
+
+.torihiki{
+    font-weight:bold;
+    font-size:35px;
+    color:red;
+}
+
+
+=======
+}
+>>>>>>> 46ddf9e3892e5cd4a2455ddad44c863b2ae503ff
+=======
+
+
+>>>>>>> a6bb80caf60c480a40e08a97ff516da467dcd2dd

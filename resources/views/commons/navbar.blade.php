@@ -1,5 +1,4 @@
-<header>
-    <nav class="navbar navbar-inverse navbar-static-top">
+<nav class="navbar navbar-inverse navbar-static-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -14,10 +13,10 @@
                         <a class="navbar-brand" href="/">Helpful</a>
                     @endif
             </div>
-            
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     @if (Auth::check())
+                        <a class="navbar-brand" href="/hatsu">初めての方へ</a>
                         <a class="navbar-brand" href="{{ route('irais.search', Auth::user()->id) }}">検索へ</a>
                         <a class="navbar-brand" href="{{ route('irais.index', Auth::user()->id) }}">依頼一覧へ</a>
                         <li class="dropdown">
@@ -36,11 +35,14 @@
                             </ul>
                         </li>
                     @else
-                        <li>{!! link_to_route('signup.get', 'Sign up ') !!}</li>
-                        <li>{!! link_to_route('login', 'Log in') !!}</li>
+                        <a class="navbar-brand" href="/hatsu">初めての方へ</a>
+                        <li>{!! link_to_route('signup.get', '新規登録') !!}</li>
+                        <li>{!! link_to_route('login', 'ログイン') !!}</li>
                     @endif
                 </ul>
             </div>
         </div>
     </nav>
 </header>
+
+

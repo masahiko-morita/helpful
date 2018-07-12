@@ -30,31 +30,45 @@
                 </tr>
             </table>
         </div>
+        <div class='btn-content'>
         <div class="col-md-6">
             @if (Auth::user()->id != $irai->user_id)
+            <div id="tetsudau">
                 {!! Form::open(['route' => ['irais.thankyou', $irai->id], 'method' => 'get']) !!}
-                    {!! Form::submit('手伝う！！！', ['class' => 'btn btn-success btn-lg']) !!}
+                {!! Form::submit('手伝う！！！', ['class' => 'btn center-block']) !!}
                 {!! Form::close() !!}
+            </div>
             @endif
             @if (Auth::user()->id == $irai->user_id)
+            <div id="hensyuu">
                 {!! Form::open(['route' => ['irais.edit', $irai->id], 'method' => 'get']) !!}
-                    {!! Form::submit('依頼を編集する', ['class' => 'btn btn-info btn-lg']) !!}
+                    {!! Form::submit('依頼を編集する', ['class' => 'btn center-block']) !!}
                 {!! Form::close() !!}
+            </div>
             @endif
-            @if (Auth::user()->id == $irai->user_id)       
+            @if (Auth::user()->id == $irai->user_id)
+            <div id="sakujyo">
                 {!! Form::open(['route' => ['irais.destroy', $irai->id], 'method' => 'delete']) !!}
-                {!! Form::submit('依頼を削除する', ['class' => 'btn btn-danger btn-lg']) !!}
+                {!! Form::submit('依頼を削除する', ['class' => 'btn center-block']) !!}
                 {!! Form::close() !!}
+            </div>
             @endif    
         </div>
         
         <div class="row row-eq-height">
            <div class="col-md-9">
+            <div id="toukou">
             {!! Form::open(['route' => ['comments.store'], 'method' => 'post']) !!}
             {{Form::hidden('irai_id', $irai->id)}}
+<<<<<<< HEAD
             {!! Form::textarea('content', null, ['class' => 'form-control input-lg', 'rows="2"',  'placeholder' => 'コメント' ]) !!}
             {!! Form::submit('コメント投稿！！！', ['class' => 'btn btn-success btn-lg']) !!}
+=======
+            {!! Form::textarea('content', null, ['class' => 'form-control input-sm' ,  'placeholder' => 'コメント' ]) !!}
+            {!! Form::submit('コメント投稿！！！', ['class' => 'btn center-block']) !!}
+>>>>>>> cd8b97ec54181aa4db15c1fa6663cee4bb05161e
             {!! Form::close() !!}
+            </div>
             </div>
         </div>    
             

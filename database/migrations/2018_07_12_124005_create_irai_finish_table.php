@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateIraisTable extends Migration
+class CreateIraiFinishTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,21 +13,19 @@ class CreateIraisTable extends Migration
      */
     public function up()
     {
-        Schema::create('irais', function (Blueprint $table) {
+        Schema::create('irai_finish', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('user_id')->unsigned()->index();
-            $table->string('title');
-            $table->string('content');
-            $table->string('start')->nullable();
-            $table->string('finish')->nullable();
-            $table->string('station');
-            $table->string('reward');
+            $table->integer('finish_id')->unsigned()->index();
             $table->timestamps();
-        
-            $table->foreign('user_id')->references('id')->on('users');
-        });
-    }
 
+            // 外部キー設定
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
+            $table->foreign('finish_id')->references('id')->on('irais')->onDelete('cascade');
+
+        });
+           
+    }
 
     /**
      * Reverse the migrations.
@@ -36,8 +34,6 @@ class CreateIraisTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('irais');
-        
+        Schema::dropIfExists('irai_finish');
     }
 }
-

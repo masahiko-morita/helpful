@@ -11,13 +11,20 @@
     </div>
 
     <div class="row"> 
-        <div class="btn-content">
-        <div id="home">
+    
+        <div class='container'>
+         @include('irai_finish.finish_button', ['user' => $user])    
+            
         {!! Form::open(['route' => ['irais.index', $irai->id], 'method' => 'get']) !!}
         {!! Form::submit('ホームに戻る', ['class' => 'btn center-block']) !!}
         {!! Form::close() !!}
+        <!--{!! Form::open(['route' => ['irais.index', $irai->id], 'method' => 'get']) !!}-->
+        <!--{!! Form::submit('依頼完了', ['class' => 'btn btn-primary btn-lg']) !!}-->
+        <!--{!! Form::close() !!}-->
+        
         </div>
         </div>
+        
         
         <div class="col-md-6 text-center">
             <table class="table">
@@ -69,3 +76,4 @@
 
  @include('chats.chat', ['chats' => $chats])
 @endsection
+

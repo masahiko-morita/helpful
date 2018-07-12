@@ -370,6 +370,57 @@ text-decoration: none;
   border-style: solid;
 }
 
+/*ribbon2*/
+.ribbon2 {
+    display: inline-block;
+    position: relative;
+    height: 60px;
+    line-height: 60px;
+    vertical-align: middle;
+    text-align: center;
+    padding: 7px 0;
+    font-size: 18px;
+    background: #1989ac;
+    color: #FFF;
+    box-sizing: border-box;
+    margin-left:40%;
+    
+}
+
+.ribbon2 h2 {
+    vertical-align: middle;
+    margin: 0;
+    padding: 0 30px;
+    border-top: dashed 2px rgba(255, 255, 255, 0.5);
+    border-bottom: dashed 2px rgba(255, 255, 255, 0.5);
+    line-height: 42px;
+}
+
+.ribbon2:before, .ribbon2:after{
+  position: absolute;
+  content: '';
+  width: 0px;
+  height: 0px;
+  z-index: 1;
+}
+
+.ribbon2:before{/*左の山形*/
+  top: 0;
+  left: 0;
+  border-width: 30px 0px 30px 15px;
+  border-color: transparent transparent transparent #fff;
+  border-style: solid;
+  
+}
+
+.ribbon2:after{/*右の山形*/
+  top: 0;
+  right: 0;
+  border-width: 30px 15px 30px 0px;
+  border-color: transparent #fff transparent transparent;
+  border-style: solid;
+}
+
 /* 吹き出し本体 */
 .balloon{
   margin-top: 5%;
@@ -815,7 +866,7 @@ text-decoration: none;
 
 .btn-content #kensaku .btn{
     display: inline-block;
-    width: 200px;
+
     text-decoration: none;
     font-size:20px;
     color: #6FC9D8;
@@ -840,7 +891,7 @@ text-decoration: none;
 }
 
 .btn-post{
-  width: 150px;
+  width: 150;
   height: 150px;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
@@ -864,8 +915,11 @@ text-decoration: none;
   color:#333333;
   transform: translateY(-7px);
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 03a47998656929aa61d055c90b2923679044d127
 }
 
 /*irai-search*/
@@ -891,9 +945,27 @@ text-decoration: none;
  font-size: 40px;   
 }
 
+<<<<<<< HEAD
 .title21{
     text-align: center;
 }
+=======
+
+.btn-primary{
+    background-color: black;
+    position:fixed;
+    left:100px;
+}
+
+.btn-primary:hover{
+  background-color:silver;
+  border-color: silver;
+  box-shadow: 0px 15px 20px #FF572;
+  color:black;
+
+}
+
+>>>>>>> 03a47998656929aa61d055c90b2923679044d127
 .person_1{
     font-size: 40px;
     color: #ffde25;
@@ -931,5 +1003,8 @@ text-decoration: none;
 }
 
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 03a47998656929aa61d055c90b2923679044d127

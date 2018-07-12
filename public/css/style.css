@@ -706,3 +706,29 @@ text-decoration: none;
 .wrap #peace{
  font-size: 40px;   
 }
+
+.person_1{
+    font-size: 30px;
+    color:blue;
+}
+
+.person_2{
+    font-size: 30px;
+    color:hotpink;
+}
+
+.iraishitai{
+    font-size: 28px;
+}
+
+.tasuketai{
+    font-size: 28px;
+}
+
+.torihiki{
+    font-weight:bold;
+    font-size:35px;
+    color:red;
+}
+
+

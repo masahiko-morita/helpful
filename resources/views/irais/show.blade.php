@@ -1,30 +1,19 @@
 @extends('layouts.app')
 
 @section('content')
-<<<<<<< HEAD
-
-<div class='container text-center'>
-
-<h1>{{ $irai->title }}</h1>
-=======
     
 <div class='container'>
 <?php $user = $irai->user; ?>
 <h1 class='text-center'>{{ $irai->title }}</h1>
->>>>>>> 076409050c881e258c6262d08ae330bbe2692cba
     <div class="row"> 
         <div class="col-md-6">
             <table class="table">
                 <tr>
-<<<<<<< HEAD
-                    <th>説明</th>
-=======
                     <th><i class="fa fa-user" id='peace'> </i></th>
                     <td><a href="{{ route('users.show', $user->id) }}">{{ $user->name }}</a></td>
                 </tr>
                 <tr>
                     <th><i class="fa fa-file-alt" id='peace'> </i></th>
->>>>>>> 076409050c881e258c6262d08ae330bbe2692cba
                     <td>{{ $irai->content }}</td>
                 </tr>
                 <tr>

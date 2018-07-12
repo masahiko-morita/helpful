@@ -1,119 +1,132 @@
-<div class="divided" id="flow_sale">
-<h2 class="title21">
-取引の流れ（売買の場合）
-</h2>
-<div class="flow_left">
-<div class="flow_01">
-<p>
-売りたい人
-</p>
+@extends('layouts.app')
+@section('content')
+
+<div id="header_box">
+        <img alt="初めての方へ" height="18" width="12" src="//d1d7kfcb5oumx0.cloudfront.net/assets/layout/beginner-e0b30f19accf053ebee022ece727eda9390271e36b24f09a786487557fa57da7.png"<h1>
+            HELPFULが初めての方へ
+        </h1>
 </div>
-<div class="flow_03">
-<p>
-必要項目を
-<br>
-入力して会員登録
-</p>
-</div>
-<div class="flow_06">
-<p>
-投稿フォームに
-<br>
-不用品の内容を
-<br>
-入力して掲載
-</p>
-</div>
-<div class="flow_09">
-<p>
-問合せが来たら
-<br>
-さっそく返信！！
-</p>
-</div>
-</div>
-<div class="flow_right">
-<div class="flow_02">
-<p>
-買いたい人
-</p>
-</div>
-<div class="flow_04">
-<p>
-欲しい商品の
-<br>
-問合せボタンをクリック
-</p>
-<span>
-問合せ終了している商品は
-<br>
-ご連絡いただけません
-</span>
-</div>
-<div class="flow_07">
-<p>
-問合せフォームに
-<br>
-お名前、取引の希望内容を
-<br>
-入力しよう！
-</p>
-</div>
-<div class="flow_08">
-<span>
-チャットでお相手との
-<br>
-やりとりが開始されます
-</span>
-</div>
-<div class="flow_10">
-<p>
-投稿者と受け渡し・支払い
-<br>
-方法を相談！
-</p>
-<span>
-人気の商品の場合、
-<br>
-お返事がいただけない場合が
-<br>
-あります。
-</span>
-</div>
-</div>
-<div class="flow_center">
-<div class="flow_11">
-<p>
-受け渡し、支払い方法を相談して
-<br>
-取引を完了！！
-</p>
-</div>
-</div>
-<div class="flow_left">
-<div class="flow_12">
-<p>
-取引相手が決まったら
-<br>
-問合せの受付を終了！
-</p>
-<span>
-受付終了しても60日間
-<br>
-やり取りは継続できます。
-</span>
-</div>
-<div class="flow_14">
-<span>
-投稿日から60日で
-<br>
-再投稿が行えます。
-</span>
-</div>
-</div>
-<div class="flow_right">
-<div class="flow_13"></div>
-<div class="flow_15"></div>
-</div>
-<br class="c-both">
-</div>
+
+            <h2 class="title21">
+                    取引の流れ
+            </h2>
+        <div class="iraishitai">
+            <div class="person_1">
+                <p>
+                    依頼したい人
+                </p>
+            </div>
+            <div class="touroku_1">
+                <p>
+                    1.必要項目を
+                <br>
+                    入力して会員登録
+                </p>
+            </div>
+            <div class="flow_06">
+                <p>
+                    2.投稿ボタンをクリックし、
+                <br>
+                    依頼したいことを入力
+                </p>
+            </div>
+            <div class="flow_09">
+                <p>
+                    3.投稿した後、助ける側から
+                <br>
+                    通知が来たら、さっそく返信！
+                </p>
+            </div>
+        </div>
+        
+        <div class="arrow_1">
+            <img src="/images/down_right_arrow.png">
+        </div>
+        <div class="tasuketai">
+            <div class="person_2">
+                <p>
+                    助けたい人
+                </p>
+            </div>
+            <div class="flow_04">
+                <p>
+                    1.必要項目を
+                <br>
+                    入力して会員登録
+                </p>
+            </div>
+            <div class="flow_07">
+                <p>
+                    2.依頼者の投稿の
+                <br>
+                    手伝うボタンをクリック
+                </p>
+            </div>
+            <div class="flow_08">
+                <p>
+                    3.依頼者から問い合わせが来たら、
+                <br>
+                    コメント欄で返信
+                </p>
+            </div>
+            <div class="arrow_2">
+                <img src="/images/down_left_arrow.png">
+            </div>
+            <div class="arrow_3">
+                <img src="/images/down_arrow.png">
+            </div>
+            <div class="torihiki">
+                <p>
+                    取引完了！
+                </p>
+            </div>
+        </div>
+
+       <div class="steps">
+            <div class="c">
+            <h3 class="text-left">
+                              <span class="top-introduction-num">1</span>
+                            簡単に投稿できる
+            </h3>
+            
+            <img src="/images/toukou.jpg" width="300px" height="320px">
+
+            <p class="top-introduction-description">
+              困ったことや最寄りの駅を入力するだけで、<br>簡単に投稿できます。</p>
+            </div>
+            
+          
+           <div class="c">
+            <h3 class="text-left">
+                <div class="c">
+                              <span class="top-introduction-num">2</span>
+                            すぐにリクエストを反映できる
+            </h3>
+
+            
+
+            <img src="/images/smilydesktop.jpg" width="300px" height="320px">
+
+            <p class="top-introduction-description">
+              投稿したら即返信できる。
+            </p>
+            </div>
+            
+            <div class="c">
+            <h3 class="text-left">
+                      <span class="top-introduction-num">3</span>
+                            たくさん投稿がのせられる
+            </h3>
+
+            
+
+            <img src="/images/search.png" width="300px" height="320px">
+
+
+            <p class="top-introduction-description">
+              毎日いくつも依頼が投稿されるので、<br>困ったことがきっと解決します。
+            </p>
+            </div>
+        </div>
+        
+@endsection

@@ -19,13 +19,14 @@
                 <p> 1.まずは会員登録！ </p>
                 <img src="/images/signin.png" width="450px" height="250px">
             </div>
+            
             <div class="flow_06">
                 <p>
                     2.投稿ボタンをクリックし、
                 <br>
                     依頼したいことを入力
                 </p>
-                 <img src="/images/toukou1.PNG" width="480px" height="290px">
+                 <img src="/images/iraitoukou.jpg" width="450px" height="270px">
             </div>
             <div class="flow_09">
                 <p>
@@ -33,7 +34,7 @@
                 <br>
                     通知が来たら、さっそく返信！
                 </p>
-            　 <img src="/images/comment.PNG" width="480px" height="290px">    
+            　 <img src="/images/comment1.jpg" width="450px" height="270px">    
             </div>
         </div>
         <!--<div class="arrow_1">-->

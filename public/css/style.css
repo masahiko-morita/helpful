@@ -1019,6 +1019,112 @@ transition: .4s;
 
 }
 
+
+.touroku_1 {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    color: #6091d3;/*文字色*/
+    background: #FFF;
+    border: solid 3px #6091d3;/*線*/
+    border-radius: 10px;/*角の丸み*/
+}
+.touroku_1 p {
+    margin: 0; 
+    padding: 0;
+    color: #283e56;
+}
+
+ .flow_06, .flow_09{
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    color: #6091d3;/*文字色*/
+    background: #FFF;
+    border: solid 3px #6091d3;/*線*/
+    border-radius: 10px;/*角の丸み*/
+    
+}
+ .flow_06, .flow_09 p {
+    margin: 0; 
+    padding: 0;
+    color: #283e56;
+}
+
+ .flow_09{
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    color: #6091d3;/*文字色*/
+    background: #FFF;
+    border: solid 3px #6091d3;/*線*/
+    border-radius: 10px;/*角の丸み*/
+    
+}
+ .flow_09 p {
+    margin: 0; 
+    padding: 0;
+    color: #283e56;
+}
+
+
+ .flow_04{
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    color: #6091d3;/*文字色*/
+    background: #FFF;
+    border: solid 3px #6091d3;/*線*/
+    border-radius: 10px;/*角の丸み*/
+    
+}
+ .flow_04 p {
+    margin: 0; 
+    padding: 0;
+    color: #283e56;
+}
+
+ .flow_07{
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    color: #6091d3;/*文字色*/
+    background: #FFF;
+    border: solid 3px #6091d3;/*線*/
+    border-radius: 10px;/*角の丸み*/
+    
+}
+ .flow_07 p {
+    margin: 0; 
+    padding: 0;
+    color: #283e56;
+}
+
+ .flow_08{
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    color: #6091d3;/*文字色*/
+    background: #FFF;
+    border: solid 3px #6091d3;/*線*/
+    border-radius: 10px;/*角の丸み*/
+    
+}
+ .flow_08 p {
+    margin: 0; 
+    padding: 0;
+    color: #283e56;
+}
+
+
+
+
+
+
+
+
+
+
 .person_1{
     font-size: 40px;
     color: #ffde25;
@@ -1041,6 +1147,7 @@ transition: .4s;
 .iraishitai{
     font-size: 28px;
     float: left;
+    
 }
 
 .tasuketai{

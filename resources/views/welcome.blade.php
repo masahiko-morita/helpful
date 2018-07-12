@@ -141,14 +141,7 @@
 　  <div class="wrap">
          <button class="button"><i class="fa fa-hand-peace" id='peace'> </i> <br>New Post</button></div></a>
     @endif
-    
-    <a href="/hatsu">初めての方へ</a>
-
-</div>
-
-
-　  
-
+    </div>
 　  
 @endsection
 

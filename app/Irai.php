@@ -25,3 +25,4 @@ class Irai extends Model
     
 }
 
+ 

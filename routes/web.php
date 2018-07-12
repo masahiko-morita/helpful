@@ -38,5 +38,8 @@ Route::group(['prefix' => 'users/{id}'], function () {
     Route::post('finish', 'IraiFinishController@store')->name('irai.finish');
         Route::delete('unfinish', 'IraiFinishController@destroy')->name('irai.unfinish');
         Route::get('finishings', 'UsersController@finishings')->name('users.finishings');
+        Route::post('help', 'IraiHelpController@store')->name('irai.help');
+        Route::delete('unhelp', 'IraiHelpController@destroy')->name('irai.unhelp');
+        Route::get('helpings', 'UsersController@helpings')->name('users.helpings');
 });
 

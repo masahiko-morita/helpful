@@ -102,6 +102,48 @@ class User extends Authenticatable
     public function is_finishing($iraiId) {
         return $this->finishings()->where('finish_id', $iraiId)->exists();
     }    
+    
+    public function helpings()
+    {
+        return $this->belongsToMany(Irai::class, 'irai_help', 'user_id', 'help_id')->withTimestamps();
+    }
+    
+    public function help($helpId)
+    {
+        // 既にフォローしているかの確認
+        $exist = $this->is_helping($helpId);
+        // 自分自身ではないかの確認
+        
+        if ($exist) {
+            // 既にフォローしていれば何もしない
+            return false;
+        } else {
+            // 未フォローであればフォローする
+            $this->helpings()->attach($helpId);
+            return true;
+        }
+    }
+    
+    public function unhelp($helpId)
+    {
+        // 既にフォローしているかの確認
+        $exist = $this->is_helping($helpId);
+        // 自分自身ではないかの確認
+
+        if ($exist) {
+            // 既にフォローしていればフォローを外す
+            $this->helpings()->detach($helpId);
+            return true;
+        } else {
+            // 未フォローであれば何もしない
+            return false;
+        }
+    }
+    public function is_helping($helpId) {
+    return $this->helpings()->where('help_id', $helpId)->exists();
+    
+        
+    }
 }
 
  

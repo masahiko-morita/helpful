@@ -21,12 +21,18 @@ Route::get('logout', 'Auth\LoginController@logout')->name('logout.get');
 
 Route::get('/', 'WelcomeController@index');
 Route::get('thankyou/{id}', 'IraisController@thankyou')->name('irais.thankyou');
+Route::get('/hatsu', function () {
+    return view('hatsu');
+});
 
 Route::group(['middleware' => ['auth']], function () {
     Route::resource('chats', 'ChatsController');
     Route::resource('comments', 'CommentsController');
     Route::resource('users', 'UsersController'); 
     Route::resource('irais','IraisController');
+    Route::post('finish', 'IraiFinishController@store')->name('irai.finish');
+        Route::delete('unfinish', 'IraiFinishController@destroy')->name('irai.unfinish');
+        Route::get('finishings', 'UsersController@finishings')->name('users.finishings');
     Route::get('iraisearch', 'SearchController@iraisearch')->name('irais.search');
 });
 

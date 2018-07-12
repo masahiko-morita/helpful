@@ -99,5 +99,20 @@ class UsersController extends Controller
 
         return view('users.show',$data);
     }
+    
+    public function finishings($id)
+    {
+        $user = User::find($id);
+        $finishings = $user->finishings()->paginate(10);
+
+        $data = [
+            'user' => $user,
+            'users' => $finishings,
+        ];
+
+        $data += $this->counts($user);
+
+        return view('users.finishings', $data);
+    }
 }
 

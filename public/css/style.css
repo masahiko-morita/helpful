@@ -858,7 +858,11 @@ text-decoration: none;
   box-shadow: 0px 15px 20px #FF572;
   color:#333333;
   transform: translateY(-7px);
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
 
+>>>>>>> a6bb80caf60c480a40e08a97ff516da467dcd2dd
 }
 
 /*irai-search*/
@@ -884,5 +888,36 @@ text-decoration: none;
  font-size: 40px;   
 }
 
+<<<<<<< HEAD
+.person_1{
+    font-size: 30px;
+    color:blue;
+}
+
+.person_2{
+    font-size: 30px;
+    color:hotpink;
+}
+
+.iraishitai{
+    font-size: 28px;
+}
+
+.tasuketai{
+    font-size: 28px;
+}
+
+.torihiki{
+    font-weight:bold;
+    font-size:35px;
+    color:red;
+}
 
 
+=======
+}
+>>>>>>> 46ddf9e3892e5cd4a2455ddad44c863b2ae503ff
+=======
+
+
+>>>>>>> a6bb80caf60c480a40e08a97ff516da467dcd2dd

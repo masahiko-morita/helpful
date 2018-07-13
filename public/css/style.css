@@ -810,11 +810,11 @@ transition: .4s;
 }
 #hensyuu .btn{
     display: block;
-    width: 250px;
+    width: 170px;
     text-align: center;
     text-decoration: none;
-    margin-top:20px;
-    font-size:30px;
+    margin-top:15px;
+    font-size:20px;
     color: #6FC9D8;
     border: 3px solid #6FC9D8;
     border-radius: 3px;
@@ -829,11 +829,11 @@ transition: .4s;
 
 #sakujyo .btn{
     display: block;
-    width: 250px;
+    width: 170px;
     text-align: center;
     text-decoration: none;
     margin-top:15px;
-    font-size:30px;
+    font-size:20px;
     color: #EA5C5C;
     border: 3px solid #EA5C5C;
     border-radius: 3px;
@@ -848,11 +848,11 @@ transition: .4s;
 
 #toukou .btn{
     display: block;
-    width: 250px;
+    width: 170px;
     text-align: center;
     text-decoration: none;
-    margin-top:50px;
-    font-size:30px;
+    margin-top:15px;
+    font-size:20px;
     color: #BC927A;
     border: 3px solid #BC927A;
     border-radius: 3px;
@@ -864,6 +864,30 @@ transition: .4s;
 #toukou .btn:hover{
    background: #BC927A;
    color: #fff; 
+}
+
+#koushin .btn{
+    display: block;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    margin-top:10px;
+    font-size:20px;
+    color: #6FC9D8;
+    border: 3px solid #6FC9D8;
+    border-radius: 3px;
+    transition: .4s;
+    background-color:rgba(255,255,255,0.7);
+}
+
+#koushin .btn:hover{
+   background: #BC927A;
+   color: #fff; 
+}
+
+#hensyuu .btn:hover{
+   background: #6FC9D8;
+   color: #fff;
 }
 
 #home .btn{

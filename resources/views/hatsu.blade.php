@@ -1,40 +1,42 @@
 @extends('layouts.app')
 @section('content')
 
-<div id="header_box">
-        <img alt="初めての方へ" height="18" width="12" src="//d1d7kfcb5oumx0.cloudfront.net/assets/layout/beginner-e0b30f19accf053ebee022ece727eda9390271e36b24f09a786487557fa57da7.png"
-        <h1>初めての方へ </h1>
+<div class="header_box">
+     
+   <!--     <img alt="初めての方へ" height="38" width="30" src="//d1d7kfcb5oumx0.cloudfront.net/assets/layout/beginner-e0b30f19accf053ebee022ece727eda9390271e36b24f09a786487557fa57da7.png">-->
+   <!--<font size="77">HELPFUL GUIDE </font>-->
+   <!--      <img alt="初めての方へ" height="38" width="30" src="//d1d7kfcb5oumx0.cloudfront.net/assets/layout/beginner-e0b30f19accf053ebee022ece727eda9390271e36b24f09a786487557fa57da7.png">-->
+ <div class="demo demo11">
+  <div class="heading">
+    <svg height="50px" width="100%">
+      <text y="45px">HELPFUL GUIDE</text>
+    </svg>
+  </div>
+ </div>
 </div>
 
-        <h2 class="title21">～取引の流れ～ </h2>
-        
+
+<div class="demo demo3">
+  <div class="heading"><span>取引の流れ</span></div>
+</div>
         <div class="iraishitai">
             <div class="person_1">
-                <p>
-                    依頼したい人
-                </p>
+                <p>依頼したい人</p>
             </div>
             
             <div class="touroku_1">
-                <p> 1.まずは会員登録！ </p>
-                <img src="/images/signin.png" width="450px" height="250px">
+                <p> <span class="top-introduction-numm">1</span>New postボタンをクリック!</p>
+                <img src="/images/newpost.jpg" width="450px" height="280px">
             </div>
             
             <div class="flow_06">
-                <p>
-                    2.投稿ボタンをクリックし、
-                <br>
-                    依頼したいことを入力
-                </p>
-                 <img src="/images/iraitoukou.jpg" width="450px" height="270px">
+                  <p> <span class="top-introduction-numm">2</span>依頼したいことを入力</p>
+                 <img src="/images/iraitoukou.jpg" width="450px" height="320px">
             </div>
             <div class="flow_09">
-                <p>
-                    3.投稿した後、助ける側から
-                <br>
-                    通知が来たら、さっそく返信！
-                </p>
-            　 <img src="/images/comment1.jpg" width="450px" height="270px">    
+                <p><span class="top-introduction-numm">3</span>
+                    投稿した後、助ける側から<br>通知が来たら、さっそく返信!</p>
+            　 <img src="/images/comment1.jpg" width="450px" height="280px">    
             </div>
         </div>
         <!--<div class="arrow_1">-->
@@ -43,35 +45,38 @@
         
         <div class="tasuketai">
             <div class="person_2">
-                <p>
-                    助けたい人
-                </p>
+                <p>助けたい人</p>
             </div>
             <div class="flow_04">
-                <p>
-                    1.まずは会員登録！
-                </p>
-                 <img src="/images/signin.png" width="450px" height="250px">
+                <p> <span class="top-introduction-numn">1</span>まずは会員登録!</p>
+                 <img src="/images/signin.png" width="460px" height="280px">
             </div>
-            
-            
             
             <div class="flow_07">
-                <p>
-                    2.依頼者の投稿の
-                <br>
-                    手伝うボタンをクリック
-                </p>
-                <img src="/images/signin.png" width="450px" height="250px">
+                  <p> <span class="top-introduction-numn">2</span>依頼者の投稿の<br>手伝うボタンをクリック</p>
+                <img src="/images/melon2.jpg" width="450px" height="260px">
             </div>
+            
             <div class="flow_08">
-                <p>
-                    3.依頼者から問い合わせが来たら、
-                <br>
-                    コメント欄で返信
-                </p>
-                <img src="/images/signin.png" width="450px" height="250px">
+                <p> <span class="top-introduction-numn">3</span>依頼者から問い合わせが来たら <br> コメント欄で返信!</p>
+                <img src="/images/tetsudau.jpg" width="450px" height="240px">
             </div>
+            
+    <div class="abcd">    
+      <div class="animation">
+        <div class="effect" style='pointer-events:none;'>
+        </div>
+        @if (!Auth::check())
+        <div class="effect-background">
+          <a href="{{ route('signup.get') }}" style='z-index:1000;'> <h1> HELPFULを始める </h1></a>
+        </div>
+        @endif
+      </div>
+　  </div>
+            
+            
+            
+    
             <!--<div class="arrow_2">-->
             <!--    <img src="/images/down_left_arrow.png">-->
             <!--</div>-->
@@ -132,4 +137,6 @@
        <!--     </div>-->
        <!-- </div>-->
         
+        
+  
 @endsection

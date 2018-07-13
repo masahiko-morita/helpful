@@ -457,6 +457,7 @@ transition: .4s;
   position: relative;
   padding: 20px;
   background-color: #fff3ad;
+  word-break:break-all;
 }
 
 .balloon::before{
@@ -1003,19 +1004,6 @@ transition: .4s;
 }
 
 
-.btn-primary{
-    background-color: black;
-    position:fixed;
-    left:100px;
-}
-
-.btn-primary:hover{
-  background-color:silver;
-  border-color: silver;
-  box-shadow: 0px 15px 20px #FF572;
-  color:black;
-
-}
 
 
 .touroku_1 {
@@ -1172,6 +1160,7 @@ transition: .4s;
 	font-size: 16px;
 	background: #e0edff;
 	border-radius: 30px;
+	word-break:break-all;
 }
 
 .balloon1-left:before{
@@ -1206,4 +1195,34 @@ transition: .4s;
 .circle i{
     font-size: 30px;
     color:gray;
+}
+
+
+body {
+	min-width: 480px;
+}
+#sampleFix {
+	position: fixed;
+	top: 50px;
+}
+#sampleMainContents {
+	padding: 2em;
+	border-left: 1px solid #ddd;
+}
+
+.linkInThePage{
+    background-color:salmon;
+}
+
+.linkInThePage:hover{
+    background-color:black;
+}
+
+.linkInThePage .active{
+    background-color:pink;
+}
+
+.nav>li.active>a, .nav>li.active>a:focus, .nav>li.active>a:hover {
+    color: #fff;
+    background-color: pink;
 }

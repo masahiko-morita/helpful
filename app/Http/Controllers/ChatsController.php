@@ -10,6 +10,8 @@ use App\Irai;
 
 use App\Chat;
 
+use App\Notification;
+
 class ChatsController extends Controller
 {
     public function index()
@@ -45,6 +47,12 @@ class ChatsController extends Controller
         
 
         $chats = \App\Chat::find($request->irai_id);
+        
+        $notification = new Notification;
+        $notification->user_id = $request->user_id;
+        $notification->type = $request->type;
+        $notification->save();
+        
         return redirect(route('irais.thankyou',
             ['id'=>$request->irai_id
             ]));

@@ -144,6 +144,19 @@ class User extends Authenticatable
     
         
     }
+    // 通知用モデル
+    public function notifications()
+    {
+        return $this->hasMany(Notification::class)->withPivot('type')->withTimestamps();
+    }
+     public function chat_notifications()
+    {
+        return $this->notifications()->where('type', 'chat');
+    }
+     public function commment_notifications()
+    {
+        return $this->notifications()->where('type', 'comment');
+    }
 }
 
  

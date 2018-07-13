@@ -32,7 +32,7 @@
         </div>
         
     </div>
-           @include('irais.irai', ['irais' => $finishings])
+           @include('irais.irai', ['irais' => $helpings])
 </div>
 
 

@@ -30,13 +30,17 @@
                 </tr>
             </table>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6"> 
             @if (Auth::user()->id != $irai->user_id)
             <div id="tetsudau">
-                 @include('irai_help.help_button', ['user' => $user])
+                @if (Auth::user()->is_finishing($irai->id)) 
+                 @include('irai_finish.finish_button', ['user' => $user])
                 <!--{!! Form::open(['route' => ['irais.thankyou', $irai->id], 'method' => 'get']) !!}-->
                 <!--{!! Form::submit('手伝う！！！', ['class' => 'btn center-block']) !!}-->
                 <!--{!! Form::close() !!}-->
+                @else
+                    @include('irai_help.help_button', ['user' => $user])
+                @endif
             </div>
             @endif
             @if (Auth::user()->id == $irai->user_id)

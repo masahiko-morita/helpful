@@ -13,7 +13,6 @@
 
        <div class="balloon">
       {{$user->content}}
-  <br>
 </div>
     </div>
 

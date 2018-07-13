@@ -1269,7 +1269,7 @@ transition: .4s;
  	color: #555;
 	font-size: 16px;
 	background: #e0edff;
-	border-radius: 30px;
+	border-radius: 20px;
 	word-break:break-all;
 }
 
@@ -1316,7 +1316,7 @@ a{
 #sampleFix {
 	position: fixed;
 	top: 25%;
-	left:10%;
+	left:1%;
 }
 #sampleMainContents {
 	padding: 2em;
@@ -1346,3 +1346,6 @@ a{
     border-left: 1px solid #ddd;
 }
 
+#show{
+    font-size: 20px;
+}

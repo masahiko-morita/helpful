@@ -4,9 +4,9 @@
 <?php $user = $irai->user; ?>
 <div class="container">
     <div class='text-center'>
-        <div class='ribbon3'>
+
            <h2>ありがとうございます</h2>
-        </div>
+
         <h4>依頼内容は以下でございます</h4>
     </div>
 

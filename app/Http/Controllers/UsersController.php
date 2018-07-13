@@ -115,6 +115,21 @@ class UsersController extends Controller
         return view('users.finishings', $data);
     }
     
+    public function finished($id)
+    {
+        $user = User::find($id);
+        $finished = $user->finished()->paginate(10);
+
+        $data = [
+            'user' => $user,
+            'finished' => $finished,
+        ];
+        
+        $data += $this->counts($user);
+
+        return view('users.helpees', $data);
+    }
+    
     public function helpings($id)
     {
         $user = User::find($id);
@@ -142,7 +157,8 @@ class UsersController extends Controller
 
         $data += $this->counts($user);
 
-        return view('users.helpees', $data);
+        return view('users.helpees',['user' => User::find($id)
+        ], $data);
     }
 
 }

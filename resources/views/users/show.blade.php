@@ -23,8 +23,8 @@
 <div class="col-xs-8">
     <ul class="nav nav-tabs nav-justified">
         <li role="presentation" class="{{ Request::is('users/' . $user->id) ? 'active' : '' }}"><a href="{{ route('users.show', ['id' => $user->id]) }}">出した依頼 <span class="badge">{{ $count_irais }}</span></a></li>
-        <li role="presentation" class="{{ Request::is('users/*/helpings') ? 'active' : '' }}"><a href="{{ route('users.helpings', ['id' => $user->id]) }}">助けている一覧 <span class="badge">{{ $count_helpings }}</span></a></li>
-        <li role="presentation" class="{{ Request::is('users/*/helpees') ? 'active' : '' }}"><a href="{{ route('users.helpees', ['id' => $user->id]) }}">助けてもらっている一覧 <span class="badge">{{ $count_helpees }}</span></a></li>
+        <li role="presentation" class="{{ Request::is('users/*/helpings') ? 'active' : '' }}"><a href="{{ route('users.helpings', ['id' => $user->id]) }}">お助け中 <span class="badge">{{ $count_helpings }}</span></a></li>
+        <li role="presentation" class="{{ Request::is('users/*/helpees') ? 'active' : '' }}"><a href="{{ route('users.helpees', ['id' => $user->id]) }}">助けられた <span class="badge">{{ $count_helpees }}</span></a></li>
         <li role="presentation" class="{{ Request::is('users/*/finishings') ? 'active' : '' }}"><a href="{{ route('users.finishings', ['id' => $user->id]) }}">依頼完了一覧 <span class="badge">{{ $count_finishings }}</span></a></li>
     </ul>
 </div>

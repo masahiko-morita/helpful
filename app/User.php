@@ -76,6 +76,11 @@ class User extends Authenticatable
     {
         return $this->belongsToMany(Irai::class, 'irai_finish', 'user_id', 'finish_id')->withTimestamps();
     }
+    
+    public function finished()
+    {
+        return $this->belongsToMany(Irai::class, 'irai_finish', 'finish_id', 'user_id')->withTimestamps();
+    }
 
     public function finish($iraiId)
     {
@@ -131,9 +136,8 @@ class User extends Authenticatable
         // 既にフォローしているかの確認
         $exist = $this->is_helping($helpId);
         // 自分自身ではないかの確認
-        $its_me = $this->id == $helpId;
         
-        if ($exist || $its_me) {
+        if ($exist) {
             // 既にフォローしていれば何もしない
             return false;
         } else {
@@ -148,9 +152,8 @@ class User extends Authenticatable
         // 既にフォローしているかの確認
         $exist = $this->is_helping($helpId);
         // 自分自身ではないかの確認
-        $its_me = $this->id == $helpId;
 
-        if ($exist && !$its_me) {
+        if ($exist) {
             // 既にフォローしていればフォローを外す
             $this->helpings()->detach($helpId);
             return true;

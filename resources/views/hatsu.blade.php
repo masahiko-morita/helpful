@@ -14,6 +14,7 @@
 <div class="demo demo3">
   <div class="heading"><span>取引の流れ</span></div>
 </div>
+        
         <div class="iraishitai">
             <div class="person_1">
                 <p>依頼したい人</p>
@@ -35,9 +36,7 @@
             　 <img src="/images/comment1.jpg" width="450px" height="280px">    
             </div>
         </div>
-        <!--<div class="arrow_1">-->
-        <!--    <img src="/images/down_right_arrow.png">-->
-        <!--</div>-->
+       
         
         <div class="tasuketai">
             <div class="person_2">
@@ -58,15 +57,19 @@
                 <img src="/images/tetsudau.jpg" width="450px" height="280px">
             </div>
             
-    <div class="abcd">    
-      <div class="animation">
-        <div class="effect" style='pointer-events:none;'>
         </div>
-        <div class="effect-background">
-          <a href="{{ route('signup.get') }}" style='z-index:1000;'> <h1> HELPFULを始める </h1></a>
-        </div>
-      </div>
-　  </div>
+    </div>
+            
+   <!-- <div class="abcd">    -->
+   <!--   <div class="animation">-->
+   <!--     <div class="effect" style='pointer-events:none;'>-->
+   <!--     </div>-->
+   <!--     <div class="effect-background">-->
+   <!--       <a href="{{ route('signup.get') }}" style='z-index:1000;'> <h1> HELPFULを始める </h1></a>-->
+   <!--     </div>-->
+   <!--   </div>-->
+　  <!--</div>-->
+　  <!--</div>-->
 　  
 　  
             <!--<div class="arrow_2">-->
@@ -80,7 +83,7 @@
             <!--        取引完了！-->
             <!--    </p>-->
             <!--</div>-->
-        </div>
+       
 
        <!--<div class="steps">-->
        <!--     <div class="c">-->

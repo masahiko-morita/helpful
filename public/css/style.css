@@ -540,12 +540,6 @@ transition: .4s;
     margin-left:35%;
 }
 
-.abcd{
-    margin-left:-217px;
-    margin-top: 100px;
-    text-align: center;
-}
-    
 .header_box{
     margin-left:110px;
 }
@@ -1256,7 +1250,6 @@ transition: .4s;
     border-radius: 22px;/*角の丸み*/
     margin-top: 59px;
      width: 560px;
-    
 }
 
 .torihiki{

@@ -225,10 +225,16 @@ text-decoration: none;
 .maintitle{
     text-align: center;
     margin-left: 1px;
+<<<<<<< HEAD
     color:navy;
     margin-right: 680px;
     margin-top: 40px;
 
+=======
+    color:white;
+    margin-right: 650px;
+    margin-top: 110px;
+>>>>>>> 9295a6a67e72629e4aacb9cef55d02b52fa775b8
    }
 
 .introduction{
@@ -968,6 +974,22 @@ transition: .4s;
     display: block;
 }
 
+<<<<<<< HEAD
+=======
+#tetsudai-tyu .btn{
+    text-decoration: none;
+    color: #FFF;
+    border: 3px solid #FFF;
+    border-radius: 3px;
+    background-color: green;
+    text-align: center;
+    width: 130px;
+    margin-top:10px;
+    padding: 0.3em;
+    display: block;
+}
+>>>>>>> 9295a6a67e72629e4aacb9cef55d02b52fa775b8
+
 
 /*irai-search*/
 .search-content {
@@ -1156,4 +1178,49 @@ transition: .4s;
 }
 
 
+.balloon1-left {
+ 	position: relative;
+	display: inline-block;
+ 	margin: 1.5em 0 1.5em 15px;
+	padding: 7px 10px;
+	min-width: 120px;
+ 	max-width: 100%;
+ 	color: #555;
+	font-size: 16px;
+	background: #e0edff;
+	border-radius: 30px;
+}
 
+.balloon1-left:before{
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: -30px;
+ 	margin-top: -15px;
+	border: 15px solid transparent;
+	border-right: 15px solid #e0edff;
+}
+
+.balloon1-left p {
+	margin: 0;
+	padding: 0;
+}
+
+.circle {
+  background-color:white;
+  padding: 0;
+  margin: 0;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 50%;
+  border-color: gray;
+
+}
+
+.circle i{
+    font-size: 30px;
+    color:gray;
+}

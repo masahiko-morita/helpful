@@ -30,13 +30,24 @@
                 </tr>
             </table>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6"> 
             @if (Auth::user()->id != $irai->user_id)
             <div id="tetsudau">
+<<<<<<< HEAD
                  @include('irai_help.help_button', ['user' => $user])
                 <!--{!! Form::open(['route' => ['irais.thankyou', $irai->id], 'method' => 'get']) !!}-->
                 <!--{!! Form::submit('手伝う！！！', ['class' => 'btn center-block']) !!}-->
                 <!--{!! Form::close() !!}-->
+=======
+                @if (Auth::user()->is_finishing($irai->id)) 
+                 @include('irai_finish.finish_button', ['user' => $user])
+                <!--{!! Form::open(['route' => ['irais.thankyou', $irai->id], 'method' => 'get']) !!}-->
+                <!--{!! Form::submit('手伝う！！！', ['class' => 'btn center-block']) !!}-->
+                <!--{!! Form::close() !!}-->
+                @else
+                    @include('irai_help.help_button', ['user' => $user])
+                @endif
+>>>>>>> 9295a6a67e72629e4aacb9cef55d02b52fa775b8
             </div>
             @endif
             @if (Auth::user()->id == $irai->user_id)
@@ -60,10 +71,15 @@
             <div id="toukou">
             {!! Form::open(['route' => ['comments.store'], 'method' => 'post']) !!}
             {{Form::hidden('irai_id', $irai->id)}}
+
             {!! Form::textarea('content', null, ['class' => 'form-control input-lg', 'rows="2"',  'placeholder' => 'コメント' ]) !!}
             {!! Form::submit('コメント投稿！', ['class' => 'btn btn-success btn-lg']) !!}
+<<<<<<< HEAD
           
            
+=======
+            {!! Form::close() !!}
+>>>>>>> 9295a6a67e72629e4aacb9cef55d02b52fa775b8
             </div>
             </div>
         </div>    

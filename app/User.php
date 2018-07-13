@@ -39,6 +39,10 @@ class User extends Authenticatable
         return Irai::whereIn('user_id', $user_ids);
     }
     
+    
+    
+    
+    
     public function comments()
     {
        return $this->hasMany(Comment::class);
@@ -62,6 +66,11 @@ class User extends Authenticatable
         $user_ids[] = $this->id;
         return Chat::whereIn('user_id', $user_ids);
     }
+    
+    
+    
+    
+    
     
     public function finishings()
     {
@@ -103,9 +112,18 @@ class User extends Authenticatable
         return $this->finishings()->where('finish_id', $iraiId)->exists();
     }    
     
+    
+    
+    
+    
     public function helpings()
     {
         return $this->belongsToMany(Irai::class, 'irai_help', 'user_id', 'help_id')->withTimestamps();
+    }
+    
+    public function helpees()
+    {
+        return $this->belongsToMany(Irai::class, 'irai_help' , 'help_id', 'user_id')->withTimestamps();
     }
     
     public function help($helpId)
@@ -113,8 +131,9 @@ class User extends Authenticatable
         // 既にフォローしているかの確認
         $exist = $this->is_helping($helpId);
         // 自分自身ではないかの確認
+        $its_me = $this->id == $helpId;
         
-        if ($exist) {
+        if ($exist || $its_me) {
             // 既にフォローしていれば何もしない
             return false;
         } else {
@@ -129,8 +148,9 @@ class User extends Authenticatable
         // 既にフォローしているかの確認
         $exist = $this->is_helping($helpId);
         // 自分自身ではないかの確認
+        $its_me = $this->id == $helpId;
 
-        if ($exist) {
+        if ($exist && !$its_me) {
             // 既にフォローしていればフォローを外す
             $this->helpings()->detach($helpId);
             return true;
@@ -142,7 +162,6 @@ class User extends Authenticatable
     public function is_helping($helpId) {
     return $this->helpings()->where('help_id', $helpId)->exists();
     
-        
     }
 }
 

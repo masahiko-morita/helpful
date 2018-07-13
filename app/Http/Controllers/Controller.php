@@ -15,11 +15,13 @@ class Controller extends BaseController
         $count_irais = $user->irais()->count();
         $count_finishings = $user->finishings()->count();
         $count_helpings = $user->helpings()->count();
-
+        $count_helpees = $user->helpees()->count();
+        
         return [
             'count_irais' => $count_irais,
             'count_finishings' => $count_finishings,
             'count_helpings' => $count_helpings,
+            'count_helpees' => $count_helpees,
         ];
     }
 }

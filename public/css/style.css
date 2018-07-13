@@ -540,13 +540,6 @@ transition: .4s;
     margin-left:35%;
 }
 
-.abcd{
-    margin-left:-217px;
-    margin-bottom: 10px;
-    margin-top: 5%;
-    text-align: center;
-    }
-    
 .header_box{
     margin-left:110px;
 }
@@ -579,6 +572,7 @@ transition: .4s;
   position: absolute;
   bottom: 13px;
 }
+
 .demo3 .heading span:before {
   right: 100%;
 }
@@ -599,8 +593,6 @@ transition: .4s;
   font-size: 50px;
 }
 
-
-
 /*welcomepageのボタン*/
 .animation {
   width:350px;
@@ -618,15 +610,11 @@ transition: .4s;
 }
 
 .animation a {
-
-  
   font-size:16px;
   color:#BBBBBB;
-
   font-family:arial;
   font-size:36px;
   color:#1989ac;
-
   text-decoration:none;
   line-height:56px;
   transition:all .10s ease;
@@ -1126,9 +1114,9 @@ transition: .4s;
     padding: 0.5em 1em;
     margin: 2em 0;
     font-weight: bold;
-    color: #6091d3;/*文字色*/
+    color: #CCCCCC;/*文字色*/
     background: #FFF;
-    border: solid 3px #6091d3;/*線*/
+    border: solid 3px #CCCCCC;/*線*/
     border-radius: 10px;/*角の丸み*/
 }
 .touroku_1 p {
@@ -1138,17 +1126,17 @@ transition: .4s;
 }
 
 
- .flow_06, .flow_09{
+ .flow_06{
     padding: 0.5em 1em;
     margin: 2em 0;
     font-weight: bold;
-    color: #6091d3;/*文字色*/
+    color: #CCCCCC;/*文字色*/
     background: #FFF;
-    border: solid 3px #6091d3;/*線*/
+    border: solid 3px #CCCCCC;/*線*/
     border-radius: 10px;/*角の丸み*/
-    
 }
- .flow_06, .flow_09 p {
+
+ .flow_06 p {
     margin: 0; 
     padding: 0;
     color: #283e56;
@@ -1158,9 +1146,9 @@ transition: .4s;
     padding: 0.5em 1em;
     margin: 2em 0;
     font-weight: bold;
-    color: #6091d3;/*文字色*/
+    color: #CCCCCC;/*文字色*/
     background: #FFF;
-    border: solid 3px #6091d3;/*線*/
+    border: solid 3px #CCCCCC;/*線*/
     border-radius: 10px;/*角の丸み*/
     
 }
@@ -1175,9 +1163,9 @@ transition: .4s;
     padding: 0.5em 1em;
     margin: 2em 0;
     font-weight: bold;
-    color: #6091d3;/*文字色*/
+    color: #CCCCCC;/*文字色*/
     background: #FFF;
-    border: solid 3px #6091d3;/*線*/
+    border: solid 3px #CCCCCC;/*線*/
     border-radius: 10px;/*角の丸み*/
     
 }
@@ -1191,9 +1179,9 @@ transition: .4s;
     padding: 0.5em 1em;
     margin: 2em 0;
     font-weight: bold;
-    color: #6091d3;/*文字色*/
+    color: #CCCCCC;/*文字色*/
     background: #FFF;
-    border: solid 3px #6091d3;/*線*/
+    border: solid 3px #CCCCCC;/*線*/
     border-radius: 10px;/*角の丸み*/
     
 }
@@ -1207,9 +1195,9 @@ transition: .4s;
     padding: 0.5em 1em;
     margin: 2em 0;
     font-weight: bold;
-    color: #6091d3;/*文字色*/
+    color: #CCCCCC;/*文字色*/
     background: #FFF;
-    border: solid 3px #6091d3;/*線*/
+    border: solid 3px #CCCCCC;/*線*/
     border-radius: 10px;/*角の丸み*/
     
 }
@@ -1231,26 +1219,38 @@ transition: .4s;
     font-size: 40px;
     color:hotpink;
     text-shadow: 2px 0px 0px #ff003f, 0px 1px 0px #ff003f, -1px 0px 0px #ff003f, 0px -1px 0px #ff003f;
-    margin-left: 150px;
+    margin-left: 190px;
 }
 
-.tasuketai{
-    float: right;
-    width: 500px;
-}
+
 
 
 .iraishitai{
     font-size: 28px;
     float: left;
-    
+    padding: 0em 0em;
+    margin: 2em 0;
+    font-weight: bold;
+    color: #F0FFF0;/*文字色*/
+    background: #F0FFF0;
+    border: solid 3px #fff;/*線*/
+    border-radius: 22px;/*角の丸み*/
+    width: 560px;
 }
 
 .tasuketai{
+     float: right;
+    width: 500px;
     font-size: 28px;
+     /*margin: 2em 0;*/
+    font-weight: bold;
+    color: #FFF0F5;/*文字色*/
+    background: #FFF0F5;
+    border: solid 0px #fff;/*線*/
+    border-radius: 22px;/*角の丸み*/
+    margin-top: 59px;
+     width: 560px;
 }
-
-
 
 .torihiki{
     font-weight:bold;

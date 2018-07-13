@@ -1,13 +1,13 @@
 @if (Auth::id() != $user->id)
     @if (Auth::user()->is_helping($irai->id))
-        <div id="kanryou-zumi">
+        <div id="tetsudai-tyu">
         {!! Form::open(['route' => ['irai.help', $irai->id]]) !!}
-        {!! Form::submit('手伝い中', ['class' => "btn btn-danger btn-block"]) !!}
+        {!! Form::submit('手伝い中', ['class' => "btn btn-danger btn-block center-block"]) !!}
         {!! Form::close() !!}
         </div>
     @else
     <div id="tetsudai">
-        {{!! Form::open(['route' => ['irai.help', $irai->id]]) !!}
+        {!! Form::open(['route' => ['irai.help', $irai->id]]) !!}
             {!! Form::submit('手伝う！', ['class' => "btn center-block"]) !!}
         {!! Form::close() !!}
         </div>

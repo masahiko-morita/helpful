@@ -63,7 +63,6 @@
 
             {!! Form::textarea('content', null, ['class' => 'form-control input-lg', 'rows="2"',  'placeholder' => 'コメント' ]) !!}
             {!! Form::submit('コメント投稿！', ['class' => 'btn btn-success btn-lg']) !!}
-
             {!! Form::close() !!}
             </div>
             </div>

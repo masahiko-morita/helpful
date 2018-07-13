@@ -16,8 +16,16 @@ class IraiFinishController extends Controller
 {
     public function store($id)
     {
+        $user = \Auth::user();
+        $irais = $user->feed_irais()->orderBy('created_at', 'desc')->paginate(10);
+        
+        
         \Auth::user()->finish($id);
-        return redirect()->back();
+        return view('irais.index', [
+            'irais' => $irais,
+        
+        ]);
+    
     }
 
     public function destroy($id)

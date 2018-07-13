@@ -9,34 +9,48 @@
         <div class="col-md-6">
             <table class="table">
                 <tr>
-                    <th><i class="fa fa-user" id='peace'> </i></th>
+                    <th><i class="fa fa-user" id='show'> </i></th>
                     <td><a href="{{ route('users.show', $user->id) }}">{{ $user->name }}</a></td>
                 </tr>
                 <tr>
-                    <th><i class="fa fa-file-alt" id='peace'> </i></th>
+                    <th><i class="fa fa-file-alt" id='show'> </i></th>
                     <td>{{ $irai->content }}</td>
                 </tr>
                 <tr>
-                <th><i class="fa fa-clock" id='peace'> </i> </th>
+                <th><i class="fa fa-clock" id='show'> </i> </th>
                     <td>{{ $irai->start }}　～　{{ $irai->finish }}</td>
                 </tr>
                 <tr>
-                    <th><i class="fa fa-map-marker-alt" id='peace'> </i> 場所</th>
+                    <th><i class="fa fa-map-marker-alt" id='show'> </i> 場所</th>
                     <td>{{ $irai->station }}</td>
                 </tr>
                 <tr>
-                    <th><i class="fa fa-gift" id='peace'> </i> お礼</th>
+                    <th><i class="fa fa-gift" id='show'> </i> お礼</th>
                     <td>{{ $irai->reward }}</td>
                 </tr>
             </table>
         </div>
-        <div class="col-md-6">
+        <div class="col-md-6"> 
             @if (Auth::user()->id != $irai->user_id)
+
             <div id="tetsudau">
                  @include('irai_help.help_button', ['user' => $user])
                 <!--{!! Form::open(['route' => ['irais.thankyou', $irai->id], 'method' => 'get']) !!}-->
                 <!--{!! Form::submit('手伝う！！！', ['class' => 'btn center-block']) !!}-->
                 <!--{!! Form::close() !!}-->
+
+                @if (Auth::user()->is_finishing($irai->id)) 
+                    <div id ="kanryou-zumi-2">
+                    @include('irai_finish.finish_button', ['user' => $user])
+                <!--{!! Form::open(['route' => ['irais.thankyou', $irai->id], 'method' => 'get']) !!}-->
+                <!--{!! Form::submit('手伝う！！！', ['class' => 'btn center-block']) !!}-->
+                <!--{!! Form::close() !!}-->
+                    </div>
+                @else
+                 <div id="tetsudau">
+                    @include('irai_help.help_button', ['user' => $user])
+                </div>
+                @endif
             </div>
             @endif
             @if (Auth::user()->id == $irai->user_id)
@@ -64,7 +78,7 @@
             {{Form::hidden('type', 'comment')}}
             
             {!! Form::textarea('content', null, ['class' => 'form-control input-lg', 'rows="2"',  'placeholder' => 'コメント' ]) !!}
-            {!! Form::submit('コメント投稿！', ['class' => 'btn btn-success btn-lg']) !!}
+            {!! Form::submit('コメント投稿', ['class' => 'btn btn-success btn-lg']) !!}
 
             {!! Form::close() !!}
             </div>
@@ -76,4 +90,3 @@
 @include('comments.comment', ['comments' => $comments])
 
 @endsection
-

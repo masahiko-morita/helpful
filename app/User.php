@@ -39,6 +39,10 @@ class User extends Authenticatable
         return Irai::whereIn('user_id', $user_ids);
     }
     
+    
+    
+    
+    
     public function comments()
     {
        return $this->hasMany(Comment::class);
@@ -63,9 +67,24 @@ class User extends Authenticatable
         return Chat::whereIn('user_id', $user_ids);
     }
     
+    
+    
+    
+    
+    
     public function finishings()
     {
         return $this->belongsToMany(Irai::class, 'irai_finish', 'user_id', 'finish_id')->withTimestamps();
+    }
+    
+    public function finished()
+    {
+        
+        // User Irao
+        // irai_finish
+        // user --> finish_id
+        // irai --> user_id
+        return $this->belongsToMany(Irai::class, 'irai_finish', 'finish_id', 'user_id')->withTimestamps();
     }
 
     public function finish($iraiId)
@@ -103,9 +122,18 @@ class User extends Authenticatable
         return $this->finishings()->where('finish_id', $iraiId)->exists();
     }    
     
+    
+    
+    
+    
     public function helpings()
     {
         return $this->belongsToMany(Irai::class, 'irai_help', 'user_id', 'help_id')->withTimestamps();
+    }
+    
+    public function helpees()
+    {
+        return $this->belongsToMany(Irai::class, 'irai_help' , 'help_id', 'user_id')->withTimestamps();
     }
     
     public function help($helpId)
@@ -142,7 +170,6 @@ class User extends Authenticatable
     public function is_helping($helpId) {
     return $this->helpings()->where('help_id', $helpId)->exists();
     
-        
     }
     // 通知用モデル
     public function notifications()

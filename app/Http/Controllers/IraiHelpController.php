@@ -14,7 +14,8 @@ use App\Chat;
 
 class IraiHelpController extends Controller
 {
-    public function store(Request $request, $id)
+
+    public function store($id)
     {
         $irai = Irai::find($id);
         $chats = Chat::orderBy('created_at', 'desc')->paginate(10);
@@ -27,7 +28,17 @@ class IraiHelpController extends Controller
 
     public function destroy($id)
     {
+
         \Auth::user()->unhelp($id);
         return redirect()->back();
+
+        $irai = Irai::find($id);
+        $chats = Chat::orderBy('created_at', 'desc')->paginate(10);
+        
+        \Auth::user()->unhelp($id);
+        return view('irais.thankyou', [
+            'irai' => $irai,
+            'chats' => $chats,
+        ]);
     }
 }

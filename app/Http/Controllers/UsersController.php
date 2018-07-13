@@ -97,6 +97,9 @@ class UsersController extends Controller
                 // 'favorites' => $favorites,
                 ];
 
+                $data += $this->counts($user);
+
+
         return view('users.show',$data);
     }
     
@@ -115,6 +118,33 @@ class UsersController extends Controller
         return view('users.finishings', $data);
     }
     
+    public function finished($id)
+    {
+        $other_irai_ids_src = \DB::select('select * from irai_finish where user_id != ?', [$id]);
+        $other_irai_ids = array();
+        foreach($other_irai_ids_src as $v) {
+            array_push($other_irai_ids, $v->finish_id);
+        }
+ //       var_dump($other_irai_ids);
+        $finished = Irai::whereIn('id',$other_irai_ids)->get();
+//        for()
+        /*
+        
+        $finished = $user->finishings()->select('finish_id')
+        ->where('irai_finish.user_id', '!=', $id);//->get();
+        return $finished->toSql();
+*/
+
+        $data = [
+            'user' => User::find($id),
+            'finished' => $finished,
+        ];
+        
+        $data += $this->counts(User::find($id));
+
+        return view('users.finished', $data);
+    }
+    
     public function helpings($id)
     {
         $user = User::find($id);
@@ -129,5 +159,22 @@ class UsersController extends Controller
 
         return view('users.helpings', $data);
     }
+    
+    public function helpees($id)
+    {
+        $user = User::find($id);
+        $helpees = $user->helpees()->where('finish_id')->get()->paginate(10);
+
+        $data = [
+            'user' => $user,
+            'helpees' => $helpees,
+        ];
+
+        $data += $this->counts($user);
+
+        return view('users.helpees',['user' => User::find($id)
+        ], $data);
+    }
+
 }
 

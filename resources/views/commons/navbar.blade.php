@@ -10,9 +10,9 @@
 
 
                     @if (Auth::check())
-                        <a class="navbar-brand" href="{{ route('irais.index', Auth::check()) }}">Helpful</a>
+                        <a class="navbar-brand" id="logo2" href="{{ route('irais.index', Auth::check()) }}"><img src="/images/logo2.png"></a>
                     @else
-                        <a class="navbar-brand" href="/">Helpful</a>
+                       <a class="navbar-brand" id="logo2" href="/"><img src="/images/logo2.png""></a>
                     @endif
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

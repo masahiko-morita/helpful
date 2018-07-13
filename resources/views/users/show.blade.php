@@ -13,7 +13,6 @@
 
        <div class="balloon">
       {{$user->content}}
-  <br>
 </div>
     </div>
 
@@ -53,7 +52,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-xs-12">
+				<div class="col-xs-12" id='tatesen'>
 					<div id="sampleMainContents">
 						
 						<h2 id="sampleA">

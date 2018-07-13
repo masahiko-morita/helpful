@@ -225,9 +225,15 @@ text-decoration: none;
 .maintitle{
     text-align: center;
     margin-left: 1px;
+<<<<<<< HEAD
     color:navy;
     margin-right: 680px;
     margin-top: 40px;
+=======
+    color:white;
+    margin-right: 650px;
+    margin-top: 110px;
+>>>>>>> 9295a6a67e72629e4aacb9cef55d02b52fa775b8
    }
 
 .introduction{
@@ -960,6 +966,19 @@ transition: .4s;
     border: 3px solid #FFF;
     border-radius: 3px;
     background-color:#EA5C5C;
+    text-align: center;
+    width: 130px;
+    margin-top:10px;
+    padding: 0.3em;
+    display: block;
+}
+
+#tetsudai-tyu .btn{
+    text-decoration: none;
+    color: #FFF;
+    border: 3px solid #FFF;
+    border-radius: 3px;
+    background-color: green;
     text-align: center;
     width: 130px;
     margin-top:10px;

@@ -357,7 +357,8 @@ transition: .4s;
     background: #1989ac;
     color: #FFF;
     box-sizing: border-box;
-    margin-left: 0;
+    margin-left: 40%;
+    margin-top: 5%
     
 }
 
@@ -368,6 +369,7 @@ transition: .4s;
     border-top: dashed 2px rgba(255, 255, 255, 0.5);
     border-bottom: dashed 2px rgba(255, 255, 255, 0.5);
     line-height: 42px;
+    
 }
 
 .ribbon3:before, .ribbon3:after{
@@ -453,6 +455,7 @@ transition: .4s;
   position: relative;
   padding: 20px;
   background-color: #fff3ad;
+  word-break:break-all;
 }
 
 .balloon::before{
@@ -1107,8 +1110,8 @@ transition: .4s;
 
  
 
-.wrap #peace{
- font-size: 40px;   
+#peace{
+ font-size: 35px;   
 }
 
 
@@ -1117,19 +1120,6 @@ transition: .4s;
 }
 
 
-.btn-primary{
-    background-color: black;
-    position:fixed;
-    left:100px;
-}
-
-.btn-primary:hover{
-  background-color:silver;
-  border-color: silver;
-  box-shadow: 0px 15px 20px #FF572;
-  color:black;
-
-}
 
 
 .touroku_1 {
@@ -1280,6 +1270,7 @@ transition: .4s;
 	font-size: 16px;
 	background: #e0edff;
 	border-radius: 30px;
+	word-break:break-all;
 }
 
 .balloon1-left:before{
@@ -1316,6 +1307,42 @@ transition: .4s;
     color:gray;
 }
 
+
 a{
     font-size: 12px;
 }
+
+
+#sampleFix {
+	position: fixed;
+	top: 25%;
+	left:10%;
+}
+#sampleMainContents {
+	padding: 2em;
+
+}
+
+
+#sampleFix li{
+    color: #fff;
+    background-color:white;
+
+
+}
+
+#sampleFix a {
+    font-size:18px;
+    
+
+}
+
+#sampleFix{
+    border-color: black;
+    z-index: 2;
+}
+
+.col-xs-12{
+    border-left: 1px solid #ddd;
+}
+

@@ -100,7 +100,6 @@
           <a href="{{ route('signup.get') }}" style='z-index:1000;'> <h1> HELPFULを始める </h1></a>
         </div>
         @endif
-
       </div>
 　  </div>
 　  

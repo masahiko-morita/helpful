@@ -519,7 +519,7 @@ transition: .4s;
   float:left;
   cursor:pointer;
   position:relative;
-  box-sizing:border-box;
+  box-sizing:border-box; 
   overflow:hidden;
   margin:0 0 40px 0;
   border-radius:10px;
@@ -808,6 +808,7 @@ transition: .4s;
    background: #93D87C;
    color: #fff;
 }
+
 #hensyuu .btn{
     display: block;
     width: 250px;
@@ -978,6 +979,7 @@ transition: .4s;
     margin-top:50px;
     padding: 0.3em;
     display: block;
+    font-size:30px;
 }
 
 #tetsudai-tyu .btn{
@@ -985,7 +987,7 @@ transition: .4s;
     color: #FFF;
     border: 3px solid #FFF;
     border-radius: 3px;
-    background-color: green;
+    background-color: #93D87C;
     text-align: center;
     width: 130px;
     margin-top:10px;

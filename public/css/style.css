@@ -109,15 +109,6 @@ body {
     text-align: center;
 }
 
-
-  height: 300px;
-   width: 300px;
-   margin:20px 20px;
-   overflow: hidden; 
-   position:relative;
-   border:solid;
-}
-
 .irai .irai-flower:hover  .irai-syousai {
     opacity: 1;
     position:absolute;
@@ -161,9 +152,7 @@ body {
     text-align: center;
     line-height:10px;
     margin-top: 15px;
-
 }
-
 
 .irai-flower .contentbox{
   width:80%;
@@ -227,9 +216,6 @@ text-decoration: none;
     color:navy;
     margin-right: 680px;
     margin-top: 40px;
-
-
-
    }
 
 .introduction{
@@ -1328,14 +1314,10 @@ a{
 #sampleFix li{
     color: #fff;
     background-color:white;
-
-
 }
 
 #sampleFix a {
     font-size:18px;
-    
-
 }
 
 #sampleFix{

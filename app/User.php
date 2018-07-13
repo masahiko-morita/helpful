@@ -79,6 +79,11 @@ class User extends Authenticatable
     
     public function finished()
     {
+        
+        // User Irao
+        // irai_finish
+        // user --> finish_id
+        // irai --> user_id
         return $this->belongsToMany(Irai::class, 'irai_finish', 'finish_id', 'user_id')->withTimestamps();
     }
 

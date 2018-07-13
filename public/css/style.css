@@ -224,10 +224,10 @@ text-decoration: none;
 .maintitle{
     text-align: center;
     margin-left: 1px;
-
     color:navy;
     margin-right: 680px;
     margin-top: 40px;
+
 
 
    }
@@ -357,7 +357,8 @@ transition: .4s;
     background: #1989ac;
     color: #FFF;
     box-sizing: border-box;
-    margin-left: 0;
+    margin-left: 40%;
+    margin-top: 5%
     
 }
 
@@ -368,6 +369,7 @@ transition: .4s;
     border-top: dashed 2px rgba(255, 255, 255, 0.5);
     border-bottom: dashed 2px rgba(255, 255, 255, 0.5);
     line-height: 42px;
+    
 }
 
 .ribbon3:before, .ribbon3:after{
@@ -453,6 +455,7 @@ transition: .4s;
   position: relative;
   padding: 20px;
   background-color: #fff3ad;
+  word-break:break-all;
 }
 
 .balloon::before{
@@ -605,7 +608,7 @@ transition: .4s;
   float:left;
   cursor:pointer;
   position:relative;
-  box-sizing:border-box;
+  box-sizing:border-box; 
   overflow:hidden;
   margin:0 0 40px 0;
   border-radius:10px;
@@ -891,6 +894,7 @@ transition: .4s;
    background: #93D87C;
    color: #fff;
 }
+
 #hensyuu .btn{
     display: block;
     width: 250px;
@@ -1051,12 +1055,27 @@ transition: .4s;
 }
 
 
+#kanryou-zumi-2 .btn{
+    text-decoration: none;
+    color: #FFF;
+    border: 3px solid #FFF;
+    border-radius: 3px;
+    background-color:#EA5C5C;
+    text-align: center;
+    width: 250px;
+    margin-top:50px;
+    padding: 0.3em;
+    display: block;
+    font-size:30px;
+}
+
+
 #tetsudai-tyu .btn{
     text-decoration: none;
     color: #FFF;
     border: 3px solid #FFF;
     border-radius: 3px;
-    background-color: green;
+    background-color: #93D87C;
     text-align: center;
     width: 130px;
     margin-top:10px;
@@ -1085,8 +1104,8 @@ transition: .4s;
 
  
 
-.wrap #peace{
- font-size: 40px;   
+#peace{
+ font-size: 35px;   
 }
 
 
@@ -1095,19 +1114,6 @@ transition: .4s;
 }
 
 
-.btn-primary{
-    background-color: black;
-    position:fixed;
-    left:100px;
-}
-
-.btn-primary:hover{
-  background-color:silver;
-  border-color: silver;
-  box-shadow: 0px 15px 20px #FF572;
-  color:black;
-
-}
 
 
 .touroku_1 {
@@ -1271,6 +1277,7 @@ transition: .4s;
 	font-size: 16px;
 	background: #e0edff;
 	border-radius: 30px;
+	word-break:break-all;
 }
 
 .balloon1-left:before{
@@ -1306,3 +1313,43 @@ transition: .4s;
     font-size: 30px;
     color:gray;
 }
+
+
+a{
+    font-size: 12px;
+}
+
+
+#sampleFix {
+	position: fixed;
+	top: 25%;
+	left:10%;
+}
+#sampleMainContents {
+	padding: 2em;
+
+}
+
+
+#sampleFix li{
+    color: #fff;
+    background-color:white;
+
+
+}
+
+#sampleFix a {
+    font-size:18px;
+    
+
+}
+
+#sampleFix{
+    border-color: black;
+    z-index: 2;
+}
+
+.col-xs-12{
+    border-left: 1px solid #ddd;
+}
+

@@ -2,10 +2,6 @@
 @section('content')
 
 <div class="header_box">
-     
-   <!--     <img alt="初めての方へ" height="38" width="30" src="//d1d7kfcb5oumx0.cloudfront.net/assets/layout/beginner-e0b30f19accf053ebee022ece727eda9390271e36b24f09a786487557fa57da7.png">-->
-   <!--<font size="77">HELPFUL GUIDE </font>-->
-   <!--      <img alt="初めての方へ" height="38" width="30" src="//d1d7kfcb5oumx0.cloudfront.net/assets/layout/beginner-e0b30f19accf053ebee022ece727eda9390271e36b24f09a786487557fa57da7.png">-->
  <div class="demo demo11">
   <div class="heading">
     <svg height="50px" width="100%">
@@ -14,7 +10,6 @@
   </div>
  </div>
 </div>
-
 
 <div class="demo demo3">
   <div class="heading"><span>取引の流れ</span></div>
@@ -31,8 +26,9 @@
             
             <div class="flow_06">
                   <p> <span class="top-introduction-numm">2</span>依頼したいことを入力</p>
-                 <img src="/images/iraitoukou.jpg" width="450px" height="320px">
+                 <img src="/images/iraitoukou.jpg" width="450px" height="300px">
             </div>
+            
             <div class="flow_09">
                 <p><span class="top-introduction-numm">3</span>
                     投稿した後、助ける側から<br>通知が来たら、さっそく返信!</p>
@@ -58,25 +54,21 @@
             </div>
             
             <div class="flow_08">
-                <p> <span class="top-introduction-numn">3</span>依頼者から問い合わせが来たら <br> コメント欄で返信!</p>
-                <img src="/images/tetsudau.jpg" width="450px" height="240px">
+                <p> <span class="top-introduction-numn">3</span>依頼者から問い合わせが<br>きたらコメント欄で返信!</p>
+                <img src="/images/tetsudau.jpg" width="450px" height="280px">
             </div>
             
     <div class="abcd">    
       <div class="animation">
         <div class="effect" style='pointer-events:none;'>
         </div>
-        @if (!Auth::check())
         <div class="effect-background">
           <a href="{{ route('signup.get') }}" style='z-index:1000;'> <h1> HELPFULを始める </h1></a>
         </div>
-        @endif
       </div>
 　  </div>
-            
-            
-            
-    
+　  
+　  
             <!--<div class="arrow_2">-->
             <!--    <img src="/images/down_left_arrow.png">-->
             <!--</div>-->
@@ -136,7 +128,4 @@
        <!--     </p>-->
        <!--     </div>-->
        <!-- </div>-->
-        
-        
-  
 @endsection

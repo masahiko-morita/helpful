@@ -16,8 +16,13 @@ class IraiFinishController extends Controller
 {
     public function store($id)
     {
-        \Auth::user()->finish($id);
-        return redirect()->back();
+        $irai = Irai::find($id);
+        $chats = Chat::orderBy('created_at', 'desc')->paginate(10);
+        \Auth::user()->help($id);
+        return view('irais.thankyou', [
+            'irai' => $irai,
+            'chats' => $chats,
+        ]);
     }
 
     public function destroy($id)
@@ -26,3 +31,4 @@ class IraiFinishController extends Controller
         return redirect()->back();
     }
 }
+ 

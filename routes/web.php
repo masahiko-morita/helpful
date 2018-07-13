@@ -36,6 +36,7 @@ Route::group(['middleware' => ['auth']], function () {
 
 Route::group(['prefix' => 'users/{id}'], function () {
     Route::post('finish', 'IraiFinishController@store')->name('irai.finish');
+   
         Route::delete('unfinish', 'IraiFinishController@destroy')->name('irai.unfinish');
         Route::get('finishings', 'UsersController@finishings')->name('users.finishings');
         Route::post('help', 'IraiHelpController@store')->name('irai.help');

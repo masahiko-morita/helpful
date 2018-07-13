@@ -191,7 +191,6 @@ body {
     text-align: center;
 }
 
-
  a{
     text-decoration: none;
     color:black;
@@ -226,6 +225,9 @@ text-decoration: none;
     color:navy;
     margin-right: 680px;
     margin-top: 40px;
+
+
+
    }
 
 .introduction{
@@ -353,7 +355,8 @@ transition: .4s;
     background: #1989ac;
     color: #FFF;
     box-sizing: border-box;
-    margin-left: 0;
+    margin-left: 40%;
+    margin-top: 5%
     
 }
 
@@ -364,6 +367,7 @@ transition: .4s;
     border-top: dashed 2px rgba(255, 255, 255, 0.5);
     border-bottom: dashed 2px rgba(255, 255, 255, 0.5);
     line-height: 42px;
+    
 }
 
 .ribbon3:before, .ribbon3:after{
@@ -449,6 +453,7 @@ transition: .4s;
   position: relative;
   padding: 20px;
   background-color: #fff3ad;
+  word-break:break-all;
 }
 
 .balloon::before{
@@ -498,15 +503,101 @@ transition: .4s;
 }
 
 
+.top-introduction-numn{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0 8px 0 0;
+    border-radius: 50%;
+    background: hotpink;
+    text-align: center;
+    line-height: 40px;
+    font-size: 24px;
+    color: #fff;
+}
+
+.top-introduction-numm{
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: 0 8px 0 0;
+    border-radius: 50%;
+    background: #3CB371;
+    text-align: center;
+    line-height: 40px;
+    font-size: 24px;
+    color: #fff;
+}
+
+
 .abc{
     text-align: center;
-
     margin-left: 400px;
     margin-bottom: 10px;
-
     margin-top: 5%;
     margin-left:35%;
 }
+
+.abcd{
+    margin-left:-217px;
+    margin-bottom: 10px;
+    margin-top: 5%;
+    text-align: center;
+    }
+    
+.header_box{
+    margin-left:110px;
+}
+
+.demo {
+  width: 500px;
+  margin: 0 auto;
+  padding: 10px 0;
+  font-family: sans-serif;
+  font-size:26px;
+  color:#1989ac;
+}
+.heading {
+  margin: 10px 0
+}
+.demo3 .heading {
+  color: #1989ac;
+  text-align: center;
+  overflow: hidden;
+}
+.demo3 .heading span {
+  display: inline-block;
+  position: relative;
+}
+.demo3 .heading span:before,.demo3 .heading span:after {
+  content: "";
+  border-bottom: 2px solid #1989ac;
+  width: 45px;
+  margin: 0 15px;
+  position: absolute;
+  bottom: 13px;
+}
+.demo3 .heading span:before {
+  right: 100%;
+}
+
+.demo {
+  width: 500px;
+  margin: 0 auto;
+  padding: 10px 0;
+  font-family: sans-serif;
+  font-size: 20px;
+  color:#283e56;
+}
+
+.demo11 .heading text {
+  stroke: #3cb3e4;
+  stroke-width: 1.5;
+  fill: rgba(60,179,228,0.2);
+  font-size: 50px;
+}
+
+
 
 /*welcomepageのボタン*/
 .animation {
@@ -522,8 +613,8 @@ transition: .4s;
   margin:0 0 40px 0;
   border-radius:10px;
   box-shadow:4px 4px #555;
-  
 }
+
 .animation a {
 
   
@@ -550,6 +641,7 @@ transition: .4s;
   position:absolute;
   transition:all .6s ease;
   z-index:1;
+ 
 }
 .effect-background {
   width:330px;
@@ -758,7 +850,7 @@ transition: .4s;
 
 
 /*irai-create*/
-.toukou h4 {
+.h4 {
     text-decoration: underline;
 }
 
@@ -990,6 +1082,7 @@ transition: .4s;
     display: block;
 }
 
+
 #kanryou-zumi-2 .btn{
     text-decoration: none;
     color: #FFF;
@@ -1004,6 +1097,7 @@ transition: .4s;
     font-size:30px;
 }
 
+
 #tetsudai-tyu .btn{
     text-decoration: none;
     color: #FFF;
@@ -1016,6 +1110,7 @@ transition: .4s;
     padding: 0.3em;
     display: block;
 }
+
 
 
 /*irai-search*/
@@ -1037,8 +1132,8 @@ transition: .4s;
 
  
 
-.wrap #peace{
- font-size: 40px;   
+#peace{
+ font-size: 35px;   
 }
 
 
@@ -1047,19 +1142,6 @@ transition: .4s;
 }
 
 
-.btn-primary{
-    background-color: black;
-    position:fixed;
-    left:100px;
-}
-
-.btn-primary:hover{
-  background-color:silver;
-  border-color: silver;
-  box-shadow: 0px 15px 20px #FF572;
-  color:black;
-
-}
 
 
 .touroku_1 {
@@ -1076,6 +1158,7 @@ transition: .4s;
     padding: 0;
     color: #283e56;
 }
+
 
  .flow_06, .flow_09{
     padding: 0.5em 1em;
@@ -1158,19 +1241,11 @@ transition: .4s;
     color: #283e56;
 }
 
-
-
-
-
-
-
-
-
-
 .person_1{
     font-size: 40px;
-    color: #ffde25;
-    text-shadow: 2px 0px 0px #ff5900, 0px 1px 0px #ff5900, -1px 0px 0px #ff5900, 0px -1px 0px #ff5900;
+    color: #3CB371;
+    text-shadow: 1px 0px 0px #3CB371, 0px 1px 0px #3CB371, -1px 0px 0px #3CB371, 1px -1px 0px #3CB371;
+    margin-left: 150px;
 }
 
 
@@ -1178,6 +1253,7 @@ transition: .4s;
     font-size: 40px;
     color:hotpink;
     text-shadow: 2px 0px 0px #ff003f, 0px 1px 0px #ff003f, -1px 0px 0px #ff003f, 0px -1px 0px #ff003f;
+    margin-left: 150px;
 }
 
 .tasuketai{
@@ -1215,7 +1291,8 @@ transition: .4s;
  	color: #555;
 	font-size: 16px;
 	background: #e0edff;
-	border-radius: 30px;
+	border-radius: 20px;
+	word-break:break-all;
 }
 
 .balloon1-left:before{
@@ -1252,10 +1329,51 @@ transition: .4s;
     color:gray;
 }
 
+
 a{
     font-size: 12px;
 }
 
+<<<<<<< HEAD
 #logo2 {
     width:300px;
 } 
+=======
+
+#sampleFix {
+	position: fixed;
+	top: 25%;
+	left:1%;
+}
+#sampleMainContents {
+	padding: 2em;
+
+}
+
+
+#sampleFix li{
+    color: #fff;
+    background-color:white;
+
+
+}
+
+#sampleFix a {
+    font-size:18px;
+    
+
+}
+
+#sampleFix{
+    border-color: black;
+    z-index: 2;
+}
+
+#tatesen{
+    border-left: 1px solid #ddd;
+}
+
+#show{
+    font-size: 20px;
+}
+>>>>>>> a948d898442b6443be3a1e9dba535400d32d1082

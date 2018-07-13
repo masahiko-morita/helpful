@@ -40,9 +40,49 @@
             @yield('cover')
             @yield('content')
             
+
+           
+ 
+        <!-- モーダル・ダイアログ -->
+            <div class="modal fade" id="sampleModal" tabindex="-1">
+            	<div class="modal-dialog">
+            		<div class="modal-content">
+            			<div class="modal-header">
+            				<button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+            				<h4 class="modal-title">キーワードを検索</h4>
+            			</div>
+            			<div class="modal-body">
+            			 
+            				{!! Form::open(['route' => 'irais.search', 'method' => 'get']) !!}
+                            {!! Form::text('q', '', ['class' => 'form-control', 'placeholder' => 'キーワード(例:タイトル(引っ越し),駅(二子玉),時間(12日の場合12))', 'size' => 40,'style' => 'width:500px']) !!}
+                
+            			</div>
+            			<div class="modal-footer">
+            				{!! Form::submit('依頼を検索', ['class' => 'btn']) !!}
+                            {!! Form::close() !!}
+            			</div>
+            		</div>
+            	</div>
+            </div>
+            
            
         </div> 
         
+            
+           
+        </div> 
+        
+        
+        <!--java-->
+        <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
+        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>-->
+        <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>-->
+
+
+           
+       
+        
+
     </body>
     @include('commons.footer')
 

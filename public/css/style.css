@@ -967,6 +967,19 @@ transition: .4s;
     display: block;
 }
 
+#kanryou-zumi-2 .btn{
+    text-decoration: none;
+    color: #FFF;
+    border: 3px solid #FFF;
+    border-radius: 3px;
+    background-color:#EA5C5C;
+    text-align: center;
+    width: 250px;
+    margin-top:50px;
+    padding: 0.3em;
+    display: block;
+}
+
 #tetsudai-tyu .btn{
     text-decoration: none;
     color: #FFF;

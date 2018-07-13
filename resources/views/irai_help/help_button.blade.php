@@ -7,7 +7,7 @@
         </div>
     @else
     <div id="tetsudai">
-        {{!! Form::open(['route' => ['irai.help', $irai->id]]) !!}
+        {!! Form::open(['route' => ['irai.help', $irai->id]]) !!}
             {!! Form::submit('手伝う！', ['class' => "btn center-block"]) !!}
         {!! Form::close() !!}
         </div>

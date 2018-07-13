@@ -279,6 +279,7 @@ transition: .4s;
   background: repeating-linear-gradient(-45deg, #edf5f4, #edf5f4 10px, #f6faf9 0, #f6faf9 20px);
   padding: 1em;
   height:280px;
+  margin-bottom: 20%;
 }
 
 .maste-box .maste-content{
@@ -358,7 +359,7 @@ transition: .4s;
     color: #FFF;
     box-sizing: border-box;
     margin-left: 40%;
-    margin-top: 5%
+    margin-top: 0;
     
 }
 

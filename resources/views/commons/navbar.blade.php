@@ -18,14 +18,14 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     @if (Auth::check())
-                        <a class="navbar-brand" href="/hatsu">初めての方へ</a>
+                        <a class="navbar-brand" href="/hatsu" style="font-size:10pt">初めての方へ</a>
                         <a class="navbar-brand" data-toggle="modal" data-target="#sampleModal"}}"><i class="fa fa-search" id='search'></i></a>
-                        <a class="navbar-brand" href="{{ route('irais.index', Auth::user()->id) }}">依頼一覧へ</a>
+                        <a class="navbar-brand" href="{{ route('irais.index', Auth::user()->id) }}" style="font-size:10pt">依頼一覧へ</a>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ Auth::user()->name }} <span class="caret"></span></a>
                             <ul class="dropdown-menu">
                                 <li>
-                                    <a href="{{ route('users.show', Auth::user()->id) }}">マイページ</a>
+                                    <a href="{{ route('users.show', Auth::user()->id) }}"style="font-size:10pt">マイページ</a>
                                 </li>
                                 <li>
                                     <a href="{{ route('users.edit', Auth::user()->id) }}">マイページの編集</a>

@@ -38,6 +38,13 @@ body {
 .navbar {
     background-color: #283e56;
     border-style:none;
+    height: 60px;
+    
+}
+
+.navbar-brand img{
+    width:100px;
+    height:38px;
 }
 　
 /*footer*/
@@ -107,15 +114,6 @@ body {
 
 .irai {
     text-align: center;
-}
-
-
-  height: 300px;
-   width: 300px;
-   margin:20px 20px;
-   overflow: hidden; 
-   position:relative;
-   border:solid;
 }
 
 .irai .irai-flower:hover  .irai-syousai {
@@ -882,7 +880,7 @@ transition: .4s;
 }
 
 #koushin .btn:hover{
-   background: #BC927A;
+   background: #99CCFF;
    color: #fff; 
 }
 
@@ -1257,3 +1255,7 @@ transition: .4s;
 a{
     font-size: 12px;
 }
+
+#logo2 {
+    width:300px;
+} 

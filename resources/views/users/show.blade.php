@@ -13,12 +13,12 @@
 
        <div class="balloon">
       {{$user->content}}
-  <br>
 </div>
     </div>
 
 </div>
         
+<<<<<<< HEAD
 <div> 
 
 <div class="col-xs-8">
@@ -54,6 +54,30 @@
 <!--				</div>-->
 <!--				<div class="col-xs-12">-->
 <!--					<div id="sampleMainContents">-->
+=======
+
+
+<div role="document" data-spy="scroll" data-target="#sampleScrollSpy">
+
+	<div class="container-fluid">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-2">
+					<div id="sampleFix">
+						<h1>  </h1>	
+						<div data-spy="scroll"id="sampleScrollSpy" class='barbox'>
+							<ul class="nav nav-stacked">
+								<li><a class="linkInThePage" href="#sampleA"><i class="fa fa-check" '></i>  出した依頼</a></li>
+								<li><a class="linkInThePage" href="#sampleB"><i class="fa fa-check"></i>  助けている一覧</a></li>
+								<li><a class="linkInThePage" href="#sampleC"><i class="fa fa-check"'></i>  依頼完了一覧</a></li>
+								
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12" id='tatesen'>
+					<div id="sampleMainContents">
+>>>>>>> 50ab97470d88bd46d0615057a5d456ba7e15454e
 						
 <!--						<h2 id="sampleA">-->
 <!--							 <div class='ribbon3'>-->
@@ -82,11 +106,19 @@
 						
 						
 						
+<<<<<<< HEAD
 <!--					</div>-->
 <!--				</div>-->
 <!--			</div>-->
 <!--		</div>-->
 <!--	</div>-->
+=======
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+>>>>>>> 50ab97470d88bd46d0615057a5d456ba7e15454e
 
 </div>
 

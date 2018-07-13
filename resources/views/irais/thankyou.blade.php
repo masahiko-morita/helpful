@@ -4,9 +4,15 @@
 <?php $user = $irai->user; ?>
 <div class="container">
     <div class='text-center'>
+<<<<<<< HEAD
         
            <h2>ありがとうございます</h2>
         
+=======
+
+           <h2>ありがとうございます</h2>
+
+>>>>>>> 50ab97470d88bd46d0615057a5d456ba7e15454e
         <h4>依頼内容は以下でございます</h4>
     </div>
 

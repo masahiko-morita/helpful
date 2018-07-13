@@ -38,6 +38,13 @@ body {
 .navbar {
     background-color: #283e56;
     border-style:none;
+    height: 60px;
+    
+}
+
+.navbar-brand img{
+    width:100px;
+    height:38px;
 }
 　
 /*footer*/
@@ -107,15 +114,6 @@ body {
 
 .irai {
     text-align: center;
-}
-
-
-  height: 300px;
-   width: 300px;
-   margin:20px 20px;
-   overflow: hidden; 
-   position:relative;
-   border:solid;
 }
 
 .irai .irai-flower:hover  .irai-syousai {
@@ -279,6 +277,7 @@ transition: .4s;
   background: repeating-linear-gradient(-45deg, #edf5f4, #edf5f4 10px, #f6faf9 0, #f6faf9 20px);
   padding: 1em;
   height:280px;
+  margin-bottom: 20%;
 }
 
 .maste-box .maste-content{
@@ -358,7 +357,7 @@ transition: .4s;
     color: #FFF;
     box-sizing: border-box;
     margin-left: 40%;
-    margin-top: 5%
+    margin-top: 0;
     
 }
 
@@ -540,13 +539,6 @@ transition: .4s;
     margin-left:35%;
 }
 
-.abcd{
-    margin-left:-217px;
-    margin-bottom: 10px;
-    margin-top: 5%;
-    text-align: center;
-    }
-    
 .header_box{
     margin-left:110px;
 }
@@ -579,6 +571,7 @@ transition: .4s;
   position: absolute;
   bottom: 13px;
 }
+
 .demo3 .heading span:before {
   right: 100%;
 }
@@ -599,8 +592,6 @@ transition: .4s;
   font-size: 50px;
 }
 
-
-
 /*welcomepageのボタン*/
 .animation {
   width:350px;
@@ -618,15 +609,11 @@ transition: .4s;
 }
 
 .animation a {
-
-  
   font-size:16px;
   color:#BBBBBB;
-
   font-family:arial;
   font-size:36px;
   color:#1989ac;
-
   text-decoration:none;
   line-height:56px;
   transition:all .10s ease;
@@ -903,11 +890,11 @@ transition: .4s;
 
 #hensyuu .btn{
     display: block;
-    width: 250px;
+    width: 170px;
     text-align: center;
     text-decoration: none;
-    margin-top:20px;
-    font-size:30px;
+    margin-top:15px;
+    font-size:20px;
     color: #6FC9D8;
     border: 3px solid #6FC9D8;
     border-radius: 3px;
@@ -922,11 +909,11 @@ transition: .4s;
 
 #sakujyo .btn{
     display: block;
-    width: 250px;
+    width: 170px;
     text-align: center;
     text-decoration: none;
     margin-top:15px;
-    font-size:30px;
+    font-size:20px;
     color: #EA5C5C;
     border: 3px solid #EA5C5C;
     border-radius: 3px;
@@ -941,11 +928,11 @@ transition: .4s;
 
 #toukou .btn{
     display: block;
-    width: 250px;
+    width: 170px;
     text-align: center;
     text-decoration: none;
-    margin-top:50px;
-    font-size:30px;
+    margin-top:15px;
+    font-size:20px;
     color: #BC927A;
     border: 3px solid #BC927A;
     border-radius: 3px;
@@ -957,6 +944,30 @@ transition: .4s;
 #toukou .btn:hover{
    background: #BC927A;
    color: #fff; 
+}
+
+#koushin .btn{
+    display: block;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    margin-top:10px;
+    font-size:20px;
+    color: #6FC9D8;
+    border: 3px solid #6FC9D8;
+    border-radius: 3px;
+    transition: .4s;
+    background-color:rgba(255,255,255,0.7);
+}
+
+#koushin .btn:hover{
+   background: #99CCFF;
+   color: #fff; 
+}
+
+#hensyuu .btn:hover{
+   background: #6FC9D8;
+   color: #fff;
 }
 
 #home .btn{
@@ -1126,9 +1137,9 @@ transition: .4s;
     padding: 0.5em 1em;
     margin: 2em 0;
     font-weight: bold;
-    color: #6091d3;/*文字色*/
+    color: #CCCCCC;/*文字色*/
     background: #FFF;
-    border: solid 3px #6091d3;/*線*/
+    border: solid 3px #CCCCCC;/*線*/
     border-radius: 10px;/*角の丸み*/
 }
 .touroku_1 p {
@@ -1138,17 +1149,17 @@ transition: .4s;
 }
 
 
- .flow_06, .flow_09{
+ .flow_06{
     padding: 0.5em 1em;
     margin: 2em 0;
     font-weight: bold;
-    color: #6091d3;/*文字色*/
+    color: #CCCCCC;/*文字色*/
     background: #FFF;
-    border: solid 3px #6091d3;/*線*/
+    border: solid 3px #CCCCCC;/*線*/
     border-radius: 10px;/*角の丸み*/
-    
 }
- .flow_06, .flow_09 p {
+
+ .flow_06 p {
     margin: 0; 
     padding: 0;
     color: #283e56;
@@ -1158,9 +1169,9 @@ transition: .4s;
     padding: 0.5em 1em;
     margin: 2em 0;
     font-weight: bold;
-    color: #6091d3;/*文字色*/
+    color: #CCCCCC;/*文字色*/
     background: #FFF;
-    border: solid 3px #6091d3;/*線*/
+    border: solid 3px #CCCCCC;/*線*/
     border-radius: 10px;/*角の丸み*/
     
 }
@@ -1175,9 +1186,9 @@ transition: .4s;
     padding: 0.5em 1em;
     margin: 2em 0;
     font-weight: bold;
-    color: #6091d3;/*文字色*/
+    color: #CCCCCC;/*文字色*/
     background: #FFF;
-    border: solid 3px #6091d3;/*線*/
+    border: solid 3px #CCCCCC;/*線*/
     border-radius: 10px;/*角の丸み*/
     
 }
@@ -1191,9 +1202,9 @@ transition: .4s;
     padding: 0.5em 1em;
     margin: 2em 0;
     font-weight: bold;
-    color: #6091d3;/*文字色*/
+    color: #CCCCCC;/*文字色*/
     background: #FFF;
-    border: solid 3px #6091d3;/*線*/
+    border: solid 3px #CCCCCC;/*線*/
     border-radius: 10px;/*角の丸み*/
     
 }
@@ -1207,9 +1218,9 @@ transition: .4s;
     padding: 0.5em 1em;
     margin: 2em 0;
     font-weight: bold;
-    color: #6091d3;/*文字色*/
+    color: #CCCCCC;/*文字色*/
     background: #FFF;
-    border: solid 3px #6091d3;/*線*/
+    border: solid 3px #CCCCCC;/*線*/
     border-radius: 10px;/*角の丸み*/
     
 }
@@ -1231,26 +1242,38 @@ transition: .4s;
     font-size: 40px;
     color:hotpink;
     text-shadow: 2px 0px 0px #ff003f, 0px 1px 0px #ff003f, -1px 0px 0px #ff003f, 0px -1px 0px #ff003f;
-    margin-left: 150px;
+    margin-left: 190px;
 }
 
-.tasuketai{
-    float: right;
-    width: 500px;
-}
+
 
 
 .iraishitai{
     font-size: 28px;
     float: left;
-    
+    padding: 0em 0em;
+    margin: 2em 0;
+    font-weight: bold;
+    color: #F0FFF0;/*文字色*/
+    background: #F0FFF0;
+    border: solid 3px #fff;/*線*/
+    border-radius: 22px;/*角の丸み*/
+    width: 560px;
 }
 
 .tasuketai{
+     float: right;
+    width: 500px;
     font-size: 28px;
+     /*margin: 2em 0;*/
+    font-weight: bold;
+    color: #FFF0F5;/*文字色*/
+    background: #FFF0F5;
+    border: solid 0px #fff;/*線*/
+    border-radius: 22px;/*角の丸み*/
+    margin-top: 59px;
+     width: 560px;
 }
-
-
 
 .torihiki{
     font-weight:bold;
@@ -1269,7 +1292,7 @@ transition: .4s;
  	color: #555;
 	font-size: 16px;
 	background: #e0edff;
-	border-radius: 30px;
+	border-radius: 20px;
 	word-break:break-all;
 }
 
@@ -1312,11 +1335,10 @@ a{
     font-size: 12px;
 }
 
-
 #sampleFix {
 	position: fixed;
 	top: 25%;
-	left:10%;
+	left:1%;
 }
 #sampleMainContents {
 	padding: 2em;
@@ -1342,7 +1364,13 @@ a{
     z-index: 2;
 }
 
-.col-xs-12{
+#tatesen{
     border-left: 1px solid #ddd;
 }
+
+#show{
+    font-size: 20px;
+}
+
+
 

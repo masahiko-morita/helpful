@@ -9,23 +9,23 @@
         <div class="col-md-6">
             <table class="table">
                 <tr>
-                    <th><i class="fa fa-user" id='peace'> </i></th>
+                    <th><i class="fa fa-user" id='show'> </i></th>
                     <td><a href="{{ route('users.show', $user->id) }}">{{ $user->name }}</a></td>
                 </tr>
                 <tr>
-                    <th><i class="fa fa-file-alt" id='peace'> </i></th>
+                    <th><i class="fa fa-file-alt" id='show'> </i></th>
                     <td>{{ $irai->content }}</td>
                 </tr>
                 <tr>
-                <th><i class="fa fa-clock" id='peace'> </i> </th>
+                <th><i class="fa fa-clock" id='show'> </i> </th>
                     <td>{{ $irai->start }}　～　{{ $irai->finish }}</td>
                 </tr>
                 <tr>
-                    <th><i class="fa fa-map-marker-alt" id='peace'> </i> 場所</th>
+                    <th><i class="fa fa-map-marker-alt" id='show'> </i> 場所</th>
                     <td>{{ $irai->station }}</td>
                 </tr>
                 <tr>
-                    <th><i class="fa fa-gift" id='peace'> </i> お礼</th>
+                    <th><i class="fa fa-gift" id='show'> </i> お礼</th>
                     <td>{{ $irai->reward }}</td>
                 </tr>
             </table>
@@ -76,7 +76,7 @@
             {{Form::hidden('irai_id', $irai->id)}}
 
             {!! Form::textarea('content', null, ['class' => 'form-control input-lg', 'rows="2"',  'placeholder' => 'コメント' ]) !!}
-            {!! Form::submit('コメント投稿！！', ['class' => 'btn btn-success btn-lg']) !!}
+            {!! Form::submit('コメント投稿', ['class' => 'btn btn-success btn-lg']) !!}
 
             {!! Form::close() !!}
             </div>
@@ -88,4 +88,3 @@
 @include('comments.comment', ['comments' => $comments])
 
 @endsection
-

@@ -355,7 +355,8 @@ transition: .4s;
     background: #1989ac;
     color: #FFF;
     box-sizing: border-box;
-    margin-left: 0;
+    margin-left: 40%;
+    margin-top: 5%
     
 }
 
@@ -366,6 +367,7 @@ transition: .4s;
     border-top: dashed 2px rgba(255, 255, 255, 0.5);
     border-bottom: dashed 2px rgba(255, 255, 255, 0.5);
     line-height: 42px;
+    
 }
 
 .ribbon3:before, .ribbon3:after{
@@ -1001,8 +1003,8 @@ transition: .4s;
 
  
 
-.wrap #peace{
- font-size: 40px;   
+#peace{
+ font-size: 35px;   
 }
 
 
@@ -1207,5 +1209,39 @@ transition: .4s;
 
 a{
     font-size: 12px;
+}
+
+
+#sampleFix {
+	position: fixed;
+	top: 25%;
+	left:10%;
+}
+#sampleMainContents {
+	padding: 2em;
+
+}
+
+
+#sampleFix li{
+    color: #fff;
+    background-color:white;
+
+
+}
+
+#sampleFix a {
+    font-size:18px;
+    
+
+}
+
+#sampleFix{
+    border-color: black;
+    z-index: 2;
+}
+
+.col-xs-12{
+    border-left: 1px solid #ddd;
 }
 

@@ -225,15 +225,9 @@ text-decoration: none;
 .maintitle{
     text-align: center;
     margin-left: 1px;
-<<<<<<< HEAD
     color:navy;
     margin-right: 680px;
     margin-top: 40px;
-=======
-    color:white;
-    margin-right: 650px;
-    margin-top: 110px;
->>>>>>> 5b63a55fad1218dda1157d194103700dcecc2fce
    }
 
 .introduction{
@@ -974,6 +968,19 @@ transition: .4s;
     display: block;
 }
 
+#tetsudai-tyu .btn{
+    text-decoration: none;
+    color: #FFF;
+    border: 3px solid #FFF;
+    border-radius: 3px;
+    background-color: green;
+    text-align: center;
+    width: 130px;
+    margin-top:10px;
+    padding: 0.3em;
+    display: block;
+}
+
 
 /*irai-search*/
 .search-content {
@@ -1198,31 +1205,7 @@ transition: .4s;
 }
 
 
-body {
-	min-width: 480px;
-}
-#sampleFix {
-	position: fixed;
-	top: 50px;
-}
-#sampleMainContents {
-	padding: 2em;
-	border-left: 1px solid #ddd;
+a{
+    font-size: 12px;
 }
 
-.linkInThePage{
-    background-color:salmon;
-}
-
-.linkInThePage:hover{
-    background-color:black;
-}
-
-.linkInThePage .active{
-    background-color:pink;
-}
-
-.nav>li.active>a, .nav>li.active>a:focus, .nav>li.active>a:hover {
-    color: #fff;
-    background-color: pink;
-}

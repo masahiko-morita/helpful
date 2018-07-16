@@ -10,6 +10,8 @@ use App\Irai;
 
 use App\Comment;
 
+use App\Notification;
+
 class CommentsController extends Controller
 {
 
@@ -35,7 +37,6 @@ class CommentsController extends Controller
     
     public function store(Request $request)
     {
-        
         $this->validate($request, [
             'content' => 'required|max:191',
         ]);
@@ -47,6 +48,12 @@ class CommentsController extends Controller
         
 
         $comments = \App\Comment::find($request->irai_id);
+        
+        $notification = new Notification;
+        $notification->user_id = $request->user_id;
+        $notification->type = $request->type;
+        $notification->save();
+        
         return redirect(route('irais.show',
             ['id'=>$request->irai_id]));
     }

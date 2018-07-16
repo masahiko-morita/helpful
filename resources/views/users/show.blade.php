@@ -18,7 +18,6 @@
 
 </div>
         
-<<<<<<< HEAD
 <div> 
 
 <div class="col-xs-8">
@@ -54,7 +53,6 @@
 <!--				</div>-->
 <!--				<div class="col-xs-12">-->
 <!--					<div id="sampleMainContents">-->
-=======
 
 
 <div role="document" data-spy="scroll" data-target="#sampleScrollSpy">
@@ -77,7 +75,6 @@
 				</div>
 				<div class="col-xs-12" id='tatesen'>
 					<div id="sampleMainContents">
->>>>>>> 50ab97470d88bd46d0615057a5d456ba7e15454e
 						
 <!--						<h2 id="sampleA">-->
 <!--							 <div class='ribbon3'>-->
@@ -106,19 +103,11 @@
 						
 						
 						
-<<<<<<< HEAD
-<!--					</div>-->
-<!--				</div>-->
-<!--			</div>-->
-<!--		</div>-->
-<!--	</div>-->
-=======
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
->>>>>>> 50ab97470d88bd46d0615057a5d456ba7e15454e
 
 </div>
 

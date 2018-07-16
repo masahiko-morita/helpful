@@ -34,7 +34,7 @@
             @if (Auth::user()->id != $irai->user_id)
 
             <div id="tetsudau">
-                 @include('irai_help.help_button', ['user' => $user])
+                <!-- @include('irai_help.help_button', ['user' => $user])-->
                 <!--{!! Form::open(['route' => ['irais.thankyou', $irai->id], 'method' => 'get']) !!}-->
                 <!--{!! Form::submit('手伝う！！！', ['class' => 'btn center-block']) !!}-->
                 <!--{!! Form::close() !!}-->

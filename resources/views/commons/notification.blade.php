@@ -23,7 +23,7 @@
     @if($isChat == true)
     <div class="panel panel-info">
     <div class="panel-body">
-       チャットに新着のコメントがあります。
+       新着の取引メッセージがあります。
     </div>
     </div>
     @endif

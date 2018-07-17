@@ -44,9 +44,17 @@ body {
 
 .navbar-brand img{
     width:100px;
-    height:38px;
+    height:35px;
 }
-　
+
+.navbar-brand {
+    font-size: 16px;
+}
+
+.dropdown-toggle {
+    font-size: 16px;
+}
+
 /*footer*/
 
 #footer {
@@ -244,9 +252,15 @@ text-decoration: none;
 .cp_btn {
 position: relative;
 display: block;
+<<<<<<< HEAD
 width: 240px;
 height: 60px;
 padding: 0.8em;
+=======
+width: 250px;
+height:60px;
+padding: 0.5em;
+>>>>>>> f1f6eec0302e51c74b98745a034ac5f2358f6b61
 text-align: center;
 font-weight: bold;
 text-decoration: none;
@@ -257,8 +271,13 @@ transition: .4s;
 border-radius: 4px;
 margin-left: 160px;
 margin-right: 650px;
+<<<<<<< HEAD
 margin-top: 50px;
 
+=======
+margin-top: 20px;
+font-size: 25px;
+>>>>>>> f1f6eec0302e51c74b98745a034ac5f2358f6b61
 }
 
 .cp_btn:hover {
@@ -1354,6 +1373,5 @@ a{
 #show{
     font-size: 20px;
 }
-
 
 

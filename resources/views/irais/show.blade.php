@@ -34,6 +34,13 @@
             @if (Auth::user()->id != $irai->user_id)
 
             <div id="tetsudau">
+<<<<<<< HEAD
+=======
+                <!-- @include('irai_help.help_button', ['user' => $user])-->
+                <!--{!! Form::open(['route' => ['irais.thankyou', $irai->id], 'method' => 'get']) !!}-->
+                <!--{!! Form::submit('手伝う！！！', ['class' => 'btn center-block']) !!}-->
+                <!--{!! Form::close() !!}-->
+>>>>>>> f1f6eec0302e51c74b98745a034ac5f2358f6b61
 
                 @if (Auth::user()->is_finishing($irai->id)) 
                     <div id ="kanryou-zumi-2">
@@ -70,7 +77,9 @@
             <div id="toukou">
             {!! Form::open(['route' => ['comments.store'], 'method' => 'post']) !!}
             {{Form::hidden('irai_id', $irai->id)}}
-
+            {{Form::hidden('user_id', $user->id)}}
+            {{Form::hidden('type', 'comment')}}
+            
             {!! Form::textarea('content', null, ['class' => 'form-control input-lg', 'rows="2"',  'placeholder' => 'コメント' ]) !!}
             {!! Form::submit('コメント投稿', ['class' => 'btn btn-success btn-lg']) !!}
 

@@ -36,9 +36,14 @@
             
                             <div class='maste-btn'>
                                 @if (Auth::user() == null)
+                                
                             
                                 @elseif(Auth::user()->id != $irai->user_id)
                                     @include('irai_help.help_button', ['user' => $user])
+                                    
+                                
+                                    
+                                
                                 @endif
                             </div>
                             <h4 class="glyphicon glyphicon-time text-center"></h4><br> {{ $irai->start }}~<br>{{ $irai->finish }}<br>
@@ -57,6 +62,8 @@
                             
                                 @elseif(Auth::user()->id != $irai->user_id)
                                     @include('irai_help.help_button', ['user' => $user])
+                                    
+                                
                                 @endif
                             </div>
                             <h4 class="glyphicon glyphicon-time text-center"></h4><br> {{ $irai->start }}~<br>{{ $irai->finish }}<br>

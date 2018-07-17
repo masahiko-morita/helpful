@@ -125,7 +125,7 @@ class UsersController extends Controller
         foreach($other_irai_ids_src as $v) {
             array_push($other_irai_ids, $v->finish_id);
         }
- //       var_dump($other_irai_ids);
+        // var_dump($other_irai_ids);
         $finished = Irai::whereIn('id',$other_irai_ids)->get();
 //        for()
         /*
@@ -160,21 +160,21 @@ class UsersController extends Controller
         return view('users.helpings', $data);
     }
     
-    public function helpees($id)
-    {
-        $user = User::find($id);
-        $helpees = $user->helpees()->where('finish_id')->get()->paginate(10);
+    // public function helpees($id)
+    // {
+    //     $user = User::find($id);
+    //     $helpees = $user->helpees()->where('finish_id')->get()->paginate(10);
 
-        $data = [
-            'user' => $user,
-            'helpees' => $helpees,
-        ];
+    //     $data = [
+    //         'user' => $user,
+    //         'helpees' => $helpees,
+    //     ];
 
-        $data += $this->counts($user);
+    //     $data += $this->counts($user);
 
-        return view('users.helpees',['user' => User::find($id)
-        ], $data);
-    }
+    //     return view('users.helpees',['user' => User::find($id)
+    //     ], $data);
+    // }
 
 }
 

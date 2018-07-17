@@ -38,6 +38,13 @@ body {
 .navbar {
     background-color: #283e56;
     border-style:none;
+    height: 60px;
+    
+}
+
+.navbar-brand img{
+    width:100px;
+    height:38px;
 }
 　
 /*footer*/
@@ -109,9 +116,12 @@ body {
     text-align: center;
 }
 
+<<<<<<< HEAD
 
 
 
+=======
+>>>>>>> a255e234d4408260b1113a3bb219bfae6cc35785
 .irai .irai-flower:hover  .irai-syousai {
     opacity: 1;
     position:absolute;
@@ -352,7 +362,7 @@ transition: .4s;
     background: #1989ac;
     color: #FFF;
     box-sizing: border-box;
-    margin-left:43%;
+
     
     margin-top: 0;
     
@@ -887,11 +897,11 @@ transition: .4s;
 
 #hensyuu .btn{
     display: block;
-    width: 250px;
+    width: 170px;
     text-align: center;
     text-decoration: none;
-    margin-top:20px;
-    font-size:30px;
+    margin-top:15px;
+    font-size:20px;
     color: #6FC9D8;
     border: 3px solid #6FC9D8;
     border-radius: 3px;
@@ -906,11 +916,11 @@ transition: .4s;
 
 #sakujyo .btn{
     display: block;
-    width: 250px;
+    width: 170px;
     text-align: center;
     text-decoration: none;
     margin-top:15px;
-    font-size:30px;
+    font-size:20px;
     color: #EA5C5C;
     border: 3px solid #EA5C5C;
     border-radius: 3px;
@@ -925,11 +935,11 @@ transition: .4s;
 
 #toukou .btn{
     display: block;
-    width: 250px;
+    width: 170px;
     text-align: center;
     text-decoration: none;
-    margin-top:50px;
-    font-size:30px;
+    margin-top:15px;
+    font-size:20px;
     color: #BC927A;
     border: 3px solid #BC927A;
     border-radius: 3px;
@@ -941,6 +951,30 @@ transition: .4s;
 #toukou .btn:hover{
    background: #BC927A;
    color: #fff; 
+}
+
+#koushin .btn{
+    display: block;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    margin-top:10px;
+    font-size:20px;
+    color: #6FC9D8;
+    border: 3px solid #6FC9D8;
+    border-radius: 3px;
+    transition: .4s;
+    background-color:rgba(255,255,255,0.7);
+}
+
+#koushin .btn:hover{
+   background: #99CCFF;
+   color: #fff; 
+}
+
+#hensyuu .btn:hover{
+   background: #6FC9D8;
+   color: #fff;
 }
 
 #home .btn{
@@ -1308,7 +1342,6 @@ a{
     font-size: 12px;
 }
 
-
 #sampleFix {
 	position: fixed;
 	top: 25%;
@@ -1333,15 +1366,9 @@ a{
 
 }
 
-#sampleFix{
-    border-color: black;
-    z-index: 2;
-}
 
-#tatesen{
-    border-left: 1px solid #ddd;
-}
 
 #show{
     font-size: 20px;
 }
+

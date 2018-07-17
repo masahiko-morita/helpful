@@ -15,8 +15,9 @@
                     {!! Form::text('content', null, ['class' => 'form-control']) !!}
                 
             </div> 
-    
-        {!! Form::submit('更新', ['class' => 'btn btn-info btn-lg']) !!}
+        <div id="koushin">
+        {!! Form::submit('更新', ['class' => 'btn btn-info btn-xs']) !!}
+        </div>
     </div>
 </div>    
     {!! Form::close() !!}

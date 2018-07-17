@@ -64,7 +64,13 @@
             <div id="toukou">
                 {!! Form::open(['route' => ['chats.store'], 'method' => 'post']) !!}
                 {{Form::hidden('irai_id', $irai->id)}}
+
                 {!! Form::textarea('content', null, ['class' => 'form-control input-lg' , 'rows="2"',  'placeholder' => 'コメント'  ]) !!}
+
+                {{Form::hidden('user_id', $user->id)}}
+                {{Form::hidden('type', 'chat')}}
+               
+
                 {!! Form::submit('投稿！', ['class' => 'btn center-block']) !!}
                 {!! Form::close() !!}
             </div>

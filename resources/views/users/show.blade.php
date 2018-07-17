@@ -35,7 +35,17 @@
         </div> 
     </div>
 
+    
 
+
+<div role="document" data-spy="scroll" data-target="#sampleScrollSpy">
+
+	<div class="container-fluid">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-2">
+				
+				</div>
 				<div class="col-xs-12" id='tatesen'>
 					<div id="sampleMainContents">
 
@@ -56,9 +66,27 @@
 						</ol>
 						@endif
 						
-					
-					
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
+</div>
+
+
+	<script>
+		$( function() {
+			$('.linkInThePage').click( function () {
+				var hrefValue = $(this).attr( 'href' );
+				$(hrefValue).animatescroll();
+			} );
+		} );
+	</script>
+
+
+
+    
 
 
  <a href="{{ route('irais.create', ['id' => $user->id]) }}">

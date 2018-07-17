@@ -1,12 +1,15 @@
 @extends('layouts.app')
 
 @section('content')
-
-<div class='ribbon3'>
-  <h2>依頼一覧</h2>
+<div class='text-center'>
+    <div class='ribbon3'>
+      <h2>依頼一覧</h2>
+    </div>
 </div>
 
 <div class='container'>
+    
+
 
 @include('irais.irai', ['irais' => $irais])
  
@@ -17,6 +20,8 @@
 
 </div>
 </a>
+
+
 
 </div>
  

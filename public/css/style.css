@@ -5,9 +5,8 @@
 /*body*/
 
 body {
-    background: #f2f2f2;
+    background: white;
 
-    background-color: white;
 
     /*background-color: #E8f1f5;*/
     font-family:  'Noto Sans JP', sans-serif;
@@ -124,6 +123,7 @@ body {
     text-align: center;
 }
 
+
 .irai .irai-flower:hover  .irai-syousai {
     opacity: 1;
     position:absolute;
@@ -167,9 +167,7 @@ body {
     text-align: center;
     line-height:10px;
     margin-top: 15px;
-
 }
-
 
 .irai-flower .contentbox{
   width:80%;
@@ -208,7 +206,7 @@ a:hover {
 text-decoration: none;
 }
 
-.content1  {
+.content1{
     margin-bottom: 20px;
     width: 80%;
     height: 390px;
@@ -249,7 +247,6 @@ text-decoration: none;
 .explaination{
     padding-bottom: 20px;
 }
-
 
 .cp_btn {
 position: relative;
@@ -311,12 +308,10 @@ transition: .4s;
     text-align: center;
 }
 
-
 .containerirai{
   position:relative;
   margin-top: 10%;
   height:70%;
-
 }
 
 .maste-btn .btn{
@@ -357,15 +352,15 @@ transition: .4s;
     height: 60px;
     line-height: 60px;
     vertical-align: middle;
-    text-align: center;
+
     padding: 7px 0;
     font-size: 18px;
     background: #1989ac;
     color: #FFF;
     box-sizing: border-box;
-    margin-left: 40%;
-    margin-top: 0;
+
     
+    margin-top: 0;
 }
 
 .ribbon3 h2 {
@@ -375,7 +370,6 @@ transition: .4s;
     border-top: dashed 2px rgba(255, 255, 255, 0.5);
     border-bottom: dashed 2px rgba(255, 255, 255, 0.5);
     line-height: 42px;
-    
 }
 
 .ribbon3:before, .ribbon3:after{
@@ -390,16 +384,15 @@ transition: .4s;
   top: 0;
   left: 0;
   border-width: 30px 0px 30px 15px;
-  border-color: transparent transparent transparent #fff;
+  border-color: transparent transparent transparent white;
   border-style: solid;
-  
 }
 
 .ribbon3:after{/*右の山形*/
   top: 0;
   right: 0;
   border-width: 30px 15px 30px 0px;
-  border-color: transparent #fff transparent transparent;
+  border-color: transparent white transparent transparent;
   border-style: solid;
 }
 
@@ -417,7 +410,6 @@ transition: .4s;
     color: #FFF;
     box-sizing: border-box;
     margin-left:40%;
-    
 }
 
 .ribbon2 h2 {
@@ -441,7 +433,7 @@ transition: .4s;
   top: 0;
   left: 0;
   border-width: 30px 0px 30px 15px;
-  border-color: transparent transparent transparent #fff;
+  border-color: transparent transparent transparent white;
   border-style: solid;
   
 }
@@ -450,7 +442,7 @@ transition: .4s;
   top: 0;
   right: 0;
   border-width: 30px 15px 30px 0px;
-  border-color: transparent #fff transparent transparent;
+  border-color: transparent white transparent transparent;
   border-style: solid;
 }
 
@@ -536,8 +528,6 @@ transition: .4s;
     font-size: 24px;
     color: #fff;
 }
-
-
 .abc{
     text-align: center;
     margin-left: 400px;
@@ -640,10 +630,10 @@ transition: .4s;
  
 }
 .effect-background {
-  width:330px;
+  width:320px;
   height:76px;
   top:-0px;
-  left:0px;
+  left:1px;
   background:#00000000;
   position:absolute;
   z-index:2;
@@ -661,7 +651,6 @@ transition: .4s;
     margin-bottom:  50px;
 }
 
-
 /*comment-comment*/
 
 .comment .comment-flower .contentbox .popover{
@@ -676,6 +665,7 @@ transition: .4s;
     text-align:right;
 }
 
+
 /*irai-index*/
 .index-content form{
     text-align:center;
@@ -684,14 +674,11 @@ transition: .4s;
 /*だいき（コメントの高さ変更）*/
 .comment-title-comments h3{
     text-align: left;
-
-
 }
 
 .glyphicon .glyphicon-time{
     text-align: center;
 }
-
 
 .anim750{
   transition: all 750ms ease-in-out;
@@ -843,14 +830,10 @@ transition: .4s;
     text-align: center;
 }
 
-
-
 /*irai-create*/
 .h4 {
     text-decoration: underline;
 }
-
- 
 
 .wrap #peace{
  font-size: 40px;   
@@ -946,6 +929,7 @@ transition: .4s;
     transition: .4s;
     background-color:rgba(255,255,255,0.7);
     text-align: center;
+    margin-right: 400px;
 }
 
 #toukou .btn:hover{
@@ -979,10 +963,10 @@ transition: .4s;
 
 #home .btn{
     display: block;
-    width: 200px;
+    width: 170px;
     text-align: center;
     text-decoration: none;
-    margin-top:50px;
+    margin-top:30px;
     font-size:15px;
     color: #6FC9D8;
     border: 3px solid #6FC9D8;
@@ -990,6 +974,7 @@ transition: .4s;
     transition: .4s;
     background-color:rgba(255,255,255,0.7);
     text-align: center;
+    margin-right:500px;
 }
 
 #home .btn:hover{
@@ -1045,7 +1030,7 @@ transition: .4s;
 .btn-post:hover {
   background-color:	#FFC0CB;
   box-shadow: 0px 15px 20px #FF572;
-  color:#333333;
+  color:white;
   transform: translateY(-7px);
 }
 
@@ -1058,6 +1043,7 @@ transition: .4s;
     transition: .4s;
     background-color:rgba(255,255,255,0.7);
     text-align: center;
+    width:250px;
 }
 
 #kanryou .btn:hover{
@@ -1107,6 +1093,26 @@ transition: .4s;
     display: block;
 }
 
+<<<<<<< HEAD
+#torihiki .btn{
+    display: block;
+    width: 170px;
+    text-align: center;
+    text-decoration: none;
+    margin-top:15px;
+    font-size:20px;
+    color: #93D87C;
+    border: 3px solid #93D87C;
+    border-radius: 3px;
+    transition: .4s;
+    background-color:rgba(255,255,255,0.7);
+}
+
+#torihiki .btn:hover{
+   background: #93D87C;
+   color: #fff;
+}
+
 
 
 /*irai-search*/
@@ -1114,11 +1120,8 @@ transition: .4s;
     text-align: center;
 }
 
-
-
 .search-content {
     text-align: center;
-
 }
 
 /*irai-create*/
@@ -1126,19 +1129,13 @@ transition: .4s;
     text-decoration: underline;
 }
 
- 
-
 #peace{
  font-size: 35px;   
 }
 
-
 .title21{
     text-align: center;
 }
-
-
-
 
 .touroku_1 {
     padding: 0.5em 1em;
@@ -1154,8 +1151,36 @@ transition: .4s;
     padding: 0;
     color: #283e56;
 }
+ .flow_10{
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    color: #CCCCCC;/*文字色*/
+    background: #FFF;
+    border: solid 3px #CCCCCC;/*線*/
+    border-radius: 10px;/*角の丸み*/
+}
 
+ .flow_10 p {
+    margin: 0; 
+    padding: 0;
+    color: #283e56;}
 
+ .flow_19{
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    color: #CCCCCC;/*文字色*/
+    background: #FFF;
+    border: solid 3px #CCCCCC;/*線*/
+    border-radius: 10px;/*角の丸み*/
+}
+
+ .flow_19 p {
+    margin: 0; 
+    padding: 0;
+    color: #283e56;
+}
  .flow_06{
     padding: 0.5em 1em;
     margin: 2em 0;
@@ -1188,7 +1213,6 @@ transition: .4s;
     color: #283e56;
 }
 
-
  .flow_04{
     padding: 0.5em 1em;
     margin: 2em 0;
@@ -1197,7 +1221,6 @@ transition: .4s;
     background: #FFF;
     border: solid 3px #CCCCCC;/*線*/
     border-radius: 10px;/*角の丸み*/
-    
 }
  .flow_04 p {
     margin: 0; 
@@ -1229,7 +1252,6 @@ transition: .4s;
     background: #FFF;
     border: solid 3px #CCCCCC;/*線*/
     border-radius: 10px;/*角の丸み*/
-    
 }
  .flow_08 p {
     margin: 0; 
@@ -1241,7 +1263,12 @@ transition: .4s;
     font-size: 40px;
     color: #3CB371;
     text-shadow: 1px 0px 0px #3CB371, 0px 1px 0px #3CB371, -1px 0px 0px #3CB371, 1px -1px 0px #3CB371;
+<<<<<<< HEAD
     margin-left: 150px;
+   
+=======
+    margin-left: 170px;
+>>>>>>> 93bfec6976b01ad594fd70e7c995858d2ebe9716
 }
 
 
@@ -1265,11 +1292,12 @@ transition: .4s;
     background: #F0FFF0;
     border: solid 3px #fff;/*線*/
     border-radius: 22px;/*角の丸み*/
-    width: 560px;
+    width: 595px;
+    margin-left: -60px;
 }
 
 .tasuketai{
-     float: right;
+    float: right;
     width: 500px;
     font-size: 28px;
      /*margin: 2em 0;*/
@@ -1279,7 +1307,8 @@ transition: .4s;
     border: solid 0px #fff;/*線*/
     border-radius: 22px;/*角の丸み*/
     margin-top: 59px;
-     width: 560px;
+    width: 595px;
+    margin-right:-60px;
 }
 
 .torihiki{
@@ -1356,27 +1385,432 @@ a{
 #sampleFix li{
     color: #fff;
     background-color:white;
-
-
 }
 
 #sampleFix a {
     font-size:18px;
-    
-
 }
 
-#sampleFix{
-    border-color: black;
-    z-index: 2;
-}
 
-#tatesen{
-    border-left: 1px solid #ddd;
-}
 
 #show{
     font-size: 20px;
 }
 
+<<<<<<< HEAD
+.w {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+}
 
+.w-body {
+  animation: 1.3s ease-in-out infinite alternate bodyStep;
+  background-color: #eb486b;
+  border-radius: 50%;
+  height: 160px;
+  overflow: hidden;
+  margin: -80px 0 0 -80px;
+  position: absolute;
+  text-align: center;
+  width: 160px;
+  white-space: nowrap;
+}
+
+  .w-body-skin,
+  .w-body-skin::before,
+  .w-body-skin::after {
+    background-color: #e7ddb6;
+    border-radius: 50%;
+    display: block;
+    height: 85px;
+    width: 85px;
+  }
+  .w-body-skin {
+    animation: 0.07s ease-in-out infinite alternate skinShake;
+    margin: -20px auto 0;
+  }
+    .w-body-skin::before,
+    .w-body-skin::after {
+      border-radius: 0 0 50% 50%;
+      content: '';
+      transform: translateY(20px);
+    }
+    .w-body-skin::before {
+      margin-left: -90px;
+    }
+    .w-body-skin::after {
+      margin: -85px 0 0 90px;
+    }
+
+  .w-body-nipples,
+  .w-body-nipples::after {
+    background-color: #f5978e;
+    border-radius: 50%;
+    display: block;
+    height: 10px;
+    position: relative;
+    width: 10px;
+  }
+    .w-body-nipples::after {
+      content: '';
+      margin-left: 56px;
+      transform: translateY(0);
+    }
+  .w-body-nipples {
+    animation: 0.07s ease-in-out infinite alternate nipplesShake;
+  }
+
+  .w-head,
+  .w-head::before {
+    background-color: #e7ddb6;
+    display: block;
+    height: 30px;
+    margin: -106px 0 0 -17px;
+    position: absolute;
+    width: 34px;
+    z-index: 1;
+  }
+    .w-head {
+      animation: 1.3s ease-in-out infinite alternate bodyStep;
+    }
+    .w-head::before {
+      background-color: #eb486b;
+      border-radius: 50% 50% 0 0;
+      content: '';
+      height: 40px;
+      margin: -27px 0 0;
+    }
+
+  .w-eye {
+    background-color: #772436;
+    border: 2px solid #e7ddb6;
+    border-radius: 0 8px 6px 70%;
+    display: block;
+    height: 8px;
+    margin: -11px 0 0 1px;
+    position: absolute;
+    width: 11px;
+    z-index: 1;
+  }
+    .w-eye::after {
+      background-color: #e7ddb6;
+      border-radius: 50%;
+      content: '';
+      display: block;
+      height: 5px;
+      margin: 1px 0 0 4px;
+      width: 5px;
+    }
+    .w-eye_right {
+      margin-left: 18px;
+      transform: scaleX(-1);
+    }
+
+  .w-arm {
+    animation: 1.3s ease-in-out infinite alternate bodyStep;
+    margin: -63px 0 0 -80px;
+    position: absolute;
+  }
+    .w-arm_right {
+      animation: 1.3s ease-in-out infinite alternate bodyStepMirror;
+      margin-left: 80px;
+    }
+    .w-arm::before {
+      animation: 0.07s ease-in-out infinite alternate armShake;
+      border-radius: 30px 30px 0 0;
+      background-color: #d8cca7;
+      content: '';
+      height: 80px;
+      margin: -10px 0 0 -22px;
+      position: absolute;
+      transform: rotate(31deg);
+      transform-origin: bottom;
+      width: 50px;
+    }
+    .w-arm_right::before {
+      animation-delay: 0.07s;
+    }
+    .w-arm::after {
+      content: '';
+      background-color: #e7ddb6;
+      border-radius: 3px 0 30px 30px;
+      height: 85px;
+      margin: 54px 0 0 -55px;
+      position: absolute;
+      transform: rotate(49deg);
+      width: 50px;
+    }
+
+  .w-leg {
+    animation: 1.3s ease-in infinite alternate legShift;
+    margin: 49px 0 0 -52px;
+    position: absolute;
+  }
+    .w-leg-top {
+      animation: 1.3s ease-in infinite alternate legTop;
+      background-color: #e7ddb6;
+      height: 50px;
+      position: absolute;
+      width: 45px;
+    }
+    .w-leg-bottom {
+      animation: 1.3s ease-in infinite alternate legBottom;
+      background-color: #eb486b;
+      height: 70px;
+      margin: 40px 0 0 0px;
+      position: absolute;
+      width: 45px;
+    }
+    .w-leg-bottom::before {
+      animation: 1.3s ease-in infinite alternate bootsBackground;
+      background-color: #eb486b;
+      border-radius: 50% 0 0 0;
+      content: '';
+      height: 10px;
+      margin: 60px 0 0 -20px;
+      position: absolute;
+      width: 20px;
+    }
+    .w-leg_right {
+      animation: 1.3s ease-in -1.3s infinite alternate legShiftScale;
+      margin-left: 52px;
+      transform: scaleX(-1);
+    }
+      .w-leg_right .w-leg-top,
+      .w-leg_right .w-leg-bottom,
+      .w-leg_right .w-leg-bottom::before {
+        animation-delay: 1.3s;
+      }
+
+.w-shoelace,
+.w-shoelace::after {
+  background-color: yellow;
+  border-radius: 2px;
+  height: 2px;
+  margin: 15px 0 0 1px;
+  transform: rotate(45deg);
+  width: 12px;
+}
+  .w-shoelace::after {
+    content: '';
+    margin: 0;
+    position:absolute;
+    transform: rotate(90deg);
+  }
+.w-heel {
+  bottom: 0;
+  height: 20px;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  width: 20px;
+}
+  .w-heel::after {
+    background-color: yellow;
+    border-radius: 50%;
+    content: '';
+    height: 40px;
+    position: absolute;
+    width: 40px;
+  }
+@keyframes legShift {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 0);
+  }
+  75% {
+    transform: translate(0, -20px);
+  }
+  90% {
+    transform: translate(20px, 0);
+  }
+  100% {
+    transform: translate(20px, 0);
+  }
+}
+
+@keyframes legShiftScale {
+  0% {
+    transform: translate(0, 0) scaleX(-1);
+    z-index: 0;
+  }
+  50% {
+    transform: translate(0, 0) scaleX(-1);
+    z-index: 0;
+  }
+  75% {
+    transform: translate(0, -20px) scaleX(-1);
+    z-index: 0;
+  }
+  90% {
+    transform: translate(-20px, 0) scaleX(-1);
+    z-index: -1;
+  }
+  100% {
+    transform: translate(-20px, 0) scaleX(-1);
+    z-index: -1;
+  }
+}
+
+@keyframes legTop {
+  0% {
+    background-color: #e7ddb6;
+    transform: rotate(0deg);
+  }
+  50% {
+    background-color: #e7ddb6;
+    transform: rotate(0deg);
+  }
+  75% {
+    background-color: #e7ddb6;
+    transform: rotate(30deg);
+  }
+  90% {
+    background-color: #b8b092;
+    transform: rotate(0deg);
+  }
+  100% {
+    background-color: #b8b092;
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes legBottom {
+  0% {
+    background-color: #eb486b;
+    transform: translate(0, 0)  rotate(0deg);
+  }
+  50% {
+    background-color: #eb486b;
+    transform: translate(0, 0)  rotate(0deg);
+  }
+  75% {
+    background-color: #eb486b;
+    transform: translate(0px, -15px) rotate(-20deg);
+  }
+  90% {
+    background-color: #ba3b56;
+    transform: translate(0, 0)  rotate(0deg);
+  }
+  100% {
+    background-color: #ba3b56;
+    transform: translate(0, 0)  rotate(0deg);
+  }
+}
+
+@keyframes bootsBackground {
+  0% {
+    background-color: #eb486b;
+  }
+  75% {
+    background-color: #eb486b;
+  }
+  90% {
+    background-color: #ba3b56;
+  }
+  100% {
+    background-color: #ba3b56;
+  }
+}
+
+@keyframes bodyStep {
+  0% {
+    transform: translate3d(-22px, 0, 0);
+  }
+  2% {
+    transform: translate3d(-22px, 0, 0);
+  }
+  25% {
+    transform: translate3d(-11px, -15px, 0);
+  }
+  50% {
+    transform: translate3d(0, 0, 0);
+  }
+  75% {
+    transform: translate3d(11px, -15px, 0);
+  }
+  98% {
+    transform: translate3d(22px, 0, 0);
+  }
+  100% {
+    transform: translate3d(22px, 0, 0);
+  }
+}
+
+@keyframes bodyStepMirror {
+  0% {
+    transform: translate3d(-22px, 0, 0) scaleX(-1);
+  }
+  25% {
+    transform: translate3d(-11px, -15px, 0) scaleX(-1);
+  }
+  50% {
+    transform: translate3d(0, 0, 0) scaleX(-1);
+  }
+  75% {
+    transform: translate3d(11px, -15px, 0) scaleX(-1);
+  }
+  100% {
+    transform: translate3d(22px, 0, 0) scaleX(-1);
+  }
+}
+
+@keyframes skinShake {
+  from {
+    transform: translateX(-3px);
+  }
+  to {
+    transform: translateX(3px);
+  }
+}
+
+@keyframes nipplesShake {
+  from {
+    transform: translate(44px, -25px);
+  }
+  to {
+    transform: translate(50px, -25px);
+  }
+}
+
+@keyframes armShake {
+  from {
+    transform: rotate(28deg);
+  }
+  to {
+    transform: rotate(32deg);
+  }
+}
+.LinkedIn,
+.LinkedIn:visited {
+  bottom: .25em;
+  color: #e7ddb6;
+  position: absolute;
+  right: .25em;
+}
+.LinkedIn:hover {
+  color: white;
+}
+
+.kimokawa{
+ position:fixed;
+ bottom:150px;
+ left:-150px;
+ height:50px;
+}
+.table {
+    margin-left: 280px;
+    margin-top: 30px;
+}
+
+#momo {
+   margin-left: 200px;
+   margin-top: 60px;
+}
+
+.col-md-9 {
+    margin-left:200px;
+}

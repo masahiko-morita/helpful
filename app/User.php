@@ -69,9 +69,6 @@ class User extends Authenticatable
     
     
     
-    
-    
-    
     public function finishings()
     {
         return $this->belongsToMany(Irai::class, 'irai_finish', 'user_id', 'finish_id')->withTimestamps();
@@ -99,6 +96,7 @@ class User extends Authenticatable
         } else {
             // 未フォローであればフォローする
             $this->finishings()->attach($iraiId);
+            $this->helpings()->detach($iraiId);
             return true;
         }
     }

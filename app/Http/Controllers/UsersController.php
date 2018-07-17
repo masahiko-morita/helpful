@@ -107,6 +107,7 @@ class UsersController extends Controller
     {
         $user = User::find($id);
         $finishings = $user->finishings()->paginate(10);
+        
 
         $data = [
             'user' => $user,
@@ -157,6 +158,8 @@ class UsersController extends Controller
     {
         $user = User::find($id);
         $helpings = $user->helpings()->paginate(10);
+        
+
 
         $data = [
             'user' => $user,

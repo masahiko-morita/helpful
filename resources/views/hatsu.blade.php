@@ -14,7 +14,6 @@
 <div class="demo demo3">
    <div class="heading"><span>取引の流れ</span></div>
 </div>
-        
         <div class="iraishitai">
             <div class="person_1">
                 <p>依頼したい人</p>
@@ -42,7 +41,6 @@
             　 <img src="/images/comment1.jpg" width="450px" height="280px">    
             </div>
         </div>
-       
         
         <div class="tasuketai">
             <div class="person_2">

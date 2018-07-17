@@ -68,7 +68,6 @@
 								<li><a class="linkInThePage" href="#sampleA"><i class="fa fa-check" '></i>  出した依頼</a></li>
 								<li><a class="linkInThePage" href="#sampleB"><i class="fa fa-check"></i>  助けている一覧</a></li>
 								<li><a class="linkInThePage" href="#sampleC"><i class="fa fa-check"'></i>  依頼完了一覧</a></li>
-								
 							</ul>
 						</div>
 					</div>

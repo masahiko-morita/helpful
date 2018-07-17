@@ -44,17 +44,14 @@ class ChatsController extends Controller
             'content' => $request->content,
             'irai_id' => $request->irai_id,
         ]);
-        
-        $chats = \App\Chat::find($request->irai_id);
-        
-        
-        
+        $chats = \App\Irai::find($request->irai_id)->comments()->orderBy('id','desc')->take(1)->get();
+        foreach($chats as $chat){
         if($request->user_id != $chats->user_id){
         $notification = new Notification;
         $notification->user_id = $request->user_id;
         $notification->type = $request->type;
         $notification->save();
-            
+        }    
         }
             
         

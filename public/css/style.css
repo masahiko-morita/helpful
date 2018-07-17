@@ -353,14 +353,11 @@ transition: .4s;
     height: 60px;
     line-height: 60px;
     vertical-align: middle;
-
     padding: 7px 0;
     font-size: 18px;
     background: #1989ac;
     color: #FFF;
     box-sizing: border-box;
-
-    
     margin-top: 0;
 }
 
@@ -436,7 +433,6 @@ transition: .4s;
   border-width: 30px 0px 30px 15px;
   border-color: transparent transparent transparent #fff;
   border-style: solid;
-  
 }
 
 .ribbon2:after{/*右の山形*/
@@ -531,10 +527,9 @@ transition: .4s;
 }
 .abc{
     text-align: center;
-    margin-left: 400px;
+    margin-left: 430px;
     margin-bottom: 10px;
     margin-top: 5%;
-    margin-left:35%;
 }
 
 .header_box{
@@ -1091,7 +1086,6 @@ transition: .4s;
     display: block;
 }
 
-<<<<<<< HEAD
 #torihiki .btn{
     display: block;
     width: 170px;

@@ -12,7 +12,7 @@
 </div>
 
 <div class="demo demo3">
-  <div class="heading"><span>取引の流れ</span></div>
+   <div class="heading"><span>取引の流れ</span></div>
 </div>
         
         <div class="iraishitai">
@@ -84,14 +84,4 @@
 　  </div>
 　  @endif
             
-   <!-- <div class="abcd">    -->
-   <!--   <div class="animation">-->
-   <!--     <div class="effect" style='pointer-events:none;'>-->
-   <!--     </div>-->
-   <!--     <div class="effect-background">-->
-   <!--       <a href="{{ route('signup.get') }}" style='z-index:1000;'> <h1> HELPFULを始める </h1></a>-->
-   <!--     </div>-->
-   <!--   </div>-->
-　  <!--</div>-->
-　  <!--</div>-->
 @endsection

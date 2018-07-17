@@ -930,6 +930,7 @@ transition: .4s;
     transition: .4s;
     background-color:rgba(255,255,255,0.7);
     text-align: center;
+    margin-right: 400px;
 }
 
 #toukou .btn:hover{
@@ -963,10 +964,10 @@ transition: .4s;
 
 #home .btn{
     display: block;
-    width: 200px;
+    width: 170px;
     text-align: center;
     text-decoration: none;
-    margin-top:50px;
+    margin-top:30px;
     font-size:15px;
     color: #6FC9D8;
     border: 3px solid #6FC9D8;
@@ -974,6 +975,7 @@ transition: .4s;
     transition: .4s;
     background-color:rgba(255,255,255,0.7);
     text-align: center;
+    margin-right:500px;
 }
 
 #home .btn:hover{
@@ -1042,6 +1044,7 @@ transition: .4s;
     transition: .4s;
     background-color:rgba(255,255,255,0.7);
     text-align: center;
+    width:250px;
 }
 
 #kanryou .btn:hover{
@@ -1388,6 +1391,20 @@ a{
 
 #show{
     font-size: 20px;
+}
+
+.table {
+    margin-left: 280px;
+    margin-top: 30px;
+}
+
+#momo {
+   margin-left: 200px;
+   margin-top: 60px;
+}
+
+.col-md-9 {
+    margin-left:200px;
 }
 
 

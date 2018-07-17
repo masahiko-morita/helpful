@@ -1093,7 +1093,7 @@ transition: .4s;
     display: block;
 }
 
-<<<<<<< HEAD
+
 #torihiki .btn{
     display: block;
     width: 170px;
@@ -1264,6 +1264,9 @@ transition: .4s;
     color: #3CB371;
     text-shadow: 1px 0px 0px #3CB371, 0px 1px 0px #3CB371, -1px 0px 0px #3CB371, 1px -1px 0px #3CB371;
 
+    margin-left: 150px;
+
+
 }
 
 
@@ -1392,7 +1395,6 @@ a{
     font-size: 20px;
 }
 
-<<<<<<< HEAD
 .w {
   left: 50%;
   position: absolute;

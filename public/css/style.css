@@ -1115,6 +1115,24 @@ transition: .4s;
     display: block;
 }
 
+#torihiki .btn{
+    display: block;
+    width: 170px;
+    text-align: center;
+    text-decoration: none;
+    margin-top:15px;
+    font-size:20px;
+    color: #93D87C;
+    border: 3px solid #93D87C;
+    border-radius: 3px;
+    transition: .4s;
+    background-color:rgba(255,255,255,0.7);
+}
+
+#torihiki .btn:hover{
+   background: #93D87C;
+   color: #fff;
+}
 
 
 /*irai-search*/

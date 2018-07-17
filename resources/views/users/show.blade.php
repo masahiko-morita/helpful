@@ -40,32 +40,55 @@
 				</div>
 				<div class="col-xs-12" id='tatesen'>
 					<div id="sampleMainContents">
-						
+					
+						 
 						<h2 id="sampleA">
 							 <div class='ribbon3'>
 					           <h2>出した依頼</h2>
 					        </div>
 						</h2>
+						
+						@if($count_irais==0)
+						<br>
+						 <h4 class='text-center'>投稿がありません</h4><br>
+						@else
 						<ol>
 							@include('irais.irai', ['irais' => $irais])
 						</ol>
+						@endif
+						
 						<h2 id="sampleB">
 					 	<div class='ribbon3'>
 				           <h2>助けている一覧</h2>
 				        </div>
 						</h2>
+						
+						@if($count_irais==0)
+						<br>
+						 <h4 class='text-center'>投稿がありません</h4><br>
+						@else
+						
 						<ol>
 							@include('irais.irai', ['irais' => $irais])
 						</ol>
+						
+						@endif
+						
 						<h2 id="sampleC">
 							 <div class='ribbon3'>
 					           <h2>依頼完了一覧</h2>
 					        </div>
 						</h2>
+						
+						@if($count_irais==0)
+						<br>
+						 <h4 class='text-center'>投稿がありません</h4><br>
+						@else
+						
 						<ol>
 							@include('irais.irai', ['irais' => $irais])
 						</ol>
-						
+					    @endif
 						
 						
 					</div>

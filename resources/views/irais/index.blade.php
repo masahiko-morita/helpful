@@ -7,6 +7,11 @@
 </div>
 
 <div class='container'>
+    
+@if($count_irais==0)
+    <br>
+     <h4 class='text-center'>投稿がありません</h4><br>
+@else
 
 @include('irais.irai', ['irais' => $irais])
  
@@ -17,6 +22,8 @@
 
 </div>
 </a>
+
+@endif
 
 </div>
  

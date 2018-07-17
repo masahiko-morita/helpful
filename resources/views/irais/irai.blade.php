@@ -43,7 +43,7 @@
                             </div>
                             <h4 class="glyphicon glyphicon-time text-center"></h4><br> {{ $irai->start }}~<br>{{ $irai->finish }}<br>
                             <h4 class="glyphicon glyphicon-map-marker"></h4> {{$irai->station}}<br>
-                            <h4 class="glyphicon glyphicon-heart"></h4> {{ $irai->reward }}<br>
+                            <h4 class="glyphicon glyphicon-gift"></h4> {{ $irai->reward }}<br>
                    </div>
                    </a>
                     @else
@@ -61,7 +61,7 @@
                             </div>
                             <h4 class="glyphicon glyphicon-time text-center"></h4><br> {{ $irai->start }}~<br>{{ $irai->finish }}<br>
                             <h4 class="glyphicon glyphicon-map-marker"></h4> {{$irai->station}}<br>
-                            <h4 class="glyphicon glyphicon-heart"></h4> {{ $irai->reward }}<br>
+                            <h4 class="glyphicon glyphicon-gift"></h4> {{ $irai->reward }}<br>
                    </div>
                    </a>
                    @endif

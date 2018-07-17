@@ -198,7 +198,7 @@ a:hover {
 text-decoration: none;
 }
 
-.content1  {
+.content1{
     margin-bottom: 20px;
     width: 80%;
     height: 390px;
@@ -244,7 +244,8 @@ text-decoration: none;
 .cp_btn {
 position: relative;
 display: block;
-width: 170px;
+width: 240px;
+height: 60px;
 padding: 0.8em;
 text-align: center;
 font-weight: bold;
@@ -256,7 +257,8 @@ transition: .4s;
 border-radius: 4px;
 margin-left: 160px;
 margin-right: 650px;
-margin-top: 30px;
+margin-top: 50px;
+
 }
 
 .cp_btn:hover {
@@ -299,12 +301,10 @@ transition: .4s;
     text-align: center;
 }
 
-
 .containerirai{
   position:relative;
   margin-top: 10%;
   height:70%;
-
 }
 
 .maste-btn .btn{
@@ -353,7 +353,6 @@ transition: .4s;
     box-sizing: border-box;
     margin-left: 40%;
     margin-top: 0;
-    
 }
 
 .ribbon3 h2 {
@@ -363,7 +362,6 @@ transition: .4s;
     border-top: dashed 2px rgba(255, 255, 255, 0.5);
     border-bottom: dashed 2px rgba(255, 255, 255, 0.5);
     line-height: 42px;
-    
 }
 
 .ribbon3:before, .ribbon3:after{
@@ -380,7 +378,6 @@ transition: .4s;
   border-width: 30px 0px 30px 15px;
   border-color: transparent transparent transparent #fff;
   border-style: solid;
-  
 }
 
 .ribbon3:after{/*右の山形*/
@@ -405,7 +402,6 @@ transition: .4s;
     color: #FFF;
     box-sizing: border-box;
     margin-left:40%;
-    
 }
 
 .ribbon2 h2 {
@@ -628,7 +624,7 @@ transition: .4s;
  
 }
 .effect-background {
-  width:330px;
+  width:320px;
   height:76px;
   top:-0px;
   left:0px;
@@ -1120,13 +1116,9 @@ transition: .4s;
  font-size: 35px;   
 }
 
-
 .title21{
     text-align: center;
 }
-
-
-
 
 .touroku_1 {
     padding: 0.5em 1em;
@@ -1185,7 +1177,6 @@ transition: .4s;
     background: #FFF;
     border: solid 3px #CCCCCC;/*線*/
     border-radius: 10px;/*角の丸み*/
-    
 }
  .flow_04 p {
     margin: 0; 
@@ -1217,7 +1208,6 @@ transition: .4s;
     background: #FFF;
     border: solid 3px #CCCCCC;/*線*/
     border-radius: 10px;/*角の丸み*/
-    
 }
  .flow_08 p {
     margin: 0; 
@@ -1229,7 +1219,7 @@ transition: .4s;
     font-size: 40px;
     color: #3CB371;
     text-shadow: 1px 0px 0px #3CB371, 0px 1px 0px #3CB371, -1px 0px 0px #3CB371, 1px -1px 0px #3CB371;
-    margin-left: 150px;
+    margin-left: 170px;
 }
 
 
@@ -1253,11 +1243,12 @@ transition: .4s;
     background: #F0FFF0;
     border: solid 3px #fff;/*線*/
     border-radius: 22px;/*角の丸み*/
-    width: 560px;
+    width: 590px;
+    margin-left: -60px;
 }
 
 .tasuketai{
-     float: right;
+    float: right;
     width: 500px;
     font-size: 28px;
      /*margin: 2em 0;*/
@@ -1267,7 +1258,8 @@ transition: .4s;
     border: solid 0px #fff;/*線*/
     border-radius: 22px;/*角の丸み*/
     margin-top: 59px;
-     width: 560px;
+    width: 590px;
+    margin-right:-60px;
 }
 
 .torihiki{

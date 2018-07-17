@@ -44,9 +44,17 @@ body {
 
 .navbar-brand img{
     width:100px;
-    height:38px;
+    height:35px;
 }
-　
+
+.navbar-brand {
+    font-size: 16px;
+}
+
+.dropdown-toggle {
+    font-size: 16px;
+}
+
 /*footer*/
 
 #footer {
@@ -1371,6 +1379,5 @@ a{
 #show{
     font-size: 20px;
 }
-
 
 

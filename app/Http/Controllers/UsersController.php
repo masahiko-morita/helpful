@@ -120,20 +120,27 @@ class UsersController extends Controller
     
     public function finished($id)
     {
+        $user = User::find($id);
         $other_irai_ids_src = \DB::select('select * from irai_finish where user_id != ?', [$id]);
         $other_irai_ids = array();
         foreach($other_irai_ids_src as $v) {
             array_push($other_irai_ids, $v->finish_id);
         }
-        // var_dump($other_irai_ids);
-        $finished = Irai::whereIn('id',$other_irai_ids)->get();
-//        for()
-        /*
-        
-        $finished = $user->finishings()->select('finish_id')
-        ->where('irai_finish.user_id', '!=', $id);//->get();
-        return $finished->toSql();
-*/
+        $finished = Irai::whereIn('id', $other_irai_ids)
+        ->where('user_id', $user -> id)
+        ->get();    
+
+            // $user = User::find($id);
+    //     $finished_src = \DB::select('select * from irai_finish where user_id != ?', [$id]);
+    //     $finished = array();
+    //     foreach($finished_src as $v) {
+    //         $irai = Irai::find($v->finish_id);
+    //         if($irai->user_id == $user->id){
+    //           array_push($finished, $irai);
+    //         } 
+    //     }
+
+
 
         $data = [
             'user' => User::find($id),
@@ -144,6 +151,7 @@ class UsersController extends Controller
 
         return view('users.finished', $data);
     }
+    
     
     public function helpings($id)
     {

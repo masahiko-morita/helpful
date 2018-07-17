@@ -124,6 +124,12 @@ body {
     text-align: center;
 }
 
+<<<<<<< HEAD
+
+
+
+=======
+>>>>>>> a255e234d4408260b1113a3bb219bfae6cc35785
 .irai .irai-flower:hover  .irai-syousai {
     opacity: 1;
     position:absolute;
@@ -352,13 +358,14 @@ transition: .4s;
     height: 60px;
     line-height: 60px;
     vertical-align: middle;
-    text-align: center;
+
     padding: 7px 0;
     font-size: 18px;
     background: #1989ac;
     color: #FFF;
     box-sizing: border-box;
-    margin-left: 40%;
+
+    
     margin-top: 0;
 }
 
@@ -408,7 +415,12 @@ transition: .4s;
     background: #1989ac;
     color: #FFF;
     box-sizing: border-box;
+<<<<<<< HEAD
     margin-left:40%;
+=======
+    margin-left:43%;
+    
+>>>>>>> b02682418355a2b1508eb72f460623bdd217cf57
 }
 
 .ribbon2 h2 {
@@ -666,6 +678,7 @@ transition: .4s;
 .comment .comment-flower .contentbox .popover .comment-death {
     text-align:right;
 }
+
 
 /*irai-index*/
 .index-content form{
@@ -1374,14 +1387,7 @@ a{
     font-size:18px;
 }
 
-#sampleFix{
-    border-color: black;
-    z-index: 2;
-}
 
-#tatesen{
-    border-left: 1px solid #ddd;
-}
 
 #show{
     font-size: 20px;

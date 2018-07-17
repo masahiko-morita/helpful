@@ -7,6 +7,8 @@
 </div>
 
 <div class='container'>
+    
+
 
 @include('irais.irai', ['irais' => $irais])
  
@@ -17,6 +19,8 @@
 
 </div>
 </a>
+
+
 
 </div>
  

@@ -5,7 +5,7 @@
 <div class="container">
     <div class='text-center'>
 
-           <h2>ありがとうございます</h2>
+           <h2>取引ページ</h2>
 
         <h4>依頼内容は以下でございます</h4>
     </div>
@@ -64,9 +64,13 @@
             <div id="toukou">
                 {!! Form::open(['route' => ['chats.store'], 'method' => 'post']) !!}
                 {{Form::hidden('irai_id', $irai->id)}}
+
+                {!! Form::textarea('content', null, ['class' => 'form-control input-lg' , 'rows="2"',  'placeholder' => 'コメント'  ]) !!}
+
                 {{Form::hidden('user_id', $user->id)}}
                 {{Form::hidden('type', 'chat')}}
-                {!! Form::textarea('content', null, ['class' => 'form-control input-sm'  ]) !!}
+               
+
                 {!! Form::submit('投稿！', ['class' => 'btn center-block']) !!}
                 {!! Form::close() !!}
             </div>

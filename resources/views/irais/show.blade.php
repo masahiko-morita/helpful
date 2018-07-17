@@ -39,6 +39,7 @@
                 <!--{!! Form::submit('手伝う！！！', ['class' => 'btn center-block']) !!}-->
                 <!--{!! Form::close() !!}-->
 
+
                 @if (Auth::user()->is_finishing($irai->id)) 
                     <div id ="kanryou-zumi-2">
                     @include('irai_finish.finish_button', ['user' => $user])

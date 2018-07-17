@@ -46,17 +46,16 @@ class CommentsController extends Controller
             'irai_id' => $request->irai_id,
         ]);
         
-        $user = \App\User::find($request->user_id);
+        
         $comments = \App\Comment::find($request->irai_id);
         
-        if($request->user_id != $user->id){
+        
         
         $notification = new Notification;
         $notification->user_id = $request->user_id;
         $notification->type = $request->type;
         $notification->save();
             
-        }
         
         return redirect(route('irais.show',
             ['id'=>$request->irai_id]));

@@ -44,18 +44,18 @@ class ChatsController extends Controller
             'content' => $request->content,
             'irai_id' => $request->irai_id,
         ]);
-        $user = \App\User::find($request->user_id);
+        
         $chats = \App\Chat::find($request->irai_id);
         
         
-        if($request->user_id != $user->id){
+        
         
         $notification = new Notification;
         $notification->user_id = $request->user_id;
         $notification->type = $request->type;
         $notification->save();
             
-        }
+        
         
         return redirect(route('irais.thankyou',
             ['id'=>$request->irai_id

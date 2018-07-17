@@ -42,6 +42,7 @@
      <div class=explaination>
           <h2>Helpfulの特徴</h2>
     </div>
+    
     <div class="top-key-features-containers">
                   <section class="top-key-features-item">
                         <figure>

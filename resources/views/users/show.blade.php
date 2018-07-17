@@ -64,7 +64,20 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-2">
+<<<<<<< HEAD
+					<div id="sampleFix">
+						<h1>  </h1>	
+						<div data-spy="scroll"id="sampleScrollSpy" class='barbox'>
+							<ul class="nav nav-stacked">
+								<li><a class="linkInThePage" href="#sampleA"><i class="fa fa-check" '></i>  出した依頼</a></li>
+								<li><a class="linkInThePage" href="#sampleB"><i class="fa fa-check"></i>  助けている一覧</a></li>
+								<li><a class="linkInThePage" href="#sampleC"><i class="fa fa-check"'></i>  依頼完了一覧</a></li>
+							</ul>
+						</div>
+					</div>
+=======
 				
+>>>>>>> b02682418355a2b1508eb72f460623bdd217cf57
 				</div>
 				<div class="col-xs-12" id='tatesen'>
 					<div id="sampleMainContents">

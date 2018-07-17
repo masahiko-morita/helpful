@@ -1263,7 +1263,9 @@ transition: .4s;
     font-size: 40px;
     color: #3CB371;
     text-shadow: 1px 0px 0px #3CB371, 0px 1px 0px #3CB371, -1px 0px 0px #3CB371, 1px -1px 0px #3CB371;
-    margin-left: 170px;
+
+    margin-left: 150px;
+
 }
 
 

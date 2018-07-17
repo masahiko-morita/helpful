@@ -51,6 +51,7 @@ class CommentsController extends Controller
         
         
         if($request->user_id != $comments->user_id){
+            
         $notification = new Notification;
         $notification->user_id = $request->user_id;
         $notification->type = $request->type;

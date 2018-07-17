@@ -41,9 +41,6 @@
                     投稿した後、助ける側から<br>通知が来たら、さっそく返信!</p>
             　 <img src="/images/comment1.jpg" width="450px" height="280px">    
             </div>
-            
-            
-            
         </div>
        
         
@@ -63,18 +60,15 @@
             
             <div class="flow_10">
                   <p> <span class="top-introduction-numn">3</span>依頼を完了するボタンを押すと<br>取引完了！</p>
-                <img src="/images/thankspage.jpg" width="470px" height="280px">
+                <img src="/images/merci.jpg" width="470px" height="280px">
             </div>
             
             <div class="flow_08">
                 <p> <span class="top-introduction-numn">4</span>依頼者から問い合わせが<br>きたらコメント欄で返信!</p>
                 <img src="/images/tetsudau.jpg" width="450px" height="280px">
             </div>
-            
         </div>
     </div>
-            
-    
                             
     @if (Auth::user() == null)                            
     <div class="abc">    
@@ -100,5 +94,4 @@
    <!--   </div>-->
 　  <!--</div>-->
 　  <!--</div>-->
-　  
 @endsection

@@ -124,12 +124,7 @@ body {
     text-align: center;
 }
 
-<<<<<<< HEAD
 
-
-
-=======
->>>>>>> a255e234d4408260b1113a3bb219bfae6cc35785
 .irai .irai-flower:hover  .irai-syousai {
     opacity: 1;
     position:absolute;
@@ -415,12 +410,7 @@ transition: .4s;
     background: #1989ac;
     color: #FFF;
     box-sizing: border-box;
-<<<<<<< HEAD
     margin-left:40%;
-=======
-    margin-left:43%;
-    
->>>>>>> b02682418355a2b1508eb72f460623bdd217cf57
 }
 
 .ribbon2 h2 {
@@ -539,8 +529,6 @@ transition: .4s;
     font-size: 24px;
     color: #fff;
 }
-
-
 .abc{
     text-align: center;
     margin-left: 400px;
@@ -646,7 +634,7 @@ transition: .4s;
   width:320px;
   height:76px;
   top:-0px;
-  left:0px;
+  left:1px;
   background:#00000000;
   position:absolute;
   z-index:2;
@@ -663,7 +651,6 @@ transition: .4s;
 .steps {
     margin-bottom:  50px;
 }
-
 
 /*comment-comment*/
 
@@ -688,14 +675,11 @@ transition: .4s;
 /*だいき（コメントの高さ変更）*/
 .comment-title-comments h3{
     text-align: left;
-
-
 }
 
 .glyphicon .glyphicon-time{
     text-align: center;
 }
-
 
 .anim750{
   transition: all 750ms ease-in-out;
@@ -847,14 +831,10 @@ transition: .4s;
     text-align: center;
 }
 
-
-
 /*irai-create*/
 .h4 {
     text-decoration: underline;
 }
-
- 
 
 .wrap #peace{
  font-size: 40px;   
@@ -1111,24 +1091,20 @@ transition: .4s;
     display: block;
 }
 
-
-
 /*irai-search*/
 .search-content {
     text-align: center;
 }
 
-
-
 .search-content {
     text-align: center;
-
 }
 
 /*irai-create*/
 .toukou h4 {
     text-decoration: underline;
 }
+
 #peace{
  font-size: 35px;   
 }
@@ -1213,7 +1189,6 @@ transition: .4s;
     color: #283e56;
 }
 
-
  .flow_04{
     padding: 0.5em 1em;
     margin: 2em 0;
@@ -1288,7 +1263,7 @@ transition: .4s;
     background: #F0FFF0;
     border: solid 3px #fff;/*線*/
     border-radius: 22px;/*角の丸み*/
-    width: 590px;
+    width: 595px;
     margin-left: -60px;
 }
 
@@ -1303,7 +1278,7 @@ transition: .4s;
     border: solid 0px #fff;/*線*/
     border-radius: 22px;/*角の丸み*/
     margin-top: 59px;
-    width: 590px;
+    width: 595px;
     margin-right:-60px;
 }
 

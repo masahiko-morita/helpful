@@ -5,7 +5,7 @@
 <div class="container">
     <div class='text-center'>
 
-           <h2>ありがとうございます</h2>
+           <h2>取引ページ</h2>
 
         <h4>依頼内容は以下でございます</h4>
     </div>

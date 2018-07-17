@@ -49,11 +49,13 @@ class ChatsController extends Controller
         
         
         
-        
+        if($request->user_id != $chats->user_id){
         $notification = new Notification;
         $notification->user_id = $request->user_id;
         $notification->type = $request->type;
         $notification->save();
+            
+        }
             
         
         

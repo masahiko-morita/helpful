@@ -46,6 +46,7 @@
 <!--								<li><a class="linkInThePage" href="#sampleA"><i class="fa fa-check" '></i>  出した依頼</a></li>-->
 <!--								<li><a class="linkInThePage" href="#sampleB"><i class="fa fa-check"></i>  助けている一覧</a></li>-->
 <!--								<li><a class="linkInThePage" href="#sampleC"><i class="fa fa-check"'></i>  依頼完了一覧</a></li>-->
+<<<<<<< HEAD
 								
 
 <!--							</ul>-->
@@ -54,6 +55,38 @@
 <!--				</div>-->
 <!--				<div class="col-xs-12">-->
 <!--					<div id="sampleMainContents">-->
+=======
+								
+<!--							</ul>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--				<div class="col-xs-12">-->
+<!--					<div id="sampleMainContents">-->
+
+
+<div role="document" data-spy="scroll" data-target="#sampleScrollSpy">
+
+	<div class="container-fluid">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-2">
+					<div id="sampleFix">
+						<h1>  </h1>	
+						<div data-spy="scroll"id="sampleScrollSpy" class='barbox'>
+							<ul class="nav nav-stacked">
+								<li><a class="linkInThePage" href="#sampleA"><i class="fa fa-check" '></i>  出した依頼</a></li>
+								<li><a class="linkInThePage" href="#sampleB"><i class="fa fa-check"></i>  助けている一覧</a></li>
+								<li><a class="linkInThePage" href="#sampleC"><i class="fa fa-check"'></i>  依頼完了一覧</a></li>
+								
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12" id='tatesen'>
+					<div id="sampleMainContents">
+						
+>>>>>>> a255e234d4408260b1113a3bb219bfae6cc35785
 <!--						<h2 id="sampleA">-->
 <!--							 <div class='ribbon3'>-->
 <!--					           <h2>出した依頼</h2>-->
@@ -81,11 +114,11 @@
 						
 						
 						
-<!--					</div>-->
-<!--				</div>-->
-<!--			</div>-->
-<!--		</div>-->
-<!--	</div>-->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 </div>
 

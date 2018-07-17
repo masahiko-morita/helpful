@@ -5,7 +5,7 @@
         <!--{!! Form::open(['route' => ['irai.unfinish', $irai->id], 'method' => 'delete']) !!}-->
 
         <!--最終的にはここのるーと消したい-->
-        {!! Form::open(['route' => ['irai.unfinish', $irai->id], 'method' => 'delete']) !!}
+        <!--{!! Form::open(['route' => ['irai.unfinish', $irai->id], 'method' => 'delete']) !!}-->
 
         {!! Form::submit('依頼完了済', ['class' => "btn btn-block center-block"]) !!}
 

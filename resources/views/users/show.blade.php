@@ -64,7 +64,6 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-xs-2">
-<<<<<<< HEAD
 					<div id="sampleFix">
 						<h1>  </h1>	
 						<div data-spy="scroll"id="sampleScrollSpy" class='barbox'>
@@ -75,9 +74,6 @@
 							</ul>
 						</div>
 					</div>
-=======
-				
->>>>>>> b02682418355a2b1508eb72f460623bdd217cf57
 				</div>
 				<div class="col-xs-12" id='tatesen'>
 					<div id="sampleMainContents">

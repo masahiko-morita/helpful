@@ -85,7 +85,7 @@
 <div class='kimokawa'>                
                 
         <section class="w">
-  <div class="w-head">
+  <a class="navbar-brand" id="logo2" href="/"><div class="w-head"></a>
     <i class="w-eye"></i>
     <i class="w-eye w-eye_right"></i>
   </div>
@@ -109,7 +109,8 @@
   </div>
   <div class="w-body">
     <div class="w-body-skin"></div>
-    <div class="w-body-nipples"></div>
+    
+     <a href="{{ route('irais.create') }}"><div class="w-body-nipples"></div></a>
   </div>
 </section>
 

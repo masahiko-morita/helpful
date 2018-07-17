@@ -248,19 +248,12 @@ text-decoration: none;
     padding-bottom: 20px;
 }
 
-
 .cp_btn {
 position: relative;
 display: block;
-<<<<<<< HEAD
-width: 240px;
-height: 60px;
-padding: 0.8em;
-=======
 width: 250px;
 height:60px;
 padding: 0.5em;
->>>>>>> f1f6eec0302e51c74b98745a034ac5f2358f6b61
 text-align: center;
 font-weight: bold;
 text-decoration: none;
@@ -271,13 +264,8 @@ transition: .4s;
 border-radius: 4px;
 margin-left: 160px;
 margin-right: 650px;
-<<<<<<< HEAD
-margin-top: 50px;
-
-=======
 margin-top: 20px;
 font-size: 25px;
->>>>>>> f1f6eec0302e51c74b98745a034ac5f2358f6b61
 }
 
 .cp_btn:hover {
@@ -1128,9 +1116,6 @@ transition: .4s;
 .toukou h4 {
     text-decoration: underline;
 }
-
- 
-
 #peace{
  font-size: 35px;   
 }
@@ -1153,8 +1138,36 @@ transition: .4s;
     padding: 0;
     color: #283e56;
 }
+ .flow_10{
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    color: #CCCCCC;/*文字色*/
+    background: #FFF;
+    border: solid 3px #CCCCCC;/*線*/
+    border-radius: 10px;/*角の丸み*/
+}
 
+ .flow_10 p {
+    margin: 0; 
+    padding: 0;
+    color: #283e56;}
 
+ .flow_19{
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    font-weight: bold;
+    color: #CCCCCC;/*文字色*/
+    background: #FFF;
+    border: solid 3px #CCCCCC;/*線*/
+    border-radius: 10px;/*角の丸み*/
+}
+
+ .flow_19 p {
+    margin: 0; 
+    padding: 0;
+    color: #283e56;
+}
  .flow_06{
     padding: 0.5em 1em;
     margin: 2em 0;

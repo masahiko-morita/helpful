@@ -27,14 +27,23 @@
             
             <div class="flow_06">
                   <p> <span class="top-introduction-numm">2</span>依頼したいことを入力</p>
-                 <img src="/images/iraitoukou.jpg" width="450px" height="300px">
+                 <img src="/images/irao2.jpg" width="450px" height="300px">
             </div>
             
             <div class="flow_09">
                 <p><span class="top-introduction-numm">3</span>
+                    投稿後、トップページに戻り<br>自分の投稿が掲載されていたら完了!</p>
+            　 <img src="/images/yo.jpg" width="450px" height="280px">    
+            </div>
+            
+             <div class="flow_19">
+                <p><span class="top-introduction-numm">4</span>
                     投稿した後、助ける側から<br>通知が来たら、さっそく返信!</p>
             　 <img src="/images/comment1.jpg" width="450px" height="280px">    
             </div>
+            
+            
+            
         </div>
        
         
@@ -52,8 +61,13 @@
                 <img src="/images/melon2.jpg" width="450px" height="260px">
             </div>
             
+            <div class="flow_10">
+                  <p> <span class="top-introduction-numn">3</span>依頼を完了するボタンを押すと<br>取引完了！</p>
+                <img src="/images/thankspage.jpg" width="470px" height="280px">
+            </div>
+            
             <div class="flow_08">
-                <p> <span class="top-introduction-numn">3</span>依頼者から問い合わせが<br>きたらコメント欄で返信!</p>
+                <p> <span class="top-introduction-numn">4</span>依頼者から問い合わせが<br>きたらコメント欄で返信!</p>
                 <img src="/images/tetsudau.jpg" width="450px" height="280px">
             </div>
             

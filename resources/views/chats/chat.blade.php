@@ -5,22 +5,24 @@
             <div class="chat-flower">
                 <div class='contentbox'>
                     @if ($chat->irai_id == $irai->id)
-                    <div class='name'>
-                        <a href="{{ route('users.show', $user->id) }}"><h3 class="chat-title-chats">{{ $user->name }}</h3></a>
+                    <div class='circle'>
+                        <a href="{{ route('users.show', $user->id) }}"><h4 class="chat-title-chats"><i class="fa fa-user" id='search'></i><br>{{ $user->name }}</h4</a>
                     </div>
-                    <div class="popover right show" style="position:relative; max-width:50%;">
-                        <div class="arrow"></div>
+                    <div class="balloon1-left" style="position:relative; max-width:50%;">
+                        
                     
                         <div class="popover-content">
                             <p>
-                               <td><h4 class="chat-title-chats">{{ $chat->content }}</h4></td>
+                               <td><h4 class="chat-title-chatss">{{ $chat->content }}</h4></td>
                             </p>
-                            <div class='chat-death'>
-                                @if (Auth::user()->id == $chat->user_id)       
+                            <div class='text-right'>
+                                @if (Auth::user()->id == $chat->user_id)     
+                               
                                     {!! Form::open(['route' => ['chats.destroy', $chat->id], 'method' => 'delete']) !!}
                                     {{Form::hidden('irai_id', $irai->id)}}
-                                    {!! Form::submit('コメント削除', ['class' => 'btn btn-danger btn-xs']) !!}
+                                    {!! Form::submit('delete', ['class' => 'btn btn-info btn-xs']) !!}
                                     {!! Form::close() !!}
+                                
                                 @endif
                             </div>
                         </div>
@@ -31,4 +33,5 @@
         </li>
 @endforeach
 </ul>
+
 

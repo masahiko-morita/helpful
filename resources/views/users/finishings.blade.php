@@ -19,7 +19,7 @@
 </div>
         
 <div> 
-<div class="col-xs-8">
+<div class="col-xs-12">
     <ul class="nav nav-tabs nav-justified">
         <li role="presentation" class="{{ Request::is('users/' . $user->id) ? 'active' : '' }}"><a href="{{ route('users.show', ['id' => $user->id]) }}">出した依頼 <span class="badge">{{ $count_irais }}</span></a></li>
         <li role="presentation" class="{{ Request::is('users/*/helpings') ? 'active' : '' }}"><a href="{{ route('users.helpings', ['id' => $user->id]) }}">お助け中 <span class="badge">{{ $count_helpings }}</span></a></li>
@@ -32,7 +32,24 @@
         <!--</div>-->
         
     </div>
-           @include('irais.irai', ['irais' => $finishings])
+           	<div id="sampleMainContents">
+						<h2 class="text-center">
+							 <div class='ribbon3'>
+					           <h2>依頼完了一覧</h2>
+					        </div>
+						</h2>
+						
+						@if($count_finishings==0)
+						<br>
+						 <h5 class='text-center'>投稿がありません</h5><br>
+						@else
+						
+						<ol>
+							@include('irais.irai', ['irais' => $finishings])
+						</ol>
+					    @endif
+		    </div>
+
 </div>
 
 

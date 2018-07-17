@@ -18,8 +18,7 @@ class IraiFinishController extends Controller
     {
         $user = \Auth::user();
         $irais = $user->feed_irais()->orderBy('created_at', 'desc')->paginate(10);
-        
-        
+
         \Auth::user()->finish($id);
         return view('irais.index', [
             'irais' => $irais,

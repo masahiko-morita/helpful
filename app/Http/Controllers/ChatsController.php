@@ -44,7 +44,7 @@ class ChatsController extends Controller
             'content' => $request->content,
             'irai_id' => $request->irai_id,
         ]);
-        $chats = \App\Irai::find($request->irai_id)->comments()->orderBy('id','desc')->take(1)->get();
+        $chats = \App\Irai::find($request->irai_id)->chats()->orderBy('id','desc')->take(1)->get();
         foreach($chats as $chat){
         if($request->user_id != $chats->user_id){
         $notification = new Notification;

@@ -1263,12 +1263,9 @@ transition: .4s;
     font-size: 40px;
     color: #3CB371;
     text-shadow: 1px 0px 0px #3CB371, 0px 1px 0px #3CB371, -1px 0px 0px #3CB371, 1px -1px 0px #3CB371;
-<<<<<<< HEAD
+
     margin-left: 150px;
-   
-=======
-    margin-left: 170px;
->>>>>>> 93bfec6976b01ad594fd70e7c995858d2ebe9716
+
 }
 
 
@@ -1397,7 +1394,6 @@ a{
     font-size: 20px;
 }
 
-<<<<<<< HEAD
 .w {
   left: 50%;
   position: absolute;

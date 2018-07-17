@@ -19,7 +19,7 @@ class NotificationsTable extends Migration
             $table->string('type')->index();
             $table->timestamps();
             
-            $table->foreign('user_id')->references('user_id')->on('irais');
+            $table->foreign('user_id')->references('id')->on('users');
         });
     }
 

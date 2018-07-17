@@ -5,7 +5,7 @@
 <div class="container">
     <div class='text-center'>
 
-           <h2>取引ページ</h2>
+           <h2>ありがとうございます</h2>
 
         <h4>依頼内容は以下でございます</h4>
     </div>
@@ -15,11 +15,6 @@
         <div class='container'>
         <div id="kanryou">
          @include('irai_finish.finish_button', ['user' => $user])
-        </div>
-        <div id="home">
-        {!! Form::open(['route' => ['irais.index', $irai->id], 'method' => 'get']) !!}
-        {!! Form::submit('ホームに戻る', ['class' => 'btn center-block']) !!}
-        {!! Form::close() !!}
         </div>
         <!--{!! Form::open(['route' => ['irais.index', $irai->id], 'method' => 'get']) !!}-->
         <!--{!! Form::submit('依頼完了', ['class' => 'btn btn-primary btn-lg']) !!}-->
@@ -32,7 +27,7 @@
         <div class="col-md-6 text-center">
             <table class="table">
             <tr>
-                <h3 class='text-center'>{{ $irai->title }}</h3>
+                <div id= momo><h3>{{ $irai->title }}</h3></div>
             </tr>
             
             <tr>
@@ -69,6 +64,9 @@
 
                 {{Form::hidden('user_id', $user->id)}}
                 {{Form::hidden('type', 'chat')}}
+
+                {{Form::hidden('user_id', $user->id)}}
+                {{Form::hidden('type', 'chat')}}
                
 
                 {!! Form::submit('投稿！', ['class' => 'btn center-block']) !!}
@@ -79,6 +77,11 @@
         </div>  
         <!--{!! Form::submit('評価をする', ['class' => 'btn btn-danger btn-lg']) !!}-->
         <!--{!! Form::close() !!}-->
+         <div id="home">
+        {!! Form::open(['route' => ['irais.index', $irai->id], 'method' => 'get']) !!}
+        {!! Form::submit('ホームに戻る', ['class' => 'btn center-block']) !!}
+        {!! Form::close() !!}
+        </div>
     </div>
 
 </div>    

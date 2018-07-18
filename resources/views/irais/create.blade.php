@@ -51,9 +51,7 @@
                                $(function () {
                                $('#datetimepicker1').datetimepicker();
                                 });
-                                
                     </script>
-
                     
                     {!! Form::label('station', '※ 場所:') !!}
                     {!! Form::text('station', null, ['class' => 'form-control','placeholder' => '例:都内、神奈川なら可です！/会社内でお願いします']) !!}

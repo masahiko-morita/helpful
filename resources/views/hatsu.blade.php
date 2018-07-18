@@ -12,9 +12,8 @@
 </div>
 
 <div class="demo demo3">
-  <div class="heading"><span>取引の流れ</span></div>
+   <div class="heading"><span>取引の流れ</span></div>
 </div>
-        
         <div class="iraishitai">
             <div class="person_1">
                 <p>依頼したい人</p>
@@ -42,7 +41,6 @@
             　 <img src="/images/comment1.jpg" width="450px" height="280px">    
             </div>
         </div>
-       
         
         <div class="tasuketai">
             <div class="person_2">
@@ -54,13 +52,13 @@
             </div>
             
             <div class="flow_07">
-                  <p> <span class="top-introduction-numn">2</span>依頼者の投稿の<br>手伝うボタンをクリック</p>
-                <img src="/images/melon2.jpg" width="450px" height="260px">
+                  <p> <span class="top-introduction-numn">2</span>依頼者の投稿の<br>手伝いを完了するボタンをクリック</p>
+                <img src="/images/taxi3.PNG" width="450px" height="260px">
             </div>
             
             <div class="flow_10">
-                  <p> <span class="top-introduction-numn">3</span>依頼を完了するボタンを押すと<br>取引完了！</p>
-                <img src="/images/merci.jpg" width="470px" height="280px">
+                  <p> <span class="top-introduction-numn">3</span>依頼完了済になると取引完了！</p>
+                <img src="/images/taxi4.PNG" width="470px" height="320px">
             </div>
             
             <div class="flow_08">
@@ -71,7 +69,7 @@
     </div>
                             
     @if (Auth::user() == null)                            
-    <div class="abc">    
+    <div class="abcd">    
       <div class="animation">
         <div class="effect" style='pointer-events:none;'>
         </div>
@@ -84,14 +82,4 @@
 　  </div>
 　  @endif
             
-   <!-- <div class="abcd">    -->
-   <!--   <div class="animation">-->
-   <!--     <div class="effect" style='pointer-events:none;'>-->
-   <!--     </div>-->
-   <!--     <div class="effect-background">-->
-   <!--       <a href="{{ route('signup.get') }}" style='z-index:1000;'> <h1> HELPFULを始める </h1></a>-->
-   <!--     </div>-->
-   <!--   </div>-->
-　  <!--</div>-->
-　  <!--</div>-->
 @endsection

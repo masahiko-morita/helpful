@@ -23,7 +23,7 @@
     @if($isChat == true)
     <div class="panel panel-info">
     <div class="panel-body">
-       新着の取引メッセージがあります。
+       新着の取引メッセージがあります。<a href="#" class="alert-link">link</a>
     </div>
     </div>
     @endif

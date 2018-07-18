@@ -866,16 +866,27 @@ transition: .4s;
     width: 200px;
     text-align: center;
     text-decoration: none;
-    margin-top:50px;
-    font-size:30px;
+    margin-top:20px;
+    font-size:18px;
     color: #3cb371;
     border: 3px solid #93D87C;
     border-radius: 3px;
     transition: .4s;
     background-color:rgba(255,255,255,0.7);
+    margin-right: -100px;
 }
 
+<<<<<<< HEAD
+.form-control{
+    margin-left: -50px;
+}
+#tetsudau .btn:hover{
+   background: #93D87C;
+   color: #fff;
+}
+=======
  
+>>>>>>> 6afefbc2a31ab6fa89a01389f4e76318e28f9580
 
 #hensyuu .btn{
     display: block;
@@ -920,7 +931,7 @@ transition: .4s;
     width: 170px;
     text-align: center;
     text-decoration: none;
-    margin-top:15px;
+    margin-top:30px;
     font-size:20px;
     color: #BC927A;
     border: 3px solid #BC927A;
@@ -928,7 +939,7 @@ transition: .4s;
     transition: .4s;
     background-color:rgba(255,255,255,0.7);
     text-align: center;
-    margin-right: 400px;
+    margin-left: 280px;
 }
 
 #toukou .btn:hover{
@@ -949,6 +960,7 @@ transition: .4s;
     transition: .4s;
     background-color:rgba(255,255,255,0.7);
 }
+
 
 #koushin .btn:hover{
    background: #99CCFF;
@@ -1263,7 +1275,16 @@ transition: .4s;
     font-size: 40px;
     color: #3CB371;
     text-shadow: 1px 0px 0px #3CB371, 0px 1px 0px #3CB371, -1px 0px 0px #3CB371, 1px -1px 0px #3CB371;
+<<<<<<< HEAD
+    margin-left: 150px;
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 5b13677a649a4f71492e9e3a010a734ae43694a5
+=======
     margin-left: 170px;
+>>>>>>> 31d8e78f38b46685b6661908d77b4bef61a72d2e
 }
 
 .person_2{
@@ -1785,9 +1806,11 @@ a{
  left:150px;
  height:50px;
 }
+
 .table {
-    margin-left: 280px;
-    margin-top: 30px;
+    margin-left: 300px;
+    margin-top: 100px;
+    width:600px;
 }
 
 #momo {
@@ -1799,3 +1822,9 @@ a{
     margin-left:200px;
 }
 
+
+/*コメント幅*/
+
+textarea.form-control {
+    width: 780px;
+}

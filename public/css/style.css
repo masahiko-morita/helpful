@@ -864,15 +864,19 @@ transition: .4s;
     width: 200px;
     text-align: center;
     text-decoration: none;
-    margin-top:50px;
-    font-size:30px;
+    margin-top:20px;
+    font-size:18px;
     color: #3cb371;
     border: 3px solid #93D87C;
     border-radius: 3px;
     transition: .4s;
     background-color:rgba(255,255,255,0.7);
+    margin-right: -100px;
 }
 
+.form-control{
+    margin-left: -50px;
+}
 #tetsudau .btn:hover{
    background: #93D87C;
    color: #fff;
@@ -921,7 +925,7 @@ transition: .4s;
     width: 170px;
     text-align: center;
     text-decoration: none;
-    margin-top:15px;
+    margin-top:30px;
     font-size:20px;
     color: #BC927A;
     border: 3px solid #BC927A;
@@ -929,7 +933,7 @@ transition: .4s;
     transition: .4s;
     background-color:rgba(255,255,255,0.7);
     text-align: center;
-    margin-right: 400px;
+    margin-left: 280px;
 }
 
 #toukou .btn:hover{
@@ -950,6 +954,7 @@ transition: .4s;
     transition: .4s;
     background-color:rgba(255,255,255,0.7);
 }
+
 
 #koushin .btn:hover{
    background: #99CCFF;
@@ -1093,10 +1098,7 @@ transition: .4s;
     display: block;
 }
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 5b13677a649a4f71492e9e3a010a734ae43694a5
 #torihiki .btn{
     display: block;
     width: 170px;
@@ -1800,16 +1802,14 @@ a{
 .kimokawa{
  position:fixed;
  bottom:150px;
-<<<<<<< HEAD
- left:-100px;
-=======
  left:150px;
->>>>>>> 5b13677a649a4f71492e9e3a010a734ae43694a5
  height:50px;
 }
+
 .table {
-    margin-left: 280px;
-    margin-top: 30px;
+    margin-left: 300px;
+    margin-top: 100px;
+    width:600px;
 }
 
 #momo {

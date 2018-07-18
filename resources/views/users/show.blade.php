@@ -42,8 +42,7 @@
 	<div class="container-fluid">
 		<div class="container">
 			<div class="row">
-
-				
+				</div>
 
 				<div class="col-xs-12" id='tatesen'>
 					<div id="sampleMainContents">

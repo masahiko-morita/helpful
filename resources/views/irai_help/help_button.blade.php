@@ -8,7 +8,7 @@
     @else
     <div id="tetsudai">
         {!! Form::open(['route' => ['irai.finish', $irai->id]]) !!}
-            {!! Form::submit('手伝いを完了する！', ['class' => "btn center-block"]) !!}
+            {!! Form::submit('手伝いを完了する', ['class' => "btn center-block"]) !!}
         {!! Form::close() !!}
         </div>
     @endif

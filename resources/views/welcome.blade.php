@@ -39,58 +39,81 @@
           </a>	
         </div>
 
-     <div class=explaination>
-          <h2>Helpfulの特徴</h2>
-    </div>
-    
-    <div class="top-key-features-containers">
-                  <section class="top-key-features-item">
-                        <figure>
-                                  <center><img src=/images/desktop.png alt="" width="80px" height="80px"></center>
-                              </figure><h3 class="top-key-features-subtitle text-center">
 
-              お手伝いしたいことや、<br>依頼したいことを投稿しよう
-            </h3>
-            <p class="top-key-features-description text-center">
-              困った時はお手伝いを依頼しよう。暇な時間は人助けしよう。
-            </p>
-          </section>
-          
-                  <section class="top-key-features-item">
-                          <figure>
-                                  <center><img src="/images/safe.png" alt="" width="80px" height="80px"alt=""></center>
-                              </figure>
-                        <h3 class="top-key-features-subtitle text-center">
-              安心・安全なシステム
-            </h3>
-            <p class="top-key-features-description text-center">
-              同期同士だから、安心、安全なお取引ができます。
-            </p>
-          </section>
-          
-                  <section class="top-key-features-item">
-                          <figure>
-                                  <center><img src=/images/chat.jpg alt="" width="80px" height="80px"></center>
-                              </figure>
-                        <h3 class="top-key-features-subtitle text-center">
-              メッセージ機能を活用しよう
-            </h3>
-            <p class="top-key-features-description text-center">
-              分からないことは、コメント機能ですぐさま解決。
-            </p>
-          </section>
-          
-                  <section class="top-key-features-item">
-                          <figure>
-                                  <center><img src="images/money.png" alt="" width="80px" height="80px"></center>
-                              </figure>
-                        <h3 class="top-key-features-subtitle text-center">
-              誰でも簡単に無料で楽しめる
-            </h3>
-            <p class="top-key-features-description text-center">
-              いつでも誰でも無料で投稿。
-            </p>
-          </section>
+<!--<div class="header_box">-->
+<!-- <div class="demo demo11">-->
+<!--  <div class="heading">-->
+<!--    <svg height="50px" width="100%">-->
+<!--      <text y="45px">HELPFUL GUIDE</text>-->
+<!--    </svg>-->
+<!--  </div>-->
+<!-- </div>-->
+<!--</div>-->
+
+<div class="demo demo3">
+   <div class="heading"><span>取引の流れ</span></div>
+</div>
+
+        <div class="iraishitai">
+                <div class="person_1">
+                    <p>依頼したい人</p>
+                </div>
+             <div class='naiyou'>   
+                <div class="touroku_1">
+                    <p> <span class="top-introduction-numm">1</span>New postボタンをクリック!</p>
+                    <img src="/images/newpost.jpg" width="450px" height="280px">
+                </div>
+                
+                <div class="flow_06">
+                      <p> <span class="top-introduction-numm">2</span>依頼したいことを入力</p>
+                     <img src="/images/irao2.jpg" width="450px" height="300px">
+                </div>
+                
+                <div class="flow_09">
+                    <p><span class="top-introduction-numm">3</span>
+                        投稿後、トップページに戻り<br>自分の投稿が掲載されていたら完了!</p>
+                　 <img src="/images/yo.jpg" width="450px" height="280px">    
+                </div>
+                
+                 <div class="flow_19">
+                    <p><span class="top-introduction-numm">4</span>
+                        投稿した後、助ける側から<br>通知が来たら、さっそく返信!</p>
+                　 <img src="/images/comment1.jpg" width="410px" height="280px">    
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="tasuketai">
+            <div class="person_2">
+                <p>助けたい人</p>
+            </div>
+
+                <div class='naiyou'>
+                    <div class="flow_04">
+                        <p> <span class="top-introduction-numn">1</span>まずは会員登録!</p>
+                         <img src="/images/signin.png" width="460px" height="280px">
+                    </div>
+                    
+                    <div class="flow_07">
+                          <p> <span class="top-introduction-numn">2</span>依頼者の投稿の<br>手伝いを完了するボタンをクリック</p>
+                        <img src="/images/taxi3.PNG" width="450px" height="260px">
+                    </div>
+                    
+                    <div class="flow_10">
+                          <p> <span class="top-introduction-numn">3</span>依頼完了済になると取引完了！</p><br>
+                        <img src="/images/taxi4.PNG" width="470px" height="320px"><br>
+                    </div>
+                    
+                    <div class="flow_08">
+                        <p> <span class="top-introduction-numn">4</span>依頼者から問い合わせが<br>きたらコメント欄で返信!</p><br>
+                        <img src="/images/tetsudau.jpg" width="420px" height="240px">
+                    </div>
+                </div>
+        </div>
+    </div>
+                            
+
 
     <div class="abc">    
       <div class="animation">

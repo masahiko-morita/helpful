@@ -876,6 +876,7 @@ transition: .4s;
     margin-right: -100px;
 }
 
+<<<<<<< HEAD
 .form-control{
     margin-left: -50px;
 }
@@ -883,6 +884,8 @@ transition: .4s;
    background: #93D87C;
    color: #fff;
 }
+=======
+>>>>>>> c144b45423bba0b0e78c06cdb2436f662b06852b
 
 #hensyuu .btn{
     display: block;

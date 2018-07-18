@@ -53,12 +53,12 @@
             
             <div class="flow_07">
                   <p> <span class="top-introduction-numn">2</span>依頼者の投稿の<br>手伝いを完了するボタンをクリック</p>
-                <img src="/images/taxi3.PNG" width="450px" height="260px">
+                <img src="/images/tetsudau2.jpg" width="450px" height="260px">
             </div>
             
             <div class="flow_10">
                   <p> <span class="top-introduction-numn">3</span>依頼完了済になると取引完了！</p>
-                <img src="/images/taxi4.PNG" width="470px" height="320px">
+                <img src="/images/bad2.jpg" width="470px" height="320px">
             </div>
             
             <div class="flow_08">

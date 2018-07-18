@@ -246,7 +246,7 @@ display: block;
 width: 250px;
 height:60px;
 padding: 0.5em;
-text-align: center;
+text-align: center;　
 font-weight: bold;
 text-decoration: none;
 color: #FFF;
@@ -281,6 +281,11 @@ transition: .4s;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 7;
     overflow: hidden;
+}
+
+.maste-box .maste-content #maste-ryaku{
+    position: absolute;
+	bottom: 0;
 }
 
 .maste-tape{
@@ -839,7 +844,7 @@ transition: .4s;
 /*button*/
 .maste-btn .btn{
     display: block;
-    width: 130px;
+    width: 140px;
     margin-top:10px;
     padding: 0.3em;
     text-align: center;
@@ -871,6 +876,7 @@ transition: .4s;
     margin-right: -100px;
 }
 
+<<<<<<< HEAD
 .form-control{
     margin-left: -50px;
 }
@@ -878,6 +884,9 @@ transition: .4s;
    background: #93D87C;
    color: #fff;
 }
+=======
+ 
+>>>>>>> 6afefbc2a31ab6fa89a01389f4e76318e28f9580
 
 #hensyuu .btn{
     display: block;
@@ -1037,20 +1046,22 @@ transition: .4s;
 }
 
 #kanryou .btn{
+    display: block;
+    width: 140px;
+    margin-top:10px;
+    padding: 0.3em;
+    text-align: center;
     text-decoration: none;
-    font-size:20px;
-    color: #6FC9D8;
-    border: 3px solid #6FC9D8;
+    color: #3cb371;
+    border: 3px solid #93D87C;
     border-radius: 3px;
     transition: .4s;
     background-color:rgba(255,255,255,0.7);
-    text-align: center;
-    width:250px;
 }
 
 #kanryou .btn:hover{
-   background: #6FC9D8;
-   color: #fff; 
+   background: #93D87C;
+   color: #fff;
 }
 
 #kanryou-zumi .btn{
@@ -1087,7 +1098,7 @@ transition: .4s;
     color: #FFF;
     border: 3px solid #FFF;
     border-radius: 3px;
-    background-color: #93D87C;
+    background-color: #EA5C5C;
     text-align: center;
     width: 130px;
     margin-top:10px;
@@ -1095,10 +1106,6 @@ transition: .4s;
     display: block;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 5b13677a649a4f71492e9e3a010a734ae43694a5
 #torihiki .btn{
     display: block;
     width: 170px;

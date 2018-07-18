@@ -5,6 +5,7 @@
 <div class='container'>
 <?php $user = $irai->user; ?>
 <h1 class='text-center'>{{ $irai->title }}</h1>
+<<<<<<< HEAD
 <div class="col-md-6"> 
             @if (Auth::user()->id != $irai->user_id)
                 <div id="tetsudau">
@@ -24,6 +25,9 @@
             </div>
             @endif    
        </div>
+=======
+     
+>>>>>>> 6afefbc2a31ab6fa89a01389f4e76318e28f9580
     <div class="row"> 
             <table class="table">
                 <tr>

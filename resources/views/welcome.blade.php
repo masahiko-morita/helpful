@@ -39,17 +39,6 @@
           </a>	
         </div>
 
-
-<!--<div class="header_box">-->
-<!-- <div class="demo demo11">-->
-<!--  <div class="heading">-->
-<!--    <svg height="50px" width="100%">-->
-<!--      <text y="45px">HELPFUL GUIDE</text>-->
-<!--    </svg>-->
-<!--  </div>-->
-<!-- </div>-->
-<!--</div>-->
-
 <div class="demo demo3">
    <div class="heading"><span>取引の流れ</span></div>
 </div>
@@ -112,8 +101,6 @@
                 </div>
         </div>
     </div>
-                            
-
 
     <div class="abc">    
       <div class="animation">

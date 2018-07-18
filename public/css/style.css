@@ -570,13 +570,46 @@ left: 50%;
 transform: translateX(-50%);
 background-color: #283e56;
 border-radius: 6px;
-
 }
 
 .headings{
     font-size: 50px;
    color:#ffde25;
 }
+
+
+.demo3 .headings {
+  color: #1989ac;
+  text-align: center;
+  overflow: hidden;
+}
+.demo3 .headings span {
+  display: inline-block;
+  position: relative;
+}
+
+.demo3 .headings span:before {
+  right: 100%;
+}
+
+.demo {
+  width: 500px;
+  margin: 0 auto;
+  padding: 10px 0;
+  font-family: sans-serif;
+  font-size: 20px;
+  color:#283e56;
+}
+
+.demo11 .headings text {
+  stroke: #3cb3e4;
+  stroke-width: 1.5;
+  fill: rgba(60,179,228,0.2);
+  font-size: 50px;
+}
+
+
+
 
 
 

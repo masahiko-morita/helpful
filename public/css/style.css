@@ -1093,6 +1093,10 @@ transition: .4s;
     display: block;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5b13677a649a4f71492e9e3a010a734ae43694a5
 #torihiki .btn{
     display: block;
     width: 170px;
@@ -1263,6 +1267,11 @@ transition: .4s;
     color: #3CB371;
     text-shadow: 1px 0px 0px #3CB371, 0px 1px 0px #3CB371, -1px 0px 0px #3CB371, 1px -1px 0px #3CB371;
     margin-left: 150px;
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 5b13677a649a4f71492e9e3a010a734ae43694a5
 }
 
 
@@ -1791,7 +1800,11 @@ a{
 .kimokawa{
  position:fixed;
  bottom:150px;
+<<<<<<< HEAD
  left:-100px;
+=======
+ left:150px;
+>>>>>>> 5b13677a649a4f71492e9e3a010a734ae43694a5
  height:50px;
 }
 .table {

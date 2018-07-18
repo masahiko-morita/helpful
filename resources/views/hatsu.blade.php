@@ -3,7 +3,7 @@
 
 <div class="header_box">
  <div class="demo demo11">
-  <div class="heading">
+  <div class="headings">
     <svg height="50px" width="100%">
       <text y="45px">HELPFUL GUIDE</text>
     </svg>
@@ -15,8 +15,6 @@
    <div class="heading"><span>取引の流れ</span></div>
 </div>
         <div class="iraishitai">
-            
-            
                 <div class="person_1">
                     <p>依頼したい人</p>
                 </div>
@@ -72,8 +70,6 @@
                         <img src="/images/tetsudau.jpg" width="450px" height="283px">
                     </div>
                 </div>
-
-
         </div>
     </div>
                             

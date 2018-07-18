@@ -1302,6 +1302,7 @@ transition: .4s;
     margin-top: 59px;
     width: 595px;
     margin-right:-60px;
+    height:200%;
 }
 
 .torihiki{
@@ -1810,3 +1811,9 @@ textarea.form-control {
     width: 780px;
 } 
 
+
+.naiyou{
+    width:90%;
+    
+    margin-left:5%;
+}

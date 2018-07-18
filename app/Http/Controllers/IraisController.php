@@ -19,7 +19,7 @@ class IraisController extends Controller
         $data = [];
         if (\Auth::check()) {
             $user = \Auth::user();
-            $irais = $user->feed_irais()->orderBy('created_at', 'desc')->paginate(10);
+            $irais = $user->feed_irais()->orderBy('created_at', 'desc')->paginate(8);
 
             $data = [
                 'user' => $user,
@@ -65,7 +65,7 @@ class IraisController extends Controller
         
         $user = \Auth::user();
         // $irais = Irai::all();
-        $irais = $user->feed_irais()->orderBy('created_at', 'desc')->paginate(10);
+        $irais = $user->feed_irais()->orderBy('created_at', 'desc')->paginate(8);
 
         return view("irais.index",
               ['irais' => $irais]);
@@ -77,7 +77,7 @@ class IraisController extends Controller
         {
             $irai = Irai::find($id);
             $user = User::find($id);
-            $comments = Comment::orderBy('created_at', 'desc')->paginate(10);
+            $comments = Comment::orderBy('created_at', 'desc')->paginate(8);
             
              return view('irais.show', [
                 'irai'     => $irai,
@@ -127,7 +127,7 @@ class IraisController extends Controller
 
         $user = \Auth::user();
         // $irais = Irai::all();
-        $irais = $user->feed_irais()->orderBy('created_at', 'desc')->paginate(10);
+        $irais = $user->feed_irais()->orderBy('created_at', 'desc')->paginate(8);
 
         return view("irais.index",
               ['irais' => $irais]);
@@ -141,7 +141,7 @@ class IraisController extends Controller
         $irai = \App\Irai::find($id);
         $irai->delete();
 
-        $irais = Irai::all();
+        $irais = Irai::orderBy('created_at', 'desc')->paginate(8);
 
         return view("irais.index",
               ['irais' => $irais]);
@@ -154,7 +154,7 @@ class IraisController extends Controller
     {
         
         $irai = Irai::find($id);
-        $chats = Chat::orderBy('created_at', 'desc')->paginate(10);
+        $chats = Chat::orderBy('created_at', 'desc')->paginate(8);
 
         return view('irais.thankyou', [
             'irai' => $irai,

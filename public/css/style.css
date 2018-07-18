@@ -875,10 +875,7 @@ transition: .4s;
     background-color:rgba(255,255,255,0.7);
 }
 
-#tetsudau .btn:hover{
-   background: #93D87C;
-   color: #fff;
-}
+ 
 
 #hensyuu .btn{
     display: block;
@@ -1097,10 +1094,6 @@ transition: .4s;
     display: block;
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 5b13677a649a4f71492e9e3a010a734ae43694a5
 #torihiki .btn{
     display: block;
     width: 170px;

@@ -50,6 +50,7 @@
             <div class="person_2">
                 <p>助けたい人</p>
             </div>
+
                 <div class='naiyou'>
                     <div class="flow_04">
                         <p> <span class="top-introduction-numn">1</span>まずは会員登録!</p>
@@ -71,6 +72,8 @@
                         <img src="/images/tetsudau.jpg" width="450px" height="283px">
                     </div>
                 </div>
+
+
         </div>
     </div>
                             

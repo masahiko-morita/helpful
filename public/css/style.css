@@ -6,8 +6,6 @@
 
 body {
     background: white;
-
-
     /*background-color: #E8f1f5;*/
     font-family:  'Noto Sans JP', sans-serif;
     font-weight:300;
@@ -38,7 +36,6 @@ body {
     background-color: #283e56;
     border-style:none;
     height: 60px;
-    
 }
 
 .navbar-brand img{
@@ -153,13 +150,11 @@ body {
 	border-width: 10px 10px 0 10px;
 	border-color:  rgba(0,0,0,0.7) transparent transparent transparent;
 }
-
  
 .irai .irai-flower .irai-syousai img {
     width:20px;
     height:20px; 
 }
-
 
 .irai .irai-flower .irai-syousai p{
     font-size: 14px;
@@ -174,13 +169,11 @@ body {
   margin:0 auto;
 }
 
-
 .cover .cover-inner {
     height: 100%;
     margin: auto;
     display: table;
     color: #000066;
-   
 }
 .cover .cover-inner .cover-contents {
     display: table-cell;
@@ -216,7 +209,6 @@ text-decoration: none;
     /*text-align:center;*/
     position: absolute;
      opacity: 0.8;
-       
 }
 
 .saki{
@@ -1257,13 +1249,7 @@ transition: .4s;
     font-size: 40px;
     color: #3CB371;
     text-shadow: 1px 0px 0px #3CB371, 0px 1px 0px #3CB371, -1px 0px 0px #3CB371, 1px -1px 0px #3CB371;
-<<<<<<< HEAD
     margin-left: 170px;
-=======
-
-    margin-left: 150px;
-
->>>>>>> bfc2c288a49eb3df65a92205642a4d9a7f011695
 }
 
 .person_2{

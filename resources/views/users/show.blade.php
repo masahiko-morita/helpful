@@ -75,9 +75,6 @@
 	</div>
 
 </div>
-
-
-<<<<<<< HEAD
 	<script>
 		$( function() {
 			$('.linkInThePage').click( function () {
@@ -86,9 +83,6 @@
 			} );
 		} );
 	</script>
-=======
-
->>>>>>> bfc2c288a49eb3df65a92205642a4d9a7f011695
 
  <a href="{{ route('irais.create', ['id' => $user->id]) }}">
 <div class="wrap-1">

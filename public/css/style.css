@@ -916,7 +916,7 @@ transition: .4s;
 #toukou .btn{
     display: block;
     width: 170px;
-    text-align: center;
+   text-align: center;
     text-decoration: none;
     margin-top:15px;
     font-size:20px;
@@ -925,7 +925,6 @@ transition: .4s;
     border-radius: 3px;
     transition: .4s;
     background-color:rgba(255,255,255,0.7);
-    text-align: center;
     margin-right: 400px;
 }
 
@@ -1795,5 +1794,5 @@ a{
 }
 
 .col-md-9 {
-    margin-left:200px;
+    margin-left:100px;
 }

@@ -34,48 +34,51 @@
     <body>
        
  
-                          @include('commons.navbar')
-                          <div class="container">
-                            @include('commons.error_messages')
-                            @include('commons.notification')
-                            
+      @include('commons.navbar')
+      <div class="container">
+        @include('commons.error_messages')
+        @include('commons.notification')
+        
+
+        
+        @yield('cover')
+        @yield('content')
+        
+        <!-- モーダル・ダイアログ -->
+            <div class="modal fade" id="sampleModal" tabindex="-1">
+            	<div class="modal-dialog">
+            		<div class="modal-content">
+            			<div class="modal-header">
+            				<button type="button" class="close" data-dismiss="modal"><span>×</span></button>
+            				<h4 class="modal-title">キーワードを検索</h4>
+            			</div>
+            			<div class="modal-body">
+            			 
+            				{!! Form::open(['route' => 'irais.search', 'method' => 'get']) !!}
+                            {!! Form::text('q', '', ['class' => 'form-control', 'placeholder' => 'キーワード(例:タイトル(引っ越し),駅(二子玉),時間(12日の場合12))', 'size' => 40,'style' => 'width:500px']) !!}
                 
-                            
-                            @yield('cover')
-                            @yield('content')
-                            
-                
-                           
-                 
-                        <!-- モーダル・ダイアログ -->
-                            <div class="modal fade" id="sampleModal" tabindex="-1">
-                            	<div class="modal-dialog">
-                            		<div class="modal-content">
-                            			<div class="modal-header">
-                            				<button type="button" class="close" data-dismiss="modal"><span>×</span></button>
-                            				<h4 class="modal-title">キーワードを検索</h4>
-                            			</div>
-                            			<div class="modal-body">
-                            			 
-                            				{!! Form::open(['route' => 'irais.search', 'method' => 'get']) !!}
-                                            {!! Form::text('q', '', ['class' => 'form-control', 'placeholder' => 'キーワード(例:タイトル(引っ越し),駅(二子玉),時間(12日の場合12))', 'size' => 40,'style' => 'width:500px']) !!}
-                                
-                            			</div>
-                            			<div class="modal-footer">
-                            				{!! Form::submit('依頼を検索', ['class' => 'btn']) !!}
-                                            {!! Form::close() !!}
-                            			</div>
-                            		</div>
-                            	</div>
-                            </div>
-                             
-                           
-                        </div> 
-                         
-                            
-                           
-                        </div> 
-                        
+            			</div>
+            			<div class="modal-footer">
+            				{!! Form::submit('依頼を検索', ['class' => 'btn']) !!}
+                            {!! Form::close() !!}
+            			</div>
+            		</div>
+            	</div>
+            </div>
+             
+           
+        </div> 
+         
+            
+           
+        </div> 
+</section>
+
+    </body>
+    @include('commons.footer')
+    </div>
+
+</html>                        
                 
                         
                         <!--java  
@@ -112,10 +115,3 @@
     
 <!--     <a href="{{ route('irais.create') }}"><div class="w-body-nipples"></div></a>-->
 <!--  </div>-->
-</section>
-
-    </body>
-    @include('commons.footer')
-    </div>
-
-</html>

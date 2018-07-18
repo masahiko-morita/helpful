@@ -71,9 +71,14 @@
 	</div>
 
 </div>
-
-
-
+	<script>
+		$( function() {
+			$('.linkInThePage').click( function () {
+				var hrefValue = $(this).attr( 'href' );
+				$(hrefValue).animatescroll();
+			} );
+		} );
+	</script>
 
  <a href="{{ route('irais.create', ['id' => $user->id]) }}">
 <div class="wrap-1">

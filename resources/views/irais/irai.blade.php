@@ -25,7 +25,7 @@
             
                             <h4 class="glyphicon glyphicon-time text-center"></h4><br> {{ $irai->start }}~<br>{{ $irai->finish }}<br>
                             <h4 class="glyphicon glyphicon-map-marker"></h4> {{$irai->station}}<br>
-                            <h4 class="glyphicon glyphicon-heart"></h4> {{ $irai->reward }}<br>
+                            <h4 class="glyphicon glyphicon-gift"></h4> {{ $irai->reward }}<br>
                    </div>
                    </a>
                 @elseif (Auth::user()->is_helping($irai->id))
@@ -40,8 +40,6 @@
                             
                                 @elseif(Auth::user()->id != $irai->user_id)
                                     @include('irai_help.help_button', ['user' => $user])
-                                    
-                                
                                     
                                 
                                 @endif
@@ -62,10 +60,7 @@
                             
                                 @elseif(Auth::user()->id != $irai->user_id)
                                     @include('irai_help.help_button', ['user' => $user])
-                                    
-                                
-                                    
-                                
+                            
                                 @endif
                             </div>
                             <h4 class="glyphicon glyphicon-time text-center"></h4><br> {{ $irai->start }}~<br>{{ $irai->finish }}<br>

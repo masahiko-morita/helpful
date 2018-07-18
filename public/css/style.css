@@ -1814,3 +1814,8 @@ a{
 .col-md-9 {
     margin-left:200px;
 }
+
+.btn-info {
+    margin-left:-50px;
+    margin-top: 30px;
+}

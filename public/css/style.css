@@ -1803,3 +1803,8 @@ a{
 }
 
 
+/*コメント幅*/
+
+textarea.form-control {
+    width: 780px;
+} 

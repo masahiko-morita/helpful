@@ -85,8 +85,6 @@
             </div>
             </div>
         </div>    
-             
-            
     </div>
 @include('comments.comment', ['comments' => $comments])
 

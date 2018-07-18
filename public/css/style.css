@@ -523,7 +523,7 @@ transition: .4s;
 }
 .abc{
     text-align: center;
-    margin-left: 400px;
+    margin-left: 580px;
     margin-bottom: 10px;
     margin-top: 5%;
 }
@@ -534,9 +534,6 @@ transition: .4s;
     margin-bottom: 10px;
     margin-top: 5%;
 }
-
-
-
 
 .header_box{
     margin-left:110px;
@@ -550,30 +547,71 @@ transition: .4s;
   font-size:26px;
   color:#1989ac;
 }
-.heading {
-  margin: 10px 0
+
+.heading{
+position: relative;
+display: inline-block;
+margin-bottom: 1em;
+font-size: 31px;
+margin-left: 170px;
 }
-.demo3 .heading {
+
+.heading:before {
+content: '';
+position: absolute;
+bottom: -10px;
+display: inline-block;
+width: 60px;
+height: 3px;
+left: 50%;
+-moz-transform: translateX(-50%);
+-webkit-transform: translateX(-50%);
+-ms-transform: translateX(-50%);
+transform: translateX(-50%);
+background-color: #283e56;
+border-radius: 6px;
+}
+
+.headings{
+    font-size: 50px;
+   color:#ffde25;
+}
+
+
+.demo3 .headings {
   color: #1989ac;
   text-align: center;
   overflow: hidden;
 }
-.demo3 .heading span {
+.demo3 .headings span {
   display: inline-block;
   position: relative;
 }
-.demo3 .heading span:before,.demo3 .heading span:after {
-  content: "";
-  border-bottom: 2px solid #1989ac;
-  width: 45px;
-  margin: 0 15px;
-  position: absolute;
-  bottom: 13px;
-}
 
-.demo3 .heading span:before {
+.demo3 .headings span:before {
   right: 100%;
 }
+
+.demo {
+  width: 500px;
+  margin: 0 auto;
+  padding: 10px 0;
+  font-family: sans-serif;
+  font-size: 20px;
+  color:#283e56;
+}
+
+.demo11 .headings text {
+  stroke: #3cb3e4;
+  stroke-width: 1.5;
+  fill: rgba(60,179,228,0.2);
+  font-size: 50px;
+}
+
+
+
+
+
 
 .demo {
   width: 500px;
@@ -873,10 +911,8 @@ transition: .4s;
     border-radius: 3px;
     transition: .4s;
     background-color:rgba(255,255,255,0.7);
-    margin-right: -100px;
+    margin-left: 450px;
 }
-
- 
 
 #hensyuu .btn{
     display: block;
@@ -890,6 +926,9 @@ transition: .4s;
     border-radius: 3px;
     transition: .4s;
     background-color:rgba(255,255,255,0.7);
+    float:left;
+    margin-left: 330px;
+    margin-top: 30px;
 }
 
 #hensyuu .btn:hover{
@@ -909,17 +948,21 @@ transition: .4s;
     border-radius: 3px;
     transition: .4s;
     background-color:rgba(255,255,255,0.7);
+    float: left;
+    margin-left: 20px;
+    margin-top: 30px;
 }
 
 #sakujyo .btn:hover{
    background: #EA5C5C;
+   
    color: #fff;
 }
 
 #toukou .btn{
     display: block;
     width: 170px;
-    text-align: center;
+   text-align: center;
     text-decoration: none;
     margin-top:30px;
     font-size:20px;
@@ -928,8 +971,9 @@ transition: .4s;
     border-radius: 3px;
     transition: .4s;
     background-color:rgba(255,255,255,0.7);
+    margin-right: 400px;
     text-align: center;
-    margin-left: 280px;
+    margin-left: 380px;
 }
 
 #toukou .btn:hover{
@@ -949,6 +993,7 @@ transition: .4s;
     border-radius: 3px;
     transition: .4s;
     background-color:rgba(255,255,255,0.7);
+    
 }
 
 
@@ -1302,6 +1347,7 @@ transition: .4s;
     margin-top: 59px;
     width: 595px;
     margin-right:-60px;
+    height:200%;
 }
 
 .torihiki{
@@ -1790,7 +1836,7 @@ a{
 
 .table {
     margin-left: 300px;
-    margin-top: 100px;
+    margin-top: 120px;
     width:600px;
 }
 
@@ -1800,12 +1846,23 @@ a{
 }
 
 .col-md-9 {
-    margin-left:200px;
+    margin-left:100px;
 }
 
 
-/*コメント幅*/
+
 
 textarea.form-control {
-    width: 780px;
+    width: 700px;
+    margin-left: 170px;
+    margin-top: 15px;
 } 
+
+
+.naiyou{
+    width:90%;
+    
+    margin-left:5%;
+}
+
+

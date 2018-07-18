@@ -878,9 +878,8 @@ border-radius: 6px;
     border-radius: 3px;
     transition: .4s;
     background-color:rgba(255,255,255,0.7);
-    margin-right: -100px;
+    margin-left: 450px;
 }
-
 
 #hensyuu .btn{
     display: block;
@@ -894,6 +893,9 @@ border-radius: 6px;
     border-radius: 3px;
     transition: .4s;
     background-color:rgba(255,255,255,0.7);
+    float:left;
+    margin-left: 330px;
+    margin-top: 30px;
 }
 
 #hensyuu .btn:hover{
@@ -913,10 +915,14 @@ border-radius: 6px;
     border-radius: 3px;
     transition: .4s;
     background-color:rgba(255,255,255,0.7);
+    float: left;
+    margin-left: 20px;
+    margin-top: 30px;
 }
 
 #sakujyo .btn:hover{
    background: #EA5C5C;
+   
    color: #fff;
 }
 
@@ -932,12 +938,9 @@ border-radius: 6px;
     border-radius: 3px;
     transition: .4s;
     background-color:rgba(255,255,255,0.7);
-<<<<<<< HEAD
     margin-right: 400px;
-=======
     text-align: center;
-    margin-left: 280px;
->>>>>>> c144b45423bba0b0e78c06cdb2436f662b06852b
+    margin-left: 380px;
 }
 
 #toukou .btn:hover{
@@ -1800,7 +1803,7 @@ a{
 
 .table {
     margin-left: 300px;
-    margin-top: 100px;
+    margin-top: 120px;
     width:600px;
 }
 
@@ -1817,7 +1820,9 @@ a{
 
 
 textarea.form-control {
-    width: 780px;
+    width: 700px;
+    margin-left: 170px;
+    margin-top: 15px;
 } 
 
 
@@ -1826,3 +1831,5 @@ textarea.form-control {
     
     margin-left:5%;
 }
+
+

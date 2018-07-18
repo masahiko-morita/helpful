@@ -5,6 +5,13 @@
 <div class='container'>
 <?php $user = $irai->user; ?>
 <h1 class='text-center'>{{ $irai->title }}</h1>
+      @if (Auth::user()->id == $irai->user_id)
+            <div id="torihiki">
+                {!! Form::open(['route' => ['irais.thankyou', $irai->id], 'method' => 'get']) !!}
+                {!! Form::submit('取引ページへ', ['class' => 'btn center-block']) !!}
+                {!! Form::close() !!}
+            </div>
+            @endif
     <div class="row"> 
         <div class="col-md-6">
             <table class="table">
@@ -39,7 +46,6 @@
                 <!--{!! Form::submit('手伝う！！！', ['class' => 'btn center-block']) !!}-->
                 <!--{!! Form::close() !!}-->
 
-
                 @if (Auth::user()->is_finishing($irai->id)) 
                     <div id ="kanryou-zumi-2">
                     @include('irai_finish.finish_button', ['user' => $user])
@@ -52,13 +58,6 @@
                     @include('irai_help.help_button', ['user' => $user])
                 </div>
                 @endif
-            </div>
-            @endif
-            @if (Auth::user()->id == $irai->user_id)
-            <div id="torihiki">
-                {!! Form::open(['route' => ['irais.thankyou', $irai->id], 'method' => 'get']) !!}
-                {!! Form::submit('取引ページへ', ['class' => 'btn center-block']) !!}
-                {!! Form::close() !!}
             </div>
             @endif
             @if (Auth::user()->id == $irai->user_id)

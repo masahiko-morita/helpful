@@ -1093,7 +1093,7 @@ transition: .4s;
     display: block;
 }
 
-<<<<<<< HEAD
+
 #torihiki .btn{
     display: block;
     width: 170px;
@@ -1265,6 +1265,7 @@ transition: .4s;
     text-shadow: 1px 0px 0px #3CB371, 0px 1px 0px #3CB371, -1px 0px 0px #3CB371, 1px -1px 0px #3CB371;
 
     margin-left: 150px;
+
 
 }
 
@@ -1794,7 +1795,7 @@ a{
 .kimokawa{
  position:fixed;
  bottom:150px;
- left:-150px;
+ left:150px;
  height:50px;
 }
 .table {

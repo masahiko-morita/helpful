@@ -17,14 +17,11 @@ class IraiFinishController extends Controller
     public function store($id)
     {
         $user = \Auth::user();
-        $irais = $user->feed_irais()->orderBy('created_at', 'desc')->paginate(10);
+        $irais = $user->feed_irais()->orderBy('created_at', 'desc')->paginate(8);
 
         \Auth::user()->finish($id);
-        return view('irais.index', [
-            'irais' => $irais,
         
-        ]);
-    
+        return redirect()->route('irais.index', ['irais' => $irais]);
     }
 
     public function destroy($id)

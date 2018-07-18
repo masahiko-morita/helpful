@@ -6,8 +6,6 @@
 
 body {
     background: white;
-
-
     /*background-color: #E8f1f5;*/
     font-family:  'Noto Sans JP', sans-serif;
     font-weight:300;
@@ -38,7 +36,6 @@ body {
     background-color: #283e56;
     border-style:none;
     height: 60px;
-    
 }
 
 .navbar-brand img{
@@ -153,13 +150,11 @@ body {
 	border-width: 10px 10px 0 10px;
 	border-color:  rgba(0,0,0,0.7) transparent transparent transparent;
 }
-
  
 .irai .irai-flower .irai-syousai img {
     width:20px;
     height:20px; 
 }
-
 
 .irai .irai-flower .irai-syousai p{
     font-size: 14px;
@@ -174,13 +169,11 @@ body {
   margin:0 auto;
 }
 
-
 .cover .cover-inner {
     height: 100%;
     margin: auto;
     display: table;
     color: #000066;
-   
 }
 .cover .cover-inner .cover-contents {
     display: table-cell;
@@ -216,7 +209,6 @@ text-decoration: none;
     /*text-align:center;*/
     position: absolute;
      opacity: 0.8;
-       
 }
 
 .saki{
@@ -254,7 +246,7 @@ display: block;
 width: 250px;
 height:60px;
 padding: 0.5em;
-text-align: center;
+text-align: center;　
 font-weight: bold;
 text-decoration: none;
 color: #FFF;
@@ -289,6 +281,11 @@ transition: .4s;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 7;
     overflow: hidden;
+}
+
+.maste-box .maste-content #maste-ryaku{
+    position: absolute;
+	bottom: 0;
 }
 
 .maste-tape{
@@ -352,14 +349,11 @@ transition: .4s;
     height: 60px;
     line-height: 60px;
     vertical-align: middle;
-
     padding: 7px 0;
     font-size: 18px;
     background: #1989ac;
     color: #FFF;
     box-sizing: border-box;
-
-    
     margin-top: 0;
 }
 
@@ -435,7 +429,6 @@ transition: .4s;
   border-width: 30px 0px 30px 15px;
   border-color: transparent transparent transparent white;
   border-style: solid;
-  
 }
 
 .ribbon2:after{/*右の山形*/
@@ -533,8 +526,17 @@ transition: .4s;
     margin-left: 400px;
     margin-bottom: 10px;
     margin-top: 5%;
-    margin-left:35%;
 }
+
+.abcd{
+    text-align: center;
+    margin-left: 580px;
+    margin-bottom: 10px;
+    margin-top: 5%;
+}
+
+
+
 
 .header_box{
     margin-left:110px;
@@ -842,7 +844,7 @@ transition: .4s;
 /*button*/
 .maste-btn .btn{
     display: block;
-    width: 130px;
+    width: 140px;
     margin-top:10px;
     padding: 0.3em;
     text-align: center;
@@ -864,19 +866,16 @@ transition: .4s;
     width: 200px;
     text-align: center;
     text-decoration: none;
-    margin-top:50px;
-    font-size:30px;
+    margin-top:20px;
+    font-size:18px;
     color: #3cb371;
     border: 3px solid #93D87C;
     border-radius: 3px;
     transition: .4s;
     background-color:rgba(255,255,255,0.7);
+    margin-right: -100px;
 }
 
-#tetsudau .btn:hover{
-   background: #93D87C;
-   color: #fff;
-}
 
 #hensyuu .btn{
     display: block;
@@ -921,7 +920,7 @@ transition: .4s;
     width: 170px;
     text-align: center;
     text-decoration: none;
-    margin-top:15px;
+    margin-top:30px;
     font-size:20px;
     color: #BC927A;
     border: 3px solid #BC927A;
@@ -929,7 +928,7 @@ transition: .4s;
     transition: .4s;
     background-color:rgba(255,255,255,0.7);
     text-align: center;
-    margin-right: 400px;
+    margin-left: 280px;
 }
 
 #toukou .btn:hover{
@@ -949,7 +948,9 @@ transition: .4s;
     border-radius: 3px;
     transition: .4s;
     background-color:rgba(255,255,255,0.7);
+    
 }
+
 
 #koushin .btn:hover{
    background: #99CCFF;
@@ -1035,20 +1036,22 @@ transition: .4s;
 }
 
 #kanryou .btn{
+    display: block;
+    width: 140px;
+    margin-top:10px;
+    padding: 0.3em;
+    text-align: center;
     text-decoration: none;
-    font-size:20px;
-    color: #6FC9D8;
-    border: 3px solid #6FC9D8;
+    color: #3cb371;
+    border: 3px solid #93D87C;
     border-radius: 3px;
     transition: .4s;
     background-color:rgba(255,255,255,0.7);
-    text-align: center;
-    width:250px;
 }
 
 #kanryou .btn:hover{
-   background: #6FC9D8;
-   color: #fff; 
+   background: #93D87C;
+   color: #fff;
 }
 
 #kanryou-zumi .btn{
@@ -1085,7 +1088,7 @@ transition: .4s;
     color: #FFF;
     border: 3px solid #FFF;
     border-radius: 3px;
-    background-color: #93D87C;
+    background-color: #EA5C5C;
     text-align: center;
     width: 130px;
     margin-top:10px;
@@ -1093,7 +1096,6 @@ transition: .4s;
     display: block;
 }
 
-<<<<<<< HEAD
 #torihiki .btn{
     display: block;
     width: 170px;
@@ -1263,11 +1265,8 @@ transition: .4s;
     font-size: 40px;
     color: #3CB371;
     text-shadow: 1px 0px 0px #3CB371, 0px 1px 0px #3CB371, -1px 0px 0px #3CB371, 1px -1px 0px #3CB371;
-
-    margin-left: 150px;
-
+    margin-left: 170px;
 }
-
 
 .person_2{
     font-size: 40px;
@@ -1275,9 +1274,6 @@ transition: .4s;
     text-shadow: 2px 0px 0px #ff003f, 0px 1px 0px #ff003f, -1px 0px 0px #ff003f, 0px -1px 0px #ff003f;
     margin-left: 190px;
 }
-
-
-
 
 .iraishitai{
     font-size: 28px;
@@ -1313,7 +1309,6 @@ transition: .4s;
     font-size:35px;
     color:red;
 }
-
 
 .balloon1-left {
  	position: relative;
@@ -1355,14 +1350,12 @@ transition: .4s;
   display: inline-block;
   border-radius: 50%;
   border-color: gray;
-
 }
 
 .circle i{
     font-size: 30px;
     color:gray;
 }
-
 
 a{
     font-size: 12px;
@@ -1375,9 +1368,7 @@ a{
 }
 #sampleMainContents {
 	padding: 2em;
-
 }
-
 
 #sampleFix li{
     color: #fff;
@@ -1388,11 +1379,10 @@ a{
     font-size:18px;
 }
 
-
-
 #show{
     font-size: 20px;
 }
+
 
 .w {
   left: 50%;
@@ -1794,12 +1784,14 @@ a{
 .kimokawa{
  position:fixed;
  bottom:150px;
- left:-150px;
+ left:150px;
  height:50px;
 }
+
 .table {
-    margin-left: 280px;
-    margin-top: 30px;
+    margin-left: 300px;
+    margin-top: 100px;
+    width:600px;
 }
 
 #momo {
@@ -1812,10 +1804,9 @@ a{
 }
 
 
-#sampleScrollSpy a:hover{
-    color:white;
-}
 
-#samplenavbar{
-    margin-top: 10px;
-}
+
+textarea.form-control {
+    width: 780px;
+} 
+

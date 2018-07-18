@@ -131,17 +131,6 @@ class UsersController extends Controller
         ->where('user_id', $user -> id)
         ->get();    
 
-            // $user = User::find($id);
-    //     $finished_src = \DB::select('select * from irai_finish where user_id != ?', [$id]);
-    //     $finished = array();
-    //     foreach($finished_src as $v) {
-    //         $irai = Irai::find($v->finish_id);
-    //         if($irai->user_id == $user->id){
-    //           array_push($finished, $irai);
-    //         } 
-    //     }
-
-
 
         $data = [
             'user' => User::find($id),

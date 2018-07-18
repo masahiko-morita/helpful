@@ -1810,3 +1810,12 @@ a{
 .col-md-9 {
     margin-left:200px;
 }
+
+
+#sampleScrollSpy a:hover{
+    color:white;
+}
+
+#samplenavbar{
+    margin-top: 10px;
+}

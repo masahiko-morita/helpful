@@ -28,11 +28,13 @@
     </div>
     @endif
     @if($isComment == true)
+    <a href="{{ route('users.show', Auth::user()->id) }}">
     <div class="panel panel-info">
     <div class="panel-body">
        依頼に新着のコメントがあります。
     </div>
     </div>
+    </a>
     @endif
     
     

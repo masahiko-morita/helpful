@@ -16,7 +16,7 @@ class AddIraiIdNotificationTable extends Migration
         Schema::table('notifications', function (Blueprint $table) {
             $table->integer('irai_id')->unsigned()->index()->after('user_id');
             
-            $table->foreign('irai_id')->references('id')->on('irais')->onDelete('cascade');
+            // $table->foreign('irai_id')->references('id')->on('irais');
         });
     }
 

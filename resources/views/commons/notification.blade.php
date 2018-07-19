@@ -7,10 +7,11 @@
                     //->where('irai_id')
                     ->get();
      $delete_list = [];
-     $isComment = false;   
+     $isComment = false;
+     $isMessage = false;
      $isChat = false;
      
-     
+      
     foreach($notifications as $notification) {
          $delete_list[] = $notification->id;
          if($notification->type == 'comment') {
@@ -18,6 +19,9 @@
          }
          if($notification->type == 'chat'){  
              $isChat = true;
+         }
+         if($notification->type == 'message'){  
+             $is = true;
          }
      }
      
@@ -42,4 +46,11 @@
     </div>
     </a>
     @endif
-    
+
+    @if($isMessage == true)
+    <div class="panel panel-info">
+    <div class="panel-body">
+       コメントした依頼が解決しました！ありがとうございました！
+    </div>
+    </div>
+    @endif

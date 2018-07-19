@@ -3,8 +3,9 @@
     <head>
         <!--自動更新30秒-->
         <SCRIPT LANGUAGE="JavaScript">
-        setTimeout("location.reload()",1000*60;
+        setTimeout("location=location.href",1000*10);
         </SCRIPT>
+        
     </head>
 </html>                        
                

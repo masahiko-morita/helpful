@@ -21,8 +21,8 @@
              $isChat = true;
          }
          if($notification->type == 'message'){  
-             $is = true;
-         }
+             $isMessage = true;
+         } 
      }
      
       DB::table('notifications')->whereIn('id', $delete_list)->delete();

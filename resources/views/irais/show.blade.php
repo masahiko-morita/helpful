@@ -13,19 +13,21 @@
                     </div>
                     <div id="sakujyo">
                         {!! Form::open(['route' => ['irais.destroy', $irai->id], 'method' => 'delete']) !!}
-                        {!! Form::submit('依頼を削除する', ['class' => 'btn center-block']) !!}
+                            {!! Form::submit('依頼を削除する', ['class' => 'btn center-block']) !!}
                         {!! Form::close() !!}
                     </div>
                 @endif
             <div class="col-sm-10"> 
-                <!--@if (Auth::user()->id == $irai->user_id)-->
-                <!--    <div id="tetsudau">-->
+                @if (Auth::user()->id == $irai->user_id)
+                    <div id="tetsudau">
                        <!--@include('irai_finish.finish_button', ['user' => $user])-->
-                <!--       {!! Form::open(['route' => ['irai.unfinish', $irai->id], 'method' => 'delete']) !!}-->
-                <!--        {!! Form::submit('依頼を完了する', ['class' => 'btn center-block']) !!}-->
-                <!--        {!! Form::close() !!}-->
-                <!--    </div>-->
-                <!--@endif    -->
+                       {!! Form::open(['route' => ['irai.unfinish', $irai->id], 'method' => 'delete']) !!}
+                        {{Form::hidden('type', 'message')}}
+                        {!! Form::submit('依頼を完了する', ['class' => 'btn center-block']) !!}
+                        {!! Form::close() !!}
+                    </div>
+                @endif    
+
             </div>
     <div class="row">
         <div class="col-xs-12"> 

@@ -177,20 +177,11 @@ class User extends Authenticatable
     {
         return $this->notifications()->where('type', 'comment');
     }
-    
     // サンキューメッセージ
-    public function thankyounotifications()
+    public function thankyou_notifications()
     {
-        return $this->hasMany(Thankyounotification::class)->withTimestamps();
+        return $this->notifications()->where('type', 'message');
     }
-    
-    public function commment_thankyounotifications()
-    {
-        return $this->thankyounotifications();
-    }
-
-
-
 
 }
 

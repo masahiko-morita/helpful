@@ -55,23 +55,6 @@
         </div>
     </div>
         <div class="row row-eq-height">
-<<<<<<< HEAD
-           <div class="col-md-9">
-                <div id="toukou">
-                {!! Form::open(['route' => ['comments.store'], 'method' => 'post']) !!}
-                {{Form::hidden('irai_id', $irai->id)}}
-                {{Form::hidden('user_id', $user->id)}}
-                {{Form::hidden('type', 'comment')}}
-                
-                {!! Form::textarea('content', null, ['class' => 'form-control input-lg', 'rows="3"',  'placeholder' => '手伝います！〇月〇日いかがですか？' ]) !!}
-                {!! Form::submit('メッセージ送信！', ['class' => 'btn btn-success btn-lg']) !!}
-    
-                {!! Form::close() !!}
-                </div>
-            </div>
-        </div>    
-</div>
-=======
             <div class="col-md-9">
                 <div id="toukou">
                     {!! Form::open(['route' => ['comments.store'], 'method' => 'post']) !!}
@@ -85,7 +68,6 @@
                 </div>
             </div>
         </div>    
->>>>>>> 126d6a672a390795548d958599657f72724384b7
 @include('comments.comment', ['comments' => $comments])
 
 @endsection

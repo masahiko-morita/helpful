@@ -949,7 +949,7 @@ border-radius: 6px;
     transition: .4s;
     background-color:rgba(255,255,255,0.7);
     float: left;
-    margin-left: 20px;
+    margin-left: 80px;
     margin-top: 30px;
 }
 
@@ -961,7 +961,7 @@ border-radius: 6px;
 
 #toukou .btn{
     display: block;
-    width: 170px;
+    width: 200px;
    text-align: center;
     text-decoration: none;
     margin-top:30px;
@@ -1836,7 +1836,7 @@ a{
 
 .table {
     margin-left: 300px;
-    margin-top: 120px;
+    margin-top: 60px;
     width:600px;
 }
 

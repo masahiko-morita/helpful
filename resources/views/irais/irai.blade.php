@@ -11,7 +11,6 @@
                     <div class='maste-content'>
                             <br>
                             <h4 class='under'>{{ $irai->title }}</h4>
-            
                             <div class='maste-btn'>
                                 @if (Auth::user() == null)
                                 

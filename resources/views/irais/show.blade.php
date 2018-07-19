@@ -6,6 +6,7 @@
 <?php $user = $irai->user; ?>
 <h1 class='text-center'>{{ $irai->title }}</h1>
 
+
     <div class="col-md-10"> 
             @if (Auth::user()->id == $irai->user_id)
                 <div id="hensyuu">
@@ -19,6 +20,8 @@
                     {!! Form::close() !!}
                     
                 </div>
+<div class="col-sm-10"> 
+            @if (Auth::user()->id != $irai->user_id)
                 <div id="tetsudau">
                    <!--@include('irai_finish.finish_button', ['user' => $user])-->
                    {!! Form::open(['route' => ['irai.unfinish', $irai->id], 'method' => 'delete']) !!}
@@ -27,7 +30,8 @@
                 </div>
             @endif    
     </div>
-    <div class="row"> 
+    <div class="row">
+        <div class="col-xs-12"> 
             <table class="table">
                 <tr>
                     <th><i class="fa fa-user" id='show'> </i></th>
@@ -51,6 +55,7 @@
                 </tr>
             </table>
         </div>
+        </div>
         <div class="row row-eq-height">
            <div class="col-md-9">
             <div id="toukou">
@@ -59,8 +64,8 @@
             {{Form::hidden('user_id', $user->id)}}
             {{Form::hidden('type', 'comment')}}
             
-            {!! Form::textarea('content', null, ['class' => 'form-control input-lg', 'rows="3"',  'placeholder' => 'コメント' ]) !!}
-            {!! Form::submit('コメント投稿', ['class' => 'btn btn-success btn-lg']) !!}
+            {!! Form::textarea('content', null, ['class' => 'form-control input-lg', 'rows="3"',  'placeholder' => '手伝います！〇月〇日いかがですか？' ]) !!}
+            {!! Form::submit('メッセージ送信！', ['class' => 'btn btn-success btn-lg']) !!}
 
             {!! Form::close() !!}
             </div>

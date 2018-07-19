@@ -114,6 +114,8 @@
         @endif
       </div>
 　  </div>
+
+
 　  
 　  @if (!Auth::check())
 　  <a href="{{ route('irais.create')}}">

@@ -14,7 +14,7 @@
                     </div>
                     <div id="sakujyo">
                         {!! Form::open(['route' => ['irais.destroy', $irai->id], 'method' => 'delete']) !!}
-                        {!! Form::submit('依頼を削除する', ['class' => 'btn center-block']) !!}
+                            {!! Form::submit('依頼を削除する', ['class' => 'btn center-block']) !!}
                         {!! Form::close() !!}
                     </div>
                 @endif
@@ -23,6 +23,7 @@
                     <div id="tetsudau">
                        <!--@include('irai_finish.finish_button', ['user' => $user])-->
                        {!! Form::open(['route' => ['irai.unfinish', $irai->id], 'method' => 'delete']) !!}
+                        {{Form::hidden('type', 'message')}}
                         {!! Form::submit('依頼を完了する', ['class' => 'btn center-block']) !!}
                         {!! Form::close() !!}
                     </div>

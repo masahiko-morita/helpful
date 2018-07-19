@@ -7,7 +7,8 @@
                     //->where('irai_id')
                     ->get();
      $delete_list = [];
-     $isComment = false;   
+     $isComment = false;
+     $isMessage = false;
      $isChat = false;
      
      
@@ -18,6 +19,9 @@
          }
          if($notification->type == 'chat'){  
              $isChat = true;
+         }
+         if($notification->type == 'message'){  
+             $isMessage = true;
          }
      }
      
@@ -43,30 +47,7 @@
     </a>
     @endif
     
-<?php
-    if(Auth::check() == false){
-        return;
-    }
-    
-    $thankyou_notifications = DB::table('thankyou_notifications')
-                            ->where('user_id', \Auth::user()->id)
-                            ->get();
-    $delete_list = [];
-    $is_Comment = false;
-    
-    foreach($thankyou_notifications as $thankyou_notification) {
-        $delete_list[] = $thankyou_notification->id;
-        if($thankyou_notification->message == 'comment') {
-            $is_Comment = true;
-        }
-    }
-    
-    
-    DB::table('thankyou_notifications')->whereIn('id', $delete_list)->delete();
-    
-?>
-
-    @if($is_Comment == true)
+    @if($isMessage == true)
     <div class="panel panel-info">
     <div class="panel-body">
        コメントした依頼が解決しました！ありがとうございました！

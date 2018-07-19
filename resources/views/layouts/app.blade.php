@@ -30,10 +30,6 @@
         <!--fontawesome-->
         <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
         
-        <!--自動更新30秒-->
-        <SCRIPT LANGUAGE="JavaScript">
-        setTimeout("location.reload()",1000*30);
-        </SCRIPT>    
         </head>
     
     <body>

@@ -14,8 +14,7 @@
 
             <h4>※は必須です</h4>            
             <br>
-            <div class="form-group">
-                    
+                <div class="form-group">
                     {!! Form::label('title', '※ タイトル:') !!}
                     {!! Form::text('title', null, ['class' => 'form-control' ,'placeholder' => '例:○○をシェアしましょう']) !!}
                 
@@ -27,18 +26,18 @@
                             <div class='col-sm-6'>
                                 <div class="form-group">
                                     <label for="start">開始時刻(任意):</label><br>
-                                    <div class='input-group date' id='datetimepicker'>
-                                        <input type='text' name="start" value="{{ old('start') }}" class="form-control" />
-                                             <span class="input-group-addon">
-                                                 <span class="glyphicon glyphicon-calendar"></span>
-                                             </span>
-                                    </div>
+                                        <div class='input-group date' id='datetimepicker'>
+                                            <input type='text' name="start" value="{{ old('start') }}" class="form-control" />
+                                                <span class="input-group-addon">
+                                                    <span class="glyphicon glyphicon-calendar"></span>
+                                                </span>
+                                        </div>
                                     <label for="finish">終了時刻(任意):</label><br>
-                                    <div class='input-group date' id='datetimepicker1'>
-                                        <input type='text' name="finish" value="{{ old('finish') }}" class="form-control" />
-                                             <span class="input-group-addon">
-                                                 <span class="glyphicon glyphicon-calendar"></span>
-                                             </span>
+                                        <div class='input-group date' id='datetimepicker1'>
+                                            <input type='text' name="finish" value="{{ old('finish') }}" class="form-control" />
+                                                <span class="input-group-addon">
+                                                    <span class="glyphicon glyphicon-calendar"></span>
+                                                </span>
                                     </div>
                                 </div>
                             </div>

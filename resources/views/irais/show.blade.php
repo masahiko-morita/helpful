@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-    
 <div class='container'>
     <?php $user = $irai->user; ?>
         <h1 class='text-center'>{{ $irai->title }}</h1>
@@ -55,22 +54,6 @@
         </div>
     </div>
         <div class="row row-eq-height">
-<<<<<<< HEAD
-           <div class="col-md-9">
-            <div id="toukou">
-            {!! Form::open(['route' => ['comments.store'], 'method' => 'post']) !!}
-            {{Form::hidden('irai_id', $irai->id)}}
-            {{Form::hidden('user_id', $user->id)}}
-            {{Form::hidden('type', 'comment')}}
-            
-            {!! Form::textarea('content', null, ['class' => 'form-control input-lg', 'rows="3"',  'placeholder' => '手伝います！〇月〇日いかがですか？' ]) !!}
-                {!! Form::submit('メッセージ送信！', ['class' => 'btn btn-success btn-lg']) !!}
-
-            {!! Form::close() !!}
-           </a>
-            
-            </div>
-=======
             <div class="col-md-9">
                 <div id="toukou">
                     {!! Form::open(['route' => ['comments.store'], 'method' => 'post']) !!}
@@ -82,9 +65,7 @@
                         {!! Form::submit('メッセージ送信！', ['class' => 'btn btn-success btn-lg']) !!}
                     {!! Form::close() !!}
                 </div>
->>>>>>> cffc735ba51d6fae85e504091555a4ab4bae6da0
             </div>
         </div>    
 @include('comments.comment', ['comments' => $comments])
-
 @endsection

@@ -20,7 +20,7 @@
                     @if (Auth::check())
                         <a class="navbar-brand" href="/hatsu">初めての方へ</a>
                         <a class="navbar-brand" data-toggle="modal" data-target="#sampleModal"}}">検索 <i class="fa fa-search" id='search'></i></a>
-                        <a class="navbar-brand" href="{{ route('irais.index', Auth::user()->id) }}">依頼一覧へ</a>
+                        <a class="navbar-brand" href="{{ route('irais.index', Auth::user()->id) }}">TOP</a>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ Auth::user()->name }} <span class="caret"></span></a>
                            
@@ -47,6 +47,6 @@
             </div>
             </div>
             </nav>
-</header>
+
 
 

@@ -6,14 +6,13 @@
 <?php $user = $irai->user; ?>
 <h1 class='text-center'>{{ $irai->title }}</h1>
 
-<div class="col-md-10"> 
+<div class="col-md-6"> 
             @if (Auth::user()->id != $irai->user_id)
                 <div id="tetsudau">
                     @include('irai_help.help_button', ['user' => $user])
                 </div>
             @endif
             @if (Auth::user()->id == $irai->user_id)
-            
             <div id="hensyuu">
                 {!! Form::open(['route' => ['irais.edit', $irai->id], 'method' => 'get']) !!}
                     {!! Form::submit('依頼を編集する', ['class' => 'btn center-block']) !!}
@@ -68,4 +67,4 @@
     </div>
 @include('comments.comment', ['comments' => $comments])
 
-@endsection
+@endsection 

@@ -19,10 +19,10 @@
          if($notification->type == 'chat'){  
              $isChat = true;
          }
-     }                
+     }
      
-    DB::table('notifications')->whereIn('id', $delete_list)->delete();
-
+      DB::table('notifications')->whereIn('id', $delete_list)->delete();
+      
 ?>    
 
     @if($isChat == true)
@@ -32,6 +32,7 @@
     </div>
     </div>
     @endif
+    
     @if($isComment == true)
     <a href="{{ route('irais.show', $notification->irai_id) }}">
     <div class="panel panel-info">

@@ -104,7 +104,6 @@ class User extends Authenticatable
         
         if ($exist) {
             // 既にフォローしていればフォローを外す
-            $this->finishings()->detach($iraiId);
             return true;
         } else {
             // 未フォローであれば何もしない

@@ -6,26 +6,27 @@
 <?php $user = $irai->user; ?>
 <h1 class='text-center'>{{ $irai->title }}</h1>
 
-<div class="col-md-10"> 
-            @if (Auth::user()->id != $irai->user_id)
-                <div id="tetsudau">
-                    @include('irai_help.help_button', ['user' => $user])
-                </div>
-            @endif
+    <div class="col-md-10"> 
             @if (Auth::user()->id == $irai->user_id)
-            
-            <div id="hensyuu">
-                {!! Form::open(['route' => ['irais.edit', $irai->id], 'method' => 'get']) !!}
-                    {!! Form::submit('依頼を編集する', ['class' => 'btn center-block']) !!}
-                {!! Form::close() !!}
-            </div>
-            <div id="sakujyo">
-                {!! Form::open(['route' => ['irais.destroy', $irai->id], 'method' => 'delete']) !!}
-                {!! Form::submit('依頼を削除する', ['class' => 'btn center-block']) !!}
-                {!! Form::close() !!}
-            </div>
+                <div id="hensyuu">
+                    {!! Form::open(['route' => ['irais.edit', $irai->id], 'method' => 'get']) !!}
+                        {!! Form::submit('依頼を編集する', ['class' => 'btn center-block']) !!}
+                    {!! Form::close() !!}
+                </div>
+                <div id="sakujyo">
+                    {!! Form::open(['route' => ['irais.destroy', $irai->id], 'method' => 'delete']) !!}
+                    {!! Form::submit('依頼を削除する', ['class' => 'btn center-block']) !!}
+                    {!! Form::close() !!}
+                    
+                </div>
+                <div id="tetsudau">
+                   <!--@include('irai_finish.finish_button', ['user' => $user])-->
+                   {!! Form::open(['route' => ['irai.unfinish', $irai->id], 'method' => 'delete']) !!}
+                    {!! Form::submit('依頼を完了する', ['class' => 'btn center-block']) !!}
+                    {!! Form::close() !!}
+                </div>
             @endif    
-       </div>
+    </div>
     <div class="row"> 
             <table class="table">
                 <tr>

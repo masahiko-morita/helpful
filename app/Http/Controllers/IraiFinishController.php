@@ -22,11 +22,26 @@ class IraiFinishController extends Controller
         \Auth::user()->finish($id);
         
         return redirect()->route('irais.index', ['irais' => $irais]);
+    
+    
+
+        
     }
 
     public function destroy($id)
     {
-        \Auth::user()->unfinish($id);
-        return redirect()->back();
+        $irai = Irai::find($id);
+        
+        if (\Auth::id() === $irai->user_id) {
+            
+        $irai = \App\Irai::find($id);
+        $irai->delete();
+        
+
+        $irais = Irai::orderBy('created_at', 'desc')->paginate(8);
+
+        return view("irais.index",
+              ['irais' => $irais]);
+        }
     }
 }

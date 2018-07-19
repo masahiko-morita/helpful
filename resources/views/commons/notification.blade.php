@@ -4,22 +4,27 @@
     } 
      $notifications = DB::table('notifications')
                     ->where('user_id', \Auth::user()->id)
+                    //->where('irai_id')
                     ->get();
      $delete_list = [];
-     $isComment = false;
+     $isComment = false;   
      $isChat = false;
+     
      
     foreach($notifications as $notification) {
          $delete_list[] = $notification->id;
          if($notification->type == 'comment') {
              $isComment = true;
          }
-         if($notification->type == 'chat'){
+         if($notification->type == 'chat'){  
              $isChat = true;
          }
      }                
+     
     DB::table('notifications')->whereIn('id', $delete_list)->delete();
+
 ?>    
+
     @if($isChat == true)
     <div class="panel panel-info">
     <div class="panel-body">
@@ -28,7 +33,7 @@
     </div>
     @endif
     @if($isComment == true)
-    <a href="{{ route('users.show', Auth::user()->id) }}">
+    <a href="{{ route('irais.show', $notification->irai_id) }}">
     <div class="panel panel-info">
     <div class="panel-body">
        依頼に新着のコメントがあります。

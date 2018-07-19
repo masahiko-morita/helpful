@@ -979,14 +979,12 @@ border-radius: 6px;
     transition: .4s;
     background-color:rgba(255,255,255,0.7);
     margin-right: 400px;
-    text-align: center;
     margin-left: 380px;
 }
 
 #toukou .btn:hover{
    background: #BC927A;
-   color: #fff; 
-}
+   color: #fff; }
 
 #koushin .btn{
     display: block;
@@ -1142,8 +1140,7 @@ border-radius: 6px;
     width: 130px;
     margin-top:10px;
     padding: 0.3em;
-    display: block;
-}
+    display: block;}
 
 #torihiki .btn{
     display: block;
@@ -1163,8 +1160,6 @@ border-radius: 6px;
    background: #93D87C;
    color: #fff;
 }
-
-
 
 /*irai-search*/
 .search-content {
@@ -1851,24 +1846,56 @@ a{
 }
 
 .col-md-9 {
-    margin-left:100px;
-}
-
-
-
+    margin-left:100px;}
 
 textarea.form-control {
     width: 700px;
     margin-left: 170px;
     margin-top: 15px;
 } 
-
-
 .naiyou{
     width:90%;
-    
-    margin-left:5%;
+    margin-left:5%;}
+
+
+a.bt-samp74 {
+  display: block;
+  position: relative;
+  height: 30px;
+  width: 190px;
+  text-decoration: none;
+  line-height: 30px;
+  font-size: 16px;
+  font-weight: bold;
+  background: #none;
+  border: 2px solid #756C67;
+  padding-left:40px;
+  color: #756C67;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -o-transition: 0.3s;
+  -ms-transition: 0.3s;
+  transition: 0.3s;
 }
+a.bt-samp74 i{  
+  display: block;
+  position: absolute;
+  top:0;
+  left:0px;
+  height: 30px;
+  width: 30px;
+  line-height:30px;
+  text-align: center;
+  background:#756C67;
+  color: #fff;
+}
+a.bt-samp74:hover{
+  opacity: 0.7;
+}    
+
+
+    
+
 
 
 

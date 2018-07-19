@@ -61,9 +61,11 @@
             {{Form::hidden('type', 'comment')}}
             
             {!! Form::textarea('content', null, ['class' => 'form-control input-lg', 'rows="3"',  'placeholder' => '手伝います！〇月〇日いかがですか？' ]) !!}
-            {!! Form::submit('メッセージ送信！', ['class' => 'btn btn-success btn-lg']) !!}
+                {!! Form::submit('メッセージ送信！', ['class' => 'btn btn-success btn-lg']) !!}
 
             {!! Form::close() !!}
+           </a>
+            
             </div>
             </div>
         </div>    

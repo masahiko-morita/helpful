@@ -11,7 +11,7 @@
      $isMessage = false;
      $isChat = false;
      
-     
+      
     foreach($notifications as $notification) {
          $delete_list[] = $notification->id;
          if($notification->type == 'comment') {

@@ -60,6 +60,7 @@ class CommentsController extends Controller
         }
             
         
+        
         return redirect(route('irais.show',
             ['id'=>$request->irai_id]));
     }

@@ -1,4 +1,6 @@
 @extends('layouts.app')
+@extends('commons.auto')
+
 
 @section('content')
 
@@ -10,45 +12,34 @@
 
 
     <div class='col-md-5 text-center'>
-
-       <div class="balloon">
-      {{$user->content}}
-</div>
+		<div class="balloon">
+      		{{$user->content}}
+		</div>
     </div>
-
 </div>
-        
-<div> 
-
 <div class="col-xs-12">
     <ul class="nav nav-tabs nav-justified">
-<li role="presentation" class="{{ Request::is('users/' . $user->id) ? 'active' : '' }}"><a href="{{ route('users.show', ['id' => $user->id]) }}">出した依頼 <span class="badge">{{ $count_irais }}</span></a></li>
+		<li role="presentation" class="{{ Request::is('users/' . $user->id) ? 'active' : '' }}"><a href="{{ route('users.show', ['id' => $user->id]) }}">出した依頼 <span class="badge">{{ $count_irais }}</span></a></li>
         <li role="presentation" class="{{ Request::is('users/*/finishings') ? 'active' : '' }}"><a href="{{ route('users.finishings', ['id' => $user->id]) }}">お助け完了！<span class="badge">{{ $count_finishings }}</span></a></li>
-        <li role="presentation" class="{{ Request::is('users/*/finished') ? 'active' : '' }}"><a href="{{ route('users.finished', ['id' => $user->id]) }}">助けられた <span class="badge"></span></a></li>    </ul>
-        
+        <li role="presentation" class="{{ Request::is('users/*/finished') ? 'active' : '' }}"><a href="{{ route('users.finished', ['id' => $user->id]) }}">助けられた <span class="badge"></span></a></li> </ul>
 </div>
-    <div class='container'>
-        <div class='maepage'>
-            {!! $irais->render() !!}
-        </div> 
-    </div>
+<div class='container'>
+    <div class='maepage'>
+    	{!! $irais->render() !!}
+    </div> 
+</div>
 <div role="document" data-spy="scroll" data-target="#sampleScrollSpy">
-
 	<div class="container-fluid">
 		<div class="container">
 			<div class="row">
-				</div>
+			</div>
 
-				<div class="col-xs-12" id='tatesen'>
-					<div id="sampleMainContents">
-
-					
-						 
-						<h2 class="text-center">
-							 <div class='ribbon3'>
-					           <h2>出した依頼</h2>
-					        </div>
-						</h2>
+<div class="col-xs-12" id='tatesen'>
+	<div id="sampleMainContents">
+		<h2 class="text-center">
+			<div class='ribbon3'>
+				<h2>出した依頼</h2>
+			</div>
 						
 						@if($count_irais==0)
 						<br>

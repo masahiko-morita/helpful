@@ -21,7 +21,7 @@
              $isChat = true;
          }
          if($notification->type == 'message'){  
-             $isMessage = true;
+             $is = true;
          }
      }
      
@@ -46,7 +46,7 @@
     </div>
     </a>
     @endif
-    
+
     @if($isMessage == true)
     <div class="panel panel-info">
     <div class="panel-body">

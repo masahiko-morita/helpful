@@ -1,4 +1,6 @@
 @extends('layouts.app')
+@extends('commons.auto')
+
 
 @section('content')
 <?php $user = $irai->user; ?>

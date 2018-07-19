@@ -274,6 +274,11 @@ transition: .4s;
   padding: 1em;
   height:280px;
   margin-bottom: 20%;
+   -moz-transition: -moz-transform 0.5s linear;
+    -webkit-transition: -webkit-transform 0.5s linear;
+    -o-transition: -o-transform 0.5s linear;
+    -ms-transition: -ms-transform 0.5s linear;
+    transition: transform 0.5s linear;
 }
 
 .maste-box .maste-content{
@@ -303,6 +308,14 @@ transition: .4s;
 }
 .maste-box .maste-btn {
     text-align: center;
+}
+
+.maste-box:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 .containerirai{

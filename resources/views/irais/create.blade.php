@@ -4,7 +4,7 @@
 
 <!-- Write content for each page here -->
  
-        <div class='ribbon3'>
+        <div class='shinki_ribbon'>
            <h2>新規投稿</h2>
         </div>
     <div class='toukou'>

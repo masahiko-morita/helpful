@@ -379,7 +379,7 @@ transition: .4s;
     background: #1989ac;
     color: #FFF;
     box-sizing: border-box;
-    margin-top: 30px;
+    margin-top: 0px;
     margin-left: -150px;
 }
 
@@ -464,6 +464,54 @@ transition: .4s;
   border-width: 30px 15px 30px 0px;
   border-color: transparent white transparent transparent;
   border-style: solid;}
+  
+.shinki_ribbon {
+    display: inline-block;
+    position: relative;
+    height: 60px;
+    line-height: 60px;
+    vertical-align: middle;
+    padding: 7px 0;
+    font-size: 18px;
+    background: #1989ac;
+    color: #FFF;
+    box-sizing: border-box;
+    margin-top: 0px;
+    margin-left: 500px;
+}
+
+.shinki_ribbon h2 {
+    vertical-align: middle;
+    margin: 0;
+    padding: 0 30px;
+    border-top: dashed 2px rgba(255, 255, 255, 0.5);
+    border-bottom: dashed 2px rgba(255, 255, 255, 0.5);
+    line-height: 42px;
+}
+
+.shinki_ribbon:before, .shinki_ribbon:after{
+  position: absolute;
+  content: '';
+  width: 0px;
+  height: 0px;
+  z-index: 1;
+}
+
+.shinki_ribbon:before{/*左の山形*/
+  top: 0;
+  left: 0;
+  border-width: 30px 0px 30px 15px;
+  border-color: transparent transparent transparent white;
+  border-style: solid;
+}
+
+.shinki_ribbon:after{/*右の山形*/
+  top: 0;
+  right: 0;
+  border-width: 30px 15px 30px 0px;
+  border-color: transparent white transparent transparent;
+  border-style: solid;
+}
 
 /* 吹き出し本体 */
 .balloon{
@@ -1854,13 +1902,13 @@ textarea.form-control {
     width:100px;
     height:100px;
     margin-left: 130px;
-    margin-top: -30px;
+    margin-top: 0px;
 }
 
 .introduction_momo {
     background-color: #ADD8E6;
     margin-top: 0px;
-    padding: 70px;
+    padding: 25px;
     width:620px;
     margin-left: 250px;
     border:double 5px;
@@ -1868,15 +1916,10 @@ textarea.form-control {
     border-radius: 0.5em;
 }
 
-.introduction_momo {
-    margin-left: 260px;
-    margin-top: 30px;
-}
-
 #momo_name {
     margin-top: 30px;
     margin-left: 140px;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
 }
 
 

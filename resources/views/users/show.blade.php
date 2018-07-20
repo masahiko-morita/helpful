@@ -8,13 +8,8 @@
         <img src="{{ Gravatar::src($user->email, 100) . '&d=mm' }}" alt="" class="img-circle" width='30%'>
         <div id=momo_name>
         <h3>{{ $user->name }}</h3>
-<<<<<<< HEAD
     </div>
     <div class='col-md-5 text-center'>
-=======
-        </div>
-   
->>>>>>> 67943f1dd9b2d0febe8c973b77fd078a6e15f7ca
 		<div class="balloon">
       		{{$user->content}}
 		</div>

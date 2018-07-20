@@ -11,7 +11,6 @@
             <div class="maintitle">
                 @if (!Auth::check())
                     <a href="{{ route('signup.get') }}" class="cp_btn">Helpfulを始める</a>
-                    <!--<a href="{{ route('signup.get') }}" class="btn btn-default btn-lg">HELPFULを始める</a>-->
                 @endif
             </div>
         </div>
@@ -29,7 +28,7 @@
         			<img src="../images/feed1.png" alt="First slide">
         		</div>
         		<div class="item">
-        			<img src="../images/feed2.png" alt="Second slide">
+        			<img src="../images/feed1.png" alt="Second slide">
         		</div>
         		<div class="item">
         			<img src="../images/feed1.png" alt="Third slide">

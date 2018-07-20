@@ -28,7 +28,6 @@
       DB::table('notifications')->whereIn('id', $delete_list)->delete();
       
 ?>    
-
     @if($isChat == true)
     <div class="panel panel-info">
     <div class="panel-body">

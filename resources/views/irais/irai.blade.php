@@ -40,8 +40,5 @@
             </a>
         </div>
     </div>
-<<<<<<< HEAD
 @endforeach
-=======
-@endforeach
->>>>>>> 1d2a74c43cab27ced1f30c9f289676b7857368dc
+

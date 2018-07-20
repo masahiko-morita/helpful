@@ -3,10 +3,10 @@
 @section('content')
 
 <!-- Write content for each page here -->
+ 
         <div class='ribbon3'>
            <h2>新規投稿</h2>
         </div>
-    
     <div class='toukou'>
     <div class="row"> 
         <div class="form-group col-xs-12 col-sm-offset-2 col-sm-8 col-lg-offset-3 col-lg-6">
@@ -57,6 +57,8 @@
                     
                     {!! Form::label('reward', '※ お礼:') !!}
                     {!! Form::text('reward', null, ['class' => 'form-control','placeholder' => '例:100円お渡しします/○○が■円で買えます']) !!}
+                    
+                     
             </div> 
    
                     {!! Form::submit('依頼を投稿する', ['class' => 'btn btn-info btn-lg']) !!}

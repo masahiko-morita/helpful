@@ -10,7 +10,6 @@
      $isComment = false;
      $isMessage = false;
      $isChat = false;
-     
       
     foreach($notifications as $notification) {
          $delete_list[] = $notification->id;
@@ -21,36 +20,27 @@
              $isChat = true;
          }
          if($notification->type == 'message'){  
-             $isMessage = true;
-         } 
+             $isMessage = true;} 
      }
      
       DB::table('notifications')->whereIn('id', $delete_list)->delete();
-      
 ?>    
-
     @if($isChat == true)
-    <div class="panel panel-info">
-    <div class="panel-body">
-       新着の取引メッセージがあります。
-    </div>
+    <div class="husen">
+       新着の取引メッセージがあります<a href="#" class="alert-link">link</a>
     </div>
     @endif
     
     @if($isComment == true)
     <a href="{{ route('irais.show', $notification->irai_id) }}">
-    <div class="panel panel-info">
-    <div class="panel-body">
-       依頼に新着のコメントがあります。
-    </div>
+    <div class="husen">
+      依頼に新着のコメントがあります
     </div>
     </a>
     @endif
 
     @if($isMessage == true)
-    <div class="panel panel-info">
-    <div class="panel-body">
+    <div class="husen">
        コメントした依頼が解決しました！ありがとうございました！
-    </div>
     </div>
     @endif

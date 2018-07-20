@@ -379,7 +379,8 @@ transition: .4s;
     background: #1989ac;
     color: #FFF;
     box-sizing: border-box;
-    margin-top: 0;
+    margin-top: 30px;
+    margin-left: -150px;
 }
 
 .ribbon3 h2 {
@@ -462,17 +463,18 @@ transition: .4s;
   right: 0;
   border-width: 30px 15px 30px 0px;
   border-color: transparent white transparent transparent;
-  border-style: solid;
-}
+  border-style: solid;}
 
 /* 吹き出し本体 */
 .balloon{
-  margin-top: 5%;
+  /*margin-top: 5%;*/
   width:200px;
   position: relative;
   padding: 20px;
-  background-color: #fff3ad;
+  background-color: #edf5f4;
   word-break:break-all;
+  margin-left:260px;
+  margin-top: -145px;
 }
 
 .balloon::before{
@@ -483,9 +485,10 @@ transition: .4s;
   height: 0;
   left: -15px;
   top: 20px;
-  border-right: 15px solid #fff3ad;
+  border-right: 15px solid 	#edf5f4;
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
+  font-size: 20px;
 }
 
 
@@ -500,13 +503,11 @@ transition: .4s;
     width: 50%;
     height: 310px;
     text-align: center;
-    font-size: 15px;
-}
+    font-size: 15px;}
 
 .c{
     display: inline-block;
-    margin-left: 8px;
-    }
+    margin-left: 8px;}
 
 .top-introduction-num{
     display: inline-block;
@@ -924,14 +925,19 @@ border-radius: 6px;
     width: 200px;
     text-align: center;
     text-decoration: none;
-    margin-top:20px;
-    font-size:18px;
+    margin-top:40px;
+    margin-left: 425px;
+    font-size:25px;
     color: #3cb371;
     border: 3px solid #93D87C;
     border-radius: 3px;
     transition: .4s;
     background-color:rgba(255,255,255,0.7);
-    margin-left: 450px;
+}
+
+#tetsudau .btn:hover{
+   background: #93D87C;
+   color: #fff;
 }
 
 #hensyuu .btn{
@@ -940,7 +946,7 @@ border-radius: 6px;
     text-align: center;
     text-decoration: none;
     margin-top:15px;
-    font-size:20px;
+    font-size:15px;
     color: #6FC9D8;
     border: 3px solid #6FC9D8;
     border-radius: 3px;
@@ -962,7 +968,7 @@ border-radius: 6px;
     text-align: center;
     text-decoration: none;
     margin-top:15px;
-    font-size:20px;
+    font-size:15px;
     color: #EA5C5C;
     border: 3px solid #EA5C5C;
     border-radius: 3px;
@@ -979,6 +985,10 @@ border-radius: 6px;
    color: #fff;
 }
 
+#toukou　p {
+    text-align: center;
+}
+
 #toukou .btn{
     display: block;
     width: 200px;
@@ -992,14 +1002,12 @@ border-radius: 6px;
     transition: .4s;
     background-color:rgba(255,255,255,0.7);
     margin-right: 400px;
-    text-align: center;
     margin-left: 380px;
 }
 
 #toukou .btn:hover{
    background: #BC927A;
-   color: #fff; 
-}
+   color: #fff; }
 
 #koushin .btn{
     display: block;
@@ -1155,8 +1163,7 @@ border-radius: 6px;
     width: 130px;
     margin-top:10px;
     padding: 0.3em;
-    display: block;
-}
+    display: block;}
 
 #torihiki .btn{
     display: block;
@@ -1176,8 +1183,6 @@ border-radius: 6px;
    background: #93D87C;
    color: #fff;
 }
-
-
 
 /*irai-search*/
 .search-content {
@@ -1336,38 +1341,6 @@ border-radius: 6px;
     text-shadow: 2px 0px 0px #ff003f, 0px 1px 0px #ff003f, -1px 0px 0px #ff003f, 0px -1px 0px #ff003f;
     margin-left: 140px;
 }
-
-.iraishitai{
-    font-size: 20px;
-    float: left;
-    padding: 0em 0em;
-    margin: 2em 0;
-    font-weight: bold;
-    color: #F0FFF0;/*文字色*/
-    background: #F0FFF0;
-    border: solid 3px #fff;/*線*/
-    border-radius: 22px;/*角の丸み*/
-    width: 495px;
-    margin-left: -20px;
-}
-
-.tasuketai{
-    float: right;
-    font-size: 20px;
-     /*margin: 2em 0;*/
-    font-weight: bold;
-    color: #FFF0F5;/*文字色*/
-    background: #FFF0F5;
-    border: solid 0px #fff;/*線*/
-    border-radius: 22px;/*角の丸み*/
-    margin-top: 45px;
-    width: 475px;
-    margin-right:-20px;
-    height:200%;
-}
-
-
-
 .torihiki{
     font-weight:bold;
     font-size:35px;
@@ -1864,24 +1837,46 @@ a{
 }
 
 .col-md-9 {
-    margin-left:100px;
-}
-
-
-
+    margin-left:100px;}
 
 textarea.form-control {
     width: 700px;
     margin-left: 170px;
     margin-top: 15px;
 } 
-
-
 .naiyou{
     width:90%;
     
     margin-left:5%;
 }
 
+.introduction_momo img {
+    width:100px;
+    height:100px;
+    margin-left: 130px;
+    margin-top: -30px;
+}
+
+.introduction_momo {
+    background-color: #ADD8E6;
+    margin-top: 0px;
+    padding: 70px;
+    width:620px;
+    margin-left: 250px;
+    border:double 5px;
+    border-color: SteelBlue;
+    border-radius: 0.5em;
+}
+
+.introduction_momo {
+    margin-left: 260px;
+    margin-top: 30px;
+}
+
+#momo_name {
+    margin-top: 30px;
+    margin-left: 140px;
+    margin-bottom: 30px;
+}
 
 

@@ -924,14 +924,19 @@ border-radius: 6px;
     width: 200px;
     text-align: center;
     text-decoration: none;
-    margin-top:20px;
-    font-size:18px;
+    margin-top:40px;
+    margin-left: 425px;
+    font-size:25px;
     color: #3cb371;
     border: 3px solid #93D87C;
     border-radius: 3px;
     transition: .4s;
     background-color:rgba(255,255,255,0.7);
-    margin-left: 450px;
+}
+
+#tetsudau .btn:hover{
+   background: #93D87C;
+   color: #fff;
 }
 
 #hensyuu .btn{
@@ -940,7 +945,7 @@ border-radius: 6px;
     text-align: center;
     text-decoration: none;
     margin-top:15px;
-    font-size:20px;
+    font-size:15px;
     color: #6FC9D8;
     border: 3px solid #6FC9D8;
     border-radius: 3px;
@@ -962,7 +967,7 @@ border-radius: 6px;
     text-align: center;
     text-decoration: none;
     margin-top:15px;
-    font-size:20px;
+    font-size:15px;
     color: #EA5C5C;
     border: 3px solid #EA5C5C;
     border-radius: 3px;
@@ -977,6 +982,10 @@ border-radius: 6px;
    background: #EA5C5C;
    
    color: #fff;
+}
+
+#toukou　p {
+    text-align: center;
 }
 
 #toukou .btn{

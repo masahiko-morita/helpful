@@ -1,3 +1,4 @@
+
 <nav class="navbar navbar-inverse navbar-static-top">
         <div class="container">
             <div class="navbar-header">
@@ -21,11 +22,11 @@
                         <a class="navbar-brand" href="/hatsu">初めての方へ</a>
                         <a class="navbar-brand" data-toggle="modal" data-target="#sampleModal"}}">検索 <i class="fa fa-search" id='search'></i></a>
 
-                        <a class="navbar-brand" href="{{ route('irais.index', Auth::user()->id) }}">Topへ</a>
+                        <a class="navbar-brand" href="{{ route('irais.index', Auth::user()->id) }}">Top</a>
 
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ Auth::user()->name }} <span class="caret"></span></a>
-                           
+                           @include('commons.auto')
                             <ul class="dropdown-menu">
                                 <li>
                                     <a href="{{ route('users.show', Auth::user()->id) }}">マイページ</a>

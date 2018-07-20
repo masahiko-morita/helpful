@@ -28,7 +28,6 @@
                     </div>
                 @endif    
 
-
             </div>
     <div class="row">
         <div class="col-xs-12"> 
@@ -71,9 +70,6 @@
             </div>
         </div>    
 @include('comments.comment', ['comments' => $comments])
-<<<<<<< HEAD
-@endsection
-=======
 
 @endsection 
->>>>>>> 0006357bb8cc594e07672f7862b94435d97cb3f8
+

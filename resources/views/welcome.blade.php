@@ -66,12 +66,7 @@
 
 
         <!-- START THE FEATURETTES -->
-
- 
-
-
         <hr class="featurette-divider">
-
         <div class="row featurette">
           <div class="col-md-5 order-md-2">
             <h2 class="featurette-heading">知らない子も多いけどみんな助けてくれるの？<br> <div class="text-muted"><br>Don't Worry!</div></h2>
@@ -84,12 +79,10 @@
         </div>
 
         <hr class="featurette-divider">
-
         <div class="row featurette">
           <div class="col-md-12 text-center">
             <h2 class="featurette-heading">さあ登録しよう！<br><br><p class="text-muted">知らない間に他の同期の輪は広がっているかも？</p></h2><br>
             <p class="lead"></p>
-            
     
           </div>
           
@@ -106,13 +99,7 @@
 　  </div>
           
         </div>
-
-
-
         <!-- /END THE FEATURETTES -->
-
-
-
 
 <div class="demo demo3">
    <div class="heading"><span>取引の流れ</span></div>

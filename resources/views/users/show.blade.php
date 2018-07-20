@@ -1,7 +1,6 @@
 @extends('layouts.app')
 @extends('commons.auto')
 
-
 @section('content')
 
 <div class='containermypage'>

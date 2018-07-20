@@ -9,7 +9,6 @@
             {!! Form::model($irai, ['route' => ['irais.update', $irai->id], 'method' => 'put']) !!}
             
             <div class="form-group">
-                    
                     {!! Form::label('title', 'タイトル:') !!}
                     {!! Form::text('title', null, ['class' => 'form-control']) !!}
                 
@@ -47,7 +46,6 @@
                                 });
                                 
                     </script>
-                    
                     {!! Form::label('station', '駅:') !!}
                     {!! Form::text('station', null, ['class' => 'form-control']) !!}
                     

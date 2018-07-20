@@ -1,7 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-    
 <div class='container'>
     <?php $user = $irai->user; ?>
         <h1 class='text-center'>{{ $irai->title }}</h1>
@@ -28,7 +27,6 @@
                         {!! Form::close() !!}
                     </div>
                 @endif    
-
 
             </div>
     <div class="row">
@@ -73,3 +71,4 @@
 @include('comments.comment', ['comments' => $comments])
 
 @endsection 
+

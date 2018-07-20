@@ -474,8 +474,8 @@ transition: .4s;
   padding: 20px;
   background-color: #edf5f4;
   word-break:break-all;
-  margin-left:290px;
-  margin-top: -100px;
+  margin-left:260px;
+  margin-top: -145px;
 }
 
 .balloon::before{
@@ -1896,17 +1896,17 @@ textarea.form-control {
     margin-left:5%;
 }
 
-.introduction img {
+.introduction_momo img {
     width:100px;
     height:100px;
-    margin-left: -50px;
+    margin-left: 130px;
     margin-top: -30px;
 }
 
-.introduction {
+.introduction_momo {
     background-color: #ADD8E6;
     margin-top: 0px;
-    padding: 60px;
+    padding: 70px;
     width:620px;
     margin-left: 250px;
     border:double 5px;
@@ -1914,8 +1914,15 @@ textarea.form-control {
     border-radius: 0.5em;
 }
 
-.introduction h3 {
-    margin-left: -50px;
+.introduction_momo {
+    margin-left: 260px;
+    margin-top: 30px;
+}
+
+#momo_name {
+    margin-top: 30px;
+    margin-left: 140px;
+    margin-bottom: 30px;
 }
 
 

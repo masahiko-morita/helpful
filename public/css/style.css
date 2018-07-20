@@ -9,14 +9,14 @@ body {
     /*background-color: #E8f1f5;*/
     font-family:  'Noto Sans JP', sans-serif;
     font-weight:300;
-    animation: fadeIn 2s ease 0s 1 normal;
-    -webkit-animation: fadeIn 2s ease 0s 1 normal;
+    /*animation: fadeIn 2s ease 0s 1 normal;*/
+    /*-webkit-animation: fadeIn 2s ease 0s 1 normal;*/
 }
 
-@keyframes fadeIn {
-    0% {opacity: 0}
-    100% {opacity: 1}
-}
+/*@keyframes fadeIn {*/
+/*    0% {opacity: 0}*/
+/*    100% {opacity: 1}*/
+/*}*/
 
 @-webkit-keyframes fadeIn {
     0% {opacity: 0}
@@ -471,7 +471,7 @@ transition: .4s;
   width:200px;
   position: relative;
   padding: 20px;
-  background-color: #fff3ad;
+  background-color: #edf5f4;
   word-break:break-all;
 }
 
@@ -483,9 +483,10 @@ transition: .4s;
   height: 0;
   left: -15px;
   top: 20px;
-  border-right: 15px solid #fff3ad;
+  border-right: 15px solid 	#edf5f4;
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
+  font-size: 20px;
 }
 
 

@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+.iraishitai{
+    font-size: 20px;
+    float: left;
+    padding: 0em 0em;
+    margin: 2em 0;
+    font-weight: bold;
+    color: #F0FFF0;/*文字色*/
+    background: #F0FFF0;
+    border: solid 3px #fff;/*線*/
+    border-radius: 22px;/*角の丸み*/
+    width: 495px;
+    margin-left: -20px;}
+
+.tasuketai{
+    float: right;
+    font-size: 20px;
+     /*margin: 2em 0;*/
+    font-weight: bold;
+    color: #FFF0F5;/*文字色*/
+    background: #FFF0F5;
+    border: solid 0px #fff;/*線*/
+    border-radius: 22px;/*角の丸み*/
+    margin-top: 45px;
+    width: 475px;
+    margin-right:-20px;
+    height:200%;
+}
+
+.husen {
+    width: 230px;
+    height: 40px;
+    line-height: 40px;
+    position: relative;
+    background: #87CEEB;
+    margin-right:-20px;
+}
+.husen:after {
+    width: 170px;
+    height: 35px;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 2px;
+    /* ぼかし */
+    -moz-box-shadow: 0 10px 10px #999; /* Firefox */
+    -webkit-box-shadow: 0 10px 10px #999; /* Safari and Chrome */
+    box-shadow: 0 5px 5px #999;
+    /* 回転 */
+    -moz-transform: rotate(3deg); /* FireFox */
+    -webkit-transform: rotate(3deg); /* Safari and Chrome */
+    -o-transform: rotate(3deg); /* Opera */
+    -ms-transform: rotate(3deg); /* IE */
+    transform: rotate(3deg);
+    z-index: -1;}
+

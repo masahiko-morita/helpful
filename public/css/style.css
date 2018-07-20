@@ -463,8 +463,7 @@ transition: .4s;
   right: 0;
   border-width: 30px 15px 30px 0px;
   border-color: transparent white transparent transparent;
-  border-style: solid;
-}
+  border-style: solid;}
 
 /* 吹き出し本体 */
 .balloon{
@@ -504,13 +503,11 @@ transition: .4s;
     width: 50%;
     height: 310px;
     text-align: center;
-    font-size: 15px;
-}
+    font-size: 15px;}
 
 .c{
     display: inline-block;
-    margin-left: 8px;
-    }
+    margin-left: 8px;}
 
 .top-introduction-num{
     display: inline-block;
@@ -1005,14 +1002,12 @@ border-radius: 6px;
     transition: .4s;
     background-color:rgba(255,255,255,0.7);
     margin-right: 400px;
-    text-align: center;
     margin-left: 380px;
 }
 
 #toukou .btn:hover{
    background: #BC927A;
-   color: #fff; 
-}
+   color: #fff; }
 
 #koushin .btn{
     display: block;
@@ -1168,8 +1163,7 @@ border-radius: 6px;
     width: 130px;
     margin-top:10px;
     padding: 0.3em;
-    display: block;
-}
+    display: block;}
 
 #torihiki .btn{
     display: block;
@@ -1189,8 +1183,6 @@ border-radius: 6px;
    background: #93D87C;
    color: #fff;
 }
-
-
 
 /*irai-search*/
 .search-content {
@@ -1349,38 +1341,6 @@ border-radius: 6px;
     text-shadow: 2px 0px 0px #ff003f, 0px 1px 0px #ff003f, -1px 0px 0px #ff003f, 0px -1px 0px #ff003f;
     margin-left: 140px;
 }
-
-.iraishitai{
-    font-size: 20px;
-    float: left;
-    padding: 0em 0em;
-    margin: 2em 0;
-    font-weight: bold;
-    color: #F0FFF0;/*文字色*/
-    background: #F0FFF0;
-    border: solid 3px #fff;/*線*/
-    border-radius: 22px;/*角の丸み*/
-    width: 495px;
-    margin-left: -20px;
-}
-
-.tasuketai{
-    float: right;
-    font-size: 20px;
-     /*margin: 2em 0;*/
-    font-weight: bold;
-    color: #FFF0F5;/*文字色*/
-    background: #FFF0F5;
-    border: solid 0px #fff;/*線*/
-    border-radius: 22px;/*角の丸み*/
-    margin-top: 45px;
-    width: 475px;
-    margin-right:-20px;
-    height:200%;
-}
-
-
-
 .torihiki{
     font-weight:bold;
     font-size:35px;
@@ -1877,19 +1837,13 @@ a{
 }
 
 .col-md-9 {
-    margin-left:100px;
-}
-
-
-
+    margin-left:100px;}
 
 textarea.form-control {
     width: 700px;
     margin-left: 170px;
     margin-top: 15px;
 } 
-
-
 .naiyou{
     width:90%;
     

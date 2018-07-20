@@ -2,6 +2,8 @@
 @include('commons.auto')
 
 @section('content')
+
+
 <div class='text-center'>
     <div class='ribbon3'>
          <h2>依頼一覧</h2>
@@ -20,6 +22,4 @@
         <p>{{ $irais->links() }}</p>
     </ul>
 </div>
-
-
 @endsection

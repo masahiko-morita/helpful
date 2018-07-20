@@ -19,13 +19,14 @@ class IraisController extends Controller
         $data = [];
         if (\Auth::check()) {
             $user = \Auth::user();
-            $irais = $user->feed_irais()->orderBy('created_at', 'desc')->paginate(8);
-
+            $irais = $user->feed_irais_alive();//->where('alive', 1)->orderBy('created_at', 'desc')->paginate(8);
+            
             $data = [
                 'user' => $user,
                 'irais' => $irais,
             ];
             $data += $this->counts($user);
+            
             return view('irais.index', $data);
         }else {
             return view('welcome');
@@ -36,6 +37,7 @@ class IraisController extends Controller
     public function create()
     {
         $irai = new Irai;
+        
         
         return view('irais.create', [
             'irai' => $irai,
@@ -60,12 +62,11 @@ class IraisController extends Controller
             'finish' => $request->finish,
             'station' => $request->station,
             'reward' => $request->reward,
-            
         ]);
         
         $user = \Auth::user();
         // $irais = Irai::all();
-        $irais = $user->feed_irais()->orderBy('created_at', 'desc')->paginate(8);
+        $irais = $user->feed_irais_alive();
 
         return view("irais.index",
               ['irais' => $irais]);
@@ -134,7 +135,7 @@ class IraisController extends Controller
 
         $user = \Auth::user();
         // $irais = Irai::all();
-        $irais = $user->feed_irais()->orderBy('created_at', 'desc')->paginate(8);
+        $irais = $user->feed_irais_alive();
 
         return view("irais.index",
               ['irais' => $irais]);
@@ -153,8 +154,7 @@ class IraisController extends Controller
 
         $irais = Irai::orderBy('created_at', 'desc')->paginate(8);
 
-        return view("irais.index",
-              ['irais' => $irais]);
+       return redirect()->route('irais.index', ['irais' => $irais]);
         
 
       }  

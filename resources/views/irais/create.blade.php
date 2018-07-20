@@ -57,6 +57,8 @@
                     
                     {!! Form::label('reward', '※ お礼:') !!}
                     {!! Form::text('reward', null, ['class' => 'form-control','placeholder' => '例:100円お渡しします/○○が■円で買えます']) !!}
+                    
+                     
             </div> 
    
                     {!! Form::submit('依頼を投稿する', ['class' => 'btn btn-info btn-lg']) !!}

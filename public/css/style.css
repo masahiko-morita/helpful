@@ -1130,7 +1130,8 @@ border-radius: 6px;
   justify-content: center;
   position: fixed;
  width:300px;
- float:right;
+ right:0px;
+ bottom:100px;
 }
 
 .btn-post{
@@ -1959,6 +1960,11 @@ textarea.form-control {
     margin-top: 0;
 }
 
-.navbar{
-    margin-bottom: 0;
+.wrap-2 {
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+ width:300px;
+ right:0px;
+ bottom:100px;
 }

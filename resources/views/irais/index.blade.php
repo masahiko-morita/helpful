@@ -1,13 +1,10 @@
 @extends('layouts.app')
 
 
-
-<<<<<<< HEAD
-
 @section('content')
  <?php 
         $v =$_COOKIE["data1"]??"";
-        
+
         $vv =$_COOKIE["data2"]??"";
     ?>
 
@@ -19,6 +16,7 @@
                 	<strong>↑のユーザー名をクリックするとマイページへのリンクがあります</strong>
                     </div>
             @endif
+        </div>
         
          
 
@@ -32,6 +30,13 @@
     <div class='container'>
     @include('irais.irai', ['irais' => $irais])
    
+
+    <div class="text-center">
+        <ul class="paginate">
+            <p>{{ $irais->links() }}</p>
+        </ul>
+    </div>
+
     <div class="wrap-1 ball">
 @if($v == "")
                 	<div class="alert alert-warning alert-dismissible fade in" role="alert">
@@ -45,10 +50,14 @@
         </a>
     </div>
 
+
+
     <div class="text-center">
         <ul class="paginate">
             <p>{{ $irais->links() }}</p>
         </ul>
     </div>
 </div>
+
+
 @endsection

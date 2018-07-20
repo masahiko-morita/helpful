@@ -79,13 +79,20 @@ class IraisController extends Controller
             $user = User::find($id);
             $comments = Comment::orderBy('created_at', 'desc')->paginate(8);
             
-             return view('irais.show', [
-                'irai'     => $irai,
-                'user'     => $user,
-                'comments' => $comments,
-          
-           ]);
+            if ($irai == null) {
+                return view('irais.error');
+
+
+            } else { 
+                return view('irais.show', [
+                    'irai'     => $irai,
+                    'user'     => $user,
+                    'comments' => $comments,
+                    ]);
+            }
     }
+    
+    
   
             
 

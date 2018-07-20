@@ -46,7 +46,7 @@ class IraiFinishController extends Controller
         $notification->save();
 
         }    
-        }
+        } 
         
         $irai->delete();
         $irais = Irai::orderBy('created_at', 'desc')->paginate(8);  

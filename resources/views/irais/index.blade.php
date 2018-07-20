@@ -2,9 +2,11 @@
 @include('commons.auto')
 
 @section('content')
+
+
 <div class='text-center'>
     <div class='ribbon3'>
-      <h2>依頼一覧</h2>
+         <h2>依頼一覧</h2>
     </div>
 </div>
 <div class='container'>
@@ -21,4 +23,3 @@
     </ul>
 </div>
 @endsection
-

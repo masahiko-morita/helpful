@@ -1,22 +1,20 @@
 @extends('layouts.app')
 @extends('commons.auto')
 
-
 @section('content')
 
 <div class='containermypage'>
-    <div class='col-md-offset-3 col-md-3 text-center'>
+		<div class="introduction_momo">
         <img src="{{ Gravatar::src($user->email, 100) . '&d=mm' }}" alt="" class="img-circle" width='30%'>
+        <div id=momo_name>
         <h3>{{ $user->name }}</h3>
-    </div>
-
-
-    <div class='col-md-5 text-center'>
+        </div>
+   
 		<div class="balloon">
       		{{$user->content}}
 		</div>
-    </div>
-</div>
+	</div>
+  </div>
 <!--<div class="col-xs-12">-->
 <!--    <ul class="nav nav-tabs nav-justified">-->
 <!--		<li role="presentation" class="{{ Request::is('users/' . $user->id) ? 'active' : '' }}"><a href="{{ route('users.show', ['id' => $user->id]) }}">出した依頼 <span class="badge">{{ $count_irais }}</span></a></li>-->
@@ -40,7 +38,6 @@
 			<div class='ribbon3'>
 				<h2>出した依頼</h2>
 			</div>
-						
 						@if($count_irais==0)
 						<br>
 						 <h4 class='text-center'>投稿がありません</h4><br>
@@ -72,3 +69,4 @@
 </div>
 </a>
 @endsection
+

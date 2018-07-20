@@ -4,16 +4,20 @@
 @section('content')
 
 <div class='containermypage'>
-    <div class='col-md-offset-3 col-md-3 text-center'>
+		<div class="introduction">
         <img src="{{ Gravatar::src($user->email, 100) . '&d=mm' }}" alt="" class="img-circle" width='30%'>
         <h3>{{ $user->name }}</h3>
+<<<<<<< HEAD
     </div>
     <div class='col-md-5 text-center'>
+=======
+   
+>>>>>>> b2f73a5ca6e1c00ab9d5c9075d68ced6d853e1f8
 		<div class="balloon">
       		{{$user->content}}
 		</div>
-    </div>
-</div>
+	</div>
+  </div>
 <!--<div class="col-xs-12">-->
 <!--    <ul class="nav nav-tabs nav-justified">-->
 <!--		<li role="presentation" class="{{ Request::is('users/' . $user->id) ? 'active' : '' }}"><a href="{{ route('users.show', ['id' => $user->id]) }}">出した依頼 <span class="badge">{{ $count_irais }}</span></a></li>-->
@@ -68,3 +72,4 @@
 </div>
 </a>
 @endsection
+

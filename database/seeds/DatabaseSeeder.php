@@ -18,5 +18,13 @@ class DatabaseSeeder extends Seeder
             'gender' => 'Male',
             'content' => 'こんにちは！',
         ]);
+        
+        DB::table('users')->insert([
+            'name' => 'test_123',
+            'email' => 'aaa@gmail.com',
+            'password' => bcrypt('123456'),
+            'gender' => 'Male',
+            'content' => 'こんにちは！',
+        ]);
     }
 }

@@ -1,12 +1,14 @@
-    @if (Auth::user()->is_finishing($irai->id))
-        <div id="kanryou-zumi">
-        {!! Form::submit('依頼完了済', ['class' => "btn btn-block center-block"]) !!}
-        {!! Form::close() !!}
-        </div>
+    @if ($irai->alive == 0)
+    <div id="kanryou-zumi-2">
+        <p class='center-block'>解決済み</p>
+    </div>
     @else
-    <div id="kanryou">
-        {!! Form::open(['route' => ['irais.destroy', $irai->id]]) !!}
-            {!! Form::submit('依頼を完了する', ['class' => "btn btn-block center-block"]) !!}
+    <div class='center-block' id="tetsudau">
+        {!! Form::open(['route' => ['irai.unfinish', $irai->id], 'method' => 'delete']) !!}
+        {{Form::hidden('type', 'message')}}
+        {!! Form::submit('解決した', ['class' => 'btn center-block']) !!}
         {!! Form::close() !!}
-        </div>
+    </div>
     @endif
+
+

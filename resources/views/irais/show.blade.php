@@ -4,7 +4,6 @@
 <div class='container'>
     <?php $user = $irai->user; ?>
         <h1 class='text-center'>{{ $irai->title }}</h1>
-            <div class="col-md-10"> 
                 @if (Auth::user()->id == $irai->user_id)
                     <div id="hensyuu">
                         {!! Form::open(['route' => ['irais.edit', $irai->id], 'method' => 'get']) !!}
@@ -16,15 +15,8 @@
                             {!! Form::submit('削除', ['class' => 'btn center-block']) !!}
                         {!! Form::close() !!}
                     </div>
-                @endif
-            <div class="col-sm-10"> 
-                @if (Auth::user()->id == $irai->user_id)
-                    <div id="tetsudau">
-                       <!--@include('irai_finish.finish_button', ['user' => $user])-->
-                       {!! Form::open(['route' => ['irai.unfinish', $irai->id], 'method' => 'delete']) !!}
-                        {{Form::hidden('type', 'message')}}
-                        {!! Form::submit('解決した', ['class' => 'btn center-block']) !!}
-                        {!! Form::close() !!}
+                    <div>
+                       @include('irai_finish.finish_button', ['user' => $user])
                     </div>
                 @endif    
     <div class="row">

@@ -135,6 +135,7 @@ class IraisController extends Controller
     
     public function destroy($id)
     {
+        
         $irai = Irai::find($id);
         if (\Auth::id() === $irai->user_id) {
             

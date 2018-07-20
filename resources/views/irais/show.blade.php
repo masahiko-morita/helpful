@@ -9,7 +9,7 @@
 <div class="col-md-10"> 
             @if (Auth::user()->id != $irai->user_id)
                 <div id="tetsudau">
-                    @include('irai_help.help_button', ['user' => $user])
+                    @include('irai_finish.finish_button', ['user' => $user])
                 </div>
             @endif
             @if (Auth::user()->id == $irai->user_id)

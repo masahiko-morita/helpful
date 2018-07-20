@@ -471,7 +471,7 @@ transition: .4s;
   width:200px;
   position: relative;
   padding: 20px;
-  background-color: #fff3ad;
+  background-color: #edf5f4;
   word-break:break-all;
 }
 
@@ -483,9 +483,10 @@ transition: .4s;
   height: 0;
   left: -15px;
   top: 20px;
-  border-right: 15px solid #fff3ad;
+  border-right: 15px solid 	#edf5f4;
   border-top: 15px solid transparent;
   border-bottom: 15px solid transparent;
+  font-size: 20px;
 }
 
 
@@ -1882,6 +1883,7 @@ textarea.form-control {
     
     margin-left:5%;
 }
+
 
 
 

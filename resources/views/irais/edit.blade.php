@@ -2,7 +2,8 @@
 
 @section('content')
 
-<h1>依頼の投稿編集ページ</h1>
+<div class='text-center'><h3>投稿編集</h3></div>
+
  <div class="row"> 
         <div class="form-group col-xs-12 col-sm-offset-2 col-sm-8 col-lg-offset-3 col-lg-6">
             {!! Form::model($irai, ['route' => ['irais.update', $irai->id], 'method' => 'put']) !!}
@@ -51,6 +52,8 @@
                     {!! Form::label('reward', 'お礼:') !!}
                     {!! Form::text('reward', null, ['class' => 'form-control']) !!}
         </div> 
-        {!! Form::submit('更新する', ['class' => 'btn btn-info btn-lg']) !!}
+        
+        {!! Form::submit('更新する', ['class' => 'btn btn-info btn-lg center-block']) !!}
+    
     </div>
 @endsection

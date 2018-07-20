@@ -379,7 +379,7 @@ transition: .4s;
     background: #1989ac;
     color: #FFF;
     box-sizing: border-box;
-    margin-top: 30px;
+    margin-top: 0px;
     margin-left: -150px;
 }
 
@@ -1912,11 +1912,6 @@ textarea.form-control {
     border:double 5px;
     border-color: SteelBlue;
     border-radius: 0.5em;
-}
-
-.introduction_momo {
-    margin-left: 260px;
-    margin-top: 30px;
 }
 
 #momo_name {

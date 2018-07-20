@@ -34,13 +34,15 @@ class User extends Authenticatable
     
     public function feed_irais()
     {
+        
         $user_ids = $this->pluck('users.id');
         $user_ids[] = $this->id;
         return Irai::whereIn('user_id', $user_ids);
     }
     
-    
-    
+    public function feed_irais_alive(){
+        return Irai::where('alive', 1)->orderBy('created_at', 'desc')->paginate(8);
+    }
     
     
     public function comments()
@@ -55,17 +57,17 @@ class User extends Authenticatable
         return Comment::whereIn('user_id', $user_ids);
     }
     
-    public function chats()
-    {
-       return $this->hasMany(Chat::class);
-    }
+    // public function chats()
+    // {
+    //   return $this->hasMany(Chat::class);
+    // }
     
-    public function feed_chats()
-    {
-        $user_ids = $this->pluck('users.id');
-        $user_ids[] = $this->id;
-        return Chat::whereIn('user_id', $user_ids);
-    }
+    // public function feed_chats()
+    // {
+    //     $user_ids = $this->pluck('users.id');
+    //     $user_ids[] = $this->id;
+    //     return Chat::whereIn('user_id', $user_ids);
+    // }
     
     
     
@@ -185,4 +187,16 @@ class User extends Authenticatable
 
 }
 
+
+/*
+    irai
+    id, title, archived(boolean)
+    
+    $irai->alive = true;// existing
+    $irai->alive = false // not there
+    
+    Irai::where('archived', true)->get(); //getting arlive ones
+    Irai::where('archived', false)->get(); //getting dead ones
+    
+*/
  

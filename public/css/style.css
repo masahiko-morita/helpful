@@ -379,7 +379,8 @@ transition: .4s;
     background: #1989ac;
     color: #FFF;
     box-sizing: border-box;
-    margin-top: 0;
+    margin-top: 30px;
+    margin-left: -150px;
 }
 
 .ribbon3 h2 {
@@ -467,12 +468,14 @@ transition: .4s;
 
 /* 吹き出し本体 */
 .balloon{
-  margin-top: 5%;
+  /*margin-top: 5%;*/
   width:200px;
   position: relative;
   padding: 20px;
   background-color: #edf5f4;
   word-break:break-all;
+  margin-left:290px;
+  margin-top: -100px;
 }
 
 .balloon::before{
@@ -1884,6 +1887,26 @@ textarea.form-control {
     margin-left:5%;
 }
 
+.introduction img {
+    width:100px;
+    height:100px;
+    margin-left: -50px;
+    margin-top: -30px;
+}
 
+.introduction {
+    background-color: #ADD8E6;
+    margin-top: 0px;
+    padding: 60px;
+    width:620px;
+    margin-left: 250px;
+    border:double 5px;
+    border-color: SteelBlue;
+    border-radius: 0.5em;
+}
+
+.introduction h3 {
+    margin-left: -50px;
+}
 
 

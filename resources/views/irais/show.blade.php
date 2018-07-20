@@ -60,7 +60,7 @@
                         {{Form::hidden('irai_id', $irai->id)}}
                         {{Form::hidden('user_id', $user->id)}}
                         {{Form::hidden('type', 'comment')}}
-                        {!! Form::textarea('content', null, ['class' => 'form-control input-lg', 'rows="2"',  'placeholder' => '手伝います！〇月〇日いかがですか？' ]) !!}
+                        {!! Form::textarea('content', null, ['class' => 'form-control input-lg', 'rows=2',  'placeholder' => '手伝います！〇月〇日いかがですか？' ]) !!}
                         {!! Form::submit('メッセージ送信！', ['class' => 'btn btn-success btn-lg']) !!}
                     {!! Form::close() !!}
                 </div>

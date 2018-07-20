@@ -1,7 +1,6 @@
 <?php
     if(Auth::check() == false) {
-        return;
-    } 
+        return;} 
      $notifications = DB::table('notifications')
                     ->where('user_id', \Auth::user()->id)
                     //->where('irai_id')
@@ -30,7 +29,6 @@
        新着の取引メッセージがあります<a href="#" class="alert-link">link</a>
     </div>
     @endif
-    
     @if($isComment == true)
     <a href="{{ route('irais.show', $notification->irai_id) }}">
     <div class="husen">
@@ -40,7 +38,7 @@
     @endif
 
     @if($isMessage == true)
-    <div class="husen">
-       コメントした依頼が解決しました！ありがとうございました！
+    <div class="husem">
+       コメントした依頼が解決しました！<br>ありがとうございました☺
     </div>
     @endif

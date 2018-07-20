@@ -379,13 +379,8 @@ transition: .4s;
     background: #1989ac;
     color: #FFF;
     box-sizing: border-box;
-<<<<<<< HEAD
-    margin-top: 0;
-    
-=======
     margin-top: 30px;
     margin-left: -150px;
->>>>>>> b2f73a5ca6e1c00ab9d5c9075d68ced6d853e1f8
 }
 
 .ribbon3 h2 {
@@ -468,8 +463,7 @@ transition: .4s;
   right: 0;
   border-width: 30px 15px 30px 0px;
   border-color: transparent white transparent transparent;
-  border-style: solid;
-}
+  border-style: solid;}
 
 /* 吹き出し本体 */
 .balloon{
@@ -509,13 +503,11 @@ transition: .4s;
     width: 50%;
     height: 310px;
     text-align: center;
-    font-size: 15px;
-}
+    font-size: 15px;}
 
 .c{
     display: inline-block;
-    margin-left: 8px;
-    }
+    margin-left: 8px;}
 
 .top-introduction-num{
     display: inline-block;
@@ -1349,24 +1341,6 @@ border-radius: 6px;
     text-shadow: 2px 0px 0px #ff003f, 0px 1px 0px #ff003f, -1px 0px 0px #ff003f, 0px -1px 0px #ff003f;
     margin-left: 140px;
 }
-
-.tasuketai{
-    float: right;
-    font-size: 20px;
-     /*margin: 2em 0;*/
-    font-weight: bold;
-    color: #FFF0F5;/*文字色*/
-    background: #FFF0F5;
-    border: solid 0px #fff;/*線*/
-    border-radius: 22px;/*角の丸み*/
-    margin-top: 45px;
-    width: 475px;
-    margin-right:-20px;
-    height:200%;
-}
-
-
-
 .torihiki{
     font-weight:bold;
     font-size:35px;
@@ -1872,9 +1846,6 @@ textarea.form-control {
 } 
 .naiyou{
     width:90%;
-<<<<<<< HEAD
-    margin-left:5%;}
-=======
     
     margin-left:5%;
 }
@@ -1902,4 +1873,3 @@ textarea.form-control {
 }
 
 
->>>>>>> d0ddd3c4269cde0692b6e80c28c297993b7f3b93

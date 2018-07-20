@@ -3,6 +3,7 @@
 @section('content')
 
 <!-- Write content for each page here -->
+ 
         <div class='ribbon3'>
            <h2>新規投稿</h2>
         </div>

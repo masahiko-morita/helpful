@@ -4,10 +4,12 @@
 @section('content')
 
 <div class='containermypage'>
-		<div class="introduction">
+		<div class="introduction_momo">
         <img src="{{ Gravatar::src($user->email, 100) . '&d=mm' }}" alt="" class="img-circle" width='30%'>
+        <div id=momo_name>
         <h3>{{ $user->name }}</h3>
-   
+    </div>
+    <div class='col-md-5 text-center'>
 		<div class="balloon">
       		{{$user->content}}
 		</div>

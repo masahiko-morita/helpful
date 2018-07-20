@@ -11,7 +11,6 @@
             <div class="maintitle">
                 @if (!Auth::check())
                     <a href="{{ route('signup.get') }}" class="cp_btn">Helpfulを始める</a>
-                    <!--<a href="{{ route('signup.get') }}" class="btn btn-default btn-lg">HELPFULを始める</a>-->
                 @endif
             </div>
         </div>
@@ -29,7 +28,7 @@
         			<img src="../images/feed1.png" alt="First slide" height='100'>
         		</div>
         		<div class="item">
-        			<img src="../images/feed2.png" alt="Second slide">
+        			<img src="../images/feed1.png" alt="Second slide">
         		</div>
         		<div class="item">
         			<img src="../images/feed1.png" alt="Third slide">
@@ -67,12 +66,7 @@
 
 
         <!-- START THE FEATURETTES -->
-
- 
-
-
         <hr class="featurette-divider">
-
         <div class="row featurette">
           <div class="col-md-5 order-md-2">
             <h2 class="featurette-heading">知らない子も多いけどみんな助けてくれるの？<br> <div class="text-muted"><br>Don't Worry!</div></h2>
@@ -85,12 +79,10 @@
         </div>
 
         <hr class="featurette-divider">
-
         <div class="row featurette">
           <div class="col-md-12 text-center">
             <h2 class="featurette-heading">さあ登録しよう！<br><br><p class="text-muted">知らない間に他の同期の輪は広がっているかも？</p></h2><br>
             <p class="lead"></p>
-            
     
           </div>
           
@@ -107,13 +99,7 @@
 　  </div>
           
         </div>
-
-
-
         <!-- /END THE FEATURETTES -->
-
-
-
 
 <div class="demo demo3">
    <div class="heading"><span>取引の流れ</span></div>
@@ -191,8 +177,6 @@
         @endif
       </div>
 　  </div>
-
-
 　  
 　  @if (!Auth::check())
 　  <a href="{{ route('irais.create')}}">

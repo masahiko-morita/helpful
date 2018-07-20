@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@include('commons.auto')
 
 @section('content')
 <div class='text-center'>

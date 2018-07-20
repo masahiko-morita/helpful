@@ -137,10 +137,12 @@ class IraisController extends Controller
     {
         
         $irai = Irai::find($id);
+        
         if (\Auth::id() === $irai->user_id) {
             
         $irai = \App\Irai::find($id);
         $irai->delete();
+        
 
         $irais = Irai::orderBy('created_at', 'desc')->paginate(8);
 

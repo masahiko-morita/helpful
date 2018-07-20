@@ -47,16 +47,19 @@ class CommentsController extends Controller
         ]);
         
         $comments = \App\Irai::find($request->irai_id)->comments()->orderBy('id','desc')->take(1)->get();
+        
         foreach($comments as $comment){
         if($request->user_id != $comment->user_id){
             
         $notification = new Notification;
+        $notification->irai_id = $request->irai_id;
         $notification->user_id = $request->user_id;
         $notification->type = $request->type;
         $notification->save();
         }    
         }
             
+        
         
         return redirect(route('irais.show',
             ['id'=>$request->irai_id]));
@@ -78,7 +81,3 @@ class CommentsController extends Controller
         }
     }
 }
-
-
-
-        

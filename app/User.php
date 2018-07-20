@@ -104,7 +104,6 @@ class User extends Authenticatable
         
         if ($exist) {
             // 既にフォローしていればフォローを外す
-            $this->finishings()->detach($iraiId);
             return true;
         } else {
             // 未フォローであれば何もしない
@@ -178,6 +177,12 @@ class User extends Authenticatable
     {
         return $this->notifications()->where('type', 'comment');
     }
+    // サンキューメッセージ
+    public function thankyou_notifications()
+    {
+        return $this->notifications()->where('type', 'message');
+    }
+
 }
 
  

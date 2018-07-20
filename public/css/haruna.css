@@ -1,0 +1,220 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(http://fonts.googleapis.com/earlyaccess/notosansjp.css);
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+
+body {
+
+    font-family: Lato, "Noto Sans JP", "游ゴシック Medium", "游ゴシック体", "Yu Gothic Medium", YuGothic, "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+.preserve-3d {
+    transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+}
+
+
+
+.back {
+    margin-left:200%;
+    width: 33%;
+    height: 200px;
+    float: left;
+    background-color: #eeeeee;
+    border: 10px;
+    border-color: #ffffff;
+    border-style: solid;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    counter-increment: bc;
+    padding: 0px 5px 5px 5px;
+}
+
+.back:before {
+    content: counter(bc) "_";
+    position: absolute;
+    padding: 10px;
+}
+
+@media screen and (max-width: 1260px) {
+    .back {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .back {
+        width: 100%;
+    }
+}
+
+.button_base {
+    margin: 0;
+    border: 0;
+    font-size: 18px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin-top: -25px;
+    margin-left: -100px;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-user-select: none;
+    cursor: default;
+}
+
+.button_base:hover {
+    cursor: pointer;
+}
+
+
+
+
+/* ### ### ### 05 */
+.b05_3d_roll {
+
+    margin-left:250px;
+    perspective: 500px;
+    -webkit-perspective: 500px;
+    -moz-perspective: 500px;
+}
+
+.b05_3d_roll div {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    padding: 10px;
+    border: #000000 solid 1px;
+    pointer-events: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+.b05_3d_roll div:nth-child(1) {
+    color: #000000;
+    background-color: #000000;
+    transform: rotateX(90deg);
+    -webkit-transform: rotateX(90deg);
+    -moz-transform: rotateX(90deg);
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transform-origin: 50% 50% -25px;
+    -webkit-transform-origin: 50% 50% -25px;
+    -moz-transform-origin: 50% 50% -25px;
+}
+
+.b05_3d_roll div:nth-child(2) {
+    color: #000000;
+    background-color: #ffffff;
+    transform: rotateX(0deg);
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transform-origin: 50% 50% -25px;
+    -webkit-transform-origin: 50% 50% -25px;
+    -moz-transform-origin: 50% 50% -25px;
+}
+
+.b05_3d_roll:hover div:nth-child(1) {
+    color: #ffffff;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transform: rotateX(0deg);
+    -webkit-transform: rotateX(0deg);
+    -moz-transform: rotateX(0deg);
+}
+
+.b05_3d_roll:hover div:nth-child(2) {
+    background-color: #000000;
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transform: rotateX(-90deg);
+    -webkit-transform: rotateX(-90deg);
+    -moz-transform: rotateX(-90deg);
+}
+
+a {
+    color:black;
+}
+
+a:hover{
+    text-decoration:none;
+    color:#FFD700;
+
+}
+
+.cp_btn {
+position: relative;
+display: block;
+width: 150px;
+height:50px;
+padding: 0.5em;
+text-align: center;　
+
+text-decoration: none;
+color: #FFF;
+text-shadow: 0 0 5px rgba(255, 255, 255, 0.0);
+background: #FFD700;
+transition: .4s;
+border-radius: 4px;
+margin-left: 160px;
+margin-right: 650px;
+margin-top: 20px;
+font-size: 20px;
+}
+
+.cp_btn:hover {
+color:black;
+text-shadow: -6px 0px 15px rgba(255, 255, 240, 0.83), 6px 0px 15px rgba(255, 255, 240, 0.83);
+transition: .4s;
+}
+
+h1 {
+ font-size:100px;
+ font-weight:bolder;
+ user-select:none;
+}
+
+h1 span { display:inline-block; animation:float .2s ease-in-out infinite; }
+ @keyframes float {
+  0%,100%{ transform:none; }
+  33%{ transform:translateY(-1px) rotate(-2deg); }
+  66%{ transform:translateY(1px) rotate(2deg); }
+}
+body:hover span { animation:bounce .6s; }
+@keyframes bounce {
+  0%,100%{ transform:translate(0); }
+  25%{ transform:rotateX(20deg) translateY(2px) rotate(-3deg); }
+  50%{ transform:translateY(-20px) rotate(3deg) scale(1.1);  }
+}
+
+span:nth-child(4n) { color:#1989ac; }
+span:nth-child(4n-1) { color:#FFD700; }
+span:nth-child(4n-2) { color:silver; }
+span:nth-child(4n-3) { color:navy; }
+
+h1 span:nth-child(2){ animation-delay:.05s; }
+h1 span:nth-child(3){ animation-delay:.1s; }
+h1 span:nth-child(4){ animation-delay:.15s; }
+h1 span:nth-child(5){ animation-delay:.2s; }
+h1 span:nth-child(6){ animation-delay:.25s; }
+h1 span:nth-child(7){ animation-delay:.3s; }
+h1 span:nth-child(8){ animation-delay:.35s; }
+h1 span:nth-child(9){ animation-delay:.4s; }
+h1 span:nth-child(10){ animation-delay:.45s; }
+h1 span:nth-child(11){ animation-delay:.5s; }
+h1 span:nth-child(12){ animation-delay:.55s; }
+h1 span:nth-child(13){ animation-delay:.6s; }
+h1 span:nth-child(14){ animation-delay:.65s; }

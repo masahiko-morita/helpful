@@ -31,8 +31,8 @@ class IraiFinishController extends Controller
     {
         $irai = \App\Irai::find($id);
         
-        if (\Auth::id() === $irai->user_id) {
         
+        if (\Auth::id() === $irai->user_id) {
         
         $comments = \App\Irai::find($id)->comments()->orderBy('id','desc')->get();
         
@@ -45,10 +45,12 @@ class IraiFinishController extends Controller
         $notification->type = 'message';
         $notification->save();
 
-        }    
-        }
+            }    
+        } 
         
-        $irai->delete();
+        $irai->alive = 0;
+        $irai->save();
+        
         $irais = Irai::orderBy('created_at', 'desc')->paginate(8);  
         
         return redirect()->route('irais.index', ['irais' => $irais]);

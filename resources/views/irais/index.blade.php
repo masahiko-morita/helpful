@@ -2,6 +2,7 @@
 
 
 
+<<<<<<< HEAD
 
 @section('content')
  <?php 
@@ -10,7 +11,7 @@
         $vv =$_COOKIE["data2"]??"";
     ?>
 
-    <div class='text-center'>
+
         <div class='mypage driveInRight'>
             @if($vv == "")
                 	<div class="alert alert-warning alert-dismissible fade in" role="alert">
@@ -20,7 +21,8 @@
             @endif
         
          
-    </div>
+
+<div class='text-center'>
 
         <div class='ribbon3'>
           <h2>依頼一覧</h2>
@@ -49,7 +51,4 @@
         </ul>
     </div>
 </div>
-
-
 @endsection
-

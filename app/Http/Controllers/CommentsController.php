@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use Illuminate\Support\Facades\DB;
+
 use App\User;
 
 use App\Irai;
@@ -46,19 +48,21 @@ class CommentsController extends Controller
             'irai_id' => $request->irai_id,
         ]);
         
-        $comments = \App\Irai::find($request->irai_id)->comments()->orderBy('id','desc')->take(1)->get();
+        $irai = \App\Irai::find($request->irai_id);
+        
+        $comments = \App\Comment::find($request->irai_id)->select('user_id','irai_id')->groupBy('user_id','irai_id')->orderBy('user_id','desc')->get();
         
         foreach($comments as $comment){
-        if($request->user_id != $comment->user_id){
-            
+
+        if(\Auth::id() != $comment->user_id){
         $notification = new Notification;
-        $notification->irai_id = $request->irai_id;
-        $notification->user_id = $request->user_id;
+        $notification->irai_id = $comment->irai_id;
+        $notification->user_id = $comment->user_id;
         $notification->type = $request->type;
         $notification->save();
+
         }    
         }
-            
         
         
         return redirect(route('irais.show',

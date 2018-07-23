@@ -26,15 +26,18 @@
 ?>    
     @if($isChat == true)
     <div class="husen">
-       新着の取引メッセージがあります<a href="#" class="alert-link">link</a>
+      <div class="tyaki"><button type="button" data-dismiss="alert" class="close">&times;</button><p><strong> 新着の取引メッセージがあります</strong></p>
+      <a href="#" class="alert-link">link</a>
+       
     </div>
     @endif
     
     @if($isComment == true)
     <a href="{{ route('irais.show', $notification->irai_id) }}">
+    
      <div class="alert alert-dismissible fade in " role="alert">
       <div class="husen">
-        <div class="tyaki"><button type="button" data-dismiss="alert" class="close">&times;</button><p>依頼に新着のコメントがあります</p>
+        <div class="tyaki"><button type="button" data-dismiss="alert" class="close">&times;</button><p><strong>依頼に新着のコメントがあります</strong></p>
         </div>
     </div>
     </div>

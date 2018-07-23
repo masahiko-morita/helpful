@@ -17,7 +17,7 @@
                                 <h4 class="glyphicon glyphicon-map-marker"></h4> {{$irai->station}}<br>
                                 <h4 class="glyphicon glyphicon-gift"></h4> {{ $irai->reward }}<br>
                             </div>
-                   </div>
+                        </div>
                 @else
                     <div class='maste-content'>
                             <br>

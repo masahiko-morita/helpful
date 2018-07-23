@@ -2,7 +2,6 @@
 
 #hensyuu2 .btn {
     margin-top:20px;
-    position: relative;
     display: inline-block;
     font-weight: bold;
     padding: 0.5em 1em;
@@ -23,3 +22,4 @@
 #hensyuu_contents {
     padding-top: 25px;
 }
+

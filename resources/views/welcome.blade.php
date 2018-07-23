@@ -83,9 +83,7 @@
           <div class="col-md-12 text-center">
             <h2 class="featurette-heading">さあ登録しよう！<br><br><p class="text-muted">知らない間に他の同期の輪は広がっているかも？</p></h2><br>
             <p class="lead"></p>
-    
           </div>
-          
 <div class="text-center">    
       <div class="animation">
         <div class="effect" style='pointer-events:none;'>

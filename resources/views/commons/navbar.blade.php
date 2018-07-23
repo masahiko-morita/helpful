@@ -32,10 +32,6 @@
                                     <a href="{{ route('users.show', Auth::user()->id) }}">マイページ</a>
                                 </li>
                                 <li role="separator" class="divider"></li>
-                                <li>
-                                    <a href="{{ route('users.edit', Auth::user()->id) }}">マイページの編集</a>
-                                </li>
-                                <li role="separator" class="divider"></li>
                                 <li>{!! link_to_route('irais.index', 'ホームに戻る') !!}</li>
                                 <li role="separator" class="divider"></li>
                                 <li>{!! link_to_route('logout.get', 'ログアウト') !!}</li>                                

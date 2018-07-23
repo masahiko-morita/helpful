@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html>
-    <head>
+
         <!--自動更新30秒-->
         <SCRIPT LANGUAGE="JavaScript">
 <<<<<<< HEAD
@@ -10,6 +8,6 @@
 >>>>>>> 0006357bb8cc594e07672f7862b94435d97cb3f8
         </SCRIPT>
         
-    </head>
-</html>                        
+
+                      
                

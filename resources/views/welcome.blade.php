@@ -25,13 +25,13 @@
          <a href="{{ route('irais.index') }}">   
         	<div class="carousel-inner" role="listbox">
         		<div class="item active">
-        			<img src="../images/feed1.png" alt="First slide" height='100'>
+        			<img src="../images/feed2.png" alt="First slide" height='100'>
         		</div>
         		<div class="item">
         			<img src="../images/feed1.png" alt="Second slide">
         		</div>
         		<div class="item">
-        			<img src="../images/feed1.png" alt="Third slide">
+        			<img src="../images/feed2.png" alt="Third slide">
         		</div>
         	</div>
           </a>	

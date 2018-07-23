@@ -40,13 +40,12 @@
         @include('commons.error_messages')
         @include('commons.notification')
         
-
         
         @yield('cover')
         @yield('content')
         
         <!-- モーダル・ダイアログ -->
-            <div class="modal fade" id="sampleModal" tabindex="-1">
+            <div class="modal fade" id="sampleModal" tabindex="-1"> 
             	<div class="modal-dialog">
             		<div class="modal-content">
             			<div class="modal-header">

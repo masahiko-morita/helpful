@@ -522,7 +522,7 @@ transition: .4s;
   /*margin-top: 5%;*/
   width:200px;
   position: relative;
-  padding: 20px;
+  padding-bottom: 7px;
   background-color: #edf5f4;
   word-break:break-all;
   margin-left:260px;

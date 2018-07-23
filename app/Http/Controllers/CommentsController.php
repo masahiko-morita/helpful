@@ -50,16 +50,24 @@ class CommentsController extends Controller
         
         $irai = \App\Irai::find($request->irai_id);
         
-        $comments = \App\Comment::find($request->irai_id)->select('user_id','irai_id')->groupBy('user_id','irai_id')->orderBy('user_id','desc')->get();
+        if(\Auth::id() != $irai->user_id){
+        $notification = new Notification;
+        $notification->irai_id = $irai->id;
+        $notification->user_id = $irai->user_id;
+        $notification->type = $request->type;
+        $notification->save(); 
+        }
+        
+        $comments = \App\Comment::where('irai_id', $request->irai_id)->select('user_id')->groupBy('user_id')->orderBy('user_id','desc')->get();
         
         foreach($comments as $comment){
+        if(\Auth::id() != $comment->user_id && $comment->user_id != $irai->user_id){
 
-        if(\Auth::id() != $comment->user_id){
-        $notification = new Notification;
-        $notification->irai_id = $comment->irai_id;
-        $notification->user_id = $comment->user_id;
-        $notification->type = $request->type;
-        $notification->save();
+            $notification = new Notification;
+            $notification->irai_id = $request->irai_id;
+            $notification->user_id = $comment->user_id;
+            $notification->type = $request->type;
+            $notification->save();
 
         }    
         }

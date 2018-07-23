@@ -29,12 +29,6 @@
     @include('irais.irai', ['irais' => $irais])
    
 
-    <div class="text-center">
-        <ul class="paginate">
-            <p>{{ $irais->links() }}</p>
-        </ul>
-    </div>
-
     <div class="wrap-1 ball">
 
 @if($v == "")

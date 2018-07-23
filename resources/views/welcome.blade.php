@@ -83,19 +83,20 @@
           <div class="col-md-12 text-center">
             <h2 class="featurette-heading">さあ登録しよう！<br><br><p class="text-muted">知らない間に他の同期の輪は広がっているかも？</p></h2><br>
             <p class="lead"></p>
-    
           </div>
+<div class="text-center">    
+      <div class="animation">
+        <div class="effect" style='pointer-events:none;'>
+        </div>
+        @if (!Auth::check())
+        <div class="effect-background">
+          <a href="{{ route('signup.get') }}" style='z-index:1000;'> <h1>HELPFULを始める</h1></a>
+        </div>
+        @endif
+      </div>
+　  </div>
           
-        <div class="text-center">    
-            <div class="animation">
-                <div class="effect" style='pointer-events:none;'>
-                </div>
-                @if (!Auth::check())
-                <div class="effect-background">
-                  <a href="{{ route('signup.get') }}" style='z-index:1000;'> <h1>HELPFULを始める</h1></a>
-                </div>
-                @endif
-            </div>
+
         </div>
 </div>
         <!-- /END THE FEATURETTES -->

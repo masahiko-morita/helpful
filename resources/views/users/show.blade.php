@@ -11,7 +11,14 @@
     </div>
     <div class='col-md-5 text-center'>
 		<div class="balloon">
+			<div id="hensyuu_contents">
       		{{$user->content}}
+      		</div>
+      		<div id="hensyuu2">
+                        {!! Form::open(['route' => ['users.edit', $user->id], 'method' => 'get']) !!}
+                            {!! Form::submit('編集', ['class' => 'btn center-block']) !!}
+                        {!! Form::close() !!}
+                    </div>
 		</div>
 	</div>
   </div>

@@ -23,3 +23,8 @@
     padding-top: 25px;
 }
 
+.table a{
+    border-bottom: 1px solid #000080;
+    color: 	#008080;
+    text-decoration: none;
+}

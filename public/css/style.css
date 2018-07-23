@@ -560,12 +560,8 @@ border-radius: 6px;
     background: #1989ac;
     color: #FFF;
     box-sizing: border-box;
-<<<<<<< HEAD
-    margin-top: 30px;
-=======
-    margin-top: 0px;
-    margin-left: -150px;
->>>>>>> 3f5f8d958d2503b38d166b20823be8fc0fc2c7c7
+　　margin-top: 30px;
+
 }
 
 .ribbon3 h2 {
@@ -1082,7 +1078,7 @@ textarea.form-control {
      
 }
 
-.alert{
+#alert{
     width:160px;
     color:white;
     background-color: rgba(0,0,0,0.4);

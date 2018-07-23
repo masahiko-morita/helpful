@@ -560,8 +560,12 @@ border-radius: 6px;
     background: #1989ac;
     color: #FFF;
     box-sizing: border-box;
+<<<<<<< HEAD
+    margin-top: 30px;
+=======
     margin-top: 0px;
     margin-left: -150px;
+>>>>>>> 3f5f8d958d2503b38d166b20823be8fc0fc2c7c7
 }
 
 .ribbon3 h2 {
@@ -698,7 +702,7 @@ border-radius: 6px;
 .balloon{
   width:200px;
   position: relative;
-  padding-bottom: 3px;
+  padding-bottom: 5px;
   background-color: #edf5f4;
   word-break:break-all;
   margin-left:260px;

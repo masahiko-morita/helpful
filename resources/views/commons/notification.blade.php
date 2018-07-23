@@ -74,11 +74,7 @@
     } else {
         $messagesIsShow = true;
     }
-<<<<<<< HEAD
-    
 
-=======
->>>>>>> d0ea82cb3094626e8b9dee0099c849a1d9dd711c
     ?>
     @if($messagesIsShow)
     <div class="alert alert-dismissible fade in " role="alert">

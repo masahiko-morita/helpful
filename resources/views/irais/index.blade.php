@@ -50,5 +50,6 @@
 
 </div>
 
+@include('commons.auto')
 
 @endsection

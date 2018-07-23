@@ -73,10 +73,6 @@
     } else {
         $messagesIsShow = true;
     }
-    var_dump($messages_id);
-    var_dump($vvv);
-    var_dump($messagesIsShow);
-    var_dump($_COOKIE);
 
     ?>
     @if($messagesIsShow)

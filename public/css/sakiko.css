@@ -25,7 +25,8 @@
     margin-top: 45px;
     width: 475px;
     margin-right:-20px;
-    height:200%;}
+    height:200%;
+}
     
 .tyaki{
     text-align: center;
@@ -77,30 +78,3 @@
     top: 3px;
 }
 
-    
-/*フセム*/
-/*.husem {*/
-/*    width: 170px;*/
-/*    height: 25px;*/
-/*    line-height: 40px;*/
-/*    position: relative;*/
-/*    background: #87CEEB;*/
-/*    margin-right:-20px;}*/
-/*.husem:after {*/
-/*    width: 170px;*/
-/*    height: 35px;*/
-/*    content: "";*/
-/*    position: absolute;*/
-/*    top: 0;*/
-/*    right: 2px;*/
-    /* ぼかし */
-    -moz-box-shadow: 0 10px 10px #999; /* Firefox */
-    -webkit-box-shadow: 0 10px 10px #999; /* Safari and Chrome */
-/*    box-shadow: 0 5px 5px #999;*/
-    /* 回転 */
-    -moz-transform: rotate(3deg); /* FireFox */
-    -webkit-transform: rotate(3deg); /* Safari and Chrome */
-    -o-transform: rotate(3deg); /* Opera */
-    -ms-transform: rotate(3deg); /* IE */
-/*    transform: rotate(3deg);*/
-/*    z-index: -1;}*/

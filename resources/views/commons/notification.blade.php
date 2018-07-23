@@ -32,7 +32,7 @@
     
     @if($isComment == true)
     <a href="{{ route('irais.show', $notification->irai_id) }}">
-     <div class="alert alert-dismissible fade in" role="alert">
+     <div class="alert alert-dismissible fade in " role="alert">
       <div class="husen">
         <div class="tyaki"><button type="button" data-dismiss="alert" class="close">&times;</button><p>依頼に新着のコメントがあります</p>
         </div>
@@ -42,7 +42,7 @@
     @endif
 
     @if($isMessage == true)
-    <div class="husem">
+    <div class="husen">
        コメントした依頼が解決しました！<br>ありがとうございました☺
     </div>
     @endif

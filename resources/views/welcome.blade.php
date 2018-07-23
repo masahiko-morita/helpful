@@ -96,7 +96,9 @@
       </div>
 　  </div>
           
+
         </div>
+</div>
         <!-- /END THE FEATURETTES -->
 
 <div class="demo demo3">

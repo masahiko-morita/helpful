@@ -68,7 +68,7 @@ body {
 a{
     text-decoration: none;
     color:black;
-     font-size: 12px;
+    font-size: 12px;
 }
 
 a:hover {
@@ -560,8 +560,7 @@ border-radius: 6px;
     background: #1989ac;
     color: #FFF;
     box-sizing: border-box;
-　　margin-top: 30px;
-
+    margin-top: 30px;
 }
 
 .ribbon3 h2 {
@@ -792,10 +791,14 @@ border-radius: 6px;
 
 /*irais-show*/
 .table {
-    margin-left: 300px;
-    margin-top: 60px;
+    margin:60px auto;
     width:600px;
+    font-size: 20px;
 }
+
+.table td {
+    margin-left:10px;
+} 
 
 /*peace (new post)*/
 .wrap #peace{
@@ -830,20 +833,19 @@ border-radius: 6px;
 }
 
 #hensyuu .btn{
-    display: block;
+    display: inline-block;
     width: 170px;
     text-align: center;
     text-decoration: none;
-    margin-top:15px;
+    margin-top:30px;
     font-size:15px;
     color: #6FC9D8;
     border: 3px solid #6FC9D8;
     border-radius: 3px;
     transition: .4s;
+    margin-rihgt:15px;
+    float:right;
     background-color:rgba(255,255,255,0.7);
-    float:left;
-    margin-left: 330px;
-    margin-top: 30px;
 }
 
 #hensyuu .btn:hover{
@@ -852,20 +854,19 @@ border-radius: 6px;
 }
 
 #sakujyo .btn{
-    display: block;
+    display: inline-block;
     width: 170px;
     text-align: center;
     text-decoration: none;
-    margin-top:15px;
+    margin-top:30px;
     font-size:15px;
     color: #EA5C5C;
     border: 3px solid #EA5C5C;
     border-radius: 3px;
     transition: .4s;
     background-color:rgba(255,255,255,0.7);
-    float: left;
-    margin-left: 80px;
-    margin-top: 30px;
+    margin-left: 15 px;
+    float:left;
 }
 
 #sakujyo .btn:hover{
@@ -890,8 +891,7 @@ border-radius: 6px;
     border-radius: 3px;
     transition: .4s;
     background-color:rgba(255,255,255,0.7);
-    margin-right: 400px;
-    margin-left: 380px;
+    margin:10px auto;
 }
 
 #toukou .btn:hover{
@@ -970,20 +970,18 @@ border-radius: 6px;
 }
 
 #kaiketsu-zumi {
-     display:block;
+    width:250px;
+    margin: 30px auto;
+    height:25px;
 }
 
 #kaiketsu-zumi p{
     color: #FFF;
-    width:250px;
     border: 3px solid #FFF;
     border-radius: 3px;
     background-color:#EA5C5C;
     text-align: center;
-    height:50px;
-    font-size:30px;
-    padding-bottom: 10px;
-    margin-top: 90px;
+    font-size:23px;
 }
 
 /*irais-search*/
@@ -1027,8 +1025,7 @@ border-radius: 6px;
 }
 
 textarea.form-control {
-    width: 700px;
-    margin-left: 170px;
+    width: 700px; 
     margin-top: 15px;
 } 
 

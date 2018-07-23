@@ -38,7 +38,9 @@
     line-height: 40px;
     position: relative;
     background: #A7F1FF;
-    margin-right:-20px;}
+    margin-right:-20px;
+
+}
     
 .husen:after {
     width: 170px;

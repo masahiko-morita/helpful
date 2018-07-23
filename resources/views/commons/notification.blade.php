@@ -22,21 +22,19 @@
          if($notification->type == 'message'){  
              $isMessage = true;} 
      }
-     
-<<<<<<< HEAD
+
      DB::table('notifications')->whereIn('id', $delete_list)->get();
    
-=======
-      DB::table('notifications')->whereIn('id', $delete_list)->get();
->>>>>>> b580f741dfd82d24848295c4a1b8869c542ea0b2
+
 ?>    
     @if($isChat == true)
-  
+  <div class='col-md-6'>
     <div class="husen">
       <div class="tyaki"><button type="button" data-dismiss="alert" class="close">&times;</button><p><strong> 新着の取引メッセージがあります</strong></p>
       <a href="#" class="alert-link">link</a>
        
     </div>
+  </div>
   
     @endif
     
@@ -51,6 +49,7 @@
     </div>
     </div>
     </a>
+
   
     @endif
 

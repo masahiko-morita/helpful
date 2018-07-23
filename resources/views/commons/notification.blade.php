@@ -74,6 +74,7 @@
     } else {
         $messagesIsShow = true;
     }
+
     ?>
     @if($messagesIsShow)
     <div class="alert alert-dismissible fade in " role="alert">
@@ -84,3 +85,5 @@
     </div>
     @endif
     @endif
+    
+    

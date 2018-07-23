@@ -22,17 +22,21 @@
              $isMessage = true;} 
      }
      
-      DB::table('notifications')->whereIn('id', $delete_list)->delete();
+      DB::table('notifications')->whereIn('id', $delete_list)->get();
 ?>    
     @if($isChat == true)
     <div class="husen">
        新着の取引メッセージがあります<a href="#" class="alert-link">link</a>
     </div>
     @endif
+    
     @if($isComment == true)
     <a href="{{ route('irais.show', $notification->irai_id) }}">
-    <div class="husen">
-      依頼に新着のコメントがあります
+     <div class="alert alert-dismissible fade in" role="alert">
+      <div class="husen">
+        <div class="tyaki"><button type="button" data-dismiss="alert" class="close">&times;</button><p>依頼に新着のコメントがあります</p>
+        </div>
+    </div>
     </div>
     </a>
     @endif

@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+#hensyuu2 .btn {
+    margin-top:20px;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    border-left: solid 4px SteelBlue;
+    border-right: solid 4px SteelBlue;
+    color: SteelBlue;
+    background: #e1f3ff;
+    transition: .4s;
+}
+
+.square_btn:hover {
+    background: #668ad8;
+    color: #FFF;
+}
+
+
+#hensyuu_contents {
+    padding-top: 25px;
+}
+

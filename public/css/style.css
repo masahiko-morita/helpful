@@ -702,7 +702,7 @@ border-radius: 6px;
 .balloon{
   width:200px;
   position: relative;
-  padding-bottom: 3px;
+  padding-bottom: 5px;
   background-color: #edf5f4;
   word-break:break-all;
   margin-left:260px;

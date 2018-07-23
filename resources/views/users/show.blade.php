@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@extends('commons.auto')
+@include('commons.auto')
 
 @section('content')
 
@@ -11,7 +11,14 @@
     </div>
     <div class='col-md-5 text-center'>
 		<div class="balloon">
+			<div id="hensyuu_contents">
       		{{$user->content}}
+      		</div>
+      		<div id="hensyuu2">
+                        {!! Form::open(['route' => ['users.edit', $user->id], 'method' => 'get']) !!}
+                            {!! Form::submit('編集', ['class' => 'btn center-block']) !!}
+                        {!! Form::close() !!}
+                    </div>
 		</div>
 	</div>
   </div>
@@ -54,19 +61,33 @@
 	</div>
 
 </div>
-	<script>
-		$( function() {
-			$('.linkInThePage').click( function () {
-				var hrefValue = $(this).attr( 'href' );
-				$(hrefValue).animatescroll();
-			} );
-		} );
-	</script>
 
- <a href="{{ route('irais.create', ['id' => $user->id]) }}">
-<div class="wrap-1">
-  <button class="btn-post"><i class="fa fa-hand-peace" id='peace'> </i><br>New Post</button>
+ <?php 
+        $v =$_COOKIE["data1"]??"";
+    
+    ?>
+ 	
+ 	
+    <div class="wrap-1 ball">
+@if($v == "")
+                	<div class="alert alert-warning alert-dismissible fade in" role="alert">
+                	<button type="button" data-dismiss="alert" class="close" onclick="document.cookie = 'data1=123';">&times;</button>
+                	<p><strong>新規投稿は↓<br>をクリック</strong></p>
+                    </div>
+@endif
+        <a href="{{ route('irais.create') }}">
+                <button class="btn-post"><i class="fa fa-hand-peace" id='peace'></i><br>New Post</button>
+            </div>
+        </a>
+    </div>
+
+    <div class="text-center">
+        <ul class="paginate">
+            <p>{{ $irais->links() }}</p>
+        </ul>
+    </div>
 </div>
+
+
 </a>
 @endsection
-

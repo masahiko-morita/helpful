@@ -11,13 +11,7 @@
                     <div class='maste-content'>
                             <br>
                             <h4 class='under'>{{ $irai->title }}</h4>
-                            <div class='maste-btn'>
-                                @if (Auth::user() == null)
-                                
-                                @elseif(Auth::user()->id != $irai->user_id)
-                                   @include('irai_finish.finish_button', ['user' => $user])
-                                @endif
-                            </div>
+                            
                             <div id='maste-ryaku'>
                                 <h4 class="glyphicon glyphicon-time text-center"></h4><br> {{ $irai->start }}~<br>{{ $irai->finish }}<br>
                                 <h4 class="glyphicon glyphicon-map-marker"></h4> {{$irai->station}}<br>

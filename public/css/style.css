@@ -301,7 +301,6 @@ transition: .4s;
 }
 
 .maste-box .maste-content #maste-ryaku{
-    position: absolute;
 	bottom: 0;
 }
 
@@ -1968,4 +1967,54 @@ textarea.form-control {
  width:300px;
  right:0px;
  bottom:100px;
+}
+
+
+.errormessage{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    width:500px;
+    height:50px;
+    color:white;
+    background-color:#FF99CC;
+    border-color:white;
+    margin-bottom:1px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.button {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  line-height: 120px;
+
+  background:linear-gradient(to right, rgb(255, 126, 95), rgb(254, 180, 123));
+  border: 1px solid white;
+  border-radius: 50%;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  padding-top:40px;
+}
+.button:hover {
+  -webkit-animation: scale .3s ease-in-out;
+  animation: scale .3s ease-in-out;
+}
+@-webkit-keyframes scale {
+  50% { -webkit-transform: scale(1.1); }
+}
+@keyframes scale {
+  50% { transform: scale(1.1); }
+}
+
+.button span{
+    font-size:25px;
+    padding-top: 100px;
+}
+
+
+.signup{
+    margin-left: 40%;
 }

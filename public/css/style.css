@@ -77,8 +77,8 @@ text-decoration: none;
 .saki{
     font-size: larger;
      color: #fff;
-     margin-left:50px; 
-     margin-top: 70px;
+     margin-left:-10px; 
+     margin-top: 10px;
 }
 
 .maintitle{
@@ -91,7 +91,7 @@ text-decoration: none;
 
 .introduction{
     text-align:center;
-    margin-top: 440px;
+    margin-top: 75px;
    }
 
 .explaination h2{ 
@@ -104,6 +104,121 @@ text-decoration: none;
     padding-bottom: 20px;
 }
 
+<<<<<<< HEAD
+=======
+.cp_btn {
+position: relative;
+display: block;
+width: 250px;
+height:60px;
+padding: 0.5em;
+text-align: center;　
+font-weight: bold;
+text-decoration: none;
+color: #FFF;
+text-shadow: 0 0 5px rgba(255, 255, 255, 0.0);
+background: #FFD700;
+transition: .4s;
+border-radius: 4px;
+margin-left: 160px;
+margin-right: 650px;
+margin-top: -80px;
+font-size: 25px;
+}
+
+.cp_btn:hover {
+text-shadow: -6px 0px 15px rgba(255, 255, 240, 0.83), 6px 0px 15px rgba(255, 255, 240, 0.83);
+transition: .4s;
+}
+
+.dp_btn {
+position: relative;
+display: block;
+width: 250px;
+height:60px;
+padding: 0.5em;
+text-align: center;　
+font-weight: bold;
+text-decoration: none;
+color: #FFF;
+text-shadow: 0 0 5px rgba(255, 255, 255, 0.0);
+background: #FFD700;
+transition: .4s;
+border-radius: 4px;
+margin-left: 160px;
+margin-right: 650px;
+margin-top: 0px;
+font-size: 25px;
+}
+
+.dp_btn:hover {
+text-shadow: -6px 0px 15px rgba(255, 255, 240, 0.83), 6px 0px 15px rgba(255, 255, 240, 0.83);
+transition: .4s;
+}
+
+/*welcomepageのボタン*/
+.animation {
+  width:350px;
+  height:76px;
+  text-align:center;
+  border:2px solid #1989ac;
+  float:left;
+  cursor:pointer;
+  position:relative;
+  box-sizing:border-box; 
+  overflow:hidden;
+  margin:0 0 40px 0;
+  border-radius:10px;
+  box-shadow:4px 4px #555;
+}
+
+.animation a {
+  font-size:16px;
+  color:#BBBBBB;
+  font-family:arial;
+  font-size:36px;
+  color:#1989ac;
+  text-decoration:none;
+  line-height:56px;
+  transition:all .10s ease;
+  z-index:2;
+  position:relative;
+}
+
+.effect {
+  width:330px;
+  height:76px;
+  top:-2px;
+  left:-360px;
+  background:#283e56;
+  position:absolute;
+  transition:all .6s ease;
+  z-index:1;
+ 
+}
+
+.effect-background {
+  width:320px;
+  height:76px;
+  top:-0px;
+  left:1px;
+  background:#00000000;
+  position:absolute;
+  z-index:2;
+}
+
+
+.animation:hover .effect {
+  left:0;
+  color:#fff;
+ }
+ 
+.animation:hover a {
+  color:#fff;
+
+}
+
+>>>>>>> e54e3c16963535e768003f5f3ac6bb9b6e2f5aa6
 .steps {
     margin-bottom:  50px;
 }
@@ -946,6 +1061,7 @@ textarea.form-control {
     padding-top: 10px;
     width:500px;
     height:50px;
+}
 
 #alert{
     width:160px;
@@ -984,7 +1100,10 @@ textarea.form-control {
 .button span{
     font-size:25px;
     padding-top: 100px;
+<<<<<<< HEAD
     border-radius: 10px;
+=======
+>>>>>>> e54e3c16963535e768003f5f3ac6bb9b6e2f5aa6
 }
 
 .signup{

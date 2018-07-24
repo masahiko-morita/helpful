@@ -1,3 +1,4 @@
+
 <ul class="media-list">
 @foreach ($comments as $comment)
     <?php $user = $comment->user; ?>
@@ -33,4 +34,6 @@
         </li>
 @endforeach
 </ul>
+
+
 

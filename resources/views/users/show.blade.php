@@ -3,6 +3,7 @@
 
 @section('content')
 
+<div class='container　col-xs-6"'>
 <div class='containermypage'>
 	<div class="introduction_momo">
             <img src="{{ Gravatar::src($user->email, 100) . '&d=mm' }}" alt="" class="img-circle" width='30%'>
@@ -32,12 +33,13 @@
 			<div class="row">
 			</div>
 
-            <div class="col-xs-12" id='tatesen'>
-	            <div id="sampleMainContents">
-    			        <div class='ribbon3'>
-    				        <h2>出した依頼</h2>
-    			        </div>
-						@if($count_irais==0)
+<div class="col-xs-12" id='tatesen'>
+	<div id="sampleMainContents">
+		<h2 class="text-center">
+			<div class='ribbon3'>
+				<h2>出した依頼</h2></h2>
+			</div>
+            			@if($count_irais==0)
 						<br>
 						 <h4 class='text-center'>投稿がありません</h4><br>
 						@else

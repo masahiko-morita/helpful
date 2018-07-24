@@ -11,10 +11,7 @@
                     <div class='maste-content'>
                             <br>
                             <h4 class='under'>{{ $irai->title }}</h4>
-<<<<<<< HEAD
                             
-=======
->>>>>>> 3f5f8d958d2503b38d166b20823be8fc0fc2c7c7
                             <div id='maste-ryaku'>
                                 <h4 class="glyphicon glyphicon-time text-center"></h4><br> {{ $irai->start }}~<br>{{ $irai->finish }}<br>
                                 <h4 class="glyphicon glyphicon-map-marker"></h4> {{$irai->station}}<br>

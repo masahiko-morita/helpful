@@ -83,10 +83,10 @@
             <p class="lead"></p>
           </div>
 
-<div class="wrap-1 ball">
+<div class="wrap-1 ball col-xs-6">
         <a href="{{ route('irais.create') }}">
                 <button class="btn-post"><i class="fa fa-hand-peace" id='peace'></i><br>New Post</button>
-            </div>
+            
         </a>
     </div>
           

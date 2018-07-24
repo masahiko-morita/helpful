@@ -3,6 +3,7 @@
 
 @section('content')
 
+<div class='container　col-xs-6"'>
 <div class='containermypage'>
 		<div class="introduction_momo">
         <img src="{{ Gravatar::src($user->email, 100) . '&d=mm' }}" alt="" class="img-circle" width='30%'>
@@ -24,7 +25,7 @@
 		</div>
 	</div>
   </div>
-<div class='container'>
+
     <div class='maepage'>
     	{!! $irais->render() !!}
     </div>   
@@ -39,7 +40,7 @@
 	<div id="sampleMainContents">
 		<h2 class="text-center">
 			<div class='ribbon3'>
-				<h2>出した依頼</h2>
+				<h2>出した依頼</h2></h2>
 			</div>
 						@if($count_irais==0)
 						<br>

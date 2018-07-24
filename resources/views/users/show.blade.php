@@ -5,34 +5,31 @@
 
 <div class='container　col-xs-6"'>
 <div class='containermypage'>
-		<div class="introduction_momo">
-        <img src="{{ Gravatar::src($user->email, 100) . '&d=mm' }}" alt="" class="img-circle" width='30%'>
+	<div class="introduction_momo">
+            <img src="{{ Gravatar::src($user->email, 100) . '&d=mm' }}" alt="" class="img-circle" width='30%'>
         <div id=momo_name>
-        <h3>{{ $user->name }}</h3>
-    </div>
-    <div class='col-md-5 text-center'>
-		<div class="balloon">
-			<div id="hensyuu_contents">
-      		{{$user->content}}
-      		</div>
-      		 @if (Auth::user()->id == $user->id)
-      		<div id="hensyuu2">
+            <h3>{{ $user->name }}</h3>
+        </div>
+        <div class='col-xs-5 text-center'>
+		    <div class="balloon">
+			    <div id="hensyuu_contents">
+      		        {{$user->content}}
+      		    </div>
+      		     @if (Auth::user()->id == $user->id)
+      		    <div id="hensyuu2">
                         {!! Form::open(['route' => ['users.edit', $user->id], 'method' => 'get']) !!}
-                            {!! Form::submit('編集', ['class' => 'btn center-block']) !!}
+                        {!! Form::submit('編集', ['class' => 'btn center-block']) !!}
                         {!! Form::close() !!}
-                    </div>
-            @endif  
-		</div>
-	</div>
-  </div>
-
+                </div>
+                @endif  
+	        </div>
+	    </div>
+    </div>
     <div class='maepage'>
     	{!! $irais->render() !!}
     </div>   
-</div>
-<div role="document" data-spy="scroll" data-target="#sampleScrollSpy">
-	<div class="container-fluid">
-		<div class="container">
+    <div role="document" data-spy="scroll" data-target="#sampleScrollSpy">
+	    <div class="container-fluid">
 			<div class="row">
 			</div>
 
@@ -42,7 +39,7 @@
 			<div class='ribbon3'>
 				<h2>出した依頼</h2></h2>
 			</div>
-						@if($count_irais==0)
+            			@if($count_irais==0)
 						<br>
 						 <h4 class='text-center'>投稿がありません</h4><br>
 						@else
@@ -50,13 +47,10 @@
 							@include('irais.irai', ['irais' => $irais])
 						</ol>
 						@endif
-						
-					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-
 </div>
 
  <?php 

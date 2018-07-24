@@ -46,12 +46,9 @@ body {
     height:35px;
 }
 
-
-
 .navbar-brand {
     font-size: 16px;
 }
-
 
 /*irai*/
 .irai {
@@ -494,11 +491,7 @@ border-radius: 6px;
     color: #FFF;
     box-sizing: border-box;
     margin-left: -60px;
-<<<<<<<<< saved version
-
-=========
     margin-top: 30px;
->>>>>>>>> local version
 }
 
 .ribbon3 h2 {

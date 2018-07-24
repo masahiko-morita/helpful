@@ -80,7 +80,7 @@
 
                             
     @if (Auth::user() == null)                            
-    <div class="abcd">    
+    <div class="abc">    
       <div class="animation">
         <div class="effect" style='pointer-events:none;'>
         </div>

@@ -41,10 +41,13 @@
                         <a class="navbar-brand" href="/hatsu"style="font-size:10pt">初めての方へ</a>
                         <li>{!! link_to_route('signup.get', '新規登録') !!}</li>
                         <li>{!! link_to_route('login', 'ログイン') !!}</li>
+                        
                     @endif
                 </ul>
+     
             </div>
             </div>
+
             </nav>
 
 

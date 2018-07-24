@@ -39,7 +39,7 @@
     @endif
     
     @if($isComment == true)
-   
+   <div class='husenhani'>
     <a href="{{ route('irais.show', $notification->irai_id) }}">
     
      <div class="alert alert-dismissible fade in " role="alert">
@@ -49,6 +49,10 @@
     </div>
     </div>
     </a>
+    
+    </div>
+    
+    
 
   
     @endif

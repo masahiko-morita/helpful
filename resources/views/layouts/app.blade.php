@@ -36,6 +36,7 @@
        
  
       @include('commons.navbar')
+      @include('commons.notification')
       <div class="container">
         @include('commons.error_messages')
         
@@ -43,7 +44,7 @@
 
         
         @yield('cover')
-        @include('commons.notification')
+        
         @yield('content')
         
         

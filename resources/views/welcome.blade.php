@@ -89,7 +89,7 @@
             <h2 class="featurette-heading">さあ登録しよう！<br><br><p class="text-muted">知らない間に他の同期の輪は広がっているかも？</p></h2><br>
             <p class="lead"></p>
           </div>
-<<<<<<< HEAD
+
 <div class="wrap-1 ball">
 
         <a href="{{ route('irais.create') }}">
@@ -99,19 +99,17 @@
     </div>
           
 <div class='signup'>
-=======
-<div class="text-center">    
-      <div class="animation">
-        <div class="effect" style='pointer-events:none;'>
-        </div>
->>>>>>> b580f741dfd82d24848295c4a1b8869c542ea0b2
+
+
         @if (!Auth::check())
         
         <a class="button" href="{{ route('signup.get') }}"><span>Sign Up Now</span></a>
         @endif
+
 </div>
 
+<h3>          <br>  </h3>
         <!-- /END THE FEATURETTES -->
 
-　  
+
 @endsection

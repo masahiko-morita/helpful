@@ -8,8 +8,6 @@
         $vv =$_COOKIE["data2"]??"";
     ?>
 
-
-
         <div class='mypage driveInRight'>
             @if($vv == "")
                 	<div class="alert alert-warning alert-dismissible fade in" role="alert">
@@ -33,6 +31,7 @@
    
 
     <div class="wrap-1 ball">
+
 @if($v == "")
                 	<div class="alert alert-warning alert-dismissible fade in" role="alert" id='alert'>
                 	<button type="button" data-dismiss="alert" class="close" onclick="document.cookie = 'data1=123';">&times;</button>
@@ -44,14 +43,12 @@
             </div>
         </a>
     </div>
-
-
-
     <div class="text-center">
         <ul class="paginate">
             <p>{{ $irais->links() }}</p>
         </ul>
     </div>
+
 </div>
 
 

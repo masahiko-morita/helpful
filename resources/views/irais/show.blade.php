@@ -20,12 +20,12 @@
                         </div>
                     </div>
                     </div>
-                    <div class="col-6 col-offset-3">
+                    <div class="col-xs-6 col-xs-offset-3">
                        @include('irai_finish.finish_button', ['user' => $user])
                     </div>
                 @endif    
     <div class="row">
-        <div class="col-12 col-offset-1"> 
+        <div class="col-xs-12 col-xs-offset-1"> 
             <table class="table">
                 <tr>
                     <th><i class="fa fa-user" id='show'> </i></th>

@@ -63,7 +63,7 @@ body {
 a{
     text-decoration: none;
     color:black;
-     font-size: 12px;
+    font-size: 12px;
 }
 
 a:hover {
@@ -226,35 +226,6 @@ transition: .4s;
     color: #fff;
 }
 
-.sakiko{
-text-align: center;}
-
-.abc{
-    text-align: center;
-    margin-left: 580px;
-    margin-bottom: 10px;
-    margin-top: 1%;
-}
-
-.abcd{
-    text-align: center;
-    margin-left: 580px;
-    margin-bottom: 10px; 
-    margin-top: 1%;
-}
-
-.header_box{
-    margin-left:110px;
-}
-
-.demo {
-  width: 500px;
-  margin: 0 auto;
-  padding: 10px 0;
-  font-family: sans-serif;
-  font-size: 20px;
-  color:#283e56; 
-}
 
 .heading{
 position: relative;
@@ -547,6 +518,7 @@ border-radius: 6px;
     color: #FFF;
     box-sizing: border-box;
 
+
     margin-top: 30px;
 
 }
@@ -685,7 +657,7 @@ border-radius: 6px;
 .balloon{
   width:200px;
   position: relative;
-  padding-bottom: 3px;
+  padding-bottom: 5px;
   background-color: #edf5f4;
   word-break:break-all;
   margin-left:260px;
@@ -780,10 +752,14 @@ border-radius: 6px;
 
 /*irais-show*/
 .table {
-    margin-left: 300px;
-    margin-top: 60px;
+    margin:60px auto;
     width:600px;
+    font-size: 20px;
 }
+
+.table td {
+    margin-left:10px;
+} 
 
 /*peace (new post)*/
 .wrap #peace{
@@ -818,20 +794,19 @@ border-radius: 6px;
 }
 
 #hensyuu .btn{
-    display: block;
+    display: inline-block;
     width: 170px;
     text-align: center;
     text-decoration: none;
-    margin-top:15px;
+    margin-top:30px;
     font-size:15px;
     color: #6FC9D8;
     border: 3px solid #6FC9D8;
     border-radius: 3px;
     transition: .4s;
+    margin-rihgt:15px;
+    float:right;
     background-color:rgba(255,255,255,0.7);
-    float:left;
-    margin-left: 330px;
-    margin-top: 30px;
 }
 
 #hensyuu .btn:hover{
@@ -840,20 +815,19 @@ border-radius: 6px;
 }
 
 #sakujyo .btn{
-    display: block;
+    display: inline-block;
     width: 170px;
     text-align: center;
     text-decoration: none;
-    margin-top:15px;
+    margin-top:30px;
     font-size:15px;
     color: #EA5C5C;
     border: 3px solid #EA5C5C;
     border-radius: 3px;
     transition: .4s;
     background-color:rgba(255,255,255,0.7);
-    float: left;
-    margin-left: 80px;
-    margin-top: 30px;
+    margin-left: 15 px;
+    float:left;
 }
 
 #sakujyo .btn:hover{
@@ -878,8 +852,7 @@ border-radius: 6px;
     border-radius: 3px;
     transition: .4s;
     background-color:rgba(255,255,255,0.7);
-    margin-right: 400px;
-    margin-left: 380px;
+    margin:10px auto;
 }
 
 #toukou .btn:hover{
@@ -967,20 +940,18 @@ border-radius: 6px;
 }
 
 #kaiketsu-zumi {
-     display:block;
+    width:250px;
+    margin: 30px auto;
+    height:25px;
 }
 
 #kaiketsu-zumi p{
     color: #FFF;
-    width:250px;
     border: 3px solid #FFF;
     border-radius: 3px;
     background-color:#EA5C5C;
     text-align: center;
-    height:50px;
-    font-size:30px;
-    padding-bottom: 10px;
-    margin-top: 90px;
+    font-size:23px;
 }
 
 
@@ -1025,8 +996,7 @@ border-radius: 6px;
 }
 
 textarea.form-control {
-    width: 700px;
-    margin-left: 170px;
+    width: 700px; 
     margin-top: 15px;
 } 
 
@@ -1081,7 +1051,6 @@ textarea.form-control {
     
 }
 
-
 #yaritori{
      color:white;
     background-color: rgba(0,0,0,0.4);
@@ -1097,6 +1066,9 @@ textarea.form-control {
     padding-top: 10px;
     width:500px;
     height:50px;
+
+#alert{
+    width:160px;
     color:white;
     background-color:#FF99CC;
     border-color:white;
@@ -1132,6 +1104,8 @@ textarea.form-control {
 .button span{
     font-size:25px;
     padding-top: 100px;
+    border-radius: 10px;
+
 }
 
 

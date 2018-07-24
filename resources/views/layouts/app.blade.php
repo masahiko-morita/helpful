@@ -41,7 +41,6 @@
         @include('commons.error_messages')
         
         
-
         
         @yield('cover')
         
@@ -49,7 +48,7 @@
         
         
         <!-- モーダル・ダイアログ -->
-            <div class="modal fade" id="sampleModal" tabindex="-1">
+            <div class="modal fade" id="sampleModal" tabindex="-1"> 
             	<div class="modal-dialog">
             		<div class="modal-content">
             			<div class="modal-header">

@@ -1,9 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-
-
-
     @if (Auth::check())
         @include('irais.index')
     @else
@@ -39,10 +36,6 @@
         	</div>
           </a>	
         </div>
-        
-        
-        
-        
         
          <hr class="featurette-divider">
         
@@ -91,7 +84,6 @@
           </div>
 
 <div class="wrap-1 ball">
-
         <a href="{{ route('irais.create') }}">
                 <button class="btn-post"><i class="fa fa-hand-peace" id='peace'></i><br>New Post</button>
             </div>
@@ -99,17 +91,11 @@
     </div>
           
 <div class='signup'>
-
-
         @if (!Auth::check())
-        
         <a class="button" href="{{ route('signup.get') }}"><span>Sign Up Now</span></a>
         @endif
-
 </div>
 
 <h3>          <br>  </h3>
         <!-- /END THE FEATURETTES -->
-
-
 @endsection

@@ -52,12 +52,7 @@ body {
 .dropdown-toggle {
     font-size: 16px;}
 
-/*footer*/
-#footer {
-    background-color: transparent;
-    color: gray;
-    text-align: center;
-}
+
 
 /*irai*/
 .irai {
@@ -77,15 +72,7 @@ text-decoration: none;
 
 /*welcome*/
 
-.content1{
-    margin-bottom: 20px;
-    width: 80%;
-    height: 390px;
-    background: url("/images/viber3.jpg") center center no-repeat;
-    background-size: cover;
-    position: absolute;
-    opacity: 0.8;
-}
+
 
 .saki{
     font-size: larger;
@@ -193,6 +180,7 @@ transition: .4s;
   z-index:2;
 }
 
+
 .animation:hover .effect {
   left:0;
   color:#fff;
@@ -200,6 +188,7 @@ transition: .4s;
  
 .animation:hover a {
   color:#fff;
+
 }
 
 .steps {
@@ -498,10 +487,7 @@ border-radius: 6px;
     overflow: hidden;
 }
 
-.maste-box .maste-content #maste-ryaku{
-    position: absolute;
-	bottom: 0;
-}
+
 
 .maste-tape{
   position: absolute;
@@ -560,7 +546,10 @@ border-radius: 6px;
     background: #1989ac;
     color: #FFF;
     box-sizing: border-box;
+
+
     margin-top: 30px;
+
 }
 
 .ribbon3 h2 {
@@ -727,6 +716,7 @@ border-radius: 6px;
 .comment .comment-flower .contentbox .name h3 {
     text-align: left;
 }
+
 
 .comment-title-comments h3{
     text-align: left;
@@ -969,6 +959,15 @@ border-radius: 6px;
   transform: translateY(-7px);
 }
 
+#alert{
+    width:160px;
+    color:white;
+    background-color:rgba(0,0,0,0.4);
+    border-color:white;
+    margin-bottom:1px;
+    border-radius: 10px;
+}
+
 #kaiketsu-zumi {
     width:250px;
     margin: 30px auto;
@@ -983,6 +982,7 @@ border-radius: 6px;
     text-align: center;
     font-size:23px;
 }
+
 
 /*irais-search*/
 .search-content {
@@ -1061,6 +1061,11 @@ textarea.form-control {
 
 .mypage{
     margin-top: 0;
+    position:fixed;
+    top:60px;
+    right:30px;
+
+
 }
 
 .mypage .alert{
@@ -1069,17 +1074,66 @@ textarea.form-control {
     color:white;
     background-color: rgba(0,0,0,0.4);
     border-color:white;
-    margin-left: 1050px;
+    
     border-radius: 10px;
     margin-top:0;
-     
+    
 }
+
+
+.errormessage{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    width:500px;
+    height:50px;
 
 #alert{
     width:160px;
+
     color:white;
-    background-color: rgba(0,0,0,0.4);
+    background-color:#FF99CC;
     border-color:white;
     margin-bottom:1px;
-    border-radius: 10px;
+
+    border-radius: 5px;
+    font-size: 20px;
 }
+
+.button {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  line-height: 120px;
+  background:linear-gradient(to right, rgb(255, 126, 95), rgb(254, 180, 123));
+  border: 1px solid white;
+  border-radius: 50%;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  padding-top:40px;
+}
+.button:hover {
+  -webkit-animation: scale .3s ease-in-out;
+  animation: scale .3s ease-in-out;
+}
+@-webkit-keyframes scale {
+  50% { -webkit-transform: scale(1.1); }
+}
+@keyframes scale {
+  50% { transform: scale(1.1); }
+}
+
+.button span{
+    font-size:25px;
+    padding-top: 100px;
+    border-radius: 10px;
+
+}
+
+
+.signup{
+    margin-left: 40%;
+}
+
+

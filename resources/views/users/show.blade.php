@@ -9,7 +9,7 @@
         <div id=momo_name>
             <h3>{{ $user->name }}</h3>
         </div>
-        <div class='col-md-5 text-center'>
+        <div class='col-xs-5 text-center'>
 		    <div class="balloon">
 			    <div id="hensyuu_contents">
       		        {{$user->content}}

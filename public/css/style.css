@@ -560,13 +560,8 @@ border-radius: 6px;
     background: #1989ac;
     color: #FFF;
     box-sizing: border-box;
-<<<<<<< HEAD
-    margin-top: 0px;
-    margin-left: -150px;
-=======
     margin-top: 30px;
->>>>>>> 5df7158698eb2fa4856ff4329196ddec6c23c7e6
-}
+} 
 
 .ribbon3 h2 {
     vertical-align: middle;

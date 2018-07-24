@@ -37,8 +37,6 @@
     background: #A7F1FF;
     margin: 0 0 0 150px;
 }
-
-
     
 .husen:after {
     width: 170px;
@@ -76,7 +74,6 @@
     top: -2px;
     right: 4px;
     color: inherit;
-  
 }
 
 .alert-dismissable, .alert-dismissible {
@@ -84,6 +81,7 @@
     margin: 0;
     padding: 0;
     border: 0;
+    
 }
 .tyaki{
     text-align: center;

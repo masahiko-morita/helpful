@@ -5,7 +5,7 @@
 <div class='container'>
     <?php $user = $irai->user;
           $coment =$_COOKIE["coment"]??"";
-          $user = $irai->user; 
+          $coment2 =$_COOKIE["coment2"]??"";
     ?>
 
         <h1 class='text-center'>{{ $irai->title }}</h1>
@@ -26,9 +26,9 @@
                         </div>
                     </div>
                     </div>
-                    <div class="col-6 col-offset-3">
+                   
                        @include('irai_finish.finish_button', ['user' => $user])
-                    </div>
+                 
                 @endif    
 
     <div class="row">
@@ -57,21 +57,9 @@
             </table>
         </div>
     </div>
-    
-    
-
-
-
+       
         <div class="row row-eq-height">
-
-            <div class="col-md-7">
-
-                  @if($coment == "")
-                	<div class="alert alert-warning alert-dismissible fade in" role="alert" id='yaritori'>
-                	<button type="button" data-dismiss="alert" class="close" onclick="document.cookie = 'coment=000';">&times;</button>
-                	<strong>↓こちらのメッセージボードで手伝うまでのやり取りをすることができます。</strong>
-                    </div>
-                @endif
+         
 
                 <div id="toukou">
                     {!! Form::open(['route' => ['comments.store'], 'method' => 'post']) !!}
@@ -82,8 +70,17 @@
                         {!! Form::submit('メッセージ送信！', ['class' => 'btn btn-success btn-lg center-blosk']) !!}
                     {!! Form::close() !!}
                 </div>
-        </div>    
-@include('comments.comment', ['comments' => $comments])
+               
+        </div> 
+@if($coment2 == "")
+                	<div class="alert alert-warning alert-dismissible fade in" role="alert" id='yaritori'>
+                	<button type="button" data-dismiss="alert" class="close" onclick="document.cookie = 'coment2=111';">&times;</button>
+                	<strong>↓こちらにメッセージが表示されます。<br>依頼が完了するまでこちらでやり取りして頂けます。</strong>
+                    </div>
+@endif
 
+<div class='commentboard'>
+@include('comments.comment', ['comments' => $comments])
+</div>
 @endsection 
 

@@ -11,7 +11,8 @@
     border: solid 3px #fff;/*線*/
     border-radius: 22px;/*角の丸み*/
     width: 495px;
-    margin-left: -20px;}
+    margin-left: -20px;
+}
 
 .tasuketai{
     float: right;
@@ -25,7 +26,6 @@
     margin-top: 45px;
     width: 475px;
     margin-right:-20px;
-  
 }
     
 .tyaki{
@@ -77,4 +77,15 @@
     color: inherit;
     top: 3px;
 }
+
+.tyaki{
+    text-align: center;
+    
+}
+
+.husem{
+    width: 180px;
+    margin-right: 300px;
+}
+
 

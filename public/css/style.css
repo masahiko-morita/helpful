@@ -81,28 +81,6 @@ text-decoration: none;
 
 /*welcome*/
 
-
-
-.saki{
-    font-size: larger;
-     color: #fff;
-     margin-left:-10px; 
-     margin-top: 10px;
-}
-
-.maintitle{
-    text-align: center;
-    margin-left: 1px;
-    color:navy;
-    margin-right: 680px;
-    margin-top: 40px;
-   }
-
-.introduction{
-    text-align:center;
-    margin-top: 75px;
-   }
-
 .explaination h2{ 
     text-align: center;
     font-weight: bold;
@@ -113,8 +91,6 @@ text-decoration: none;
     padding-bottom: 20px;
 }
 
-<<<<<<< HEAD
-=======
 .cp_btn {
 position: relative;
 display: block;
@@ -203,7 +179,6 @@ transition: .4s;
   position:absolute;
   transition:all .6s ease;
   z-index:1;
- 
 }
 
 .effect-background {
@@ -216,7 +191,6 @@ transition: .4s;
   z-index:2;
 }
 
-
 .animation:hover .effect {
   left:0;
   color:#fff;
@@ -224,10 +198,8 @@ transition: .4s;
  
 .animation:hover a {
   color:#fff;
-
 }
 
->>>>>>> e54e3c16963535e768003f5f3ac6bb9b6e2f5aa6
 .steps {
     margin-bottom:  50px;
 }
@@ -307,13 +279,6 @@ border-radius: 6px;
 }
 
 .demo11 .headings text {
-  stroke: #3cb3e4;
-  stroke-width: 1.5;
-  fill: rgba(60,179,228,0.2);
-  font-size: 50px;
-}
-
-.demo11 .heading text {
   stroke: #3cb3e4;
   stroke-width: 1.5;
   fill: rgba(60,179,228,0.2);
@@ -1109,10 +1074,7 @@ textarea.form-control {
 .button span{
     font-size:25px;
     padding-top: 100px;
-<<<<<<< HEAD
     border-radius: 10px;
-=======
->>>>>>> e54e3c16963535e768003f5f3ac6bb9b6e2f5aa6
 }
 
 .signup{

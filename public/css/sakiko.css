@@ -34,12 +34,17 @@
 }
 
 .husen {
-    width: 250px;
+    width: 230px;
     height: 42px;
     line-height: 40px;
     position: relative;
     background: #A7F1FF;
     margin-left: 150px;
+}
+
+.husenhani{
+    width: 20px;
+    margin-right: 600px;
 }
     
 .husen:after {
@@ -89,6 +94,7 @@
     width: 220px;
     margin-left: 650px;
     text-align: center;
+    margin-top: 5px;
 }
 
 .sakiko{
@@ -120,5 +126,104 @@ text-align: center;}
   font-size: 20px;
   color:#283e56; 
 }
+
+.cp_btn {
+position: relative;
+display: block;
+width: 250px;
+height:60px;
+padding: 0.5em;
+text-align: center;　
+font-weight: bold;
+text-decoration: none;
+color: #FFF;
+text-shadow: 0 0 5px rgba(255, 255, 255, 0.0);
+background: #FFD700;
+transition: .4s;
+border-radius: 4px;
+margin-left: 160px;
+margin-right: 650px;
+margin-top: 20px;
+font-size: 25px;
+}
+
+.cp_btn:hover {
+text-shadow: -6px 0px 15px rgba(255, 255, 240, 0.83), 6px 0px 15px rgba(255, 255, 240, 0.83);
+transition: .4s;
+}
+
+/*welcomepageのボタン*/
+.animation {
+  width:350px;
+  height:76px;
+  text-align:center;
+  border:2px solid #1989ac;
+  float:left;
+  cursor:pointer;
+  position:relative;
+  box-sizing:border-box; 
+  overflow:hidden;
+  margin:0 0 40px 0;
+  border-radius:10px;
+  box-shadow:4px 4px #555;
+}
+
+.animation a {
+  font-size:16px;
+  color:#BBBBBB;
+  font-family:arial;
+  font-size:36px;
+  color:#1989ac;
+  text-decoration:none;
+  line-height:56px;
+  transition:all .10s ease;
+  z-index:2;
+  position:relative;
+}
+
+.effect {
+  width:330px;
+  height:76px;
+  top:-2px;
+  left:-360px;
+  background:#283e56;
+  position:absolute;
+  transition:all .6s ease;
+  z-index:1;
+ 
+}
+
+.effect-background {
+  width:320px;
+  height:76px;
+  top:-0px;
+  left:1px;
+  background:#00000000;
+  position:absolute;
+  z-index:2;
+}
+
+.animation:hover .effect {
+  left:0;
+  color:#fff;
+ }
+ 
+.animation:hover a {
+  color:#fff;
+}
+.person_1{
+    font-size: 40px;
+    color: #3CB371;
+    text-shadow: 1px 0px 0px #3CB371, 0px 1px 0px #3CB371, -1px 0px 0px #3CB371, 1px -1px 0px #3CB371;
+    margin-left: 132px;
+}
+
+.person_2{
+    font-size: 40px;
+    color:hotpink;
+    text-shadow: 2px 0px 0px #ff003f, 0px 1px 0px #ff003f, -1px 0px 0px #ff003f, 0px -1px 0px #ff003f;
+    margin-left: 140px;
+}
+
 
 

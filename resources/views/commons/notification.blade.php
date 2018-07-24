@@ -1,5 +1,4 @@
 <?php
-
     if(Auth::check() == false) {
         return;} 
      $notifications = DB::table('notifications')
@@ -29,17 +28,13 @@
      }
 
      DB::table('notifications')->whereIn('id', $delete_list)->get();
-   
-
 ?>    
-
     @if($isChat == true); 
     <div class="husen">
       <div class="tyaki"><button type="button" data-dismiss="alert" class="close" onclick="document.cookie = 'close_deals=1';path=/;">&times;</button><p><strong> 新着の取引メッセージがあります</strong></p>
       <a href="#" class="alert-link">link</a>
       </div>
    </div>
-  
     @endif
     
     @if($isComment == true)
@@ -53,24 +48,20 @@
     } else {
         $commentsIsShow = true;
     }
-// var_dump($comments_id);
-// var_dump($_COOKIE);
-// var_dump( $commentsIsShow );
     ?>
-       
     @if($commentsIsShow)
 
     <div class="alert alert-dismissible fade in " role="alert">
       <div class="husen">
         <div class="tyaki">
-         <button type="button" data-dismiss="alert" class="close"  onclick="document.cookie = 'close_comments={{$comments_id}};expires=Thu, 18 Dec 2022 12:00:00 UTC;path=/;';">&times;</button><p><strong>依頼に新着のコメントがあります</strong></p></div>
+         <button type="button" data-dismiss="alert" class="close"  onclick="document.cookie = 'close_comments={{$comments_id}};expires=Thu, 18 Dec 2022 12:00:00 UTC;path=/;';">&times;</button>
+         <p><strong>依頼に新着のコメントがあります</strong></p>
+        </div>
        </div>
     </div>
     @endif
     </a>
-    
     </div>
-  
     @endif
 
     @if($isMessage == true)
@@ -88,7 +79,7 @@
     <div class="alert alert-dismissible fade in " role="alert">
      <div class="husem">
         <div class="tyaki"><button type="button" data-dismiss="alert" class="close"  onclick="document.cookie = 'close_messages={{$messages_id}};expires=Thu, 18 Dec 2022 12:00:00 UTC;path=/;';">&times;</button><p><strong></div>
-       {{$irai->title}}は解決しました！<br>ありがとうございました☺</strong></p></div>
+       {{$irai->title}}は<br>解決しました！<br>ありがとうございました☺</strong></p></div>
      </div>
     </div>
     @endif

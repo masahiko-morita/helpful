@@ -8,17 +8,6 @@
         $vv =$_COOKIE["data2"]??"";
     ?>
 
-        <div class='mypage driveInRight'>
-            @if($vv == "")
-                	<div class="alert alert-warning alert-dismissible fade in" role="alert">
-                	    <button type="button" data-dismiss="alert" class="close" onclick="document.cookie = 'data2=123';">&times;</button>
-                	    <strong>↑のユーザー名をクリックするとマイページへのリンクがあります</strong>
-                    </div>
-            @endif
-
-        </div>
-         
-
 <h2 class='text-center'>
 
         <div class='ribbon3'>

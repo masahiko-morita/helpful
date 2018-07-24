@@ -40,23 +40,13 @@ body {
     height: 60px;
 }
 
-.navbar .nav  li{
-    float:right;
-    text-align: right;
-}
+
 .navbar-brand img{
     width:100px;
     height:35px;
 }
 
-.dropdown-menu a{
-    background-color:white;
-}
 
-.navbar-brand .dropdown .dropdown-toggle{
-    width:50px;
-    font-size: 16px;
-}
 
 .navbar-brand {
     font-size: 16px;
@@ -80,28 +70,6 @@ text-decoration: none;
 }
 
 /*welcome*/
-
-
-
-.saki{
-    font-size: larger;
-     color: #fff;
-     margin-left:-10px; 
-     margin-top: 10px;
-}
-
-.maintitle{
-    text-align: center;
-    margin-left: 1px;
-    color:navy;
-    margin-right: 680px;
-    margin-top: 40px;
-   }
-
-.introduction{
-    text-align:center;
-    margin-top: 75px;
-   }
 
 .explaination h2{ 
     text-align: center;
@@ -201,7 +169,6 @@ transition: .4s;
   position:absolute;
   transition:all .6s ease;
   z-index:1;
- 
 }
 
 .effect-background {
@@ -214,7 +181,6 @@ transition: .4s;
   z-index:2;
 }
 
-
 .animation:hover .effect {
   left:0;
   color:#fff;
@@ -222,7 +188,6 @@ transition: .4s;
  
 .animation:hover a {
   color:#fff;
-
 }
 
 .steps {
@@ -259,8 +224,6 @@ transition: .4s;
     font-size: 24px;
     color: #fff;
 }
-
-
 .heading{
 position: relative;
 display: inline-block;
@@ -306,13 +269,6 @@ border-radius: 6px;
 }
 
 .demo11 .headings text {
-  stroke: #3cb3e4;
-  stroke-width: 1.5;
-  fill: rgba(60,179,228,0.2);
-  font-size: 50px;
-}
-
-.demo11 .heading text {
   stroke: #3cb3e4;
   stroke-width: 1.5;
   fill: rgba(60,179,228,0.2);
@@ -423,7 +379,6 @@ border-radius: 6px;
     background: #FFF;
     border: solid 3px #CCCCCC;/*線*/
     border-radius: 10px;/*角の丸み*/
-    
 }
 
 .flow_07 p {
@@ -448,20 +403,6 @@ border-radius: 6px;
     color: #283e56;
 }
 
-.person_1{
-    font-size: 40px;
-    color: #3CB371;
-    text-shadow: 1px 0px 0px #3CB371, 0px 1px 0px #3CB371, -1px 0px 0px #3CB371, 1px -1px 0px #3CB371;
-    margin-left: 132px;
-}
-
-.person_2{
-    font-size: 40px;
-    color:hotpink;
-    text-shadow: 2px 0px 0px #ff003f, 0px 1px 0px #ff003f, -1px 0px 0px #ff003f, 0px -1px 0px #ff003f;
-    margin-left: 140px;
-}
-
 .naiyou{
     width:90%;
     margin-left:5%;
@@ -476,6 +417,7 @@ border-radius: 6px;
   background: repeating-linear-gradient(-45deg, #edf5f4, #edf5f4 10px, #f6faf9 0, #f6faf9 20px);
   padding: 1em;
   height:280px;
+  /*width: 255px;*/
   margin-bottom: 20%;
    -moz-transition: -moz-transform 0.5s linear;
     -webkit-transition: -webkit-transform 0.5s linear;
@@ -524,7 +466,7 @@ border-radius: 6px;
 .containerirai{
   position:relative;
   margin-top: 10%;
-  height:70%;
+  height:280px;
 }
 
 /*pagination*/
@@ -551,7 +493,10 @@ border-radius: 6px;
     background: #1989ac;
     color: #FFF;
     box-sizing: border-box;
-    margin-top: 30px;
+    margin-left: -60px;
+
+
+
 }
 
 .ribbon3 h2 {
@@ -719,7 +664,6 @@ border-radius: 6px;
     text-align: left;
 }
 
-
 .comment-title-comments h3{
     text-align: left;
 }
@@ -755,11 +699,12 @@ border-radius: 6px;
 
 .circle {
   background-color:white;
-  padding: 0;
+  padding: 10px;
   margin: 0;
-  width: 100px;
-  height: 100px;
-  line-height: 100px;
+  margin-left:5px;
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
   text-align: center;
   display: inline-block;
   border-radius: 50%;
@@ -808,15 +753,15 @@ border-radius: 6px;
     height:50px;
     text-align: center;
     text-decoration: none;
-    margin-top:40px;
-    font-size:30px;
+    margin-top: 0;
+    font-size:18px;
     color: #3cb371;
     border: 3px solid #93D87C;
     border-radius: 3px;
     transition: .4s;
     background-color:rgba(255,255,255,0.7);
-    padding-bottom: 10px;
-    margin-top: 90px;
+    padding: auto;
+    margin-top: 20px;
 }
 
 #kaiketsu .btn:hover{
@@ -950,8 +895,6 @@ border-radius: 6px;
   transition: all 0.3s ease 0s;
   cursor: pointer;
   outline: none;
-
-  
   }
 
 .btn-post:hover {
@@ -984,7 +927,6 @@ border-radius: 6px;
     text-align: center;
     font-size:23px;
 }
-
 
 /*irais-search*/
 .search-content {
@@ -1066,8 +1008,6 @@ textarea.form-control {
     position:fixed;
     top:60px;
     right:30px;
-
-
 }
 
 .mypage .alert{
@@ -1076,14 +1016,20 @@ textarea.form-control {
     color:white;
     background-color: rgba(0,0,0,0.4);
     border-color:white;
-    
     border-radius: 10px;
     margin-top:0;
-    
 }
 
-
-.errormessage{
+#yaritori{
+     color:white;
+    background-color: rgba(0,0,0,0.4);
+    border-color:white;
+    border-radius: 10px;
+    text-align:center;
+    width:30%;
+    margin-left:35%;
+}
+.mypage{
     margin-top: 10px;
     margin-bottom: 10px;
     padding-top: 10px;
@@ -1091,14 +1037,17 @@ textarea.form-control {
     height:50px;
 }
 
-#alert{
-    width:160px;
+
+
+.alert2{
     color:white;
     background-color:#FF99CC;
     border-color:white;
-    margin-bottom:1px;
+    margin-bottom:5px;
     border-radius: 5px;
     font-size: 20px;
+    height:40px;
+    width:50%;
 }
 
 .button {
@@ -1128,10 +1077,46 @@ textarea.form-control {
 .button span{
     font-size:25px;
     padding-top: 100px;
+    border-radius: 10px;
 }
 
 .signup{
-    margin-left: 40%;
-}
+    margin-left: 40%;}
 
+
+.commentboard{
+  
+   background-color: #fff;
+    border: 1px solid #ccc;
+
+    margin: 20px 5px;
+    padding: 30px 20px 20px 20px;
+    position: relative;
+    z-index: 0;
+}
+.commentboard:after{
+    background-color: #d9ccb3;
+    background-image: linear-gradient(45deg, #dfd4be 25%, transparent 25%, transparent 75%, #dfd4be 75%, #dfd4be), linear-gradient(45deg, #dfd4be 25%, transparent 25%, transparent 75%, #dfd4be 75%, #dfd4be);
+    background-position: 0 0, 12px 12px;
+    background-size: 24px 24px;
+    border-left: 2px dotted rgba(255,255,255,0.9);
+    border-right: 2px dotted rgba(255,255,255,0.9);
+    box-shadow: 0 0 5px rgba(255,255,255,0.5);
+    content: 'CHAT';
+    font-size:25px;
+    display: block;
+    margin: 0 0 10px 0;
+    padding: 5px 20px;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: -10px;
+    left: 20px;
+    transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    width:250px;
+    height:50px;
+}
 

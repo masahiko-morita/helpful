@@ -35,16 +35,16 @@
                      <img src="/images/irao2.jpg" width="270px" height="180px">
                 </div>
                 
-                <div class="flow_09">
+                 <div class="flow_19">
                     <p><span class="top-introduction-numm">3</span>
-                        投稿後、トップページに戻り<br>自分の投稿が掲載されていたら完了!</p>
-                　 <img src="/images/yo.jpg" width="270px" height="150px">    
+                        投稿した後、助ける側から<br>通知が来たら、さっそく返信!</p>
+                　 <img src="/images/soushin_capture.jpg" width="270px" height="150px">    
                 </div>
                 
-                 <div class="flow_19">
+                <div class="flow_19">
                     <p><span class="top-introduction-numm">4</span>
-                        投稿した後、助ける側から<br>通知が来たら、さっそく返信!</p>
-                　 <img src="/images/comment1.jpg" width="270px" height="150px">    
+                        助けてもらったら<br>解決したボタンを押そう！</p>
+                　 <img src="/images/kaiketsu_capture.jpg" width="270px" height="150px">    
                 </div>
             </div>
         </div>
@@ -55,24 +55,24 @@
             </div>
 
                 <div class='naiyou'>
+                    
+                     <div class="flow_07">
+                          <p> <span class="top-introduction-numn">1</span>検索🔎を押して、依頼を探そう</p>
+                        <img src="/images/kensaku_capture.jpg" width="250px" height="150px">
+                    </div>
                     <div class="flow_04">
-                        <p> <span class="top-introduction-numn">1</span>手伝いたいと思う投稿を選択!</p>
+                        <p> <span class="top-introduction-numn">2</span>手伝いたいと思う投稿を選択</p>
                          <img src="/images/hikkoshi.PNG" width="250px" height="170px">
                     </div>
                     
-                    <div class="flow_07">
-                          <p> <span class="top-introduction-numn">2</span>依頼者の投稿の<br>手伝いを完了するボタンをクリック</p>
-                        <img src="/images/taxi3.PNG" width="250px" height="150px">
-                    </div>
-                    
                     <div class="flow_10">
-                          <p> <span class="top-introduction-numn">3</span>依頼完了済になると取引完了！</p><br>
-                        <img src="/images/taxi4.PNG" width="250px" height="150px"><br>
+                          <p> <span class="top-introduction-numn">3</span>依頼者の投稿にメッセージを送信！</p><br>
+                        <img src="/images/message_capture.jpg" width="270px" height="150px"><br>
                     </div>
                     
                     <div class="flow_08">
-                        <p> <span class="top-introduction-numn">4</span>依頼者から問い合わせが<br>きたらコメント欄で返信!</p><br>
-                        <img src="/images/tetsudau.jpg" width="250px" height="120px">
+                        <p> <span class="top-introduction-numn">4</span>依頼が完了すると、完了の通知が来ます</p>
+                        <img src="/images/kanryou_capture.jpg" width="270px" height="150px">
                     </div>
                 </div>
         </div>
@@ -94,3 +94,4 @@
 　  @endif
             
 @endsection
+

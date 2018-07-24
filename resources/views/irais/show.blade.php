@@ -2,65 +2,88 @@
 
 @section('content')
 
-<div class='container'>
-    <?php $user = $irai->user;
-          $coment =$_COOKIE["coment"]??"";
-          $coment2 =$_COOKIE["coment2"]??"";
-    ?>
-
-        <h1 class='text-center'>{{ $irai->title }}</h1>
-                @if (Auth::user()->id == $irai->user_id)
-                    <div class="row">
-                        <div class="col-xs-6">
-                            <div id="hensyuu">
-                                {!! Form::open(['route' => ['irais.edit', $irai->id], 'method' => 'get']) !!}
-                                    {!! Form::submit('編集', ['class' => 'btn inline-block']) !!}
-                                {!! Form::close() !!}
+<div class="row">
+        <aside class="col-xs-6">
+            
+             <h1 class='text-center'>{{ $irai->title }}</h1>
+             
+              @if (Auth::user()->id == $irai->user_id)
+                            <div class="row">
+                            <div class="col-xs-6">
+                                <div id="hensyuu">
+                                    {!! Form::open(['route' => ['irais.edit', $irai->id], 'method' => 'get']) !!}
+                                        {!! Form::submit('編集', ['class' => 'btn inline-block']) !!}
+                                    {!! Form::close() !!}
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-xs-6">
-                            <div id="sakujyo">
-                                {!! Form::open(['route' => ['irais.destroy', $irai->id], 'method' => 'delete']) !!}
-                                    {!! Form::submit('削除', ['class' => 'btn inline-block']) !!}
-                                {!! Form::close() !!}
+                            <div class="col-xs-6">
+                                <div id="sakujyo">
+                                    {!! Form::open(['route' => ['irais.destroy', $irai->id], 'method' => 'delete']) !!}
+                                        {!! Form::submit('削除', ['class' => 'btn inline-block']) !!}
+                                    {!! Form::close() !!}
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-6 col-offset-3">
-                       @include('irai_finish.finish_button', ['user' => $user])
-                 
-                @endif    
+                            
+                            </div>
+                @endif
+        
+             
+            <?php $user = $irai->user;
+                  $coment =$_COOKIE["coment"]??"";
+                  $coment2 =$_COOKIE["coment2"]??"";
+                  $coment3 =$_COOKIE["coment3"]??"";
+            ?>
+        
+               
+      
+            <div class="row">
+                <div class="col-xs-12"> 
+                    <table class="table">
+                        <tr>
+                            <th><i class="fa fa-user" id='show'> </i></th>
+                            <td><a href="{{ route('users.show', $user->id) }}">{{ $user->name }}</a></td>
+                        </tr>
+                        <tr>
+                            <th><i class="fa fa-file-alt" id='show'> </i></th>
+                            <td>{{ $irai->content }}</td>
+                        </tr>
+                        <tr>
+                        <th><i class="fa fa-clock" id='show'> </i> </th>
+                            <td>{{ $irai->start }}　～　{{ $irai->finish }}</td>
+                        </tr>
+                        <tr>
+                            <th><i class="fa fa-map-marker-alt" id='show'> </i> 場所</th>
+                            <td>{{ $irai->station }}</td>
+                        </tr>
+                        <tr>
+                            <th><i class="fa fa-gift" id='show'> </i> お礼</th>
+                            <td>{{ $irai->reward }}</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+                
+                
+                       
+                            
+                         @if (Auth::user()->id == $irai->user_id)
+                               @include('irai_finish.finish_button', ['user' => $user])
+                               <div class='kaiketsumessage ball'>
+                                     @if($coment3 == "")
+                                            	<div class="alert alert-warning alert-dismissible fade in" role="alert" id='yaritori'>
+                                            	<button type="button" data-dismiss="alert" class="close" onclick="document.cookie = 'coment3=445';">&times;</button>
+                                            	<strong>依頼が完了した後に「解決した」ボタン↑を押してください。協力してくれた方にありがとうメッセージが自動的に送られ、こちらの投稿は消去されます。</strong>
+                                                </div>
+                                    @endif
+                                </div>
+                         
+                        @endif  
+               
+        </aside>
+   
 
-    <div class="row">
-        <div class="col-xs-12 col-xs-offset-1"> 
-            <table class="table">
-                <tr>
-                    <th><i class="fa fa-user" id='show'> </i></th>
-                    <td><a href="{{ route('users.show', $user->id) }}">{{ $user->name }}</a></td>
-                </tr>
-                <tr>
-                    <th><i class="fa fa-file-alt" id='show'> </i></th>
-                    <td>{{ $irai->content }}</td>
-                </tr>
-                <tr>
-                <th><i class="fa fa-clock" id='show'> </i> </th>
-                    <td>{{ $irai->start }}　～　{{ $irai->finish }}</td>
-                </tr>
-                <tr>
-                    <th><i class="fa fa-map-marker-alt" id='show'> </i> 場所</th>
-                    <td>{{ $irai->station }}</td>
-                </tr>
-                <tr>
-                    <th><i class="fa fa-gift" id='show'> </i> お礼</th>
-                    <td>{{ $irai->reward }}</td>
-                </tr>
-            </table>
-        </div>
-    </div>
        
-        <div class="row row-eq-height">
-         
-
+        <div class="col-xs-offset-1 col-xs-5">
                 <div id="toukou">
                     {!! Form::open(['route' => ['comments.store'], 'method' => 'post']) !!}
                         {{Form::hidden('irai_id', $irai->id)}}
@@ -70,16 +93,20 @@
                         {!! Form::submit('メッセージ送信！', ['class' => 'btn btn-success btn-lg center-blosk']) !!}
                     {!! Form::close() !!}
                 </div>
-            </div>    
 
-<div class='commentboard'>
-    @if($coment2 == "")
-                	<div class="alert alert-warning alert-dismissible fade in" role="alert" id='yaritori'>
-                	<button type="button" data-dismiss="alert" class="close" onclick="document.cookie = 'coment2=111';">&times;</button>
-                	<strong>こちらにメッセージが表示されます。<br>依頼が完了するまでこちらでやり取りをして頂けます。</strong>
-                    </div>
-    @endif
-@include('comments.comment', ['comments' => $comments])
+
+                <div class='commentboard'>
+                    @if($coment2 == "")
+                                	<div class="alert alert-warning alert-dismissible fade in" role="alert" id='yaritori'>
+                                	<button type="button" data-dismiss="alert" class="close" onclick="document.cookie = 'coment2=111';">&times;</button>
+                                	<strong>こちらにメッセージが表示されます。<br>依頼が完了するまでこちらでやり取りをして頂けます。</strong>
+                                    </div>
+                    @endif
+                @include('comments.comment', ['comments' => $comments])
+                </div>
+        </div>
 </div>
 @endsection 
+
+
 

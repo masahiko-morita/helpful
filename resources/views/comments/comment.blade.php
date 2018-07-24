@@ -6,7 +6,7 @@
                 <div class='contentbox'>
                     @if ($comment->irai_id == $irai->id)
                     <div class='circle'>
-                        <a href="{{ route('users.show', $user->id) }}"><h3 class="comment-title-comments"><i class="fa fa-user" id='search'></i><br>{{ $user->name }}</h3></a>
+                        <a href="{{ route('users.show', $user->id) }}"><h4 class="comment-title-comments"><i class="fa fa-user" id='search'></i><br>{{ $user->name }}</h4></a>
                     </div>
                     <div class="balloon1-left" style="position:relative; max-width:50%;">
                         

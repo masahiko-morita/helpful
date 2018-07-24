@@ -25,7 +25,9 @@
     margin-top: 45px;
     width: 475px;
     margin-right:-20px;
-  
+
+    height:1225px;
+
 }
     
 .tyaki{
@@ -39,7 +41,7 @@
     position: relative;
     background: #A7F1FF;
     margin-right:-20px;
-   
+
 }
     
 .husen:after {
@@ -80,5 +82,10 @@
     right: 4px;
     color: inherit;
     top: 3px;
+}
+
+
+.abc{
+    margin-left: 43%;
 }
 

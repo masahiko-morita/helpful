@@ -81,6 +81,7 @@
                
         </aside>
    
+
        
         <div class="col-xs-offset-1 col-xs-5">
                 <div id="toukou">
@@ -92,8 +93,6 @@
                         {!! Form::submit('メッセージ送信！', ['class' => 'btn btn-success btn-lg center-blosk']) !!}
                     {!! Form::close() !!}
                 </div>
-               
-         
 
 
                 <div class='commentboard'>

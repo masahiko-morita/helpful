@@ -8,10 +8,10 @@
 
     <div class="content">
         <div class="content1">
-            <div class=saki><h1 style="padding:80px">困ったときは同期に助けを</h1></div>
+            <div class=saki>  <h1 style="padding:70px">困ったときは同期に助けを</h1> </div>
             <div class="maintitle">
                 @if (!Auth::check())
-                    <a href="{{ route('signup.get') }}" class="cp_btn">Helpfulを始める</a>
+                    <a href="{{ route('signup.get') }}" class="dp_btn">Helpfulを始める</a>
                 @endif
             </div>
         </div>
@@ -59,11 +59,11 @@
             <img src="images/kanpai.png" alt="Generic placeholder image" width="195" height="150">
             <h2>同期が助けてくれる！</h2>
             <p>自分の「困った」を投稿すると興味を持った同期とその場でコメントのやり取りができ、すぐに助けてもらえます。</p>
-            <p><a class="dp_btn" href="/hatsu" role="button">詳細を見る</a></p>
+            <p><a class="cp_btn" href="/hatsu" role="button">View details &raquo;</a></p>
           </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
 
-
+ 
         <!-- START THE FEATURETTES -->
         <hr class="featurette-divider">
         <div class="row featurette">
@@ -84,17 +84,17 @@
             <p class="lead"></p>
           </div>
 
-<div class="wrap-1 ball">
+<div class="wrap-1 ball col-xs-6">
         <a href="{{ route('irais.create') }}">
-                <button class="btn-post"><i class="fa fa-hand-peace" id='peace'></i><br>New Post</button>
+            <button class="btn-post"><i class="fa fa-hand-peace" id='peace'></i><br>New Post</button>
         </a>
     </div>
-
+          
 <div class='signup'>
         @if (!Auth::check())
-        <a class="button" href="{{ route('signup.get') }}"><span>新規登録</span></a>
+        <a class="button" href="{{ route('signup.get') }}"><span>Sign Up Now</span></a>
         @endif
-  
+</div>
 
 <h3>          <br>  </h3>
         <!-- /END THE FEATURETTES -->

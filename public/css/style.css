@@ -71,28 +71,6 @@ text-decoration: none;
 
 /*welcome*/
 
-
-
-.saki{
-    font-size: larger;
-     color: #fff;
-     margin-left:-10px; 
-     margin-top: 10px;
-}
-
-.maintitle{
-    text-align: center;
-    margin-left: 1px;
-    color:navy;
-    margin-right: 680px;
-    margin-top: 40px;
-   }
-
-.introduction{
-    text-align:center;
-    margin-top: 75px;
-   }
-
 .explaination h2{ 
     text-align: center;
     font-weight: bold;
@@ -144,7 +122,7 @@ transition: .4s;
 border-radius: 4px;
 margin-left: 160px;
 margin-right: 650px;
-margin-top: 0px;
+margin-top: -70px;
 font-size: 25px;
 }
 
@@ -191,7 +169,6 @@ transition: .4s;
   position:absolute;
   transition:all .6s ease;
   z-index:1;
- 
 }
 
 .effect-background {
@@ -204,7 +181,6 @@ transition: .4s;
   z-index:2;
 }
 
-
 .animation:hover .effect {
   left:0;
   color:#fff;
@@ -212,7 +188,6 @@ transition: .4s;
  
 .animation:hover a {
   color:#fff;
-
 }
 
 .steps {
@@ -249,8 +224,6 @@ transition: .4s;
     font-size: 24px;
     color: #fff;
 }
-
-
 .heading{
 position: relative;
 display: inline-block;
@@ -296,13 +269,6 @@ border-radius: 6px;
 }
 
 .demo11 .headings text {
-  stroke: #3cb3e4;
-  stroke-width: 1.5;
-  fill: rgba(60,179,228,0.2);
-  font-size: 50px;
-}
-
-.demo11 .heading text {
   stroke: #3cb3e4;
   stroke-width: 1.5;
   fill: rgba(60,179,228,0.2);
@@ -413,7 +379,6 @@ border-radius: 6px;
     background: #FFF;
     border: solid 3px #CCCCCC;/*線*/
     border-radius: 10px;/*角の丸み*/
-    
 }
 
 .flow_07 p {
@@ -438,20 +403,6 @@ border-radius: 6px;
     color: #283e56;
 }
 
-.person_1{
-    font-size: 40px;
-    color: #3CB371;
-    text-shadow: 1px 0px 0px #3CB371, 0px 1px 0px #3CB371, -1px 0px 0px #3CB371, 1px -1px 0px #3CB371;
-    margin-left: 132px;
-}
-
-.person_2{
-    font-size: 40px;
-    color:hotpink;
-    text-shadow: 2px 0px 0px #ff003f, 0px 1px 0px #ff003f, -1px 0px 0px #ff003f, 0px -1px 0px #ff003f;
-    margin-left: 140px;
-}
-
 .naiyou{
     width:90%;
     margin-left:5%;
@@ -466,6 +417,7 @@ border-radius: 6px;
   background: repeating-linear-gradient(-45deg, #edf5f4, #edf5f4 10px, #f6faf9 0, #f6faf9 20px);
   padding: 1em;
   height:280px;
+  /*width: 255px;*/
   margin-bottom: 20%;
    -moz-transition: -moz-transform 0.5s linear;
     -webkit-transition: -webkit-transform 0.5s linear;
@@ -514,7 +466,7 @@ border-radius: 6px;
 .containerirai{
   position:relative;
   margin-top: 10%;
-  height:70%;
+  height:280px;
 }
 
 /*pagination*/
@@ -541,10 +493,12 @@ border-radius: 6px;
     background: #1989ac;
     color: #FFF;
     box-sizing: border-box;
+    margin-left: -60px;
+<<<<<<<<< saved version
 
-
+=========
     margin-top: 30px;
-
+>>>>>>>>> local version
 }
 
 .ribbon3 h2 {
@@ -711,7 +665,6 @@ border-radius: 6px;
 .comment .comment-flower .contentbox .name h3 {
     text-align: left;
 }
-
 
 .comment-title-comments h3{
     text-align: left;
@@ -944,8 +897,6 @@ border-radius: 6px;
   transition: all 0.3s ease 0s;
   cursor: pointer;
   outline: none;
-
-  
   }
 
 .btn-post:hover {
@@ -978,7 +929,6 @@ border-radius: 6px;
     text-align: center;
     font-size:23px;
 }
-
 
 /*irais-search*/
 .search-content {
@@ -1063,8 +1013,6 @@ textarea.form-control {
     position:fixed;
     top:60px;
     right:30px;
-
-
 }
 
 .mypage .alert{
@@ -1073,10 +1021,8 @@ textarea.form-control {
     color:white;
     background-color: rgba(0,0,0,0.4);
     border-color:white;
-    
     border-radius: 10px;
     margin-top:0;
-    
 }
 
 #yaritori{
@@ -1135,11 +1081,11 @@ textarea.form-control {
 .button span{
     font-size:25px;
     padding-top: 100px;
+    border-radius: 10px;
 }
 
 .signup{
-    margin-left: 40%;
-}
+    margin-left: 40%;}
 
 
 .commentboard{

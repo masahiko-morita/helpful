@@ -251,35 +251,6 @@ transition: .4s;
     color: #fff;
 }
 
-.sakiko{
-text-align: center;}
-
-.abc{
-    text-align: center;
-    margin-left: 580px;
-    margin-bottom: 10px;
-    margin-top: 1%;
-}
-
-.abcd{
-    text-align: center;
-    margin-left: 580px;
-    margin-bottom: 10px; 
-    margin-top: 1%;
-}
-
-.header_box{
-    margin-left:110px;
-}
-
-.demo {
-  width: 500px;
-  margin: 0 auto;
-  padding: 10px 0;
-  font-family: sans-serif;
-  font-size: 20px;
-  color:#283e56; 
-}
 
 .heading{
 position: relative;

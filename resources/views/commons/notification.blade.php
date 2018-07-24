@@ -37,9 +37,8 @@
     <div class="husen">
       <div class="tyaki"><button type="button" data-dismiss="alert" class="close" onclick="document.cookie = 'close_deals=1';path=/;">&times;</button><p><strong> 新着の取引メッセージがあります</strong></p>
       <a href="#" class="alert-link">link</a>
-       
-    </div>
-  </div>
+      </div>
+   </div>
   
     @endif
     
@@ -61,19 +60,16 @@
        
     @if($commentsIsShow)
 
-     <div class="alert alert-dismissible fade in " role="alert">
+    <div class="alert alert-dismissible fade in " role="alert">
       <div class="husen">
-        <div class="tyaki"><button type="button" data-dismiss="alert" class="close"  onclick="document.cookie = 'close_comments={{$comments_id}};expires=Thu, 18 Dec 2022 12:00:00 UTC;path=/;';">&times;</button><p><strong>依頼に新着のコメントがあります</strong></p>
-        </div>
-    </div>
+        <div class="tyaki">
+         <button type="button" data-dismiss="alert" class="close"  onclick="document.cookie = 'close_comments={{$comments_id}};expires=Thu, 18 Dec 2022 12:00:00 UTC;path=/;';">&times;</button><p><strong>依頼に新着のコメントがあります</strong></p></div>
+       </div>
     </div>
     @endif
     </a>
     
     </div>
-    
-    
-
   
     @endif
 
@@ -87,16 +83,13 @@
     } else {
         $messagesIsShow = true;
     }
-
     ?>
     @if($messagesIsShow)
     <div class="alert alert-dismissible fade in " role="alert">
-    <div class="husem">
-        <div class="tyaki"><button type="button" data-dismiss="alert" class="close"  onclick="document.cookie = 'close_messages={{$messages_id}};expires=Thu, 18 Dec 2022 12:00:00 UTC;path=/;';">&times;</button><p><strong>
+     <div class="husem">
+        <div class="tyaki"><button type="button" data-dismiss="alert" class="close"  onclick="document.cookie = 'close_messages={{$messages_id}};expires=Thu, 18 Dec 2022 12:00:00 UTC;path=/;';">&times;</button><p><strong></div>
        {{$irai->title}}は解決しました！<br>ありがとうございました☺</strong></p></div>
-    </div>
+     </div>
     </div>
     @endif
     @endif
-    
-    

@@ -8,10 +8,10 @@
 
     <div class="content">
         <div class="content1">
-            <div class=saki>  <h1>困ったときは同期に助けを</h1> </div>
+            <div class=saki>  <h1 style="padding:70px">困ったときは同期に助けを</h1> </div>
             <div class="maintitle">
                 @if (!Auth::check())
-                    <a href="{{ route('signup.get') }}" class="cp_btn">Helpfulを始める</a>
+                    <a href="{{ route('signup.get') }}" class="dp_btn">Helpfulを始める</a>
                 @endif
             </div>
         </div>

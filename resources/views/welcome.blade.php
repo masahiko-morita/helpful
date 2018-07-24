@@ -63,7 +63,7 @@
           </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
 
-
+ 
         <!-- START THE FEATURETTES -->
         <hr class="featurette-divider">
         <div class="row featurette">
@@ -84,9 +84,9 @@
             <p class="lead"></p>
           </div>
 
-<div class="wrap-1 ball">
+<div class="wrap-1 ball col-xs-6">
         <a href="{{ route('irais.create') }}">
-                <button class="btn-post"><i class="fa fa-hand-peace" id='peace'></i><br>New Post</button>
+            <button class="btn-post"><i class="fa fa-hand-peace" id='peace'></i><br>New Post</button>
         </a>
     </div>
           

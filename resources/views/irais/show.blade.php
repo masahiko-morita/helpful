@@ -11,24 +11,22 @@
         <h1 class='text-center'>{{ $irai->title }}</h1>
                 @if (Auth::user()->id == $irai->user_id)
                     <div class="row">
-                    <div class="col-xs-6">
-                        <div id="hensyuu">
-                            {!! Form::open(['route' => ['irais.edit', $irai->id], 'method' => 'get']) !!}
-                                {!! Form::submit('編集', ['class' => 'btn inline-block']) !!}
-                            {!! Form::close() !!}
+                        <div class="col-xs-6">
+                            <div id="hensyuu">
+                                {!! Form::open(['route' => ['irais.edit', $irai->id], 'method' => 'get']) !!}
+                                    {!! Form::submit('編集', ['class' => 'btn inline-block']) !!}
+                                {!! Form::close() !!}
+                            </div>
+                        </div>
+                        <div class="col-xs-6">
+                            <div id="sakujyo">
+                                {!! Form::open(['route' => ['irais.destroy', $irai->id], 'method' => 'delete']) !!}
+                                    {!! Form::submit('削除', ['class' => 'btn inline-block']) !!}
+                                {!! Form::close() !!}
+                            </div>
                         </div>
                     </div>
-                    <div class="col-xs-6">
-                        <div id="sakujyo">
-                            {!! Form::open(['route' => ['irais.destroy', $irai->id], 'method' => 'delete']) !!}
-                                {!! Form::submit('削除', ['class' => 'btn inline-block']) !!}
-                            {!! Form::close() !!}
-                        </div>
-                    </div>
-                    </div>
-
-                    
-
+                    <div class="col-6 col-offset-3">
                        @include('irai_finish.finish_button', ['user' => $user])
                  
                 @endif    
@@ -72,9 +70,7 @@
                         {!! Form::submit('メッセージ送信！', ['class' => 'btn btn-success btn-lg center-blosk']) !!}
                     {!! Form::close() !!}
                 </div>
-               
-        </div> 
-
+            </div>    
 
 <div class='commentboard'>
     @if($coment2 == "")

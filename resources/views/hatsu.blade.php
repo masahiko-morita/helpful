@@ -32,7 +32,7 @@
                 
                 <div class="flow_06">
                       <p> <span class="top-introduction-numm">2</span>依頼内容を入力</p>
-                     <img src="/images/irao2.jpg" width="270px" height="180px">
+                     <img src="/images/irao2.jpg" width="270px" height="175px">
                 </div>
                 
                  <div class="flow_19">
@@ -58,7 +58,7 @@
                     
                      <div class="flow_07">
                           <p> <span class="top-introduction-numn">1</span>検索🔎を押して、依頼を探そう</p>
-                        <img src="/images/kensaku_capture.jpg" width="250px" height="150px">
+                        <img src="/images/kensaku_capture.jpg" width="250px" height="170px">
                     </div>
                     <div class="flow_04">
                         <p> <span class="top-introduction-numn">2</span>手伝いたいと思う投稿を選択</p>

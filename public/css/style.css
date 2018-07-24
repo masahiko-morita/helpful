@@ -493,11 +493,13 @@ border-radius: 6px;
     background: #1989ac;
     color: #FFF;
     box-sizing: border-box;
+<<<<<<< HEAD
+=======
     margin-left: -60px;
 
 
+>>>>>>> 3db512ed4795a0d78f41b3b018810a19eb57934c
     margin-top: 30px;
-
 }
 
 .ribbon3 h2 {

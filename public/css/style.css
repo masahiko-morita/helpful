@@ -1081,6 +1081,16 @@ textarea.form-control {
     
 }
 
+
+#yaritori{
+     color:white;
+    background-color: rgba(0,0,0,0.4);
+    border-color:white;
+    border-radius: 10px;
+    margin-left:27%;
+
+}
+
 .errormessage{
     margin-top: 10px;
     margin-bottom: 10px;

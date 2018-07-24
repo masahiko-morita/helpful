@@ -2,7 +2,9 @@
 
 @section('content')
 <div class='container'>
-    <?php $user = $irai->user; ?>
+    <?php $user = $irai->user;
+           $coment =$_COOKIE["coment"]??"";
+    ?>
         <h1 class='text-center'>{{ $irai->title }}</h1>
                 @if (Auth::user()->id == $irai->user_id)
                     <div id="hensyuu">
@@ -19,8 +21,8 @@
                        @include('irai_finish.finish_button', ['user' => $user])
                     </div>
                 @endif    
-    <div class="row">
-        <div class="col-xs-12"> 
+    <div class="row row-eq-height">
+        <div class="col-md-12"> 
             <table class="table">
                 <tr>
                     <th><i class="fa fa-user" id='show'> </i></th>
@@ -45,8 +47,20 @@
             </table>
         </div>
     </div>
+    
+    
+
+
+
         <div class="row row-eq-height">
-            <div class="col-md-9">
+            <div class="col-md-7">
+
+                  @if($coment == "")
+                	<div class="alert alert-warning alert-dismissible fade in" role="alert" id='yaritori'>
+                	<button type="button" data-dismiss="alert" class="close" onclick="document.cookie = 'coment=000';">&times;</button>
+                	<strong>↓こちらのメッセージボードで手伝うまでのやり取りをすることができます。</strong>
+                    </div>
+                @endif
                 <div id="toukou">
                     {!! Form::open(['route' => ['comments.store'], 'method' => 'post']) !!}
                         {{Form::hidden('irai_id', $irai->id)}}

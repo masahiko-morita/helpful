@@ -2,14 +2,12 @@
 
 @section('content')
 
-
-
     @if (Auth::check())
         @include('irais.index')
     @else
 
     <div class="content">
-        <div class="content1">
+        <div class="content-welcome">
             <div class=saki>  <h1>困ったときは同期に助けを</h1> </div>
             <div class="maintitle">
                 @if (!Auth::check())

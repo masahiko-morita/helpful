@@ -19,7 +19,7 @@ class IraisController extends Controller
         $data = [];
         if (\Auth::check()) {
             $user = \Auth::user();
-            $irais = $user->feed_irais_alive();//->where('alive', 1)->orderBy('created_at', 'desc')->paginate(8);
+            $irais = $user->feed_irais_alive();
             
             $data = [
                 'user' => $user,

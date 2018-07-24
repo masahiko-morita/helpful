@@ -2,15 +2,13 @@
 
 @section('content')
 
-
-
     @if (Auth::check())
         @include('irais.index')
     @else
 
     <div class="content">
         <div class="content1">
-            <div class=saki>  <h1>困ったときは同期に助けを</h1> </div>
+            <div class=saki><h1 style="padding:80px">困ったときは同期に助けを</h1></div>
             <div class="maintitle">
                 @if (!Auth::check())
                     <a href="{{ route('signup.get') }}" class="cp_btn">Helpfulを始める</a>
@@ -65,7 +63,7 @@
             <img src="images/kanpai.png" alt="Generic placeholder image" width="195" height="150">
             <h2>同期が助けてくれる！</h2>
             <p>自分の「困った」を投稿すると興味を持った同期とその場でコメントのやり取りができ、すぐに助けてもらえます。</p>
-            <p><a class="cp_btn" href="/hatsu" role="button">View details &raquo;</a></p>
+            <p><a class="dp_btn" href="/hatsu" role="button">詳細を見る</a></p>
           </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
 
@@ -97,30 +95,15 @@
             </div>
         </a>
     </div>
-<<<<<<< HEAD
-　  
-　  @if (!Auth::check())
-　  <a href="{{ route('irais.create')}}">
-　  <div class="wrap-1">
-         <button class="btn-post"><i class="fa fa-hand-peace" id='peace'> </i> <br>New Post</button></div></a>
-    @endif
-    </div>
-　  
-=======
-          
+
 <div class='signup'>
-
-
         @if (!Auth::check())
         
-        <a class="button" href="{{ route('signup.get') }}"><span>Sign Up Now</span></a>
+        <a class="button" href="{{ route('signup.get') }}"><span>新規登録</span></a>
         @endif
-
 </div>
 
 <h3>          <br>  </h3>
         <!-- /END THE FEATURETTES -->
 
-
->>>>>>> 30e9ae4c601c5873bdce1c527b6ff01b1af9165e
 @endsection

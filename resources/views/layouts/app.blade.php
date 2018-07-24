@@ -40,10 +40,6 @@
       <div class="container">
         @include('commons.error_messages')
         
-        
-        
-        @yield('cover')
-        
         @yield('content')
         
         

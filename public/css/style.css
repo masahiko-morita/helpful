@@ -77,8 +77,8 @@ text-decoration: none;
 .saki{
     font-size: larger;
      color: #fff;
-     margin-left:50px; 
-     margin-top: 70px;
+     margin-left:-10px; 
+     margin-top: 10px;
 }
 
 .maintitle{
@@ -91,7 +91,7 @@ text-decoration: none;
 
 .introduction{
     text-align:center;
-    margin-top: 440px;
+    margin-top: 75px;
    }
 
 .explaination h2{ 
@@ -120,11 +120,36 @@ transition: .4s;
 border-radius: 4px;
 margin-left: 160px;
 margin-right: 650px;
-margin-top: 20px;
+margin-top: -80px;
 font-size: 25px;
 }
 
 .cp_btn:hover {
+text-shadow: -6px 0px 15px rgba(255, 255, 240, 0.83), 6px 0px 15px rgba(255, 255, 240, 0.83);
+transition: .4s;
+}
+
+.dp_btn {
+position: relative;
+display: block;
+width: 250px;
+height:60px;
+padding: 0.5em;
+text-align: center;　
+font-weight: bold;
+text-decoration: none;
+color: #FFF;
+text-shadow: 0 0 5px rgba(255, 255, 255, 0.0);
+background: #FFD700;
+transition: .4s;
+border-radius: 4px;
+margin-left: 160px;
+margin-right: 650px;
+margin-top: 0px;
+font-size: 25px;
+}
+
+.dp_btn:hover {
 text-shadow: -6px 0px 15px rgba(255, 255, 240, 0.83), 6px 0px 15px rgba(255, 255, 240, 0.83);
 transition: .4s;
 }
@@ -1087,15 +1112,14 @@ textarea.form-control {
     padding-top: 10px;
     width:500px;
     height:50px;
+}
 
 #alert{
     width:160px;
-
     color:white;
     background-color:#FF99CC;
     border-color:white;
     margin-bottom:1px;
-
     border-radius: 5px;
     font-size: 20px;
 }
@@ -1127,10 +1151,7 @@ textarea.form-control {
 .button span{
     font-size:25px;
     padding-top: 100px;
-    border-radius: 10px;
-
 }
-
 
 .signup{
     margin-left: 40%;

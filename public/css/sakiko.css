@@ -39,8 +39,7 @@
     line-height: 40px;
     position: relative;
     background: #A7F1FF;
-    margin-right:-20px;
-
+    margin-left: 150px;
 }
     
 .husen:after {
@@ -61,7 +60,6 @@
     -ms-transform: rotate(3deg); /* IE */
     transform: rotate(3deg);
     z-index: -1;
-    
 }
     
 .close{
@@ -85,18 +83,43 @@
 
 .tyaki{
     text-align: center;
-    
 }
 
 .husem{
-    width: 180px;
-    margin-right: 300px;
+    width: 220px;
+    margin-left: 650px;
+    text-align: center;
 }
 
-
-
+.sakiko{
+text-align: center;}
 
 .abc{
+    text-align: center;
+    margin-left: 580px;
+    margin-bottom: 10px;
+    margin-top: 1%;
     margin-left: 43%;
 }
+
+.abcd{
+    text-align: center;
+    margin-left: 580px;
+    margin-bottom: 10px; 
+    margin-top: 1%;
+}
+
+.header_box{
+    margin-left:110px;
+}
+
+.demo {
+  width: 500px;
+  margin: 0 auto;
+  padding: 10px 0;
+  font-family: sans-serif;
+  font-size: 20px;
+  color:#283e56; 
+}
+
 

@@ -36,13 +36,16 @@
        
  
       @include('commons.navbar')
+      @include('commons.notification')
       <div class="container">
         @include('commons.error_messages')
-        @include('commons.notification')
+        
         
         
         @yield('cover')
+        
         @yield('content')
+        
         
         <!-- モーダル・ダイアログ -->
             <div class="modal fade" id="sampleModal" tabindex="-1"> 
@@ -75,8 +78,8 @@
 </section>
 
     </body>
-    @include('commons.footer')
+  
     </div>
-
+@include('commons.footer')
 </html>                        
                 

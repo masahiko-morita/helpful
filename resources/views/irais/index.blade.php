@@ -43,13 +43,16 @@
             </div>
         </a>
     </div>
+
     <div class="text-center">
         <ul class="paginate">
             <p>{{ $irais->links() }}</p>
         </ul>
     </div>
 
+
 </div>
 
+@include('commons.auto')
 
 @endsection

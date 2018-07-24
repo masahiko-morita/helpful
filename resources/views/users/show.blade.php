@@ -14,11 +14,13 @@
 			<div id="hensyuu_contents">
       		{{$user->content}}
       		</div>
+      		 @if (Auth::user()->id == $user->id)
       		<div id="hensyuu2">
                         {!! Form::open(['route' => ['users.edit', $user->id], 'method' => 'get']) !!}
                             {!! Form::submit('編集', ['class' => 'btn center-block']) !!}
                         {!! Form::close() !!}
                     </div>
+            @endif  
 		</div>
 	</div>
   </div>

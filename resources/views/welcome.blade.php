@@ -165,20 +165,7 @@
                 </div>
         </div>
     </div>
-
-    <div class="abc">    
-      <div class="animation">
-        <div class="effect" style='pointer-events:none;'>
-        </div>
-        @if (!Auth::check())
-        <div class="effect-background">
-          <a href="{{ route('signup.get') }}" style='z-index:1000;'> <h1>HELPFULを始める</h1></a>
-        </div>
-        @endif
-      </div>
-　  </div>
-　  
-　  @if (!Auth::check())
+    @if (!Auth::check())
 　  <a href="{{ route('irais.create')}}">
 　  <div class="wrap-1">
          <button class="btn-post"><i class="fa fa-hand-peace" id='peace'> </i> <br>New Post</button></div></a>

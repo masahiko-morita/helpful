@@ -1,4 +1,5 @@
 <?php
+
     if(Auth::check() == false) {
         return;} 
      $notifications = DB::table('notifications')
@@ -26,18 +27,24 @@
              $messages_id = $notification->id;
          } 
      }
-     
-      DB::table('notifications')->whereIn('id', $delete_list)->get();
+
+     DB::table('notifications')->whereIn('id', $delete_list)->get();
+   
+
 ?>    
+
     @if($isChat == true); 
     <div class="husen">
       <div class="tyaki"><button type="button" data-dismiss="alert" class="close" onclick="document.cookie = 'close_deals=1';path=/;">&times;</button><p><strong> 新着の取引メッセージがあります</strong></p>
       <a href="#" class="alert-link">link</a>
        
     </div>
+  </div>
+  
     @endif
     
     @if($isComment == true)
+   <div class='husenhani'>
     <a href="{{ route('irais.show', $notification->irai_id) }}">
     <?php
     $commentsIsShow = true;
@@ -62,6 +69,12 @@
     </div>
     @endif
     </a>
+    
+    </div>
+    
+    
+
+  
     @endif
 
     @if($isMessage == true)
@@ -74,13 +87,16 @@
     } else {
         $messagesIsShow = true;
     }
+
     ?>
     @if($messagesIsShow)
     <div class="alert alert-dismissible fade in " role="alert">
     <div class="husem">
         <div class="tyaki"><button type="button" data-dismiss="alert" class="close"  onclick="document.cookie = 'close_messages={{$messages_id}};expires=Thu, 18 Dec 2022 12:00:00 UTC;path=/;';">&times;</button><p><strong>
-       {{$irai->title}}は解決しました！<br>ありがとうございました☺</strong></p>
+       {{$irai->title}}は解決しました！<br>ありがとうございました☺</strong></p></div>
     </div>
     </div>
     @endif
     @endif
+    
+    

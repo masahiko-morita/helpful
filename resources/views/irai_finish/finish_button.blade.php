@@ -1,9 +1,9 @@
     @if ($irai->alive == 0)
-    <div id="kanryou-zumi-2">
-        <p class='center-block'>解決済み</p>
+    <div id="kaiketsu-zumi">
+        <p>解決済み</p>
     </div>
     @else
-    <div class='center-block' id="tetsudau">
+    <div id="kaiketsu">
         {!! Form::open(['route' => ['irai.unfinish', $irai->id], 'method' => 'delete']) !!}
         {{Form::hidden('type', 'message')}}
         {!! Form::submit('解決した', ['class' => 'btn center-block']) !!}

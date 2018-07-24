@@ -8,7 +8,6 @@
         $vv =$_COOKIE["data2"]??"";
     ?>
 
-
         <div class='mypage driveInRight'>
             @if($vv == "")
                 	<div class="alert alert-warning alert-dismissible fade in" role="alert">
@@ -16,32 +15,27 @@
                 	<strong>↑のユーザー名をクリックするとマイページへのリンクがあります</strong>
                     </div>
             @endif
+
         </div>
-        
          
 
-<div class='text-center'>
+<h2 class='text-center'>
 
         <div class='ribbon3'>
           <h2>依頼一覧</h2>
           
         </div>
-    </div>
+    </h2>
     <div class='container'>
     @include('irais.irai', ['irais' => $irais])
    
 
-    <div class="text-center">
-        <ul class="paginate">
-            <p>{{ $irais->links() }}</p>
-        </ul>
-    </div>
-
     <div class="wrap-1 ball">
+
 @if($v == "")
-                	<div class="alert alert-warning alert-dismissible fade in" role="alert">
+                	<div class="alert alert-warning alert-dismissible fade in" role="alert" id='alert'>
                 	<button type="button" data-dismiss="alert" class="close" onclick="document.cookie = 'data1=123';">&times;</button>
-                	<p><strong>新規投稿は↓<br>をクリック</strong></p>
+                	<p><strong>新規投稿は<br>こちら↓</strong></p>
                     </div>
 @endif
         <a href="{{ route('irais.create') }}">
@@ -49,7 +43,16 @@
             </div>
         </a>
     </div>
+
+    <div class="text-center">
+        <ul class="paginate">
+            <p>{{ $irais->links() }}</p>
+        </ul>
+    </div>
+
+
 </div>
 
+@include('commons.auto')
 
 @endsection

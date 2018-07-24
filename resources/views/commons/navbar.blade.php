@@ -26,14 +26,10 @@
 
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ Auth::user()->name }} <span class="caret"></span></a>
-                           @include('commons.auto')
+
                             <ul class="dropdown-menu">
                                 <li>
                                     <a href="{{ route('users.show', Auth::user()->id) }}">マイページ</a>
-                                </li>
-                                <li role="separator" class="divider"></li>
-                                <li>
-                                    <a href="{{ route('users.edit', Auth::user()->id) }}">マイページの編集</a>
                                 </li>
                                 <li role="separator" class="divider"></li>
                                 <li>{!! link_to_route('irais.index', 'ホームに戻る') !!}</li>
@@ -45,10 +41,13 @@
                         <a class="navbar-brand" href="/hatsu"style="font-size:10pt">初めての方へ</a>
                         <li>{!! link_to_route('signup.get', '新規登録') !!}</li>
                         <li>{!! link_to_route('login', 'ログイン') !!}</li>
+                        
                     @endif
                 </ul>
+     
             </div>
             </div>
+
             </nav>
 
 

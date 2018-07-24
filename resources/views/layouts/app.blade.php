@@ -13,6 +13,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="{{ secure_asset('css/style.css') }}">
         <link rel="stylesheet" href="{{ secure_asset('css/sakiko.css') }}">
+        <link rel="stylesheet" href="{{ secure_asset('css/momo.css') }}">
         
         
         <!--datetimepickerjs-->
@@ -35,17 +36,19 @@
        
  
       @include('commons.navbar')
+      @include('commons.notification')
       <div class="container">
         @include('commons.error_messages')
-        @include('commons.notification')
         
-
+        
         
         @yield('cover')
+        
         @yield('content')
         
+        
         <!-- モーダル・ダイアログ -->
-            <div class="modal fade" id="sampleModal" tabindex="-1">
+            <div class="modal fade" id="sampleModal" tabindex="-1"> 
             	<div class="modal-dialog">
             		<div class="modal-content">
             			<div class="modal-header">
@@ -75,8 +78,8 @@
 </section>
 
     </body>
-    @include('commons.footer')
+  
     </div>
-
+@include('commons.footer')
 </html>                        
                 

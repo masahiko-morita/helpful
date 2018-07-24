@@ -26,6 +26,7 @@
     margin-top: 45px;
     width: 475px;
     margin-right:-20px;
+    height:1225px;
 }
     
 .tyaki{
@@ -38,7 +39,9 @@
     line-height: 40px;
     position: relative;
     background: #A7F1FF;
-    margin-right:-20px;}
+    margin-right:-20px;
+
+}
     
 .husen:after {
     width: 170px;
@@ -57,7 +60,9 @@
     -o-transform: rotate(3deg); /* Opera */
     -ms-transform: rotate(3deg); /* IE */
     transform: rotate(3deg);
-    z-index: -1;}
+    z-index: -1;
+    
+}
     
 .close{
     float: right;
@@ -88,4 +93,10 @@
     margin-right: 300px;
 }
 
+
+
+
+.abc{
+    margin-left: 43%;
+}
 

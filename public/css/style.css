@@ -40,18 +40,27 @@ body {
     height: 60px;
 }
 
+.navbar .nav  li{
+    float:right;
+    text-align: right;
+}
 .navbar-brand img{
     width:100px;
     height:35px;
 }
 
-.navbar-brand {
+.dropdown-menu a{
+    background-color:white;
+}
+
+.navbar-brand .dropdown .dropdown-toggle{
+    width:50px;
     font-size: 16px;
 }
 
-.dropdown-toggle {
-    font-size: 16px;}
-
+.navbar-brand {
+    font-size: 16px;
+}
 
 
 /*irai*/
@@ -545,8 +554,12 @@ border-radius: 6px;
 
 
     margin-top: 30px;
+<<<<<<< HEAD
+} 
+=======
 
 }
+>>>>>>> 30e9ae4c601c5873bdce1c527b6ff01b1af9165e
 
 .ribbon3 h2 {
     vertical-align: middle;

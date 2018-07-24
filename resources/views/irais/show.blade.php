@@ -74,14 +74,15 @@
                 </div>
                
         </div> 
-@if($coment2 == "")
-                	<div class="alert alert-warning alert-dismissible fade in" role="alert" id='yaritori'>
-                	<button type="button" data-dismiss="alert" class="close" onclick="document.cookie = 'coment2=111';">&times;</button>
-                	<strong>↓こちらにメッセージが表示されます。<br>依頼が完了するまでこちらでやり取りして頂けます。</strong>
-                    </div>
-@endif
+
 
 <div class='commentboard'>
+    @if($coment2 == "")
+                	<div class="alert alert-warning alert-dismissible fade in" role="alert" id='yaritori'>
+                	<button type="button" data-dismiss="alert" class="close" onclick="document.cookie = 'coment2=111';">&times;</button>
+                	<strong>こちらにメッセージが表示されます。<br>依頼が完了するまでこちらでやり取りをして頂けます。</strong>
+                    </div>
+    @endif
 @include('comments.comment', ['comments' => $comments])
 </div>
 @endsection 

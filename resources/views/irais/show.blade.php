@@ -1,7 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
-    <?php $user = $irai->user; ?>
+
+<div class='container'>
+    <?php $user = $irai->user;
+          $coment =$_COOKIE["coment"]??"";
+          $coment2 =$_COOKIE["coment2"]??"";
+    ?>
+
         <h1 class='text-center'>{{ $irai->title }}</h1>
                 @if (Auth::user()->id == $irai->user_id)
                     <div class="row">
@@ -20,10 +26,13 @@
                         </div>
                     </div>
                     </div>
-                    <div class="col-xs-6 col-xs-offset-3">
+
+                    
+
                        @include('irai_finish.finish_button', ['user' => $user])
-                    </div>
+                 
                 @endif    
+
     <div class="row">
         <div class="col-xs-12 col-xs-offset-1"> 
             <table class="table">
@@ -50,7 +59,10 @@
             </table>
         </div>
     </div>
+       
         <div class="row row-eq-height">
+         
+
                 <div id="toukou">
                     {!! Form::open(['route' => ['comments.store'], 'method' => 'post']) !!}
                         {{Form::hidden('irai_id', $irai->id)}}
@@ -60,8 +72,17 @@
                         {!! Form::submit('メッセージ送信！', ['class' => 'btn btn-success btn-lg center-blosk']) !!}
                     {!! Form::close() !!}
                 </div>
-        </div>    
-@include('comments.comment', ['comments' => $comments])
+               
+        </div> 
+@if($coment2 == "")
+                	<div class="alert alert-warning alert-dismissible fade in" role="alert" id='yaritori'>
+                	<button type="button" data-dismiss="alert" class="close" onclick="document.cookie = 'coment2=111';">&times;</button>
+                	<strong>↓こちらにメッセージが表示されます。<br>依頼が完了するまでこちらでやり取りして頂けます。</strong>
+                    </div>
+@endif
 
+<div class='commentboard'>
+@include('comments.comment', ['comments' => $comments])
+</div>
 @endsection 
 

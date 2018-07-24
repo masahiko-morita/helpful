@@ -35,13 +35,10 @@
     line-height: 40px;
     position: relative;
     background: #A7F1FF;
-    margin-left: 150px;
+    margin: 0 0 0 150px;
 }
 
-.husenhani{
-    width: 20px;
-    margin-right: 600px;
-}
+
     
 .husen:after {
     width: 170px;
@@ -79,9 +76,15 @@
     top: -2px;
     right: 4px;
     color: inherit;
-    top: 3px;
+  
 }
 
+.alert-dismissable, .alert-dismissible {
+    padding-right: 35px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
 .tyaki{
     text-align: center;
 }
@@ -90,11 +93,11 @@
     width: 220px;
     margin-left: 650px;
     text-align: center;
-    margin-top: 5px;
+    margin-top: 1px;
 }
 
 .sakiko{
-text-align: center;
+    text-align: center;
 }
 
 .abc{

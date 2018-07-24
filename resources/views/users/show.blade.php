@@ -59,7 +59,7 @@
  	
     <div class="wrap-1 ball">
 @if($v == "")
-                	<div class="alert alert-warning alert-dismissible fade in" role="alert">
+                	<div class="alert alert-warning alert-dismissible fade in" role="alert" id='alert'>
                 	<button type="button" data-dismiss="alert" class="close" onclick="document.cookie = 'data1=123';">&times;</button>
                 	<p><strong>新規投稿は↓<br>をクリック</strong></p>
                     </div>

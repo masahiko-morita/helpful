@@ -66,17 +66,17 @@
                 
                        
                             
-                         @if (Auth::user()->id == $irai->user_id)
-                               @include('irai_finish.finish_button', ['user' => $user])
-                               <div class='kaiketsumessage ball'>
+                        @if (Auth::user()->id == $irai->user_id)
+                                @include('irai_finish.finish_button', ['user' => $user])
+                                <div class='kaiketsumessage ball'>
                                      @if($coment3 == "")
                                             	<div class="alert alert-warning alert-dismissible fade in" role="alert" id='yaritori'>
                                             	<button type="button" data-dismiss="alert" class="close" onclick="document.cookie = 'coment3=445';">&times;</button>
-                                            	<strong>依頼が完了した後に「解決した」ボタン↑を押してください。協力してくれた方にありがとうメッセージが自動的に送られ、こちらの投稿は消去されます。</strong>
+                                            	<strong>依頼が完了したら"解決した"ボタンを押してください。<br>協力してくれた方にありがとうメッセージが自動的に送られ、一覧から消去されます。</strong>
                                                 </div>
                                     @endif
                                 </div>
-                         
+                                <br>
                         @endif  
                
         </aside>

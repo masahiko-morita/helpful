@@ -9,10 +9,10 @@
             {!! Form::model($user, ['route' => ['users.update', $user->id], 'method' => 'put']) !!}
             <div class="form-group">
                 {!! Form::label('content', 'ホームチーム情報/ひとこと:') !!}
-                {!! Form::text('content', null, ['class' => 'form-control' ,'placeholder' => '例:13-C/よろしくお願いします！']) !!}
+                {!! Form::text('content', null, ['class' => 'form-control' ,'autocomplete' => 'off','placeholder' => '例:13-C/よろしくお願いします！']) !!}
             </div> 
         {!! Form::submit('更新', ['class' => 'btn btn-info btn-lg center-block']) !!}
     </div>
 </div>    
     {!! Form::close() !!}
-@endsection 
+@endsection

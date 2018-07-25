@@ -25,8 +25,8 @@
                 </div>
              <div class='naiyou'>   
                 <div class="touroku_1">
-                    <p> <span class="top-introduction-numm">1</span>New postボタンをクリック!</p>
-                    <img src="/images/newpost.jpg" width="340px" height="170px">
+                    <p> <span class="top-introduction-numm">1</span>「新規投稿する」ボタンをクリック!</p>
+                    <img src="/images/new_post_capture.jpg" width="340px" height="170px">
                     
                 </div>
                 

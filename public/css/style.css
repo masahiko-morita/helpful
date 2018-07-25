@@ -945,19 +945,17 @@ border-radius: 6px;
 	padding: 2em;
 } 
 
-.introduction_momo img {
+#introduction_momo img {
     width:100px;
     height:100px;
     margin-left: 130px;
     margin-top: 0px;
 }
 
-.introduction_momo {
+#introduction_momo {
     background-color: #ADD8E6;
     margin-top: 0px;
     padding: 25px;
-    width:620px;
-    margin-left: 250px;
     border:double 5px;
     border-color: SteelBlue;
     border-radius: 0.5em;

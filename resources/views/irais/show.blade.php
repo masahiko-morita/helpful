@@ -76,6 +76,7 @@
                                                 </div>
                                     @endif
                                 </div>
+                                <br>
                         @endif  
                
         </aside>

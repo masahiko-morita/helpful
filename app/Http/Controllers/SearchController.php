@@ -20,24 +20,19 @@ class SearchController extends Controller
     	
 	$query = Request::get('q');
     
-
+	$irais_s = [];
 	
-	
-	if ($query) {
+	if (!is_null($query)) {
 	
 		$irais = Irai::where('title', 'LIKE', "%$query%")
                          ->orWhere('station', 'LIKE', "%$query%")	
                          ->orWhere('finish', 'LIKE', "%$query%")
                          ->paginate(8);
                          
-                         
-   	}else{
-   		
-		$irais = array();
-		
+		$irais_s = $irais->where('alive', 1);
 	}
-
-	$irais_s = $irais->where('alive', 1);
+	
+	
 	  
 	return view('irais.search',
 	['irais' => $irais_s,

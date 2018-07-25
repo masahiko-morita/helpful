@@ -52,7 +52,7 @@
                                 });
                     </script>
                     
-                    {!! Form::label('station', '※ 場所:') !!}
+                    {!! Form::label('station', '※ 取引場所:') !!}
                     {!! Form::text('station', null,  ['class' => 'form-control','placeholder' => '例:都内、神奈川なら可です！/会社内でお願いします' ,'autocomplete' => 'off']) !!}
                     
                     {!! Form::label('reward', '※ お礼:') !!}

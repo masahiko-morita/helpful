@@ -43,8 +43,8 @@
 }
     
 .husen:after {
-    width: 189px;
-    height: 45px;
+    width: 191px;
+    height: 46px;
     content: "";
     position: absolute;
     top: 0;
@@ -247,7 +247,6 @@ transition: .4s;
 .Heart3{
   animation: anime3 0.2s alternate infinite;
   color: hotpink;
-  
 }
 
 @keyframes anime3{
@@ -265,11 +264,19 @@ transition: .4s;
 }
 
 .heart1{
-    margin-left: -320px;
-    
+    margin-left: -300px;
 }
 
 .heart2{
-    margin-left: 250px;
-    
+    padding-left:  310px;
+}
+
+.kakomi-kage1 {
+ margin: 2em auto;
+ padding: 1em;
+ width: 140%;
+ color: #555555; /* 文字色 */
+ background-color: #FFEEFF; /* 背景色 */
+ box-shadow: 0 0 10px 10px #FFDDFF ; /* 影 */
+ height: 90px;
 }

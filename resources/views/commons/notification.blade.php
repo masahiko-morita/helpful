@@ -79,24 +79,36 @@
     ?>
     @if($messagesIsShow)
     
+    <!--<div class="alert alert-dismissible fade in " role="alert">-->
+    <!-- <div class="husem">-->
+    <!--    <div class="heart1"><h3><i class="Heart4 fas fa-heart"></i></div>-->
+    <!--    <div class="tyaki"><button type="button" data-dismiss="alert" class="close"  onclick="document.cookie = 'close_messages={{$messages_id}};expires=Thu, 18 Dec 2022 12:00:00 UTC;path=/;';">&times; <div class="items">-->
+    
+    <!--   </button>-->
+    <!--    <p> <strong>【{{$irai->title}}】は<br>解決しました！<br>ありがとうございました☺</strong></p></div>-->
+    <!--    <div class="heart2"><h3><i class="Heart4 fas fa-heart"></i></div>-->
+    <!-- </div>-->
+    <!--</div>-->
+    <!--</div>-->
+    
+    
     <div class="alert alert-dismissible fade in " role="alert">
-          
      <div class="husem">
-<<<<<<< HEAD
-        <div class="heart1"><h3><i class="Heart4 fas fa-heart"></i></div>
+              
+       <div class="kakomi-kage1">
         <div class="tyaki"><button type="button" data-dismiss="alert" class="close"  onclick="document.cookie = 'close_messages={{$messages_id}};expires=Thu, 18 Dec 2022 12:00:00 UTC;path=/;';">&times; <div class="items">
     
        </button>
-        <p><strong>【{{$irai->title}}】は<br>解決しました！<br>ありがとうございました☺</strong></p></div>
-        <div class="heart2"><h3><i class="Heart4 fas fa-heart"></h1></i></div>
-     
-=======
-        <div class="tyaki"><button type="button" data-dismiss="alert" class="close"  onclick="document.cookie = 'close_messages={{$messages_id}};expires=Thu, 18 Dec 2022 12:00:00 UTC;path=/;';">&times;</button><p><strong></div>
-       【{{$irai->title}}】は<br>解決しました！<br>ありがとうございました☺</strong></p></div>
->>>>>>> 917ea7469fa82c4a4258b7c14aeba866b685f807
+        <p> <strong>【{{$irai->title}}】は<br>解決しました！<br>ありがとうございました☺</strong></p></div>
+            
+   
      </div>
     </div>
     </div>
+    </div>
+    </div>
+    
+    
     @endif
     @endif
     

@@ -78,14 +78,10 @@
                                                 </div>
                                     @endif
                                 </div>
-<<<<<<< HEAD
-=======
-                                <br>
->>>>>>> 917ea7469fa82c4a4258b7c14aeba866b685f807
-                        @endif  
+　　　　　　　　　　　　　　　　<br>
+　　　　　　　　　　　　　　　　　　@endif  
         </aside>
-
-        <div class="col-xs-offset-1 col-xs-5">
+　　　　<div class="col-xs-offset-1 col-xs-5">
                 <div id="toukou">
                     {!! Form::open(['route' => ['comments.store'], 'method' => 'post']) !!}
                         {{Form::hidden('irai_id', $irai->id)}}

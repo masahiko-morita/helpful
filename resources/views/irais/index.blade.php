@@ -15,9 +15,10 @@
 </h2>
     <div class='container'>
     @include('irais.irai', ['irais' => $irais])
+    </div>
    
 
-    <div class="wrap-1 ball">
+<div class="wrap-1 ball">
 
 @if($v == "")
                 	<div class="alert alert-warning alert-dismissible fade in" role="alert" id='alert'>

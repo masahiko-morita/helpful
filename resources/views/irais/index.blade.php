@@ -28,7 +28,7 @@
                     </div>
 @endif
         <a href="{{ route('irais.create') }}">
-                <button class="btn-post"><i class="fa fa-hand-peace" id='peace'></i><br>New Post</button>
+                <button class="btn-post"><i class="fa fa-hand-peace" id='peace'></i><br>新規投稿する</button>
         </a>
     
     

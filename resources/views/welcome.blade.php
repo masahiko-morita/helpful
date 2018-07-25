@@ -11,7 +11,7 @@
             <div class=saki>  <h1 style="padding:70px">困ったときは同期に助けを</h1> </div>
             <div class="maintitle">
                 @if (!Auth::check())
-                    <a href="{{ route('signup.get') }}" class="dp_btn">Helpfulを始める</a>
+                    <a href="{{ route('signup.get') }}" class="dp_btn">HELPFULを始める</a>
                 @endif
             </div>
         </div>
@@ -19,10 +19,10 @@
     @endif
     
      <div class="introduction">
-        <h2>Helpfulでは、自分ではどうしようもないことを、<br>安心して同期に依頼することができます。</h2>
+        <h2>HELPFULでは、自分ではどうしようもないことを、<br>安心して同期に依頼することができます。</h2>
      </div>
   
-        <div id="sampleCarousel" class="carousel slide" data-ride="carousel"data-pause="false" data-interval="3000">
+        <div id="sampleCarousel" class="carousel slide" data-ride="carousel"data-pause="false" data-interval="6000">
          <a href="{{ route('irais.index') }}">   
         	<div class="carousel-inner" role="listbox">
         		<div class="item active">
@@ -40,7 +40,7 @@
         
          <hr class="featurette-divider">
         
-        　　<h2 class='text-center'>Helpfulとは？</h2>
+        　　<h2 class='text-center'>HELPFULとは？</h2>
         <!-- Three columns of text below the carousel -->
         <div class="row">
           <div class="col-lg-4 text-center">
@@ -51,15 +51,15 @@
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4 text-center">
             <img src="images/shiraberu.png" alt="Generic placeholder image" width="170" height="150">
-            <h2>HelpfulにPost！</h2>
-            <p>Helpfulとはそんなお悩みをお持ちの方が同期に助けを求めることができるプラットフォームです。</p>
+            <h2>HELPFULにPost！</h2>
+            <p>HELPFULとはそんなお悩みをお持ちの方が同期に助けを求めることができるプラットフォームです。</p>
             
           </div><!-- /.col-lg-4 -->
           <div class="col-lg-4 text-center">
             <img src="images/kanpai.png" alt="Generic placeholder image" width="195" height="150">
             <h2>同期が助けてくれる！</h2>
             <p>自分の「困った」を投稿すると興味を持った同期とその場でコメントのやり取りができ、すぐに助けてもらえます。</p>
-            <p><a class="cp_btn" href="/hatsu" role="button">詳細を見る</a></p>
+            <p><a class="cp_btn" href="/hatsu" role="button">詳細を見る &raquo;</a></p>
           </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
 
@@ -69,7 +69,7 @@
         <div class="row featurette">
           <div class="col-md-5 order-md-2">
             <h2 class="featurette-heading">知らない子も多いけどみんな助けてくれるの？<br> <div class="text-muted"><br>Don't Worry!</div></h2>
-            <p class="lead">同期104名に対してアンケートを行ったところ右記のような結果に。Helpfulなら同期同士だから安心して頼める上に 話したいと思っていた人に声をかけるorかけられるチャンス！困ったことを解決するとともに同期とのつながりもゲットすることができます。</p>©2018 Google
+            <p class="lead">同期104名に対してアンケートを行ったところ右記のような結果に。HELPFULなら同期同士だから安心して頼める上に 話したいと思っていた人に声をかけるorかけられるチャンス！困ったことを解決するとともに同期とのつながりもゲットすることができます。</p>©2018 Google
           </div>
           <div class="col-md-7 order-md-1">
             <img src="images/graph.jpg" alt="Generic placeholder image" width='350' height='450'>

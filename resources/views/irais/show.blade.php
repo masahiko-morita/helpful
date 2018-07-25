@@ -75,26 +75,19 @@
 
                 </div>
             </div>
+
   
                          @if (Auth::user()->id == $irai->user_id)
                                  <div class='kaiketsumessage driveInLeft'>
                                   @include('irai_finish.finish_button', ['user' => $user])<br><br><br>
                                  </div>
 
-                               
-        
-                               
-
                         @endif  
             
-                
-               
         </aside>
-   
 
-       
+
         <div class="col-xs-6">
-           
 
                 <div class='commentboard'>
                     
@@ -111,7 +104,7 @@
                 
             </div>
 
-                    </div>
+</div>
 @endsection 
 
 

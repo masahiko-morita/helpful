@@ -10,10 +10,10 @@
             
             <div class="form-group">
                     {!! Form::label('title', 'タイトル:') !!}
-                    {!! Form::text('title', null, ['class' => 'form-control']) !!}
+                    {!! Form::text('title', null, ['class' => 'form-control' , 'autocomplete' => 'off' ]) !!}
                 
                     {!! Form::label('content', '説明:') !!}
-                    {!! Form::text('content', null, ['class' => 'form-control']) !!}
+                    {!! Form::textarea('content', null, ['class' => 'form-control', 'rows=2' ,'autocomplete' => 'off' ])!!}
                     
                     <div class="container">
                         <div class="row">
@@ -21,14 +21,14 @@
                                 <div class="form-group">
                                     <label for="start">開始時刻:</label><br>
                                     <div class='input-group date' id='datetimepicker'>
-                                        <input type='text' name="start" value="{{ $irai->start }}" class="form-control" />
+                                        <input type='text' name="start" value="{{ $irai->start }}" class="form-control" /autocomplete="off">
                                              <span class="input-group-addon">
                                                  <span class="glyphicon glyphicon-calendar"></span>
                                              </span>
                                     </div>
                                     <label for="finish">終了時刻:</label><br>
                                     <div class='input-group date' id='datetimepicker1'>
-                                        <input type='text' name="finish" value="{{ $irai->finish }}" class="form-control" />
+                                        <input type='text' name="finish" value="{{ $irai->finish }}" class="form-control" /autocomplete="off">
                                              <span class="input-group-addon">
                                                  <span class="glyphicon glyphicon-calendar"></span>
                                              </span>
@@ -47,10 +47,10 @@
                                 
                     </script>
                     {!! Form::label('station', '駅:') !!}
-                    {!! Form::text('station', null, ['class' => 'form-control']) !!}
+                    {!! Form::text('station', null, ['class' => 'form-control' ,'autocomplete' => 'off']) !!}
                     
                     {!! Form::label('reward', 'お礼:') !!}
-                    {!! Form::text('reward', null, ['class' => 'form-control']) !!}
+                    {!! Form::text('reward', null, ['class' => 'form-control','autocomplete' => 'off']) !!}
         </div> 
         
         {!! Form::submit('更新する', ['class' => 'btn btn-info btn-lg center-block']) !!}

@@ -646,13 +646,14 @@ border-radius: 6px;
  	margin: 1.5em 0 1.5em 15px;
 	padding: 7px 10px;
 	min-width:50%;
- 	max-width: 100%;
+ 	max-width: 80%;
+ 	min-height:50%;
+ 	max-height: 60%;
  	color: #555;
 	font-size: 16px;
 	background: #e0edff;
 	border-radius: 10px;
 	word-break:break-all;
-	height:70px;
 
 }
 
@@ -1126,8 +1127,8 @@ border-radius: 6px;
     width: 210px;
     height: 40px;
     line-height: 40px;
-    font-size: 30px;
-    background: red;
+    font-size: 20px;
+    background: #db7093;
     color: white;
     text-align: center;
     -webkit-transform: rotate(45deg);
@@ -1135,5 +1136,7 @@ border-radius: 6px;
     -ms-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
+    
+    
 }
->>>>>>> 1f071560f730a3a8c1b6e4870bd0a77e2ea49da6
+

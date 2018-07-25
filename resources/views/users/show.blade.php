@@ -6,11 +6,11 @@
 <div class='container　col-xs-10"'>
 	<div class="col-xs-12" id="introduction_momo">
 	    <div class='row'>
-    	    <div class='col-xs-8 col-xs-offset-3 text center'>
-    	        <div class='col-xs-4'>
+    	    <div class='col-xs-8 col-xs-offset-2 col-lg-offset-3 text center'>
+    	        <div class='col-xs-4 col-lg-3'>
                 <img src="{{ Gravatar::src($user->email, 100) . '&d=mm' }}" alt="" class="img-circle" width='40%'>
                 </div>
-                <div class='col-xs-4 text-center'>
+                <div class='col-xs-6 col-lg-4 text-center'>
         		    <div class="balloon">
         			    <div id="hensyuu_contents">
               		        {{$user->content}}

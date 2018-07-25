@@ -1,6 +1,4 @@
-<? php
-$count_irais = $user->irais()->count();
-?>
+
 @extends('layouts.app')
 @include('commons.auto')
 
@@ -66,7 +64,7 @@ $count_irais = $user->irais()->count();
 @if($v == "")
                 	<div class="alert alert-warning alert-dismissible fade in" role="alert" id='alert'>
                 	<button type="button" data-dismiss="alert" class="close" onclick="document.cookie = 'data1=123';">&times;</button>
-                	<p class="text-center"><strong>新規投稿は<br>↓こちらから↓</strong></p>
+                	<p class="text-center"><strong>新規投稿は<br>↓こちらから</strong></p>
                     </div>
 @endif
         <a href="{{ route('irais.create') }}">

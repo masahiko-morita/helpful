@@ -912,7 +912,7 @@ border-radius: 6px;
     background-color:rgba(0,0,0,0.4);
     border-color:white;
    padding-top:10px;
-   padding-left:35px;
+
     border-radius: 10px;
     font-size:15px;
 }
@@ -1010,35 +1010,33 @@ textarea.form-control {
     } 
 }
 
-.mypage{
-    margin-top: 0;
-    position:fixed;
-    top:60px;
-    right:30px;
-}
-
-.mypage .alert{
-    width:300px;
-    height:70px;
-    color:white;
-    background-color: rgba(0,0,0,0.4);
-    border-color:white;
-    border-radius: 10px;
-    margin-top:5px;
-}
 
 #yaritori{
-    padding-top:10px;
+    padding-top:20px;
+    padding-left:10px;
+    padding-right:10px;
+    padding-bottom:10px;
      color:white;
     background-color: rgba(0,0,0,0.4);
     border-color:white;
     border-radius: 10px;
     text-align:center;
-    height:80px;
+    height:110px;
     font-size:15px;
     word-break:break-all;
+    width:580px;
 
 
+}
+
+#yaritori2{
+         color:white;
+    background-color: rgba(0,0,0,0.4);
+    border-color:white;
+    border-radius: 10px;
+    text-align:center;
+    height:70px;
+    padding-top:15px;
 }
 
 

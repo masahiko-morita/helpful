@@ -13,7 +13,7 @@
          
          
          <div class="well text-center">
-            投稿者</i> <a href="{{ route('users.show', $user->id) }}">{{ $user->name }}</a>さん
+
            <h3 class='text-center'>{{ $irai->title }}</h3><br>
             
             
@@ -40,7 +40,7 @@
                             <div class="row">
                             <div class="col-xs-6">
                                 <div id="hensyuu">
-                                    @if($irai->alive == 1)
+                                     @if($irai->alive == 1)
                                     {!! Form::open(['route' => ['irais.edit', $irai->id], 'method' => 'get']) !!}
                                         {!! Form::submit('編集', ['class' => 'btn inline-block']) !!}
                                     {!! Form::close() !!}
@@ -61,7 +61,7 @@
         </div>
 
                          @if (Auth::user()->id == $irai->user_id)
-                             <div class='kaiketsumessage ball'>
+                             <div class='kaiketsumessage driveInLeft'>
                                      @if($coment3 == "")
                                             	<div class="alert alert-warning alert-dismissible fade in" role="alert" id='yaritori'>
                                             	<button type="button" data-dismiss="alert" class="close" onclick="document.cookie = 'coment3=445';">&times;</button>
@@ -81,6 +81,7 @@
 
        
         <div class="col-xs-6">
+            <div id='kakomu'>
                 <div id="toukou" style="text-align:center;">
                  
                         {!! Form::open(['route' => ['comments.store'], 'method' => 'post']) !!}
@@ -94,12 +95,13 @@
            
 
                     </div>
+                </div>
 
                 <div class='commentboard'>
                     
                     <div style="height:425px;overflow:auto;padding:5px;">
                     @if($coment2 == "")
-                                	<div class="alert alert-warning alert-dismissible fade in" role="alert" id='yaritori'>
+                                	<div class="alert alert-warning alert-dismissible fade in driveInTop" role="alert" id='yaritori2'>
                                 	<button type="button" data-dismiss="alert" class="close" onclick="document.cookie = 'coment2=111';">&times;</button>
                                 	<strong>こちらにメッセージが表示されます。<br>依頼が完了するまでこちらでやり取りをして頂けます。</strong>
                                     </div>

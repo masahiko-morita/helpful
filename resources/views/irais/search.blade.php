@@ -16,6 +16,10 @@
             </div>
         </span>
   </div>
+
+</div>
+
+
   
   @if(count($irais) == 0)
     <h1>検索結果 0件</h1>
@@ -23,6 +27,7 @@
   @else
     @include('irais.irai', ['irais' => $irais])
   @endif 
+
  
 </div>
 

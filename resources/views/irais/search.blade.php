@@ -14,9 +14,16 @@
             </div>
         </span>
   </div>
-</div>
- @include('irais.irai', ['irais' => $irais])
+  
+  @if(count($irais) == 0)
+    <h1>検索結果 0件</h1>
+    <h4>該当する依頼が見つかりません。依頼は毎日増えていますので、次の依頼の解決よろしくお願いします(; ･`д･´)。</h4>
+  @else
+    @include('irais.irai', ['irais' => $irais])
+  @endif 
  
+</div>
+
 
 <a href="{{ route('irais.create')}}">
 　<div class="wrap-1">

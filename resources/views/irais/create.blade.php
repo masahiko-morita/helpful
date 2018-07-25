@@ -19,7 +19,7 @@
                     {!! Form::text('title', null, ['class' => 'form-control' ,'placeholder' => '例:○○をシェアしましょう']) !!}
                 
                     {!! Form::label('content', '※ 理由:') !!}
-                    {!! Form::text('content', null, ['class' => 'form-control','placeholder' => '例:○○を買いすぎたので分けたいです']) !!}
+                    {!! Form::text('content', null, ['class' => 'form-control', 'placeholder' => '例:○○を買いすぎたので分けたいです' ])!!}
                     
                     <div class="container">
                         <div class="row">

@@ -79,8 +79,10 @@
     <div class="alert alert-dismissible fade in " role="alert">
      <div class="husem">
         <div class="tyaki"><button type="button" data-dismiss="alert" class="close"  onclick="document.cookie = 'close_messages={{$messages_id}};expires=Thu, 18 Dec 2022 12:00:00 UTC;path=/;';">&times;</button><p><strong></div>
-       {{$irai->title}}は<br>解決しました！<br>ありがとうございました☺</strong></p></div>
+       【{{$irai->title}}】は<br>解決しました！<br>ありがとうございました☺</strong></p></div>
      </div>
     </div>
     @endif
     @endif
+    
+    

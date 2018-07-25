@@ -7,17 +7,6 @@
         $vv =$_COOKIE["data2"]??"";
     ?>
 
-        <div class='mypage driveInRight'>
-            @if($vv == "")
-                	<div class="alert alert-warning alert-dismissible fade in" role="alert">
-                	    <button type="button" data-dismiss="alert" class="close" onclick="document.cookie = 'data2=123';">&times;</button>
-                	    <strong>↑のユーザー名をクリックするとマイページへのリンクがあります</strong>
-                    </div>
-            @endif
-
-        </div>
-         
-
 <h2 class='text-center'>
 
         <div class='ribbon3'>
@@ -33,15 +22,15 @@
 @if($v == "")
                 	<div class="alert alert-warning alert-dismissible fade in" role="alert" id='alert'>
                 	    <button type="button" data-dismiss="alert" class="close" onclick="document.cookie = 'data1=123';">&times;</button>
-                	    <p><strong>新規投稿は<br>こちら↓</strong></p>
+                	    <p class="text-center"><strong>新規投稿は<br>↓こちらから↓</strong></p>
                     </div>
 @endif
         <a href="{{ route('irais.create') }}">
-                <button class="btn-post"><i class="fa fa-hand-peace" id='peace'></i><br>New Post</button>
-            </div>
+                <button class="btn-post"><i class="fa fa-hand-peace" id='peace'></i><br>新規投稿する</button>
         </a>
-    </div>
-
+    
+    
+    
     <div class="text-center">
         <ul class="paginate">
             <p>{{ $irais->links() }}</p>

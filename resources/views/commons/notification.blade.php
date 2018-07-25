@@ -31,7 +31,8 @@
 ?>    
     @if($isChat == true); 
     <div class="husen">
-      <div class="tyaki"><button type="button" data-dismiss="alert" class="close" onclick="document.cookie = 'close_deals=1';path=/;">&times;</button><p><strong> 新着の取引メッセージがあります</strong></p>
+      <div class="tyaki"><button type="button" data-dismiss="alert" class="close" onclick="document.cookie = 'close_deals=1';path=/;">&times;</button>
+        <div class=moji><h5> 新着の取引メッセージがあります</h5></div>
       <a href="#" class="alert-link">link</a>
       </div>
    </div>
@@ -54,8 +55,9 @@
     <div class="alert alert-dismissible fade in " role="alert">
       <div class="husen">
         <div class="tyaki">
+            
          <button type="button" data-dismiss="alert" class="close"  onclick="document.cookie = 'close_comments={{$comments_id}};expires=Thu, 18 Dec 2022 12:00:00 UTC;path=/;';">&times;</button>
-         <p><strong>依頼に新着のコメントがあります</strong></p>
+           <div class=moji><h5>依頼に新着のコメントがあります</h5></div>
         </div>
        </div>
     </div>
@@ -76,12 +78,37 @@
     }
     ?>
     @if($messagesIsShow)
+    
+    <!--<div class="alert alert-dismissible fade in " role="alert">-->
+    <!-- <div class="husem">-->
+    <!--    <div class="heart1"><h3><i class="Heart4 fas fa-heart"></i></div>-->
+    <!--    <div class="tyaki"><button type="button" data-dismiss="alert" class="close"  onclick="document.cookie = 'close_messages={{$messages_id}};expires=Thu, 18 Dec 2022 12:00:00 UTC;path=/;';">&times; <div class="items">-->
+    
+    <!--   </button>-->
+    <!--    <p> <strong>【{{$irai->title}}】は<br>解決しました！<br>ありがとうございました☺</strong></p></div>-->
+    <!--    <div class="heart2"><h3><i class="Heart4 fas fa-heart"></i></div>-->
+    <!-- </div>-->
+    <!--</div>-->
+    <!--</div>-->
+    
+    
     <div class="alert alert-dismissible fade in " role="alert">
      <div class="husem">
-        <div class="tyaki"><button type="button" data-dismiss="alert" class="close"  onclick="document.cookie = 'close_messages={{$messages_id}};expires=Thu, 18 Dec 2022 12:00:00 UTC;path=/;';">&times;</button><p><strong></div>
-       【{{$irai->title}}】は<br>解決しました！<br>ありがとうございました☺</strong></p></div>
+              
+       <div class="kakomi-kage1">
+        <div class="tyaki"><button type="button" data-dismiss="alert" class="close"  onclick="document.cookie = 'close_messages={{$messages_id}};expires=Thu, 18 Dec 2022 12:00:00 UTC;path=/;';">&times; <div class="items">
+    
+       </button>
+        <p> <strong>【{{$irai->title}}】は<br>解決しました！<br>ありがとうございました☺</strong></p></div>
+            
+   
      </div>
     </div>
+    </div>
+    </div>
+    </div>
+    
+    
     @endif
     @endif
     

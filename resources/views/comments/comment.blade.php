@@ -7,14 +7,14 @@
                 <div class='contentbox'>
                     @if ($comment->irai_id == $irai->id)
                     <div class='circle'>
-                        <a href="{{ route('users.show', $user->id) }}"><h4 class="comment-title-comments"><i class="fa fa-user" id='search'></i><br>{{ $user->name }}</h4></a>
+                        <a href="{{ route('users.show', $user->id) }}"><h5 class="comment-title-comments"><i class="fa fa-user" id='search'></i><br>{{ $user->name }}</h5></a>
                     </div>
-                    <div class="balloon1-left" style="position:relative; max-width:50%;">
+                    <div class="balloon1-left" style="position:relative;">
                         
                     
                         <div class="popover-content">
                             <p>
-                               <td><h4 class="comment-title-commentss">{{ $comment->content }}</h4></td>
+                               <td><p class="comment-title-commentss">{{ $comment->content }}</p></td>
                             </p>
                             <div class='text-right'>
                                 @if (Auth::user()->id == $comment->user_id)     

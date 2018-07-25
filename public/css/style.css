@@ -629,7 +629,7 @@ border-radius: 6px;
 /*comment*/
 
 .comment .comment-flower .contentbox .popover{
-    height: 80px;
+    height: 40px;
 }
 
 .comment .comment-flower .contentbox .name h3 {
@@ -645,13 +645,15 @@ border-radius: 6px;
 	display: inline-block;
  	margin: 1.5em 0 1.5em 15px;
 	padding: 7px 10px;
-	min-width: 120px;
+	min-width:50%;
  	max-width: 100%;
  	color: #555;
 	font-size: 16px;
 	background: #e0edff;
-	border-radius: 20px;
+	border-radius: 10px;
 	word-break:break-all;
+	height:70px;
+
 }
 
 .balloon1-left:before{
@@ -674,9 +676,9 @@ border-radius: 6px;
   padding: 10px;
   margin: 0;
   margin-left:5px;
-  width: 90px;
-  height: 90px;
-  line-height: 90px;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
   text-align: center;
   display: inline-block;
   border-radius: 50%;
@@ -700,14 +702,13 @@ border-radius: 6px;
 
 /*irais-show*/
 .table {
-    margin:60px auto;
-    width:600px;
-    font-size: 20px;
+    margin:30px auto;
+    width:400px;
+    font-size: 15px;
+    height:40px;
 }
 
-.table td {
-    margin-left:10px;
-} 
+
 
 /*peace (new post)*/
 .wrap #peace{
@@ -725,7 +726,7 @@ border-radius: 6px;
     height:50px;
     text-align: center;
     text-decoration: none;
-    margin-top: 0;
+    margin-top: 10px;
     font-size:18px;
     color: #3cb371;
     border: 3px solid #93D87C;
@@ -733,7 +734,7 @@ border-radius: 6px;
     transition: .4s;
     background-color:rgba(255,255,255,0.7);
     padding: auto;
-    margin-top: 20px;
+
 }
 
 #kaiketsu .btn:hover{
@@ -746,7 +747,6 @@ border-radius: 6px;
     width: 170px;
     text-align: center;
     text-decoration: none;
-    margin-top:30px;
     font-size:15px;
     color: #6FC9D8;
     border: 3px solid #6FC9D8;
@@ -767,7 +767,6 @@ border-radius: 6px;
     width: 170px;
     text-align: center;
     text-decoration: none;
-    margin-top:30px;
     font-size:15px;
     color: #EA5C5C;
     border: 3px solid #EA5C5C;
@@ -784,9 +783,7 @@ border-radius: 6px;
    color: #fff;
 }
 
-#toukou　p {
-    text-align: center;
-}
+
 
 #toukou .btn{
     display: block;
@@ -794,13 +791,14 @@ border-radius: 6px;
    text-align: center;
     text-decoration: none;
     margin-top:30px;
-    font-size:20px;
+    font-size:15px;
     color: #BC927A;
     border: 3px solid #BC927A;
     border-radius: 3px;
     transition: .4s;
     background-color:rgba(255,255,255,0.7);
     margin:10px auto;
+    height:40px;
 }
 
 #toukou .btn:hover{
@@ -808,6 +806,7 @@ border-radius: 6px;
    color: #fff; 
     
 }
+
 
 #koushin .btn{
     display: block;
@@ -880,11 +879,14 @@ border-radius: 6px;
 
 #alert{
     width:160px;
+    height:60px;
     color:white;
     background-color:rgba(0,0,0,0.4);
     border-color:white;
-    margin-bottom:1px;
+   padding-top:10px;
+
     border-radius: 10px;
+    font-size:15px;
 }
 
 #kaiketsu-zumi {
@@ -994,39 +996,34 @@ border-radius: 6px;
     } 
 }
 
-.mypage{
-    margin-top: 0;
-    position:fixed;
-    top:60px;
-    right:30px;
-}
-
-.mypage .alert{
-    width:300px;
-    height:70px;
-    color:white;
-    background-color: rgba(0,0,0,0.4);
-    border-color:white;
-    border-radius: 10px;
-    margin-top:0;
-}
 
 #yaritori{
+    padding-top:20px;
+    padding-left:10px;
+    padding-right:10px;
+    padding-bottom:10px;
      color:white;
     background-color: rgba(0,0,0,0.4);
     border-color:white;
     border-radius: 10px;
     text-align:center;
-
-}
-.mypage{
-    margin-top: 10px;
-    margin-bottom: 10px;
-    padding-top: 10px;
+    height:90px;
+    font-size:13px;
+    word-break:break-all;
     width:500px;
-    height:50px;
+
+
 }
 
+#yaritori2{
+         color:white;
+    background-color: rgba(0,0,0,0.4);
+    border-color:white;
+    border-radius: 10px;
+    text-align:center;
+    height:70px;
+    padding-top:15px;
+}
 
 
 .alert2{
@@ -1078,10 +1075,11 @@ border-radius: 6px;
   
    background-color: #fff;
     border: 1px solid #ccc;
-    margin: 70px 5px;
     padding: 70px 20px 20px 20px;
     position: relative;
     z-index: 0;
+    height:600px;
+
 }
 .commentboard:after{
     background-color: #d9ccb3;
@@ -1109,6 +1107,16 @@ border-radius: 6px;
     height:50px;
 }
 
+
+
+
+.well a .under {
+  color: navy;
+
+  font-size: 15px;
+  }
+
+
 /*完了済みのリボン*/
 
 .maste-box .irai-finish-ribbon{
@@ -1128,3 +1136,4 @@ border-radius: 6px;
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
 }
+>>>>>>> 1f071560f730a3a8c1b6e4870bd0a77e2ea49da6

@@ -24,7 +24,7 @@
 @if($v == "")
                 	<div class="alert alert-warning alert-dismissible fade in" role="alert" id='alert'>
                 	    <button type="button" data-dismiss="alert" class="close" onclick="document.cookie = 'data1=123';">&times;</button>
-                	    <p><strong>新規投稿は<br>こちら↓</strong></p>
+                	    <p class="text-center"><strong>新規投稿は<br>↓こちらから↓</strong></p>
                     </div>
 @endif
         <a href="{{ route('irais.create') }}">

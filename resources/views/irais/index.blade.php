@@ -20,19 +20,20 @@
    
 
     <div class="wrap-1 ball">
-
-@if($v == "")
-                	<div class="alert alert-warning alert-dismissible fade in" role="alert" id='alert'>
-                	    <button type="button" data-dismiss="alert" class="close" onclick="document.cookie = 'data1=123';">&times;</button>
-                	    <p><strong>新規投稿は<br>こちら↓</strong></p>
-                    </div>
-@endif
-        <a href="{{ route('irais.create') }}">
-                <button class="btn-post"><i class="fa fa-hand-peace" id='peace'></i><br>New Post</button>
+        @if($v == "")
+        	<div class="alert alert-warning alert-dismissible fade in" role="alert" id='alert'>
+        	    <button type="button" data-dismiss="alert" class="close" onclick="document.cookie = 'data1=123';">&times;</button>
+        	    <p><strong>新規投稿は<br>こちら↓</strong></p>
             </div>
-        </a>
+            
+        @endif
+    <a href="{{ route('irais.create') }}">
+                <button class="btn-post"><i class="fa fa-hand-peace" id='peace'></i><br>New Post</button>
+            </a>
     </div>
-
+    
+    
+    
     <div class="text-center">
         <ul class="paginate">
             <p>{{ $irais->links() }}</p>

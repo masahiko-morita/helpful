@@ -11,9 +11,11 @@
                             <div class="row">
                             <div class="col-xs-6">
                                 <div id="hensyuu">
+                                    @if($irai->alive == 1)
                                     {!! Form::open(['route' => ['irais.edit', $irai->id], 'method' => 'get']) !!}
                                         {!! Form::submit('編集', ['class' => 'btn inline-block']) !!}
                                     {!! Form::close() !!}
+                                    @endif
                                 </div>
                             </div>
                             <div class="col-xs-6">

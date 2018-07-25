@@ -76,13 +76,9 @@
                                                 </div>
                                     @endif
                                 </div>
-                         
                         @endif  
-               
         </aside>
-   
 
-       
         <div class="col-xs-offset-1 col-xs-5">
                 <div id="toukou">
                     {!! Form::open(['route' => ['comments.store'], 'method' => 'post']) !!}

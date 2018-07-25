@@ -42,8 +42,9 @@ body {
 
 
 .navbar-brand img{
-    width:100px;
-    height:35px;
+    width:130px;
+    height:45px;
+    margin-top: -8px;
 }
 
 

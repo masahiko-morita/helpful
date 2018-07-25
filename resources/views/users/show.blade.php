@@ -1,3 +1,6 @@
+<? php
+$count_irais = $user->irais()->count();
+?>
 @extends('layouts.app')
 @include('commons.auto')
 

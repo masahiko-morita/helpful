@@ -15,7 +15,7 @@
         </span>
   </div>
 </div>
- @include('irais.irai', ['irais' => $irais])
+
  
 
 <a href="{{ route('irais.create')}}">

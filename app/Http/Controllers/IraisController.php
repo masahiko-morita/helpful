@@ -78,7 +78,7 @@ class IraisController extends Controller
         {
             $irai = Irai::find($id);
             $user = User::find($id);
-            $comments = Comment::orderBy('created_at', 'desc')->paginate(8);
+            $comments = Comment::all();
             
             if ($irai == null) {
                 return view('irais.error');

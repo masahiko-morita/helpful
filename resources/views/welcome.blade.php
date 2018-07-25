@@ -26,13 +26,13 @@
          <a href="{{ route('irais.index') }}">   
         	<div class="carousel-inner" role="listbox">
         		<div class="item active">
-        			<img src="../images/feed1.png" alt="First slide" height='100'>
+        			<img src="../images/firstslide.jpg" alt="First slide" height='100'>
         		</div>
         		<div class="item">
-        			<img src="../images/feed2.png" alt="Second slide">
+        			<img src="../images/secondslide.jpg" alt="Second slide">
         		</div>
         		<div class="item">
-        			<img src="../images/feed2.png" alt="Third slide">
+        			<img src="../images/thirdslide.jpg" alt="Third slide">
         		</div>
         	</div>
           </a>	
@@ -59,7 +59,7 @@
             <img src="images/kanpai.png" alt="Generic placeholder image" width="195" height="150">
             <h2>同期が助けてくれる！</h2>
             <p>自分の「困った」を投稿すると興味を持った同期とその場でコメントのやり取りができ、すぐに助けてもらえます。</p>
-            <p><a class="cp_btn" href="/hatsu" role="button">View details &raquo;</a></p>
+            <p><a class="cp_btn" href="/hatsu" role="button">詳細を見る</a></p>
           </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
 
@@ -92,11 +92,13 @@
           
 <div class='signup'>
         @if (!Auth::check())
-        <a class="button" href="{{ route('signup.get') }}"><span>Sign Up Now</span></a>
+        <a class="button" href="{{ route('signup.get') }}"><span>新規登録</span></a>
         @endif
 </div>
 
 <h3>          <br>  </h3>
         <!-- /END THE FEATURETTES -->
+        
+
 
 @endsection

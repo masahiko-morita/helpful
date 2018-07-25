@@ -17,7 +17,7 @@ $count_irais = $user->irais()->count();
 		    <div class="balloon">
 			    <div id="hensyuu_contents">
       		        {{$user->content}}
-      		    </div>
+       		    </div>
       		     @if (Auth::user()->id == $user->id)
       		    <div id="hensyuu2">
                         {!! Form::open(['route' => ['users.edit', $user->id], 'method' => 'get']) !!}
@@ -66,7 +66,7 @@ $count_irais = $user->irais()->count();
 @if($v == "")
                 	<div class="alert alert-warning alert-dismissible fade in" role="alert" id='alert'>
                 	<button type="button" data-dismiss="alert" class="close" onclick="document.cookie = 'data1=123';">&times;</button>
-                	<p><strong>新規投稿は↓<br>をクリック</strong></p>
+                	<p class="text-center"><strong>新規投稿は<br>↓こちらから↓</strong></p>
                     </div>
 @endif
         <a href="{{ route('irais.create') }}">

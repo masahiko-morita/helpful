@@ -494,11 +494,7 @@ border-radius: 6px;
     color: #FFF;
     box-sizing: border-box;
     margin-left: -60px;
-<<<<<<<<< saved version
-
-=========
     margin-top: 30px;
->>>>>>>>> local version
 }
 
 .ribbon3 h2 {
@@ -816,6 +812,30 @@ border-radius: 6px;
 }
 
 
+
+#toukou .btn{
+    display: block;
+    width: 200px;
+   text-align: center;
+    text-decoration: none;
+    margin-top:30px;
+    font-size:15px;
+    color: #BC927A;
+    border: 3px solid #BC927A;
+    border-radius: 3px;
+    transition: .4s;
+    background-color:rgba(255,255,255,0.7);
+    margin:10px auto;
+    height:40px;
+}
+
+#toukou .btn:hover{
+   background: #BC927A;
+   color: #fff; 
+    
+}
+
+
 #koushin .btn{
     display: block;
     width: 150px;
@@ -1103,12 +1123,7 @@ textarea.form-control {
     height:50px;
 }
 
-#toukou .btn{
-    margin-top:10px;
-     background-color:#bd8683;
 
-    color:white;
-}
 
 .well a .under {
   color: navy;

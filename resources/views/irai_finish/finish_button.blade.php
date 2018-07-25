@@ -9,9 +9,9 @@
                   $coment3 =$_COOKIE["coment3"]??"";
             ?>
          
-    <div class='kaiketsumessage driveInLeft'>
+    <div class='kaiketsumessage'>
                                          @if($coment3 == "")
-                                                	<div class="alert alert-warning alert-dismissible fade in" role="alert" id='yaritori'>
+                                                	<div class="alert alert-warning alert-dismissible fade in  driveInLeft" role="alert" id='yaritori'>
                                                 	<button type="button" data-dismiss="alert" class="close" onclick="document.cookie = 'coment3=445';">&times;</button>
                                                 	<strong>依頼が完了した後に「解決した」ボタン↓を押してください。協力してくれた方にありがとうメッセージが自動的に送られ、こちらの投稿は全体の一覧からは消去されますが、マイページでは確認することができます。</strong>
                                                     </div>

@@ -72,7 +72,7 @@
                 </div>
          </div>
                          @if (Auth::user()->id == $irai->user_id)
-                                 <div class='kaiketsumessage driveInLeft'>
+                                 <div class='kaiketsumessage'>
                                   @include('irai_finish.finish_button', ['user' => $user])<br><br><br>
                                  </div>
                          @endif  

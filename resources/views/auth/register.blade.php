@@ -11,7 +11,7 @@
             {!! Form::open(['route' => 'signup.post']) !!}
                 <div class="form-group">
                     {!! Form::label('name', '※ニックネーム') !!}
-                    {!! Form::text('name', old('name'), ['class' => 'form-control']) !!}
+                    {!! Form::text('name', old('name'), ['class' => 'form-control', 'autocomplete' => 'off']) !!}
                 </div>
                 <input type='hidden' name="email" value="dummy@example.com">
                 
@@ -35,7 +35,7 @@
                 
                 <div class="form-group">
                     {!! Form::label('content', '※ホームチーム情報/ひとこと') !!}
-                    {!! Form::text('content', old('content'),['class' => 'form-control','placeholder' => '13-C/よろしくお願いします！']) !!}
+                    {!! Form::text('content', old('content'),['class' => 'form-control','autocomplete' => 'off', 'placeholder' => '13-C/よろしくお願いします！']) !!}
                 </div>
                 
                 

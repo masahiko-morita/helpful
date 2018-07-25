@@ -28,10 +28,14 @@
     margin-right:-20px;
     height:1225px;
 }
+.moji{
+    padding-top: 7px;
+    
+}
     
 .husen {
-    width: 230px;
-    height: 42px;
+    width: 290px;
+    height: 51px;
     line-height: 40px;
     position: relative;
     background: #A7F1FF;
@@ -39,8 +43,8 @@
 }
     
 .husen:after {
-    width: 170px;
-    height: 33px;
+    width: 191px;
+    height: 46px;
     content: "";
     position: absolute;
     top: 0;
@@ -239,4 +243,40 @@ transition: .4s;
 .introduction{
     text-align:center;
     margin-top: 75px;
+}
+.Heart3{
+  animation: anime3 0.2s alternate infinite;
+  color: hotpink;
+}
+
+@keyframes anime3{
+  0% {transform: translateY(0px);}
+  100% {transform: translateY(-10px);}
+}
+.Heart4{
+  animation: anime4 1.5s alternate infinite;
+  color: hotpink;
+}
+
+@keyframes anime4{
+  0% {transform: rotateY(0deg);}
+  100% {transform: rotateY(360deg);}
+}
+
+.heart1{
+    margin-left: -300px;
+}
+
+.heart2{
+    padding-left:  310px;
+}
+
+.kakomi-kage1 {
+ margin: 2em auto;
+ padding: 1em;
+ width: 140%;
+ color: #555555; /* 文字色 */
+ background-color: #FFEEFF; /* 背景色 */
+ box-shadow: 0 0 10px 10px #FFDDFF ; /* 影 */
+ height: 90px;
 }

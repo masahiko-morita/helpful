@@ -27,7 +27,6 @@
                 <div class="touroku_1">
                     <p> <span class="top-introduction-numm">1</span>「新規投稿する」ボタンをクリック!</p>
                     <img src="/images/new_post_capture.jpg" width="340px" height="170px">
-                    
                 </div>
                 
                 <div class="flow_06">

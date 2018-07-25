@@ -59,29 +59,8 @@
                 @endif
             
         </div>
-
-                         @if (Auth::user()->id == $irai->user_id)
-                             <div class='kaiketsumessage driveInLeft'>
-                                     @if($coment3 == "")
-                                            	<div class="alert alert-warning alert-dismissible fade in" role="alert" id='yaritori'>
-                                            	<button type="button" data-dismiss="alert" class="close" onclick="document.cookie = 'coment3=445';">&times;</button>
-                                            	<strong>依頼が完了した後に「解決した」ボタン↓を押してください。協力してくれた方にありがとうメッセージが自動的に送られ、こちらの投稿は全体の一覧からは消去されますが、マイページでは確認することができます。</strong>
-                                                </div>
-                                    @endif
-                             </div>
-                         
-                               @include('irai_finish.finish_button', ['user' => $user])
-                               
-
-                        @endif  
-                
-               
-        </aside>
-   
-
-       
-        <div class="col-xs-6">
-            <div id='kakomu'>
+        
+         <div id='kakomu'>
                 <div id="toukou" style="text-align:center;">
                  
                         {!! Form::open(['route' => ['comments.store'], 'method' => 'post']) !!}
@@ -94,12 +73,32 @@
                         {!! Form::close() !!}
            
 
-                    </div>
                 </div>
+            </div>
+  
+                         @if (Auth::user()->id == $irai->user_id)
+                                 <div class='kaiketsumessage driveInLeft'>
+                                  @include('irai_finish.finish_button', ['user' => $user])<br><br><br>
+                                 </div>
+
+                               
+        
+                               
+
+                        @endif  
+            
+                
+               
+        </aside>
+   
+
+       
+        <div class="col-xs-6">
+           
 
                 <div class='commentboard'>
                     
-                    <div style="height:425px;overflow:auto;padding:5px;">
+                    <div style="height:500px;overflow:auto;padding:5px;">
                     @if($coment2 == "")
                                 	<div class="alert alert-warning alert-dismissible fade in driveInTop" role="alert" id='yaritori2'>
                                 	<button type="button" data-dismiss="alert" class="close" onclick="document.cookie = 'coment2=111';">&times;</button>

@@ -62,10 +62,13 @@
  	
  	
     <div class="wrap-1 ball">
-        @if($v == "")
-        	<div class="alert alert-warning alert-dismissible fade in" role="alert" id='alert'>
-        	<button type="button" data-dismiss="alert" class="close" onclick="document.cookie = 'data1=123';">&times;</button>
-        	<p class="text-center"><strong>新規投稿は<br>↓こちらから↓</strong></p>
+                	<div class="alert alert-warning alert-dismissible fade in" role="alert" id='alert'>
+                	<button type="button" data-dismiss="alert" class="close" onclick="document.cookie = 'data1=123';">&times;</button>
+                	<p class="text-center"><strong>新規投稿は<br>↓こちらから↓</strong></p>
+                    </div>
+@endif
+        <a href="{{ route('irais.create') }}">
+                <button class="btn-post"><i class="fa fa-hand-peace" id='peace'></i><br>新規投稿する</button>
             </div>
         @endif
         <a href="{{ route('irais.create') }}">

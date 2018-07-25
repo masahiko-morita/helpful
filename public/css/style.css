@@ -631,30 +631,6 @@ border-radius: 6px;
   border-style: solid;
 }
 
-/* 吹き出し */
-.balloon{
-  width:200px;
-  position: relative;
-  padding-bottom: 5px;
-  background-color: #edf5f4;
-  word-break:break-all;
-  margin-left:260px;
-  margin-top: -165px;
-}
-
-.balloon::before{
-  content: '';
-  position: absolute;
-  display: block;
-  width: 0;
-  height: 0;
-  left: -15px;
-  top: 20px;
-  border-right: 15px solid 	#edf5f4;
-  border-top: 15px solid transparent;
-  border-bottom: 15px solid transparent;
-  font-size: 20px;
-}
 
 /*comment*/
 
@@ -669,7 +645,7 @@ border-radius: 6px;
 .comment-title-comments h3{
     text-align: left;
 }
-
+ 
 .balloon1-left {
  	position: relative;
 	display: inline-block;
@@ -941,14 +917,34 @@ border-radius: 6px;
 }
 
 /*users-show*/
+/* 吹き出し */
+.balloon{
+  width:150%;
+  position: relative;
+  padding-bottom: 5px;
+  background-color: #edf5f4;
+  word-break:break-all;
+}
+
+.balloon::before{
+  content: '';
+  position: absolute;
+  display: block;
+  width: 0;
+  height: 0;
+  left: -15px;
+  top: 20px;
+  border-right: 15px solid 	#edf5f4;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+  font-size: 20px;
+}
 #sampleMainContents {
 	padding: 2em;
 } 
 
 #introduction_momo img {
-    width:100px;
-    height:100px;
-    margin-left: 130px;
+    width:100%;
     margin-top: 0px;
 }
 
@@ -962,10 +958,7 @@ border-radius: 6px;
 }
 
 #momo_name {
-    margin-top: 30px;
-    margin-left: 140px;
-    margin-bottom: 0px;
-
+   text-align:center;
 }
 
 textarea.form-control {

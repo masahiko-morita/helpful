@@ -3,28 +3,36 @@
 
 @section('content')
 
-<div class='container　col-xs-6"'>
-    <div class='containermypage'>
+<div class='container　col-xs-10"'>
         	<div class="col-xs-12" id="introduction_momo">
-                    <img src="{{ Gravatar::src($user->email, 100) . '&d=mm' }}" alt="" class="img-circle" width='30%'>
-                <div id=momo_name>
-                    <h3>{{ $user->name }}</h3>
-                </div>
-                <div class='col-xs-5 text-center'>
-        		    <div class="balloon">
-        			    <div id="hensyuu_contents">
-              		        {{$user->content}}
-               		    </div>
-              		     @if (Auth::user()->id == $user->id)
-              		    <div id="hensyuu2">
-                                {!! Form::open(['route' => ['users.edit', $user->id], 'method' => 'get']) !!}
-                                {!! Form::submit('編集', ['class' => 'btn center-block']) !!}
-                                {!! Form::close() !!}
+        	    <div class='row'>
+            	    <div class='col-xs-8 col-xs-offset-3 text center'>
+            	        <div class='col-xs-4'>
+                        <img src="{{ Gravatar::src($user->email, 100) . '&d=mm' }}" alt="" class="img-circle" width='40%'>
                         </div>
-                        @endif  
-        	        </div>
-        	    </div>
+                        <div class='col-xs-4 text-center'>
+                		    <div class="balloon">
+                			    <div id="hensyuu_contents">
+                      		        {{$user->content}}
+                       		    </div>
+                      		     @if (Auth::user()->id == $user->id)
+                      		    <div id="hensyuu2">
+                                        {!! Form::open(['route' => ['users.edit', $user->id], 'method' => 'get']) !!}
+                                        {!! Form::submit('編集', ['class' => 'btn center-block']) !!}
+                                        {!! Form::close() !!}
+                                </div>
+                                @endif  
+                	        </div>
+                	    </div>
+            	    </div>
+            	</div>
+            	<div class='row'>
+            	    <div class='col-xs-8 col-xs-offset-2' id=momo_name>
+                        <h2>{{ $user->name }}</h2>
+                    </div>
+                </div>  
             </div>
+           
     <!--<div class='maepage'>-->
     <!--	{!! $irais->render() !!}-->
     <!--</div>   -->

@@ -29,10 +29,10 @@
 @endif
         <a href="{{ route('irais.create') }}">
                 <button class="btn-post"><i class="fa fa-hand-peace" id='peace'></i><br>New Post</button>
-            </div>
         </a>
-    </div>
-
+    
+    
+    
     <div class="text-center">
         <ul class="paginate">
             <p>{{ $irais->links() }}</p>

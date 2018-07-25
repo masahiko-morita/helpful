@@ -32,13 +32,17 @@ class SearchController extends Controller
                          
                          
    	}else{
+   		
 		$irais = array();
+		
 	}
 
 	$irais_s = $irais->where('alive', 1);
-	
+	  
 	return view('irais.search',
 	['irais' => $irais_s,
 	]);
+	
     } 
+   
 }   

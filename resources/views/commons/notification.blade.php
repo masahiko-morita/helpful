@@ -100,14 +100,12 @@
     
        </button>
         <p> <strong>【{{$irai->title}}】は<br>解決しました！<br>ありがとうございました☺</strong></p></div>
-            
    
      </div>
     </div>
     </div>
     </div>
     </div>
-    
     
     @endif
     @endif

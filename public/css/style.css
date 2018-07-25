@@ -1120,7 +1120,7 @@ textarea.form-control {
     height: 40px;
     line-height: 40px;
     font-size: 30px;
-    background: red;
+    background: #FF4500;
     color: white;
     text-align: center;
     -webkit-transform: rotate(45deg);

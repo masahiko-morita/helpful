@@ -69,9 +69,11 @@
                 	<p class="text-center"><strong>新規投稿は<br>↓こちらから</strong></p>
                     </div>
 
+
         <a href="{{ route('irais.create') }}">
                 <button class="btn-post"><i class="fa fa-hand-peace" id='peace'></i><br>新規投稿する</button>
             </div>
+
 
     </div>
 

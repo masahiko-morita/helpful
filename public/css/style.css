@@ -412,6 +412,7 @@ border-radius: 6px;
 /*irai-マステbox*/
 
 .maste-box {
+  overflow: hidden;
   position: relative;
   background-color: #fff;
   background: repeating-linear-gradient(-45deg, #edf5f4, #edf5f4 10px, #f6faf9 0, #f6faf9 20px);
@@ -438,7 +439,7 @@ border-radius: 6px;
 
 .maste-tape{
   position: absolute;
-  top: -0.75em;
+  top: 1%;
   background-color: rgba(100,100,100,.3);
   border-left:4px solid #8BC6CA;
   padding: 0.25em 2em;
@@ -1112,3 +1113,22 @@ textarea.form-control {
     height:50px;
 }
 
+/*完了済みのリボン*/
+
+.maste-box .irai-finish-ribbon{
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    width: 210px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 30px;
+    background: red;
+    color: white;
+    text-align: center;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}

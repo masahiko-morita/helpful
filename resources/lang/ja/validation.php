@@ -104,6 +104,7 @@ return [
     */
 
     'attributes' => [
+        'name' => 'ニックネーム',
         'title' => 'タイトル',
         'content' => 'コンテンツ',
         'station' => '場所',

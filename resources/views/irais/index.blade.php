@@ -4,7 +4,6 @@
 @section('content')
  <?php 
         $v =$_COOKIE["data1"]??"";
-
         $vv =$_COOKIE["data2"]??"";
     ?>
 
@@ -12,9 +11,8 @@
 
         <div class='ribbon3'>
           <h2>依頼一覧</h2>
-          
         </div>
-    </h2>
+</h2>
     <div class='container'>
     @include('irais.irai', ['irais' => $irais])
    

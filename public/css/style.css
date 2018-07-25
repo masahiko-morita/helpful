@@ -957,9 +957,8 @@ border-radius: 6px;
    text-align:center;
 }
 
-textarea.form-control {
- 
-    margin-top: 20px;
+.form-control {
+    margin-top: 0px;
 
 } 
 

@@ -57,16 +57,13 @@
                     </script>
                     
                     {!! Form::label('station', '※ 取引場所:') !!}
-                    {!! Form::text('station', null,  ['class' => 'form-control','placeholder' => '例:都内、神奈川なら可です！/会社内でお願いします' ,'autocomplete' => 'off']) !!}
+                    {!! Form::text('station', null,  ['class' => 'form-control','placeholder' => '例: 都内、神奈川なら可です！/会社内でお願いします🏢' ,'autocomplete' => 'off']) !!}
                     
                     {!! Form::label('reward', '※ お礼:') !!}
-                    {!! Form::text('reward', null, ['class' => 'form-control','placeholder' => '例:100円お渡しします/○○が■円で買えます' ,'autocomplete' => 'off']) !!}
-                    
+                    {!! Form::text('reward', null, ['class' => 'form-control','placeholder' => '例: ビスコあげます / ランチ奢ります🍔' ,'autocomplete' => 'off']) !!}
                      
             </div> 
-   
                     {!! Form::submit('依頼を投稿する', ['class' => 'btn btn-info btn-lg']) !!}
-                    
         </div>
     </div>
     {!! Form::close() !!}

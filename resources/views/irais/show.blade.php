@@ -54,10 +54,8 @@
                                     {!! Form::close() !!}
                                 </div>
                             </div>
-                            
                             </div>
                 @endif
-            
         </div>
         
          <div id='kakomu'>
@@ -71,22 +69,14 @@
                             
                             {!! Form::submit('メッセージ送信', ['class' => 'btn']) !!}
                         {!! Form::close() !!}
-           
-
                 </div>
-            </div>
-
-  
+         </div>
                          @if (Auth::user()->id == $irai->user_id)
-                                 <div class='kaiketsumessage driveInLeft'>
+                                 <div class='kaiketsumessage'>
                                   @include('irai_finish.finish_button', ['user' => $user])<br><br><br>
                                  </div>
-
-                        @endif  
-            
+                         @endif  
         </aside>
-
-
         <div class="col-xs-6">
 
                 <div class='commentboard'>
@@ -100,10 +90,7 @@
                     @endif
                 @include('comments.comment', ['comments' => $comments])
                     </div>
-                    
-                
-            </div>
-
+                </div>
 </div>
 @endsection 
 

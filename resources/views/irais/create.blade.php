@@ -39,6 +39,10 @@
                                                     <span class="glyphicon glyphicon-calendar"></span>
                                                 </span>
                                     </div>
+                                    <div class="alert alert-warning alert-dismissible fade in" role="alert" id='alertnew'>
+                                	    <button type="button" data-dismiss="alert" class="close" onclick="document.cookie = 'data1=123';">&times;</button>
+                                	    <p class="text-center"><strong><span class="glyphicon glyphicon-calendar"></span>を押すとカレンダーが開き日付を指定できます。またその下の<span class="glyphicon glyphicon-time text-center"></span>で時間が指定でき、数字を押すと5分ごとの選択をして頂けます。</strong></p>
+                                    </div>
                                 </div>
                             </div>
                         </div>

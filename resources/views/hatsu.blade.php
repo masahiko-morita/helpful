@@ -25,9 +25,8 @@
                 </div>
              <div class='naiyou'>   
                 <div class="touroku_1">
-                    <p> <span class="top-introduction-numm">1</span>New postボタンをクリック!</p>
-                    <img src="/images/newpost.jpg" width="240px" height="170px">
-                    
+                    <p> <span class="top-introduction-numm">1</span>「新規投稿する」ボタンをクリック!</p>
+                    <img src="/images/new_post_capture.jpg" width="340px" height="170px">
                 </div>
                 
                 <div class="flow_06">
@@ -38,7 +37,7 @@
                  <div class="flow_19">
                     <p><span class="top-introduction-numm">3</span>
                         投稿した後、助ける側から<br>通知が来たら、さっそく返信!</p>
-                　 <img src="/images/soushin_capture.jpg" width="270px" height="150px">    
+                　 <img src="/images/soushin.jpg" width="270px" height="150px">    
                 </div>
                 
                 <div class="flow_19">
@@ -58,7 +57,7 @@
                     
                      <div class="flow_07">
                           <p> <span class="top-introduction-numn">1</span>検索🔎を押して、依頼を探そう</p>
-                        <img src="/images/kensaku_capture.jpg" width="250px" height="170px">
+                        <img src="/images/kensaku_capture.jpg" width="350px" height="170px">
                     </div>
                     <div class="flow_04">
                         <p> <span class="top-introduction-numn">2</span>手伝いたいと思う投稿を選択</p>
@@ -67,12 +66,12 @@
                     
                     <div class="flow_10">
                           <p> <span class="top-introduction-numn">3</span>依頼者の投稿にメッセージを送信！</p><br>
-                        <img src="/images/message_capture.jpg" width="270px" height="150px"><br>
+                        <img src="/images/soushin.jpg" width="270px" height="150px"><br>
                     </div>
                     
                     <div class="flow_08">
                         <p> <span class="top-introduction-numn">4</span>依頼が完了すると、完了の通知が来ます</p>
-                        <img src="/images/kanryou_capture.jpg" width="270px" height="150px">
+                        <img src="/images/thankyou.jpg" width="370px" height="150px">
                     </div>
                 </div>
         </div>

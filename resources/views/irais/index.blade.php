@@ -16,11 +16,10 @@
     </h2>
     <div class='container'>
     @include('irais.irai', ['irais' => $irais])
-   
     </div>
-    <div class="wrap-1 ball">
+   
 
-
+<div class="wrap-1 ball">
 @if($v == "")
                 	<div class="alert alert-warning alert-dismissible fade in" role="alert" id='alert'>
                 	    <button type="button" data-dismiss="alert" class="close" onclick="document.cookie = 'data1=123';">&times;</button>
@@ -31,13 +30,17 @@
         <a href="{{ route('irais.create') }}">
             <button class="btn-post"><i class="fa fa-hand-peace" id='peace'></i><br>新規投稿する</button>
         </a>
-    </div>
     
-    <div class="text-center">
-        <ul class="paginate">
-            <p>{{ $irais->links() }}</p>
-        </ul>
-    </div>
+</div>    
+    
+<div class="text-center">
+    <ul class="paginate">
+        <p>{{ $irais->links() }}</p>
+    </ul>
+</div>
+
+
+
 
 @include('commons.auto')
 

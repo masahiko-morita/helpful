@@ -893,6 +893,23 @@ border-radius: 6px;
     font-size:15px;
 }
 
+#alertnew{
+    color:white;
+    background-color:rgba(0,0,0,0.4);
+    border-color:white;
+    position:fixed;
+    right:170px;
+    bottom:280px;
+    width:300px;
+    height:100px;
+    padding-top:10px;
+    padding-right:10px;
+    padding-left:10px;
+}
+    
+
+
+
 #kaiketsu-zumi {
     width:250px;
     margin: 30px auto;
@@ -1132,7 +1149,7 @@ border-radius: 6px;
     line-height: 40px;
 
     font-size: 20px;
-    background: #db7093;
+    background: #dc143c;
 
     color: white;
     text-align: center;
